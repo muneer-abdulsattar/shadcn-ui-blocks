@@ -1,0 +1,6 @@
+.code {
+  @apply text-sm max-h-96 overflow-y-auto rounded;
+}
+.code span {
+    @apply leading-[1.63rem];
+}

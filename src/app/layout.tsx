@@ -1,16 +1,13 @@
+import { AppSidebar } from "@/components/app-sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import { Hanken_Grotesk } from "next/font/google";
+import { cn } from "@/lib/utils";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const hankenGrotesk = Hanken_Grotesk({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -25,10 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={cn(hankenGrotesk.className, "antialiased")}>
+        <SidebarProvider>
+          <AppSidebar />
+          <main className="w-full p-10 max-w-screen-md">{children}</main>
+        </SidebarProvider>
       </body>
     </html>
   );
