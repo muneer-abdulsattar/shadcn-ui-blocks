@@ -2,10 +2,10 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import type { Metadata } from "next";
 import "./globals.css";
-import { Hanken_Grotesk } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const hankenGrotesk = Hanken_Grotesk({
+const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(hankenGrotesk.className, "antialiased")}>
+      <body className={cn(dmSans.className, "antialiased")}>
         <SidebarProvider>
           <AppSidebar />
           <main className="w-full p-10 max-w-screen-md">{children}</main>
