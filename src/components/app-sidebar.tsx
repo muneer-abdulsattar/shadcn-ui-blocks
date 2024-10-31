@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 
-// Menu items.
 const items = [
   {
     title: "Home",
@@ -22,6 +21,11 @@ const items = [
   {
     title: "Button",
     url: "/blocks/button",
+    icon: Inbox,
+  },
+  {
+    title: "Input",
+    url: "/blocks/input",
     icon: Inbox,
   },
 ];

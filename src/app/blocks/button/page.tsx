@@ -1,12 +1,12 @@
 import Block from "@/components/block";
-import { MainHeading } from "@/components/typography";
+import { DescriptionText, MainHeading } from "@/components/typography";
 
 const ButtonBlocks = () => (
   <div>
     <MainHeading>Button</MainHeading>
-    <p className="mt-1 text-muted-foreground">
+    <DescriptionText className="mt-1">
       Displays a button or a component that looks like a button.
-    </p>
+    </DescriptionText>
 
     <div className="mt-12 space-y-10">
       <Block title="Primary" type="button" name="primary-button" />
