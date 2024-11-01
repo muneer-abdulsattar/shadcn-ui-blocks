@@ -16,6 +16,8 @@ const ButtonBlocks = () => (
       <Block title="With button" type="input" name="with-button" />
       <Block title="With adornments" type="input" name="with-adornment" />
       <Block title="With helper text" type="input" name="with-helper-text" />
+      <Block title="File input" type="input" name="file-input" />
+      <Block title="Dropzone" type="input" name="dropzone" />
     </div>
   </div>
 );
