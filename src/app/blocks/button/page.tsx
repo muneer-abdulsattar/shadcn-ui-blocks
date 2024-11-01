@@ -16,6 +16,7 @@ const ButtonBlocks = () => (
       <Block title="Ghost" type="button" name="ghost-button" />
       <Block title="Link" type="button" name="link-button" />
       <Block title="Gradient" type="button" name="gradient-button" />
+      <Block title="Neon" type="button" name="neon-button" />
       <Block title="Rounded" type="button" name="rounded-button" />
       <Block title="Full Width" type="button" name="full-width-button" />
       <Block title="Group" type="button" name="group-button" />
