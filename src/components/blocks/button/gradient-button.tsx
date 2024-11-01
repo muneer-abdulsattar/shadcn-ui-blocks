@@ -13,7 +13,7 @@ const ButtonGradient = ({ className, ...props }: ButtonProps) => (
 );
 
 const GradientButtonDemo = () => (
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2 flex-wrap">
     <ButtonGradient>Gradient</ButtonGradient>
     <ButtonGradient size="icon">
       <StarIcon />

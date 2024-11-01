@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const GroupButtonDemo = () => (
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2 flex-wrap">
     <div>
       <Button className="rounded-r-none">Left</Button>
       <Button className="rounded-none">Middle</Button>

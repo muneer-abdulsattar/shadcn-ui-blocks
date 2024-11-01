@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { LoaderIcon, StarIcon } from "lucide-react";
 
 const RoundedButtonDemo = () => (
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2 flex-wrap">
     <Button className="rounded-full">Rounded</Button>
     <Button className="rounded-full" size="icon">
       <StarIcon />

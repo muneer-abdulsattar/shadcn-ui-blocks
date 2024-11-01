@@ -13,7 +13,7 @@ const ButtonNeon = ({ className, ...props }: ButtonProps) => (
 );
 
 const NeonButtonDemo = () => (
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2 flex-wrap">
     <ButtonNeon>Neon</ButtonNeon>
     <ButtonNeon size="icon">
       <StarIcon />

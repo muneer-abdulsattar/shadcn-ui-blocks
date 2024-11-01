@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { LoaderIcon, StarIcon } from "lucide-react";
 
 const SecondaryButtonDemo = () => (
-  <div className="flex items-center gap-2">
+  <div className="flex items-center gap-2 flex-wrap">
     <Button variant="secondary">Secondary</Button>
     <Button variant="secondary" size="icon">
       <StarIcon />
