@@ -19,5 +19,8 @@ export const DescriptionText = ({
   className,
   ...props
 }: ComponentProps<"p">) => (
-  <p className={cn("text-muted-foreground text-lg", className)} {...props} />
+  <p
+    className={cn("text-muted-foreground text-[17px]", className)}
+    {...props}
+  />
 );
