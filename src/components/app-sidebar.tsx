@@ -27,6 +27,11 @@ const groups = [
     label: "Blocks",
     items: [
       {
+        title: "Alert",
+        url: "/blocks/alert",
+        icon: Inbox,
+      },
+      {
         title: "Button",
         url: "/blocks/button",
         icon: Inbox,
@@ -37,13 +42,13 @@ const groups = [
         icon: Inbox,
       },
       {
-        title: "Tabs",
-        url: "/blocks/tabs",
+        title: "Spinner",
+        url: "/blocks/spinner",
         icon: Inbox,
       },
       {
-        title: "Alert",
-        url: "/blocks/alert",
+        title: "Tabs",
+        url: "/blocks/tabs",
         icon: Inbox,
       },
       {
