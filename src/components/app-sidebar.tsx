@@ -41,6 +41,11 @@ const groups = [
         url: "/blocks/tabs",
         icon: Inbox,
       },
+      {
+        title: "Alert",
+        url: "/blocks/alert",
+        icon: Inbox,
+      },
     ],
   },
 ];
