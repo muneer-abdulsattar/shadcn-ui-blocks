@@ -10,10 +10,11 @@ interface BlockProps {
   title: string;
   children?: ReactNode;
   name: string;
+  description?: ReactNode;
   type: string;
 }
 
-const Block: FC<BlockProps> = async ({ title, type, name }) => {
+const Block: FC<BlockProps> = async ({ title, type, description, name }) => {
   const src = `src/components/blocks/${type}/${name}.tsx`;
   const filePath = path.join(process.cwd(), src);
   const code = fs.readFileSync(filePath, "utf8");
@@ -26,6 +27,9 @@ const Block: FC<BlockProps> = async ({ title, type, name }) => {
   return (
     <div>
       <SubHeading>{title}</SubHeading>
+      {description && (
+        <p className="mb-4 text-muted-foreground">{description}</p>
+      )}
       <Tabs defaultValue="preview" className="mt-2">
         <TabsList>
           <TabsTrigger value="preview">Preview</TabsTrigger>
