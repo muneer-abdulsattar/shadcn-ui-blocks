@@ -36,6 +36,11 @@ const groups = [
         url: "/blocks/input",
         icon: Inbox,
       },
+      {
+        title: "Tabs",
+        url: "/blocks/tabs",
+        icon: Inbox,
+      },
     ],
   },
 ];
