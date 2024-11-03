@@ -27,6 +27,11 @@ const groups = [
     label: "Blocks",
     items: [
       {
+        title: "Accordion",
+        url: "/blocks/accordion",
+        icon: Inbox,
+      },
+      {
         title: "Alert",
         url: "/blocks/alert",
         icon: Inbox,

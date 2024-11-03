@@ -1,7 +1,7 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
 
-const ButtonBlocks = () => (
+const AlertBlocks = () => (
   <div>
     <MainHeading>Alert</MainHeading>
     <DescriptionText className="mt-1">
@@ -20,4 +20,4 @@ const ButtonBlocks = () => (
   </div>
 );
 
-export default ButtonBlocks;
+export default AlertBlocks;

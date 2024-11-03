@@ -27,7 +27,7 @@ export default function Home() {
             className="group h-12 text-base z-10 rounded-md w-full md:w-auto"
             asChild
           >
-            <Link href="/blocks/alert">
+            <Link href="/blocks/accordion">
               Explore Components{" "}
               <PuzzleIcon className="group-hover:-rotate-12 transition-transform" />
             </Link>

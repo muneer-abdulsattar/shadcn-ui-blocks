@@ -1,7 +1,7 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
 
-const ButtonBlocks = () => (
+const TabsBlocks = () => (
   <div>
     <MainHeading>Tabs</MainHeading>
     <DescriptionText className="mt-1">
@@ -19,4 +19,4 @@ const ButtonBlocks = () => (
   </div>
 );
 
-export default ButtonBlocks;
+export default TabsBlocks;
