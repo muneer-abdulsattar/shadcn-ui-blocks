@@ -1,9 +1,7 @@
-import { AppSidebar } from "@/components/app-sidebar";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import type { Metadata } from "next";
-import "./globals.css";
-import { DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
+import "./globals.css";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -22,12 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(dmSans.className, "antialiased")}>
-        <SidebarProvider>
-          <AppSidebar />
-          <main className="w-full p-10 max-w-screen-md">{children}</main>
-        </SidebarProvider>
-      </body>
+      <body className={cn(dmSans.className, "antialiased")}>{children}</body>
     </html>
   );
 }
