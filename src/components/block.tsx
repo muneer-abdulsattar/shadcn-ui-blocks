@@ -36,7 +36,7 @@ const Block: FC<BlockProps> = async ({ title, type, description, name }) => {
           <TabsTrigger value="code">Code</TabsTrigger>
         </TabsList>
         <TabsContent value="preview">
-          <div className="mt-2 p-4 md:px-10 border min-h-80 w-full rounded flex items-center justify-center">
+          <div className="mt-2 p-4 md:p-10 border min-h-80 w-full rounded flex items-center justify-center">
             <DynamicComponent />
           </div>
         </TabsContent>
