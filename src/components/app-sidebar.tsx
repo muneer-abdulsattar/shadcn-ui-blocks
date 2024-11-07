@@ -52,6 +52,11 @@ const groups = [
         icon: Inbox,
       },
       {
+        title: "Separator",
+        url: "/blocks/separator",
+        icon: Inbox,
+      },
+      {
         title: "Spinner",
         url: "/blocks/spinner",
         icon: Inbox,

@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
-export default function CreateAccountCard() {
+export default function SeparatorDashed() {
   return (
     <Card className="w-[350px]">
       <CardHeader>
@@ -29,9 +29,9 @@ export default function CreateAccountCard() {
             <Button>Get Started</Button>
           </div>
           <div className="relative my-4 flex items-center justify-center overflow-hidden">
-            <Separator />
+            <Separator className="h-0 border-t border-dashed bg-transparent" />
             <div className="px-2 text-center bg-white text-sm">OR</div>
-            <Separator />
+            <Separator className="h-0 border-t border-dashed bg-transparent" />
           </div>
           <div className="grid w-full gap-2">
             <Button variant="outline">

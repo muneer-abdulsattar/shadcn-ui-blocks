@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
-export default function CreateAccountCard() {
+export default function VerticalSeparatorWithLabel() {
   return (
     <Card className="w-[350px]">
       <CardHeader>
@@ -30,7 +30,7 @@ export default function CreateAccountCard() {
           </div>
           <div className="relative my-4 flex items-center justify-center overflow-hidden">
             <Separator />
-            <div className="px-2 text-center bg-white text-sm">OR</div>
+            <div className="p-2 text-center bg-white text-sm border">OR</div>
             <Separator />
           </div>
           <div className="grid w-full gap-2">
