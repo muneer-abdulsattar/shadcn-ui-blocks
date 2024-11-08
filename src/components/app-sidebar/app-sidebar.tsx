@@ -1,4 +1,16 @@
-import { Home, Inbox } from "lucide-react";
+import {
+  CreditCardIcon,
+  HandIcon,
+  Home,
+  InfoIcon,
+  LoaderIcon,
+  NotebookTabsIcon,
+  SeparatorHorizontalIcon,
+  SquareCheckIcon,
+  SquareChevronUpIcon,
+  TextCursorInputIcon,
+  TriangleAlertIcon,
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -7,10 +19,8 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import Link from "next/link";
+import AppSidebarMenuItem from "./sidebar-menu-item";
 
 const groups = [
   {
@@ -29,52 +39,62 @@ const groups = [
       {
         title: "Accordion",
         url: "/blocks/accordion",
-        icon: Inbox,
+        icon: SquareChevronUpIcon,
+        blockName: "accordion",
       },
       {
         title: "Alert",
         url: "/blocks/alert",
-        icon: Inbox,
+        icon: TriangleAlertIcon,
+        blockName: "alert",
       },
       {
         title: "Button",
         url: "/blocks/button",
-        icon: Inbox,
+        icon: HandIcon,
+        blockName: "button",
       },
       {
         title: "Card",
         url: "/blocks/card",
-        icon: Inbox,
+        icon: CreditCardIcon,
+        blockName: "card",
       },
       {
         title: "Checkbox",
         url: "/blocks/checkbox",
-        icon: Inbox,
+        icon: SquareCheckIcon,
+        blockName: "checkbox",
       },
       {
         title: "Input",
         url: "/blocks/input",
-        icon: Inbox,
+        icon: TextCursorInputIcon,
+        blockName: "input",
       },
       {
         title: "Separator",
         url: "/blocks/separator",
-        icon: Inbox,
+        icon: SeparatorHorizontalIcon,
+        blockName: "separator",
       },
       {
         title: "Spinner",
         url: "/blocks/spinner",
-        icon: Inbox,
+        icon: LoaderIcon,
+        blockName: "spinner",
       },
       {
         title: "Tabs",
         url: "/blocks/tabs",
-        icon: Inbox,
+        icon: NotebookTabsIcon,
+        blockName: "tabs",
       },
       {
         title: "Tooltip",
         url: "/blocks/tooltip",
-        icon: Inbox,
+        icon: InfoIcon,
+        blockName: "tooltip",
       },
     ],
   },
@@ -90,14 +110,7 @@ export function AppSidebar() {
             <SidebarGroupContent>
               <SidebarMenu>
                 {items.map((item) => (
-                  <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild>
-                      <Link href={item.url}>
-                        <item.icon />
-                        <span className="font-medium">{item.title}</span>
-                      </Link>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
+                  <AppSidebarMenuItem key={item.title} item={item} />
                 ))}
               </SidebarMenu>
             </SidebarGroupContent>
