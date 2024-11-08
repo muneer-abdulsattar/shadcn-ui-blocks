@@ -1,5 +1,11 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Alert",
+  description: "Displays a callout for user attention.",
+};
 
 const AlertBlocks = () => (
   <div>

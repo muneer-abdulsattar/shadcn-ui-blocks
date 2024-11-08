@@ -1,11 +1,18 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Checkbox",
+  description:
+    "A control that allows the user to toggle between checked and not checked.",
+};
 
 const CheckboxBlocks = () => (
   <div>
-    <MainHeading>Button</MainHeading>
+    <MainHeading>Checkbox</MainHeading>
     <DescriptionText className="mt-1">
-      Displays a button or a component that looks like a button.
+      A control that allows the user to toggle between checked and not checked.
     </DescriptionText>
 
     <div className="mt-12 space-y-10">

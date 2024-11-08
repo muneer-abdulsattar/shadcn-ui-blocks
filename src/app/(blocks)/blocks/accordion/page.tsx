@@ -1,5 +1,12 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Accordion",
+  description:
+    "A vertically stacked set of interactive headings that each reveal a section of content.",
+};
 
 const AccordionBlocks = () => (
   <div>

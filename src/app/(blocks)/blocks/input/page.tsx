@@ -1,5 +1,12 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Input",
+  description:
+    "Displays a form input field or a component that looks like an input field.",
+};
 
 const InputBlocks = () => (
   <div>

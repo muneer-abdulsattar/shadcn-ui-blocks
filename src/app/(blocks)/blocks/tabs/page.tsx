@@ -1,5 +1,12 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tabs",
+  description:
+    "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+};
 
 const TabsBlocks = () => (
   <div>

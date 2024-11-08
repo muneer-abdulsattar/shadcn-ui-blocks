@@ -1,5 +1,11 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Separator",
+  description: "Visually or semantically separates content.",
+};
 
 const SeparatorBlocks = () => (
   <div>

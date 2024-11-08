@@ -1,5 +1,12 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tooltip",
+  description:
+    "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+};
 
 const TooltipBlocks = () => (
   <div>

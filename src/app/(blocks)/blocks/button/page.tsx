@@ -1,5 +1,11 @@
 import Block from "@/components/block";
 import { DescriptionText, MainHeading } from "@/components/typography";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Button",
+  description: "Displays a button or a component that looks like a button.",
+};
 
 const ButtonBlocks = () => (
   <div>
