@@ -1,0 +1,53 @@
+import * as React from "react";
+import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
+import { cn } from "@/lib/utils";
+import { CheckIcon } from "@radix-ui/react-icons";
+import { BookmarkIcon, Heart, StarIcon } from "lucide-react";
+
+// Replace the `Checkbox` component in `@components/ui/checkbox` with below component and use it here to support custom icon.
+const Checkbox = React.forwardRef<
+  React.ElementRef<typeof CheckboxPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> & {
+    icon?: React.ReactNode;
+    checkedIcon?: React.ReactNode;
+  }
+>(({ className, icon, checkedIcon, ...props }, ref) => (
+  <>
+    <CheckboxPrimitive.Root
+      ref={ref}
+      className={cn("peer group", className)}
+      {...props}
+    >
+      <span className="group-data-[state=checked]:hidden">{icon}</span>
+      <span className="group-data-[state=unchecked]:hidden">{checkedIcon}</span>
+
+      {!checkedIcon && (
+        <CheckboxPrimitive.Indicator
+          className={cn("flex items-center justify-center text-current")}
+        >
+          <CheckIcon className="h-4 w-4" />
+        </CheckboxPrimitive.Indicator>
+      )}
+    </CheckboxPrimitive.Root>
+  </>
+));
+Checkbox.displayName = CheckboxPrimitive.Root.displayName;
+
+export default function CheckboxIconDemo() {
+  return (
+    <div className="flex items-center space-x-3">
+      <Checkbox
+        icon={<Heart />}
+        checkedIcon={<Heart className="fill-primary" />}
+      />
+      <Checkbox
+        icon={<BookmarkIcon />}
+        checkedIcon={<BookmarkIcon className="fill-primary" />}
+      />
+      <Checkbox
+        icon={<StarIcon />}
+        checkedIcon={<StarIcon className="fill-primary" />}
+      />
+    </div>
+  );
+}

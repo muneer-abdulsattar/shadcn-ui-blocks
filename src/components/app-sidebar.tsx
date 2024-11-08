@@ -47,6 +47,11 @@ const groups = [
         icon: Inbox,
       },
       {
+        title: "Checkbox",
+        url: "/blocks/checkbox",
+        icon: Inbox,
+      },
+      {
         title: "Input",
         url: "/blocks/input",
         icon: Inbox,
