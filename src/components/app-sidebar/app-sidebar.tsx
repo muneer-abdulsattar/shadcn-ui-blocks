@@ -1,9 +1,10 @@
 import {
   CreditCardIcon,
-  HandIcon,
   Home,
   InfoIcon,
+  LoaderCircleIcon,
   LoaderIcon,
+  MousePointerClickIcon,
   NotebookTabsIcon,
   RectangleHorizontalIcon,
   SeparatorHorizontalIcon,
@@ -59,7 +60,7 @@ const groups = [
       {
         title: "Button",
         url: "/blocks/button",
-        icon: HandIcon,
+        icon: MousePointerClickIcon,
         blockName: "button",
       },
       {
@@ -79,6 +80,12 @@ const groups = [
         url: "/blocks/input",
         icon: TextCursorInputIcon,
         blockName: "input",
+      },
+      {
+        title: "Progress",
+        url: "/blocks/progress",
+        icon: LoaderCircleIcon,
+        blockName: "progress",
       },
       {
         title: "Separator",
