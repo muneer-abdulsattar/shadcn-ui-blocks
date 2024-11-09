@@ -9,6 +9,7 @@ import {
   SquareCheckIcon,
   SquareChevronUpIcon,
   TextCursorInputIcon,
+  ToggleRightIcon,
   TriangleAlertIcon,
 } from "lucide-react";
 
@@ -83,6 +84,12 @@ const groups = [
         url: "/blocks/spinner",
         icon: LoaderIcon,
         blockName: "spinner",
+      },
+      {
+        title: "Switch",
+        url: "/blocks/switch",
+        icon: ToggleRightIcon,
+        blockName: "switch",
       },
       {
         title: "Tabs",

@@ -38,7 +38,7 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
           {!!fileCount && (
             <Badge
               className={cn(
-                "ml-auto py-0 px-1 rounded-full bg-foreground/5 group-data-[active=true]/menu-button:bg-foreground/10"
+                "ml-auto py-0 px-1 min-w-[18px] inline-flex justify-center rounded-full bg-foreground/5 group-data-[active=true]/menu-button:bg-foreground/10"
               )}
               variant="outline"
             >
