@@ -103,7 +103,7 @@ export default function CircularProgressColorDemo() {
           showLabel
           labelClassName="text-4xl font-bold"
           renderLabel={(progress) => `${progress}%`}
-          className="stroke-indigo-100"
+          className="stroke-indigo-500/25"
           progressClassName="stroke-indigo-600"
         />
         <CircularProgress
@@ -113,7 +113,7 @@ export default function CircularProgressColorDemo() {
           showLabel
           labelClassName="text-4xl font-bold"
           renderLabel={(progress) => `${progress}%`}
-          className="stroke-orange-100"
+          className="stroke-orange-500/25"
           progressClassName="stroke-orange-600"
         />
       </div>

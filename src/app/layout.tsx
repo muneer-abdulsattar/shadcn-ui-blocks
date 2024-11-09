@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -60,8 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(dmSans.className, "antialiased")}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(dmSans.className, "antialiased")}>
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

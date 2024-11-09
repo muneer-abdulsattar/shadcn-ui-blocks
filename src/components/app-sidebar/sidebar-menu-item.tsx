@@ -28,9 +28,7 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
       <AppSidebarMenuButton
         asChild
         url={item.url}
-        className={cn(
-          "group/menu-button gap-x-3 data-[active=true]:bg-blue-100 data-[active=true]:hover:bg-blue-100 data-[active=true]:text-foreground"
-        )}
+        className={cn("group/menu-button gap-x-3")}
       >
         <Link href={item.url}>
           <item.icon />
@@ -38,7 +36,7 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
           {!!fileCount && (
             <Badge
               className={cn(
-                "ml-auto py-0 px-1 min-w-[18px] inline-flex justify-center rounded-full bg-foreground/5 group-data-[active=true]/menu-button:bg-foreground/10"
+                "ml-auto py-0 px-1 min-w-[18px] inline-flex justify-center rounded-full bg-foreground/5"
               )}
               variant="outline"
             >

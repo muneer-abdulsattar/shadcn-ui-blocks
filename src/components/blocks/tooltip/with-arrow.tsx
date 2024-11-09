@@ -16,7 +16,7 @@ export default function WithArrowTooltipDemo() {
         </TooltipTrigger>
         <TooltipContent>
           <p>Tooltip with arrow</p>
-          <TooltipArrow />
+          <TooltipArrow className="fill-foreground" />
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

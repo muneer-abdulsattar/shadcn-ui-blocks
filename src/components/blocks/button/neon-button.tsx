@@ -5,7 +5,7 @@ import { StarIcon } from "lucide-react";
 const ButtonNeon = ({ className, ...props }: ButtonProps) => (
   <Button
     className={cn(
-      "bg-indigo-500 text-primary-foreground hover:bg-indigo-600 shadow-lg shadow-indigo-400",
+      "bg-indigo-500 text-primary-foreground hover:bg-indigo-600 dark:text-foreground shadow-lg shadow-indigo-400 dark:shadow-indigo-700",
       className
     )}
     {...props}

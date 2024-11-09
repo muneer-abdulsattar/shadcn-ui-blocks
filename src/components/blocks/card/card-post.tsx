@@ -55,20 +55,14 @@ export default function CardPost() {
       </CardContent>
       <Separator />
       <CardFooter className="flex py-2 px-2">
-        <Button
-          variant="ghost"
-          className="w-full text-muted-foreground hover:text-destructive"
-        >
+        <Button variant="ghost" className="w-full text-muted-foreground">
           <HeartIcon /> <span className="hidden sm:inline">Like</span>
         </Button>
         <Button variant="ghost" className="w-ful text-muted-foreground">
           <MessageCircleIcon />
           <span className="hidden sm:inline">Comment</span>
         </Button>
-        <Button
-          variant="ghost"
-          className="w-full text-muted-foreground hover:text-blue-600"
-        >
+        <Button variant="ghost" className="w-full text-muted-foreground">
           <ShareIcon /> <span className="hidden sm:inline">Share</span>
         </Button>
       </CardFooter>

@@ -5,9 +5,9 @@ const SwitchColorsDemo = () => {
   return (
     <div className="flex items-center gap-3">
       <Switch defaultChecked />
-      <Switch defaultChecked className="data-[state=checked]:bg-destructive" />
-      <Switch defaultChecked className="data-[state=checked]:bg-blue-600" />
-      <Switch defaultChecked className="data-[state=checked]:bg-emerald-600" />
+      <Switch defaultChecked className="data-[state=checked]:bg-green-500" />
+      <Switch defaultChecked className="data-[state=checked]:bg-indigo-500" />
+      <Switch defaultChecked className="data-[state=checked]:bg-rose-500" />
     </div>
   );
 };
