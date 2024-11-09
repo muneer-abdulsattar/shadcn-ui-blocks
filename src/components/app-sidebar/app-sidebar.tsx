@@ -112,6 +112,12 @@ const groups = [
         blockName: "tabs",
       },
       {
+        title: "Textarea",
+        url: "/blocks/textarea",
+        icon: TextCursorInputIcon,
+        blockName: "textarea",
+      },
+      {
         title: "Tooltip",
         url: "/blocks/tooltip",
         icon: InfoIcon,
