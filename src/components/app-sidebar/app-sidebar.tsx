@@ -5,6 +5,7 @@ import {
   InfoIcon,
   LoaderIcon,
   NotebookTabsIcon,
+  RectangleHorizontalIcon,
   SeparatorHorizontalIcon,
   SquareCheckIcon,
   SquareChevronUpIcon,
@@ -48,6 +49,12 @@ const groups = [
         url: "/blocks/alert",
         icon: TriangleAlertIcon,
         blockName: "alert",
+      },
+      {
+        title: "Badge",
+        url: "/blocks/badge",
+        icon: RectangleHorizontalIcon,
+        blockName: "badge",
       },
       {
         title: "Button",
