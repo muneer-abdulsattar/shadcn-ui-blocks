@@ -2,7 +2,6 @@ import {
   CircleDotIcon,
   CircleUserRoundIcon,
   CreditCardIcon,
-  Home,
   InfoIcon,
   LoaderCircleIcon,
   LoaderIcon,
@@ -12,6 +11,7 @@ import {
   RectangleHorizontalIcon,
   Rows3Icon,
   SeparatorHorizontalIcon,
+  ShapesIcon,
   SlidersHorizontalIcon,
   SquareCheckIcon,
   SquareChevronUpIcon,
@@ -27,21 +27,13 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
+  SidebarHeader,
   SidebarMenu,
 } from "@/components/ui/sidebar";
 import AppSidebarMenuItem from "./sidebar-menu-item";
+import Link from "next/link";
 
 const groups = [
-  {
-    label: "Getting Started",
-    items: [
-      {
-        title: "Introduction",
-        url: "/",
-        icon: Home,
-      },
-    ],
-  },
   {
     label: "Components",
     items: [
@@ -172,6 +164,14 @@ const groups = [
 export function AppSidebar() {
   return (
     <Sidebar>
+      <SidebarHeader className="p-4 border-b">
+        <Link href="/">
+          <div className="flex items-center font-bold gap-2">
+            <ShapesIcon className="h-5 w-5" />
+            Shadcn UI Blocks
+          </div>
+        </Link>
+      </SidebarHeader>
       <SidebarContent>
         {groups.map(({ label, items }) => (
           <SidebarGroup key={label}>
