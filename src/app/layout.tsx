@@ -62,6 +62,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="xqbQoq68oIz9cbsrLZP3hXQmLmG0QTIcxjb7qLEMb3Y"
+        />
+      </head>
       <body className={cn(dmSans.className, "antialiased")}>
         <ThemeProvider attribute="class">{children}</ThemeProvider>
       </body>
