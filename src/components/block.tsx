@@ -15,13 +15,15 @@ interface BlockProps {
 }
 
 const Block: FC<BlockProps> = async ({ title, type, description, name }) => {
-  const src = `src/components/blocks/${type}/${name}.tsx`;
+  const src = `src/components/customized/${type}/${name}.tsx`;
   const filePath = path.join(process.cwd(), src);
   const code = fs.readFileSync(filePath, "utf8");
 
   // Dynamically import the component from its path
   const DynamicComponent = dynamic(() =>
-    import(`@/components/blocks/${type}/${name}.tsx`).catch(() => BlockNotFound)
+    import(`@/components/customized/${type}/${name}.tsx`).catch(
+      () => BlockNotFound
+    )
   );
 
   return (

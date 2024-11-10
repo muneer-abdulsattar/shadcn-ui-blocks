@@ -20,7 +20,9 @@ type AppSidebarMenuItemProps = React.ComponentProps<typeof SidebarMenuItem> & {
 
 const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
   const fileCount = item.blockName
-    ? getNumberOfFilesInsideDirectory(`src/components/blocks/${item.blockName}`)
+    ? getNumberOfFilesInsideDirectory(
+        `src/components/customized/${item.blockName}`
+      )
     : null;
 
   return (
