@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://shadcn-ui-blocks.akashmoradiya.com/sitemap.xml
