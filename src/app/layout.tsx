@@ -10,15 +10,24 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Effortless Shadcn UI Component Previews & Code Snippets",
+  title:
+    "Effortless Shadcn UI Blocks & Components | Preview & Copy Code Snippets",
   description:
-    "Discover a vast collection of Shadcn UI components and blocks, designed for easy preview and copy. Streamline your development workflow with effortless, ready-to-use examples that enhance your project's UI/UX.",
+    "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
   keywords: [
-    "Shadcn UI",
-    "UI components",
-    "code snippets",
-    "UI blocks",
-    "frontend development",
+    "Shadcn UI blocks",
+    "Shadcn UI components",
+    "Shadcn UI previews",
+    "UI blocks for developers",
+    "Shadcn UI code snippets",
+    "Shadcn UI examples",
+    "Shadcn UI customization",
+    "Free Shadcn UI blocks",
+    "Preview Shadcn UI components",
+    "Shadcn UI examples for websites",
+    "Copy Shadcn UI code snippets",
+    "UI design components",
+    "UI design blocks",
   ],
   icons: [
     {
@@ -40,9 +49,9 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Effortless Shadcn UI Component Previews & Code Snippets",
+    title: "Effortless Shadcn UI Blocks & Components| Preview & Copy Code",
     description:
-      "Explore Shadcn UI components ready to preview and copy, making your development process faster and easier with beautiful UI examples.",
+      "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
     type: "website",
     images: [
       {
