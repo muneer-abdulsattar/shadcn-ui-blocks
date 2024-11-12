@@ -6,6 +6,7 @@ import {
   MoveRightIcon,
   PuzzleIcon,
   ShapesIcon,
+  TimerIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { FAQ } from "./faq";
@@ -127,10 +128,8 @@ export const Features = () => {
             </ul>
           </CardContent>
           <CardFooter className="pt-1">
-            <Button asChild>
-              <Link href="/blocks">
-                Explore <MoveRightIcon />
-              </Link>
+            <Button>
+              Coming Soon <TimerIcon />
             </Button>
           </CardFooter>
         </Card>
