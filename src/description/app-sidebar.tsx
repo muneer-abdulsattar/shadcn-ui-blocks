@@ -13,6 +13,7 @@ import {
   SlidersHorizontalIcon,
   SquareCheckIcon,
   SquareChevronUpIcon,
+  Table2Icon,
   TextCursorInputIcon,
   ToggleRightIcon,
   TriangleAlertIcon,
@@ -109,12 +110,12 @@ export const components = [
     icon: ToggleRightIcon,
     blockName: "switch",
   },
-  // {
-  //   title: "Table",
-  //   url: "/components/table",
-  //   icon: Table2Icon,
-  //   blockName: "table",
-  // },
+  {
+    title: "Table",
+    url: "/components/table",
+    icon: Table2Icon,
+    blockName: "table",
+  },
   {
     title: "Tabs",
     url: "/components/tabs",
