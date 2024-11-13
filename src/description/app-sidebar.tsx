@@ -1,4 +1,5 @@
 import {
+  BookTextIcon,
   CircleDotIcon,
   CircleUserRoundIcon,
   CreditCardIcon,
@@ -143,6 +144,16 @@ export const components = [
 ];
 
 export const groups = [
+  {
+    label: "Get Started",
+    items: [
+      {
+        title: "Introduction",
+        url: "/components/introduction",
+        icon: BookTextIcon,
+      },
+    ],
+  },
   {
     label: "Components",
     items: components,
