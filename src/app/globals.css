@@ -35,7 +35,7 @@
     --sidebar-accent: 214.3 31.8% 91.4%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -81,4 +81,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Shiki code block */
+.shiki code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+.shiki code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 1rem;
+  @apply mr-6 inline-block leading-[1.8] text-right text-muted-foreground text-xs;
 }

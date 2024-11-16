@@ -1,3 +1,5 @@
+"use server";
+
 import path from "path";
 import fs from "fs";
 
@@ -15,4 +17,11 @@ export const getNumberOfFilesInsideDirectory = (directoryPath: string) => {
     console.error("error :", error);
     return 0;
   }
+};
+
+export const getFileContent = async (filePath: string) => {
+  const joinedPath = path.join(process.cwd(), filePath);
+  const content = fs.readFileSync(joinedPath, "utf8");
+
+  return content;
 };

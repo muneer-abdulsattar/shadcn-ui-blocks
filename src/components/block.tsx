@@ -1,10 +1,9 @@
-import React, { FC, ReactNode } from "react";
-import { SubHeading } from "./typography";
-import path from "path";
-import fs from "fs";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
-import SyntaxHighlighter from "./SyntaxHighlighter/SyntaxHighlighter";
+import { getFileContent } from "@/lib/file";
 import dynamic from "next/dynamic";
+import { FC, ReactNode } from "react";
+import SyntaxHighlighter from "./SyntaxHighlighter/SyntaxHighlighter";
+import { SubHeading } from "./typography";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 interface BlockProps {
   title: string;
@@ -16,8 +15,7 @@ interface BlockProps {
 
 const Block: FC<BlockProps> = async ({ title, type, description, name }) => {
   const src = `src/components/customized/${type}/${name}.tsx`;
-  const filePath = path.join(process.cwd(), src);
-  const code = fs.readFileSync(filePath, "utf8");
+  const code = await getFileContent(src);
 
   // Dynamically import the component from its path
   const DynamicComponent = dynamic(() =>
