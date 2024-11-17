@@ -26,12 +26,12 @@ const BlockPreview = ({ block }: { block: string }) => {
   return (
     <ResizablePanelGroup direction="horizontal">
       <ResizablePanel ref={resizablePanelRef} defaultSize={100} minSize={30}>
-        <div className="w-full h-full rounded-lg overflow-hidden border min-h-[700px]">
+        <div className="w-full rounded-lg overflow-hidden border h-[700px] overflow-auto">
           <iframe src={`/blocks/${block}/preview`} height="100%" width="100%" />
         </div>
       </ResizablePanel>
       <ResizableHandle withHandle className="w-0" />
-      <ResizablePanel className="pr-1.5" />
+      <ResizablePanel defaultSize={0} className="pr-1.5" />
     </ResizablePanelGroup>
   );
 };
