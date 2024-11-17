@@ -14,7 +14,7 @@ const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
 
   return (
     <BlockProvider>
-      <div className="max-w-screen-xl mx-auto py-20 px-4">
+      <div className="max-w-screen-2xl mx-auto py-8 px-4">
         <MainHeading>{title}</MainHeading>
         {description && <DescriptionText>{description}</DescriptionText>}
 

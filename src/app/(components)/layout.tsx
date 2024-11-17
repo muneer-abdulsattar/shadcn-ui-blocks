@@ -1,5 +1,4 @@
 import { AppSidebar } from "@/components/app-sidebar";
-import { ThemeToggle } from "@/components/app-sidebar/theme-toggle";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Metadata } from "next";
 
@@ -19,7 +18,6 @@ export default function RootLayout({
     <SidebarProvider>
       <AppSidebar />
       <main className="w-full p-10 max-w-screen-md">{children}</main>
-      <ThemeToggle />
     </SidebarProvider>
   );
 }

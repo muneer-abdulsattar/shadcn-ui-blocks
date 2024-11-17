@@ -4,6 +4,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeToggle } from "@/components/app-sidebar/theme-toggle";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -80,7 +81,10 @@ export default function RootLayout({
       </head>
       <body className={cn(dmSans.className, "antialiased")}>
         <ThemeProvider attribute="class">
-          <TooltipProvider>{children}</TooltipProvider>
+          <TooltipProvider>
+            {children}
+            <ThemeToggle />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

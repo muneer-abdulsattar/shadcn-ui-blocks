@@ -21,7 +21,7 @@ export function FilePreview() {
   }, [activeFile, block]);
 
   return (
-    <div className="flex flex-col overflow-x-auto">
+    <div className="w-full flex flex-col overflow-x-auto">
       <div className="shrink-0 h-14 pl-6 pr-4 border-b flex items-center gap-2 justify-between bg-sidebar">
         <div className="flex items-center gap-2">
           <FileIcon className="h-4 w-4" />{" "}

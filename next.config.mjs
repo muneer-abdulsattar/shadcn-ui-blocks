@@ -6,6 +6,9 @@ const nextConfig = {
         hostname: "cdn.pixabay.com",
       },
       {
+        hostname: "images.pexels.com",
+      },
+      {
         hostname: "github.com",
       },
     ],
