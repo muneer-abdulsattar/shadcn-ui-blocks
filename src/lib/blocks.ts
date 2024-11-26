@@ -1,3 +1,4 @@
+import { BLOCK_SCREENSHOT_EXTENSION } from "@/description/blocks";
 import { BlockFile, FileTree } from "@/types/blocks";
 
 export const getFileTree = (files: BlockFile[]) => {
@@ -52,4 +53,8 @@ export const getFileTree = (files: BlockFile[]) => {
 
 export const removeBlockPrefixFromPath = (path: string) => {
   return path.replace(/^@\/blocks\//, "");
+};
+
+export const getBlockScreenshot = (blockName: string) => {
+  return `/images/blocks/screenshots/${blockName}.${BLOCK_SCREENSHOT_EXTENSION}`;
 };

@@ -4,10 +4,14 @@ import { useTheme } from "next-themes";
 import { Button } from "../ui/button";
 import { MoonIcon, SunIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+  const pathname = usePathname();
+  const isBlockPreviewPage =
+    pathname.startsWith("/blocks") && pathname.endsWith("/preview");
 
   const toggleTheme = () => {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
@@ -17,7 +21,7 @@ export const ThemeToggle = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted || isBlockPreviewPage) return null;
 
   return (
     <Button

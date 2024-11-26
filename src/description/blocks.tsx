@@ -19,3 +19,7 @@ export const blockScreens = [
     size: 100,
   },
 ];
+
+export const BLOCK_SCREENSHOT_WIDTH = 1366;
+export const BLOCK_SCREENSHOT_HEIGHT = 768;
+export const BLOCK_SCREENSHOT_EXTENSION = "webp";

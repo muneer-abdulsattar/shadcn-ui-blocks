@@ -14,6 +14,7 @@ export interface BlockFile {
 }
 
 export interface Block {
+  name: string;
   title: string;
   description?: string;
   category?: string;
