@@ -52,7 +52,7 @@ const Team03Page = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center py-8 sm:py-16 px-6 lg:px-8 max-w-screen-xl mx-auto gap-14">
       <div className="sm:max-w-sm lg:max-w-xs">
-        <b className="text-violet-500">Our team</b>
+        <b className="text-primary">Our team</b>
         <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">
           Leadership team
         </h2>
@@ -61,10 +61,7 @@ const Team03Page = () => {
           experiences for our customers.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-end gap-3">
-          <Button
-            size="lg"
-            className="bg-violet-500 hover:bg-violet-600 text-white font-semibold"
-          >
+          <Button size="lg" className="font-semibold">
             Open Positions
           </Button>
           <Button size="lg" variant="outline" className="font-semibold">
@@ -85,7 +82,7 @@ const Team03Page = () => {
             />
             <div>
               <h3 className="text-lg font-bold">{member.name}</h3>
-              <p className="text-violet-500">{member.title}</p>
+              <p className="text-primary">{member.title}</p>
               <p className="mt-2 text-muted-foreground">{member.bio}</p>
               <div className="mt-4 flex items-center gap-2.5">
                 <Button variant="secondary" size="icon" asChild>

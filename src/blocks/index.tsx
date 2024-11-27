@@ -74,6 +74,30 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "contact-02": {
+    name: "contact-02",
+    title: "Contact 02",
+    category: "contact",
+    component: React.lazy(() => import("@/blocks/contact-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/contact-02/page.tsx",
+      },
+    ],
+  },
+  "contact-03": {
+    name: "contact-03",
+    title: "Contact 03",
+    category: "contact",
+    component: React.lazy(() => import("@/blocks/contact-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/contact-03/page.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);

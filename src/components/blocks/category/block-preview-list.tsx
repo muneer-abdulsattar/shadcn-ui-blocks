@@ -6,6 +6,7 @@ import {
 } from "@/description/blocks";
 import { getBlockScreenshot } from "@/lib/blocks";
 import Image from "next/image";
+import Link from "next/link";
 
 interface BlockPreviewListProps {
   category?: string;
@@ -23,15 +24,17 @@ const BlockPreviewList = ({ category }: BlockPreviewListProps) => {
             <Badge variant="secondary">{block.category}</Badge>
           </div>
 
-          <div className="mt-3 w-full rounded-lg border overflow-auto aspect-video">
-            <Image
-              height={BLOCK_SCREENSHOT_HEIGHT}
-              width={BLOCK_SCREENSHOT_WIDTH}
-              src={getBlockScreenshot(block.name)}
-              alt={block.title}
-              className="h-full w-full object-cover"
-            />
-          </div>
+          <Link href={`/blocks/${block.name}`}>
+            <div className="mt-3 w-full rounded-lg border overflow-auto aspect-video">
+              <Image
+                height={BLOCK_SCREENSHOT_HEIGHT}
+                width={BLOCK_SCREENSHOT_WIDTH}
+                src={getBlockScreenshot(block.name)}
+                alt={block.title}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Link>
         </div>
       ))}
     </div>
