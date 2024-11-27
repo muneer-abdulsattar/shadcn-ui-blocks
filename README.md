@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shadcn UI Blocks
 
-## Getting Started
+Website - [shadcn-ui-blocks.akashmoradiya.com](https://shadcn-ui-blocks.akashmoradiya.com)
 
-First, run the development server:
+Shadcn UI Blocks is a curated collection of blocks and examples for Shadcn UI components. This platform is designed to help developers preview and copy ready-made code snippets for various components, saving time and enhancing productivity in their projects.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Component Previews:** Quickly preview how each Shadcn UI component looks and functions.
+- **Code Snippets:** Copy component code snippets effortlessly for use in your own projects.
+- **Variety of Components:** Explore blocks for buttons, forms, modals, navigation, and more.
+- **Developer-Friendly Interface:** A clean and intuitive layout for finding the perfect block.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Website Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Landing Page: Showcases the most popular Shadcn UI components with examples and links to detailed pages.
+Component-Specific Pages: Dedicated pages for individual components, featuring multiple variations and previews.
 
-## Learn More
+## 🛠️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js
+- Tailwind CSS
+- TypeScript
+- Shadcn UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📖 Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Visit the [Shadcn UI Blocks website](https://shadcn-ui-blocks.akashmoradiya.com).
+2. Browse through the available blocks and examples.
+3. Preview components and blocks to see how they look in action.
+4. Copy the code snippet directly from the page and paste it into your project.
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! If you have ideas for new blocks or improvements, feel free to reach out or fork the repository.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 Inspiration
+
+Inspired by the simplicity and flexibility of Shadcn UI components, this platform aims to make building user interfaces faster and more accessible.
