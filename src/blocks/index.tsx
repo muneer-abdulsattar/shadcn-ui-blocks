@@ -98,6 +98,66 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "footer-01": {
+    name: "footer-01",
+    title: "Footer 01",
+    category: "footer",
+    component: React.lazy(() => import("@/blocks/footer-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/footer-01/page.tsx",
+      },
+    ],
+  },
+  "footer-02": {
+    name: "footer-02",
+    title: "Footer 02",
+    category: "footer",
+    component: React.lazy(() => import("@/blocks/footer-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/footer-02/page.tsx",
+      },
+    ],
+  },
+  "footer-03": {
+    name: "footer-03",
+    title: "Footer 03",
+    category: "footer",
+    component: React.lazy(() => import("@/blocks/footer-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/footer-03/page.tsx",
+      },
+    ],
+  },
+  "footer-04": {
+    name: "footer-04",
+    title: "Footer 04",
+    category: "footer",
+    component: React.lazy(() => import("@/blocks/footer-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/footer-04/page.tsx",
+      },
+    ],
+  },
+  "footer-05": {
+    name: "footer-05",
+    title: "Footer 05",
+    category: "footer",
+    component: React.lazy(() => import("@/blocks/footer-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/footer-05/page.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
