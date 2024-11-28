@@ -33,7 +33,9 @@ const CategoryChip = ({
       variant={isSelected ? "default" : "outline"}
       asChild
     >
-      <Link href={`/blocks/categories/${category.name}`}>
+      <Link
+        href={isSelected ? "/blocks" : `/blocks/categories/${category.name}`}
+      >
         <span className="">{category.name}</span>
         <div className="min-w-3.5 py-0.5 px-1 flex items-center justify-center rounded-full bg-muted border text-muted-foreground text-xs leading-none">
           {category.totalBlocks}
