@@ -1,4 +1,5 @@
 import { blockCategories } from "@/blocks";
+import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
 import BlocksFilter from "@/components/blocks/category/blocks-filter";
 import { capitalize } from "@/lib/utils";
@@ -72,6 +73,8 @@ const BlockCategoryPage = ({ params }: { params: { category: string } }) => {
 
       <BlocksFilter />
       <BlockPreviewList category={category} />
+
+      <BlockCategoryJsonLd category={category} />
     </div>
   );
 };
