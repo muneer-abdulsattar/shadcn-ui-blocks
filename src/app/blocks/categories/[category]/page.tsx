@@ -41,7 +41,7 @@ export const generateMetadata = ({
   const { category } = params;
   const title = `${capitalize(
     category
-  )} section Shadcn UI blocks | Preview & Copy Ready-to-Use Code`;
+  )} section Shadcn UI blocks | Preview & Copy`;
   const description = `Explore beautifully designed ${category} section blocks built with Shadcn UI. Preview, customize, and copy code snippets effortlessly to enhance your website's design and functionality.`;
   const keywords = keywordsTemplate.map((keyword) =>
     keyword.replaceAll("{{category}}", capitalize(category))

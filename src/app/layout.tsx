@@ -12,8 +12,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Effortless Shadcn UI Blocks & Components | Preview & Copy Code Snippets",
+  title: "Effortless Shadcn UI Blocks & Components | Preview & Copy",
   description:
     "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
   keywords: [
@@ -51,7 +50,7 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Effortless Shadcn UI Blocks & Components| Preview & Copy Code",
+    title: "Effortless Shadcn UI Blocks & Components| Preview & Copy",
     description:
       "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
     type: "website",
