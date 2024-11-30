@@ -182,6 +182,134 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "logos-01": {
+    name: "logos-01",
+    title: "Logos 01",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-01/page.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+    ],
+  },
+  "logos-02": {
+    name: "logos-02",
+    title: "Logos 02",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-02/page.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+    ],
+  },
+  "logos-03": {
+    name: "logos-03",
+    title: "Logos 03",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-03/page.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+    ],
+  },
+  "logos-04": {
+    name: "logos-04",
+    title: "Logos 04",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-04/page.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+    ],
+  },
+  "logos-05": {
+    name: "logos-05",
+    title: "Logos 05",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-05/page.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+    ],
+  },
+  "logos-06": {
+    name: "logos-06",
+    title: "Logos 06",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-06/page.tsx",
+      },
+      {
+        path: "@/components/ui/marquee.tsx",
+        target: "components/ui/marquee.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+      {
+        path: "tailwind.config.ts",
+        target: "tailwind.config.ts",
+      },
+    ],
+  },
+  "logos-07": {
+    name: "logos-07",
+    title: "Logos 07",
+    category: "logos",
+    component: React.lazy(() => import("@/blocks/logos-07/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/logos-07/page.tsx",
+      },
+      {
+        path: "@/components/ui/marquee.tsx",
+        target: "components/ui/marquee.tsx",
+      },
+      {
+        path: "@/components/logos.tsx",
+        target: "components/logos.tsx",
+      },
+      {
+        path: "tailwind.config.ts",
+        target: "tailwind.config.ts",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);

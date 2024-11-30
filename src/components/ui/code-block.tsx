@@ -1,7 +1,11 @@
 "use client";
 import { highlight } from "@/lib/shiki";
+import {
+  transformerNotationDiff,
+  transformerNotationHighlight,
+  transformerRemoveLineBreak,
+} from "@shikijs/transformers";
 import { Loader2Icon } from "lucide-react";
-import { useTheme } from "next-themes";
 import { useLayoutEffect, useState } from "react";
 
 export function CodeBlock({
@@ -11,13 +15,20 @@ export function CodeBlock({
   initial?: JSX.Element;
   code: string;
 }) {
-  const { resolvedTheme } = useTheme();
   const [nodes, setNodes] = useState(initial);
 
   useLayoutEffect(() => {
     void highlight(code, {
       lang: "tsx",
-      theme: resolvedTheme === "light" ? "github-light" : "github-dark",
+      themes: {
+        light: "github-light-default",
+        dark: "github-dark-default",
+      },
+      transformers: [
+        transformerNotationDiff(),
+        transformerNotationHighlight(),
+        transformerRemoveLineBreak(),
+      ],
     }).then(setNodes);
   }, [code]);
 

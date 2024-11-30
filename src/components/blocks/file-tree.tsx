@@ -32,7 +32,7 @@ export function FileTree({ files }: TreeProps) {
 const TreeItem = ({ item, index = 0 }: TreeItemProps) => {
   const { activeFile, selectFile } = useBlockContext();
   const { name, type, children } = item;
-  const filePaddingLeft = `${(index + 1) * 0.8 + 2.1}rem`;
+  const filePaddingLeft = `${(index + 1) * 0.8 + 1.5}rem`;
   const folderPaddingLeft = `${(index + 1) * 0.8}rem`;
 
   const handleFileSelect = () => {
