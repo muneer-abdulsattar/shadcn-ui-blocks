@@ -1,7 +1,6 @@
-import { MoveRightIcon, PuzzleIcon, ShapesIcon } from "lucide-react";
-import React from "react";
-import { Button } from "../ui/button";
+import { PuzzleIcon, Shapes, ShapesIcon } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 import { BackgroundPattern } from "./background-pattern";
 
 export const Hero = () => {
@@ -26,18 +25,21 @@ export const Hero = () => {
             className="group h-12 text-base z-10 rounded-md w-full md:w-auto"
             asChild
           >
-            <Link href="/components/accordion">
-              Explore Components{" "}
-              <PuzzleIcon className="group-hover:-rotate-12 transition-transform" />
+            <Link href="/blocks">
+              Explore Blocks{" "}
+              <Shapes className="group-hover:-rotate-12 transition-transform" />
             </Link>
           </Button>
           <Button
             size="lg"
             className="group h-12 text-base z-10 rounded-md w-full md:w-auto"
             variant="outline"
+            asChild
           >
-            Learn More
-            <MoveRightIcon className="group-hover:translate-x-1 transition-transform" />
+            <Link href="/components/accordion">
+              View components
+              <PuzzleIcon className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
       </div>
