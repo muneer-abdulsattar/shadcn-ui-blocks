@@ -17,7 +17,7 @@ export interface Block {
   name: string;
   title: string;
   description?: string;
-  category?: string;
+  category: string;
   component: React.LazyExoticComponent<() => JSX.Element>;
   files: BlockFile[];
 }

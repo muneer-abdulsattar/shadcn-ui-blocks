@@ -1,7 +1,6 @@
 import { blockCategories } from "@/blocks";
 import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
-import BlocksFilter from "@/components/blocks/category/blocks-filter";
 import { capitalize } from "@/lib/utils";
 import { Metadata } from "next";
 
@@ -62,17 +61,18 @@ export const generateMetadata = ({
   };
 };
 
-const BlockCategoryPage = ({ params }: { params: { category: string } }) => {
+const BlockCategoryPage = ({
+  params,
+  searchParams,
+}: {
+  params: { category: string };
+  searchParams: { columns: string; q: string };
+}) => {
   const { category } = params;
 
   return (
     <div className="max-w-screen-xl mx-auto py-12 sm:py-16">
-      <h1 className="text-center text-5xl font-black tracking-tight max-w-2xl mx-auto">
-        All the Shadcn UI blocks you&apos;ll ever need in one place.
-      </h1>
-
-      <BlocksFilter />
-      <BlockPreviewList category={category} />
+      <BlockPreviewList category={category} {...searchParams} />
 
       <BlockCategoryJsonLd category={category} />
     </div>
