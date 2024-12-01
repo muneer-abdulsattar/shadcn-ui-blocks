@@ -264,7 +264,7 @@ export const blocks: Record<string, Block> = {
   },
   "logos-06": {
     name: "logos-06",
-    title: "Logos 06",
+    title: "Logos 06 (Infinite Scroll)",
     category: "logos",
     component: React.lazy(() => import("@/blocks/logos-06/page.tsx")),
     files: [
@@ -288,7 +288,7 @@ export const blocks: Record<string, Block> = {
   },
   "logos-07": {
     name: "logos-07",
-    title: "Logos 07",
+    title: "Logos 07 (Infinite Scroll)",
     category: "logos",
     component: React.lazy(() => import("@/blocks/logos-07/page.tsx")),
     files: [
@@ -307,6 +307,42 @@ export const blocks: Record<string, Block> = {
       {
         path: "tailwind.config.ts",
         target: "tailwind.config.ts",
+      },
+    ],
+  },
+  "blog-01": {
+    name: "blog-01",
+    title: "Blog 01",
+    category: "blog",
+    component: React.lazy(() => import("@/blocks/blog-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/blog-01/page.tsx",
+      },
+    ],
+  },
+  "blog-02": {
+    name: "blog-02",
+    title: "Blog 02",
+    category: "blog",
+    component: React.lazy(() => import("@/blocks/blog-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/blog-02/page.tsx",
+      },
+    ],
+  },
+  "blog-03": {
+    name: "blog-03",
+    title: "Blog 03",
+    category: "blog",
+    component: React.lazy(() => import("@/blocks/blog-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/blog-03/page.tsx",
       },
     ],
   },
