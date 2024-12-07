@@ -22,6 +22,15 @@ const PreviewListSearch = () => {
 
   const handleSearch = () => {
     const searchParams = new URLSearchParams(searchParamsString);
+
+    if (!searchParamsString && !debouncedQuery) return;
+
+    if (!debouncedQuery) {
+      searchParams.delete("q");
+      router.push(`${pathname}?${searchParams.toString()}`);
+      return;
+    }
+
     searchParams.set("q", debouncedQuery);
     router.push(`${pathname}?${searchParams.toString()}`);
   };
