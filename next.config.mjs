@@ -13,6 +13,11 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    outputFileTracingIncludes: {
+      "/blocks/*": ["./src/**/*"],
+    },
+  },
 };
 
 export default nextConfig;

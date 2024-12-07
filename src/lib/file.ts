@@ -20,7 +20,7 @@ export const getNumberOfFilesInsideDirectory = (directoryPath: string) => {
 };
 
 export const getFileContent = async (filePath: string) => {
-  const joinedPath = path.join(process.cwd(), filePath);
+  const joinedPath = path.relative(process.cwd(), filePath);
   const content = fs.readFileSync(joinedPath, "utf8");
 
   return content;
