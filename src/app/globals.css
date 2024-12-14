@@ -125,10 +125,10 @@ html.dark .shiki span {
 
 /* Block preview */
 .block-preview-wrapper {
-  --primary: 224.3 76.3% 48%;
-  --primary-foreground: 0 0% 100%;
+  --secondary: 224.3 76.3% 48%;
+  --secondary-foreground: 0 0% 100%;
 }
 .dark .block-preview-wrapper {
-  --primary: 221.2 100.2% 62.3%;
-  --primary-foreground: 0 0% 100%;
+  --secondary: 221.2 100.2% 62.3%;
+  --secondary-foreground: 0 0% 100%;
 }

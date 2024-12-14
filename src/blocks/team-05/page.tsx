@@ -66,7 +66,9 @@ const Team05Page = () => {
   return (
     <div className="flex flex-col justify-center py-8 sm:py-12 px-6 lg:px-8 max-w-screen-xl mx-auto gap-16">
       <div className="text-center max-w-2xl mx-auto">
-        <b className="text-center text-primary text-base">We&apos;re hiring!</b>
+        <b className="text-center text-secondary text-base">
+          We&apos;re hiring!
+        </b>
         <h2 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight">
           Meet Our Team
         </h2>
@@ -95,20 +97,32 @@ const Team05Page = () => {
               height={600}
             />
             <h3 className="mt-4 text-lg font-bold">{member.name}</h3>
-            <p className="text-primary">{member.title}</p>
+            <p className="text-secondary">{member.title}</p>
             <p className="mt-3 text-muted-foreground">{member.bio}</p>
             <div className="mt-4 flex items-center gap-2.5">
-              <Button variant="secondary" size="icon" asChild>
+              <Button
+                className="bg-muted hover:bg-muted text-muted-foreground shadow-none"
+                size="icon"
+                asChild
+              >
                 <Link href="#" target="_blank">
                   <TwitterIcon className="stroke-muted-foreground" />
                 </Link>
               </Button>
-              <Button variant="secondary" size="icon" asChild>
+              <Button
+                className="bg-muted hover:bg-muted text-muted-foreground shadow-none"
+                size="icon"
+                asChild
+              >
                 <Link href="#" target="_blank">
                   <DribbbleIcon className="stroke-muted-foreground" />
                 </Link>
               </Button>
-              <Button variant="secondary" size="icon" asChild>
+              <Button
+                className="bg-muted hover:bg-muted text-muted-foreground shadow-none"
+                size="icon"
+                asChild
+              >
                 <Link href="#" target="_blank">
                   <TwitchIcon className="stroke-muted-foreground" />
                 </Link>

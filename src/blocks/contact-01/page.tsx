@@ -4,7 +4,7 @@ import Link from "next/link";
 const Contact01Page = () => (
   <div className="min-h-screen flex items-center justify-center">
     <div className="text-center">
-      <b className="text-primary">Contact Us</b>
+      <b className="text-secondary">Contact Us</b>
       <h2 className="mt-3 text-2xl md:text-4xl font-black tracking-tight">
         Get In Touch
       </h2>
@@ -13,7 +13,7 @@ const Contact01Page = () => (
       </p>
       <div className="max-w-screen-xl mx-auto py-24 grid md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-10 px-6 md:px-0">
         <div className="text-center flex flex-col items-center">
-          <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+          <div className="h-12 w-12 flex items-center justify-center bg-secondary/10 text-secondary rounded-full">
             <MailIcon />
           </div>
           <h3 className="mt-6 font-bold text-xl">Email</h3>
@@ -21,14 +21,14 @@ const Contact01Page = () => (
             Our friendly team is here to help.
           </p>
           <Link
-            className="mt-4 font-bold text-primary"
+            className="mt-4 font-bold text-secondary"
             href="mailto:akashmoradiya3444@gmail.com"
           >
             akashmoradiya3444@gmail.com
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
-          <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+          <div className="h-12 w-12 flex items-center justify-center bg-secondary/10 text-secondary rounded-full">
             <MapPinIcon />
           </div>
           <h3 className="mt-6 font-bold text-xl">Office</h3>
@@ -36,7 +36,7 @@ const Contact01Page = () => (
             Come say hello at our office HQ.
           </p>
           <Link
-            className="mt-4 font-bold text-primary"
+            className="mt-4 font-bold text-secondary"
             href="https://map.google.com"
             target="_blank"
           >
@@ -44,13 +44,13 @@ const Contact01Page = () => (
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
-          <div className="h-12 w-12 flex items-center justify-center bg-primary/10 text-primary rounded-full">
+          <div className="h-12 w-12 flex items-center justify-center bg-secondary/10 text-secondary rounded-full">
             <PhoneIcon />
           </div>
           <h3 className="mt-6 font-bold text-xl">Phone</h3>
           <p className="mt-2 text-muted-foreground">Mon-Fri from 8am to 5pm.</p>
           <Link
-            className="mt-4 font-bold text-primary"
+            className="mt-4 font-bold text-secondary"
             href="tel:akashmoradiya3444@gmail.com"
           >
             +1 (555) 000-0000

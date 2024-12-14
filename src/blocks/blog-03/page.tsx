@@ -90,7 +90,7 @@ const Blog03Page = () => {
               </CardHeader>
               <CardContent className="px-0 sm:px-6 py-0 flex flex-col">
                 <div className="flex items-center gap-6">
-                  <Badge className="bg-primary/10 text-primary hover:bg-primary/10 shadow-none">
+                  <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
                     Technology
                   </Badge>
                 </div>

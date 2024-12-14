@@ -82,20 +82,32 @@ const Team03Page = () => {
             />
             <div>
               <h3 className="text-lg font-bold">{member.name}</h3>
-              <p className="text-primary">{member.title}</p>
+              <p className="text-secondary">{member.title}</p>
               <p className="mt-2 text-muted-foreground">{member.bio}</p>
               <div className="mt-4 flex items-center gap-2.5">
-                <Button variant="secondary" size="icon" asChild>
+                <Button
+                  className="bg-muted hover:bg-muted shadow-none"
+                  size="icon"
+                  asChild
+                >
                   <Link href="#" target="_blank">
                     <TwitterIcon className="stroke-muted-foreground" />
                   </Link>
                 </Button>
-                <Button variant="secondary" size="icon" asChild>
+                <Button
+                  className="bg-muted hover:bg-muted shadow-none"
+                  size="icon"
+                  asChild
+                >
                   <Link href="#" target="_blank">
                     <DribbbleIcon className="stroke-muted-foreground" />
                   </Link>
                 </Button>
-                <Button variant="secondary" size="icon" asChild>
+                <Button
+                  className="bg-muted hover:bg-muted shadow-none"
+                  size="icon"
+                  asChild
+                >
                   <Link href="#" target="_blank">
                     <TwitchIcon className="stroke-muted-foreground" />
                   </Link>

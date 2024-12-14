@@ -54,7 +54,9 @@ const Team01Page = () => {
   return (
     <div className="flex flex-col items-center justify-center py-14 px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-xl mx-auto">
-        <b className="text-center text-primary text-base">We&apos;re hiring!</b>
+        <b className="text-center text-secondary text-base">
+          We&apos;re hiring!
+        </b>
         <h2 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight">
           Meet Our Team
         </h2>
@@ -75,7 +77,7 @@ const Team01Page = () => {
               height={120}
             />
             <h3 className="mt-4 text-lg font-bold">{member.name}</h3>
-            <p className="text-primary">{member.title}</p>
+            <p className="text-secondary">{member.title}</p>
           </div>
         ))}
       </div>

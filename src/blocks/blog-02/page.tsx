@@ -35,7 +35,7 @@ const Blog02Page = () => {
             </CardHeader>
             <CardContent className="py-6">
               <div className="flex items-center gap-3">
-                <Badge className="bg-primary/10 text-primary hover:bg-primary/10 shadow-none">
+                <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
                   Technology
                 </Badge>
                 <span className="font-semibold text-sm text-muted-foreground">
@@ -51,7 +51,7 @@ const Blog02Page = () => {
                 Suspendisse varius enim in eros.
               </p>
 
-              <Button className="mt-6 shadow-none" variant="secondary">
+              <Button className="mt-6 shadow-none">
                 Read more <ChevronRight />
               </Button>
             </CardContent>
