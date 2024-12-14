@@ -1,6 +1,7 @@
 import { blockCategories } from "@/blocks";
 import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
+import { Navbar } from "@/components/layout/navbar";
 import { capitalize } from "@/lib/utils";
 import { Metadata } from "next";
 
@@ -71,11 +72,14 @@ const BlockCategoryPage = ({
   const { category } = params;
 
   return (
-    <div className="max-w-screen-xl mx-auto py-12 sm:py-16">
-      <BlockPreviewList category={category} {...searchParams} />
+    <>
+      <Navbar />
+      <div className="max-w-screen-xl mx-auto py-12 sm:py-16">
+        <BlockPreviewList category={category} {...searchParams} />
 
-      <BlockCategoryJsonLd category={category} />
-    </div>
+        <BlockCategoryJsonLd category={category} />
+      </div>
+    </>
   );
 };
 

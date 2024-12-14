@@ -21,14 +21,26 @@ export const ThemeToggle = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted || isBlockPreviewPage) return null;
+  if (isBlockPreviewPage) return null;
+
+  // To avoid flickering
+  if (!mounted) {
+    return (
+      <Button
+        onClick={toggleTheme}
+        variant="outline"
+        size="icon"
+        className="rounded-full"
+      />
+    );
+  }
 
   return (
     <Button
       onClick={toggleTheme}
       variant="outline"
       size="icon"
-      className="fixed bottom-6 right-6 rounded-full"
+      className="rounded-full"
     >
       {resolvedTheme === "dark" ? <SunIcon /> : <MoonIcon />}
     </Button>

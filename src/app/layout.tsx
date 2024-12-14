@@ -84,7 +84,9 @@ export default function RootLayout({
           <ThemeProvider attribute="class">
             <TooltipProvider>
               {children}
-              <ThemeToggle />
+              <div className="fixed bottom-6 right-6">
+                <ThemeToggle />
+              </div>
             </TooltipProvider>
           </ThemeProvider>
         </CSPostHogProvider>

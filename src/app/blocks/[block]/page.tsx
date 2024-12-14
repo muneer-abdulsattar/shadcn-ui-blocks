@@ -2,6 +2,7 @@ import { blocks } from "@/blocks";
 import BlockControls from "@/components/blocks/block-controls";
 import BlockPreview from "@/components/blocks/block-preview";
 import FileExplorer from "@/components/blocks/file-explorer";
+import { Navbar } from "@/components/layout/navbar";
 import { DescriptionText, MainHeading } from "@/components/typography";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BlockProvider } from "@/providers/block-provider";
@@ -14,6 +15,7 @@ const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
 
   return (
     <BlockProvider>
+      <Navbar />
       <div className="max-w-screen-2xl mx-auto py-8 px-4">
         <MainHeading>{title}</MainHeading>
         {description && <DescriptionText>{description}</DescriptionText>}
