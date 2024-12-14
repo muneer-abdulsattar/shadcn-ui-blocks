@@ -30,7 +30,7 @@ export function NavigationSheet() {
         </SheetHeader>
 
         <ScrollArea className="h-full pb-20">
-          <div className="space-y-4 text-lg pr-2.5">
+          <div className="space-y-4 text-base pr-2.5">
             <Link href="/">Home</Link>
 
             <div>

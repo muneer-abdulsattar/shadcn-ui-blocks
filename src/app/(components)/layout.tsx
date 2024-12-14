@@ -1,4 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar";
+import { Navbar } from "@/components/layout/navbar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import { Metadata } from "next";
 
@@ -15,9 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SidebarProvider>
-      <AppSidebar />
-      <main className="w-full p-10 max-w-screen-md">{children}</main>
-    </SidebarProvider>
+    <>
+      <div className="md:hidden">
+        <Navbar />
+      </div>
+      <SidebarProvider>
+        <AppSidebar />
+        <main className="w-full p-10 max-w-screen-md">{children}</main>
+      </SidebarProvider>
+    </>
   );
 }

@@ -13,7 +13,9 @@ export const Navbar = () => {
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Logo className="font-bold" />
-              <span className="font-bold">Shadcn UI Blocks</span>
+              <span className="font-bold hidden sm:block">
+                Shadcn UI Blocks
+              </span>
             </Link>
             <div className="ml-2 hidden sm:block">
               <AppNavigationMenu />
