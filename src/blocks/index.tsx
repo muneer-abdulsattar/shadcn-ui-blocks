@@ -346,6 +346,130 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "navbar-01": {
+    name: "navbar-01",
+    title: "Navbar 01",
+    category: "navbar",
+    component: React.lazy(() => import("@/blocks/navbar-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/navbar-01/page.tsx",
+      },
+      {
+        path: "logo.tsx",
+        target: "app/navbar-01/logo.tsx",
+      },
+      {
+        path: "nav-menu.tsx",
+        target: "app/navbar-01/nav-menu.tsx",
+      },
+      {
+        path: "navigation-sheet.tsx",
+        target: "app/navbar-01/navigation-sheet.tsx",
+      },
+    ],
+  },
+  "navbar-02": {
+    name: "navbar-02",
+    title: "Navbar 02",
+    category: "navbar",
+    component: React.lazy(() => import("@/blocks/navbar-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/navbar-02/page.tsx",
+      },
+      {
+        path: "logo.tsx",
+        target: "app/navbar-02/logo.tsx",
+      },
+      {
+        path: "nav-menu.tsx",
+        target: "app/navbar-02/nav-menu.tsx",
+      },
+      {
+        path: "navigation-sheet.tsx",
+        target: "app/navbar-02/navigation-sheet.tsx",
+      },
+    ],
+  },
+  "navbar-03": {
+    name: "navbar-03",
+    title: "Navbar 03",
+    category: "navbar",
+    component: React.lazy(() => import("@/blocks/navbar-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/navbar-03/page.tsx",
+      },
+      {
+        path: "logo.tsx",
+        target: "app/navbar-03/logo.tsx",
+      },
+      {
+        path: "nav-menu.tsx",
+        target: "app/navbar-03/nav-menu.tsx",
+      },
+      {
+        path: "navigation-sheet.tsx",
+        target: "app/navbar-03/navigation-sheet.tsx",
+      },
+      {
+        path: "config.tsx",
+        target: "app/navbar-03/config.tsx",
+      },
+    ],
+  },
+  "navbar-04": {
+    name: "navbar-04",
+    title: "Navbar 04",
+    category: "navbar",
+    component: React.lazy(() => import("@/blocks/navbar-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/navbar-04/page.tsx",
+      },
+      {
+        path: "logo.tsx",
+        target: "app/navbar-04/logo.tsx",
+      },
+      {
+        path: "nav-menu.tsx",
+        target: "app/navbar-04/nav-menu.tsx",
+      },
+      {
+        path: "navigation-sheet.tsx",
+        target: "app/navbar-04/navigation-sheet.tsx",
+      },
+    ],
+  },
+  "navbar-05": {
+    name: "navbar-05",
+    title: "Navbar 05",
+    category: "navbar",
+    component: React.lazy(() => import("@/blocks/navbar-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/navbar-05/page.tsx",
+      },
+      {
+        path: "logo.tsx",
+        target: "app/navbar-05/logo.tsx",
+      },
+      {
+        path: "nav-menu.tsx",
+        target: "app/navbar-05/nav-menu.tsx",
+      },
+      {
+        path: "navigation-sheet.tsx",
+        target: "app/navbar-05/navigation-sheet.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
