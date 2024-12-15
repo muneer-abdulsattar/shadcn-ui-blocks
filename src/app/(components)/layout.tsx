@@ -22,7 +22,7 @@ export default function RootLayout({
       </div>
       <SidebarProvider>
         <AppSidebar />
-        <main className="w-full p-10 max-w-screen-md">{children}</main>
+        <main className="w-full p-10">{children}</main>
       </SidebarProvider>
     </>
   );
