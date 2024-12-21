@@ -17,11 +17,12 @@ import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { ScrollArea } from "../ui/scroll-area";
+import { Button } from "../ui/button";
 
 export function AppNavigationMenu() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="space-x-0">
         <NavigationMenuItem>
           <NavigationMenuTrigger className="font-medium">
             Components
@@ -67,6 +68,11 @@ export function AppNavigationMenu() {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Button variant="ghost" asChild>
+            <Link href="/roadmap">Roadmap</Link>
+          </Button>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
