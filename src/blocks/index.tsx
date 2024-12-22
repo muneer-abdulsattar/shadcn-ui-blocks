@@ -550,6 +550,86 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "signup-01": {
+    name: "signup-01",
+    title: "Sign Up 01",
+    category: "signup",
+    component: React.lazy(() => import("@/blocks/signup-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/signup-01/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "signup-02": {
+    name: "signup-02",
+    title: "Sign Up 02",
+    category: "signup",
+    component: React.lazy(() => import("@/blocks/signup-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/signup-02/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "signup-03": {
+    name: "signup-03",
+    title: "Sign Up 03",
+    category: "signup",
+    component: React.lazy(() => import("@/blocks/signup-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/signup-03/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "signup-04": {
+    name: "signup-04",
+    title: "Sign Up 04",
+    category: "signup",
+    component: React.lazy(() => import("@/blocks/signup-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/signup-04/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "signup-05": {
+    name: "signup-05",
+    title: "Sign Up 05",
+    category: "signup",
+    component: React.lazy(() => import("@/blocks/signup-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/signup-05/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
