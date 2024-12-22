@@ -470,6 +470,86 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "login-01": {
+    name: "login-01",
+    title: "Login 01",
+    category: "login",
+    component: React.lazy(() => import("@/blocks/login-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/login-01/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "login-02": {
+    name: "login-02",
+    title: "Login 02",
+    category: "login",
+    component: React.lazy(() => import("@/blocks/login-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/login-02/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "login-03": {
+    name: "login-03",
+    title: "Login 03",
+    category: "login",
+    component: React.lazy(() => import("@/blocks/login-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/login-03/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "login-04": {
+    name: "login-04",
+    title: "Login 04",
+    category: "login",
+    component: React.lazy(() => import("@/blocks/login-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/login-04/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
+  "login-05": {
+    name: "login-05",
+    title: "Login 05",
+    category: "login",
+    component: React.lazy(() => import("@/blocks/login-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/login-05/page.tsx",
+      },
+      {
+        path: "@/components/logo.tsx",
+        target: "app/components/logo.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
