@@ -2,7 +2,13 @@ export const customizedComponents = {
   accordion: [
     { title: "Default", type: "accordion", name: "default" },
     { title: "Outline", type: "accordion", name: "accordion-outline" },
+    { title: "Box", type: "accordion", name: "accordion-box" },
     { title: "Contained", type: "accordion", name: "accordion-contained" },
+    {
+      title: "Box Contained",
+      type: "accordion",
+      name: "accordion-box-contained",
+    },
     {
       title: "Default Open",
       type: "accordion",
@@ -53,9 +59,11 @@ export const customizedComponents = {
   badge: [
     { title: "Default", type: "badge", name: "default" },
     { title: "Secondary", type: "badge", name: "secondary" },
-    { title: "outline", type: "badge", name: "outline" },
+    { title: "Outline", type: "badge", name: "outline" },
     { title: "Destructive", type: "badge", name: "destructive" },
     { title: "Rounded", type: "badge", name: "rounded" },
+    { title: "Gradient", type: "badge", name: "gradient" },
+    { title: "Gradient Outline", type: "badge", name: "gradient-outline" },
     { title: "Status", type: "badge", name: "status" },
     { title: "With image", type: "badge", name: "with-image" },
     { title: "With icon", type: "badge", name: "with-icon" },
@@ -143,6 +151,9 @@ export const customizedComponents = {
     { title: "Color", type: "radio-group", name: "color" },
     { title: "Size", type: "radio-group", name: "size" },
     { title: "Variant", type: "radio-group", name: "variant" },
+    { title: "Cards 1", type: "radio-group", name: "cards-1" },
+    { title: "Cards 2", type: "radio-group", name: "cards-2" },
+    { title: "Cards 3", type: "radio-group", name: "cards-3" },
   ],
   select: [
     { title: "Default", type: "select", name: "default" },
@@ -221,6 +232,7 @@ export const customizedComponents = {
     { title: "Underlined", type: "tabs", name: "underlined-tabs" },
     { title: "Separated", type: "tabs", name: "separated-tabs" },
     { title: "Vertical", type: "tabs", name: "vertical-tabs" },
+    { title: "Vertical Bordered", type: "tabs", name: "vertical-bordered" },
     { title: "Animated Content", type: "tabs", name: "animated-tabs" },
   ],
   textarea: [

@@ -1,74 +1,55 @@
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BanIcon, MoreHorizontalIcon } from "lucide-react";
+import { CircleDot, Code, GitPullRequestArrow, Settings } from "lucide-react";
 
-const followers = [
-  { username: "jane_doe", fullName: "Jane Doe" },
-  { username: "tech_guru", fullName: "Alex Thompson" },
-  { username: "nature_lover", fullName: "Emma Green" },
-  { username: "photogirl", fullName: "Sophia Martinez" },
-  { username: "code_master", fullName: "Liam Patel" },
+const tabs = [
+  {
+    value: "code",
+    label: "Code",
+    icon: Code,
+  },
+  {
+    value: "issues",
+    label: "Issues",
+    icon: CircleDot,
+  },
+  {
+    value: "pullRequests",
+    label: "Pull requests",
+    icon: GitPullRequestArrow,
+  },
+  {
+    value: "settings",
+    label: "Settings",
+    icon: Settings,
+  },
 ];
-
-const following = [
-  { username: "startup_guy", fullName: "James Lee" },
-  { username: "design_dreamer", fullName: "Mia Wilson" },
-  { username: "art_addict", fullName: "Benjamin White" },
-  { username: "web_wizard", fullName: "Lucas Nguyen" },
-  { username: "health_nut", fullName: "Ella Singh" },
-];
-
-const UserList = ({ users }: { users: typeof following }) => (
-  <div className="space-y-4">
-    {users.map(({ username, fullName }) => (
-      <div key={username} className="flex items-center gap-2 justify-between">
-        <div className="flex items-center gap-4">
-          <div className="h-10 w-10 rounded-full bg-secondary" />
-          <div>
-            <span className="block text-sm leading-none font-semibold">
-              {fullName}
-            </span>
-            <span className="text-xs leading-none">@{username}</span>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <Button size="icon" variant="outline">
-            <MoreHorizontalIcon className="h-5 w-5" />
-          </Button>
-          <Button size="icon" variant="outline" className="text-destructive">
-            <BanIcon className="h-5 w-5" />
-          </Button>
-        </div>
-      </div>
-    ))}
-  </div>
-);
 
 export default function UnderlinedTabsDemo() {
   return (
-    <Tabs defaultValue="followers" className="max-w-xs w-full">
-      <TabsList className="w-full grid grid-cols-2 p-0 bg-background border-b rounded-none h-auto">
-        <TabsTrigger
-          value="followers"
-          className="data-[state=active]:bg-none data-[state=active]:shadow-none data-[state=active]:border-b data-[state=active]:border-primary rounded-none py-3"
-        >
-          Followers
-        </TabsTrigger>
-        <TabsTrigger
-          value="following"
-          className="data-[state=active]:bg-none data-[state=active]:shadow-none data-[state=active]:border-b data-[state=active]:border-primary rounded-none py-3"
-        >
-          Following
-        </TabsTrigger>
+    <Tabs defaultValue={tabs[0].value} className="w-fit">
+      <TabsList className="w-full p-0 bg-background border-b rounded-none h-auto justify-start">
+        {tabs.map(({ value, label, icon: Icon }) => (
+          <TabsTrigger
+            key={value}
+            value={value}
+            className="data-[state=active]:bg-none data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-orange-400 rounded-none py-3 gap-2"
+          >
+            <Icon className="h-4 w-4" /> {label}
+          </TabsTrigger>
+        ))}
       </TabsList>
 
-      <div className="mt-2 p-4 border rounded-md">
-        <TabsContent value="followers">
-          <UserList users={followers} />
-        </TabsContent>
-        <TabsContent value="following">
-          <UserList users={following} />
-        </TabsContent>
+      <div className="mt-2 p-4 border rounded-md h-40 flex items-center justify-center">
+        {tabs.map(({ value, label, icon: Icon }) => (
+          <TabsContent key={value} value={value}>
+            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-muted mx-auto">
+              <Icon className="h-5 w-5" />
+            </div>
+            <p className="mt-3 font-medium text-muted-foreground tracking-tight">
+              {label} content goes here!
+            </p>
+          </TabsContent>
+        ))}
       </div>
     </Tabs>
   );
