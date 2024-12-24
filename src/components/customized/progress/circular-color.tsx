@@ -98,20 +98,20 @@ export default function CircularProgressColorDemo() {
       <div className="flex items-center gap-1">
         <CircularProgress
           value={progress[0]}
-          size={200}
-          strokeWidth={16}
+          size={120}
+          strokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
           className="stroke-indigo-500/25"
           progressClassName="stroke-indigo-600"
         />
         <CircularProgress
           value={progress[0]}
-          size={200}
-          strokeWidth={16}
+          size={120}
+          strokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
           className="stroke-orange-500/25"
           progressClassName="stroke-orange-600"

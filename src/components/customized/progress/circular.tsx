@@ -95,7 +95,7 @@ export default function CircularProgressDemo() {
 
   return (
     <div className="max-w-xs mx-auto w-full flex flex-col items-center">
-      <CircularProgress value={progress[0]} size={200} strokeWidth={16} />
+      <CircularProgress value={progress[0]} size={120} strokeWidth={10} />
       <Slider
         defaultValue={progress}
         max={100}

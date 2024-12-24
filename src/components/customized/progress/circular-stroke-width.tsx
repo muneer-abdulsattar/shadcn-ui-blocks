@@ -98,28 +98,28 @@ export default function CircularProgressStrokeWidthDemo() {
       <div className="flex items-center gap-1">
         <CircularProgress
           value={progress[0]}
-          size={200}
-          strokeWidth={16}
+          size={120}
+          strokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
         />
         <CircularProgress
           value={progress[0]}
-          size={200}
-          circleStrokeWidth={16}
+          size={120}
+          circleStrokeWidth={12}
+          progressStrokeWidth={6}
+          showLabel
+          labelClassName="text-xl font-bold"
+          renderLabel={(progress) => `${progress}%`}
+        />
+        <CircularProgress
+          value={progress[0]}
+          size={120}
+          circleStrokeWidth={6}
           progressStrokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
-          renderLabel={(progress) => `${progress}%`}
-        />
-        <CircularProgress
-          value={progress[0]}
-          size={200}
-          circleStrokeWidth={10}
-          progressStrokeWidth={16}
-          showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
         />
       </div>

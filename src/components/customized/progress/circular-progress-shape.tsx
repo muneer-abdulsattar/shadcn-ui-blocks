@@ -98,19 +98,19 @@ export default function CircularProgressShapeDemo() {
       <div className="flex items-center gap-1">
         <CircularProgress
           value={progress[0]}
-          size={200}
-          strokeWidth={16}
+          size={120}
+          strokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
           shape="round"
         />
         <CircularProgress
           value={progress[0]}
-          size={200}
-          strokeWidth={16}
+          size={120}
+          strokeWidth={10}
           showLabel
-          labelClassName="text-4xl font-bold"
+          labelClassName="text-xl font-bold"
           renderLabel={(progress) => `${progress}%`}
           shape="square"
         />

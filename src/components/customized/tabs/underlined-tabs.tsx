@@ -26,8 +26,8 @@ const tabs = [
 
 export default function UnderlinedTabsDemo() {
   return (
-    <Tabs defaultValue={tabs[0].value} className="w-fit">
-      <TabsList className="w-full p-0 bg-background border-b rounded-none h-auto justify-start">
+    <Tabs defaultValue={tabs[0].value} className="max-w-xs sm:max-w-full">
+      <TabsList className="w-full p-0 bg-background border-b rounded-none h-auto justify-start overflow-x-auto">
         {tabs.map(({ value, label, icon: Icon }) => (
           <TabsTrigger
             key={value}

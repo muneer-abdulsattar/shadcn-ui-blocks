@@ -25,7 +25,7 @@ const BlockPreview = ({ block }: { block: string }) => {
 
   return (
     <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel ref={resizablePanelRef} defaultSize={100} minSize={30}>
+      <ResizablePanel ref={resizablePanelRef} defaultSize={120} minSize={30}>
         <div className="w-full rounded-lg border h-[700px] overflow-auto">
           <iframe src={`/blocks/${block}/preview`} height="100%" width="100%" />
         </div>
