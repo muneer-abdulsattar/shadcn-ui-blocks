@@ -26,6 +26,7 @@ export const componentsMap = {
     url: "/components/accordion",
     icon: SquareChevronUpIcon,
     blockName: "accordion",
+    columns: 2,
     description:
       "A vertically stacked set of interactive headings that each reveal a section of content.",
   },
@@ -34,6 +35,7 @@ export const componentsMap = {
     url: "/components/alert",
     icon: TriangleAlertIcon,
     blockName: "alert",
+    columns: 3,
     description: "Displays a callout for user attention.",
   },
   avatar: {
@@ -41,6 +43,7 @@ export const componentsMap = {
     url: "/components/avatar",
     icon: CircleUserRoundIcon,
     blockName: "avatar",
+    columns: 3,
     description: "An image element with a fallback for representing the user.",
   },
   badge: {
@@ -48,6 +51,7 @@ export const componentsMap = {
     url: "/components/badge",
     icon: RectangleHorizontalIcon,
     blockName: "badge",
+    columns: 3,
     description: "Displays a badge or a component that looks like a badge.",
   },
   button: {
@@ -55,6 +59,7 @@ export const componentsMap = {
     url: "/components/button",
     icon: MousePointerClickIcon,
     blockName: "button",
+    columns: 3,
     description: "Displays a button or a component that looks like a button.",
   },
   card: {
@@ -62,6 +67,7 @@ export const componentsMap = {
     url: "/components/card",
     icon: CreditCardIcon,
     blockName: "card",
+    columns: 3,
     description: "Displays a card with header, content, and footer.",
   },
   checkbox: {
@@ -69,6 +75,7 @@ export const componentsMap = {
     url: "/components/checkbox",
     icon: SquareCheckIcon,
     blockName: "checkbox",
+    columns: 3,
     description:
       "A control that allows the user to toggle between checked and not checked.",
   },
@@ -77,6 +84,7 @@ export const componentsMap = {
     url: "/components/input",
     icon: TextCursorInputIcon,
     blockName: "input",
+    columns: 3,
     description:
       "Displays a form input field or a component that looks like an input field.",
   },
@@ -85,6 +93,7 @@ export const componentsMap = {
     url: "/components/progress",
     icon: LoaderCircleIcon,
     blockName: "progress",
+    columns: 3,
     description:
       "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
   },
@@ -93,6 +102,7 @@ export const componentsMap = {
     url: "/components/radio-group",
     icon: CircleDotIcon,
     blockName: "radio-group",
+    columns: 3,
     description:
       "A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.",
   },
@@ -101,6 +111,7 @@ export const componentsMap = {
     url: "/components/select",
     icon: Rows3Icon,
     blockName: "select",
+    columns: 3,
     description:
       "Displays a list of options for the user to pick from—triggered by a button.",
   },
@@ -109,6 +120,7 @@ export const componentsMap = {
     url: "/components/separator",
     icon: SeparatorHorizontalIcon,
     blockName: "separator",
+    columns: 3,
     description: "Visually or semantically separates content.",
   },
   slider: {
@@ -116,6 +128,7 @@ export const componentsMap = {
     url: "/components/slider",
     icon: SlidersHorizontalIcon,
     blockName: "slider",
+    columns: 3,
     description:
       "An input where the user selects a value from within a given range.",
   },
@@ -124,6 +137,7 @@ export const componentsMap = {
     url: "/components/spinner",
     icon: LoaderIcon,
     blockName: "spinner",
+    columns: 3,
     description: "Informs users about the status of ongoing processes.",
   },
   switch: {
@@ -131,6 +145,7 @@ export const componentsMap = {
     url: "/components/switch",
     icon: ToggleRightIcon,
     blockName: "switch",
+    columns: 3,
     description:
       "A control that allows the user to toggle between checked and not checked.",
   },
@@ -139,6 +154,7 @@ export const componentsMap = {
     url: "/components/table",
     icon: Table2Icon,
     blockName: "table",
+    columns: 2,
     description: "A responsive table component.",
   },
   tabs: {
@@ -146,6 +162,7 @@ export const componentsMap = {
     url: "/components/tabs",
     icon: NotebookTabsIcon,
     blockName: "tabs",
+    columns: 3,
     description:
       "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
   },
@@ -154,6 +171,7 @@ export const componentsMap = {
     url: "/components/textarea",
     icon: TextCursorInputIcon,
     blockName: "textarea",
+    columns: 3,
     description:
       "Displays a form textarea or a component that looks like a textarea.",
   },
@@ -168,6 +186,7 @@ export const componentsMap = {
     url: "/components/tooltip",
     icon: InfoIcon,
     blockName: "tooltip",
+    columns: 3,
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },

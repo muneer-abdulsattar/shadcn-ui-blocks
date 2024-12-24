@@ -1,14 +1,12 @@
 "use client";
 
-import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
+import { cn } from "@/lib/utils";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
 import xml from "highlight.js/lib/languages/xml";
 import "highlight.js/styles/github-dark.min.css";
-import { CheckIcon, CopyIcon } from "lucide-react";
 import { useMemo, useRef } from "react";
-import { Button } from "../ui/button";
-import { cn } from "@/lib/utils";
+import { ScrollArea } from "../ui/scroll-area";
 import s from "./SyntaxHighlighter.module.css";
 
 interface SyntaxHighlighterProps {
@@ -16,7 +14,6 @@ interface SyntaxHighlighterProps {
 }
 
 const SyntaxHighlighter = (props: SyntaxHighlighterProps) => {
-  const { isCopied, copyToClipboard } = useCopyToClipboard();
   const codeString = Array.isArray(props.children)
     ? props.children.join()
     : props.children;
@@ -30,14 +27,7 @@ const SyntaxHighlighter = (props: SyntaxHighlighterProps) => {
   }, [codeString]);
 
   return (
-    <div className="relative">
-      <Button
-        size="icon"
-        className="absolute top-2 right-5 border border-muted-foreground"
-        onClick={() => copyToClipboard(codeString)}
-      >
-        {isCopied ? <CheckIcon /> : <CopyIcon />}
-      </Button>
+    <ScrollArea className="h-[30rem] w-full rounded">
       <pre>
         <code
           ref={codeRef}
@@ -45,7 +35,7 @@ const SyntaxHighlighter = (props: SyntaxHighlighterProps) => {
           dangerouslySetInnerHTML={{ __html: result?.value }}
         />
       </pre>
-    </div>
+    </ScrollArea>
   );
 };
 

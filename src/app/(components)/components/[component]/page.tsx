@@ -1,7 +1,8 @@
-import Block from "@/components/block";
+import ComponentBlock from "@/components/component-block";
 import { DescriptionText, MainHeading } from "@/components/typography";
 import { componentsMap } from "@/description/app-sidebar";
 import { customizedComponents } from "@/description/customized-components";
+import { cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 export const generateStaticParams = async () => {
@@ -37,9 +38,15 @@ const CustomizedComponentPage = ({
       <MainHeading>{details.title}</MainHeading>
       <DescriptionText className="mt-1">{details.description}</DescriptionText>
 
-      <div className="mt-12 grid max-w-screen-md 2xl:max-w-full 2xl:grid-cols-2 gap-8">
+      <div
+        className={cn("mt-12 grid gap-2", {
+          "lg:grid-cols-2": details.columns === 2,
+          "sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3":
+            details.columns === 3,
+        })}
+      >
         {components.map((component, index) => (
-          <Block key={`${component.title}-${index}`} {...component} />
+          <ComponentBlock key={`${component.title}-${index}`} {...component} />
         ))}
       </div>
     </div>
