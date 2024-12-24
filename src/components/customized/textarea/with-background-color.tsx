@@ -4,7 +4,7 @@ export default function TextareaWithBackgroundColorDemo() {
   return (
     <Textarea
       placeholder="Type your message here."
-      className="bg-foreground/10"
+      className="bg-muted shadow-none"
     />
   );
 }

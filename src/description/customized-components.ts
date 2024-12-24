@@ -113,6 +113,7 @@ export const customizedComponents = {
     { title: "With button", type: "input", name: "with-button" },
     { title: "With adornments", type: "input", name: "with-adornment" },
     { title: "With helper text", type: "input", name: "with-helper-text" },
+    { title: "With error message", type: "input", name: "with-error-message" },
     { title: "File input", type: "input", name: "file-input" },
     { title: "Dropzone", type: "input", name: "dropzone" },
   ],

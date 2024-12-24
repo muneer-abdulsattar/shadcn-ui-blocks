@@ -16,7 +16,7 @@ import Image from "next/image";
 
 export default function CardPost() {
   return (
-    <Card className="w-full max-w-xs">
+    <Card className="w-full max-w-xs shadow-none">
       <CardHeader className="flex flex-row items-center justify-between py-2">
         <div className="flex items-center gap-3">
           <Image
@@ -36,13 +36,7 @@ export default function CardPost() {
         </Button>
       </CardHeader>
       <CardContent className="p-0">
-        <div className="relative aspect-video">
-          <Image
-            src="https://cdn.pixabay.com/photo/2023/10/12/17/56/after-the-rain-8311416_640.jpg"
-            alt=""
-            layout="fill"
-          />
-        </div>
+        <div className="relative aspect-video bg-muted border-y" />
         <div className="pt-3 pb-4 px-6">
           <h2 className="font-bold tracking-tight">Exploring New Horizons</h2>
           <p className="mt-1 text-sm text-muted-foreground">

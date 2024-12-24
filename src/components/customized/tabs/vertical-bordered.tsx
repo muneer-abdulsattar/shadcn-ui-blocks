@@ -22,7 +22,7 @@ const VerticalBorderedTabs = () => {
   return (
     <div className="">
       <Tabs
-        defaultValue="1"
+        defaultValue={tabs[0].value}
         orientation="vertical"
         className="flex items-start gap-2"
       >

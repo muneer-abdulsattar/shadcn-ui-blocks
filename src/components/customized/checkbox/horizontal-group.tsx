@@ -26,7 +26,7 @@ export default function CheckboxHorizontalGroupDemo() {
       <Label className="font-semibold">Technologies</Label>
       <div className="mt-2 flex items-center gap-4 flex-wrap">
         {technologies.map(({ name, label }) => (
-          <div key={name} className="flex items-center gap-1">
+          <div key={name} className="flex items-center gap-2">
             <Checkbox id={name} />
             <label
               htmlFor={name}

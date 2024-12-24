@@ -38,7 +38,7 @@ export default function CheckboxIconDemo() {
     <div className="flex items-center space-x-3">
       <Checkbox
         icon={<Heart />}
-        checkedIcon={<Heart className="fill-primary" />}
+        checkedIcon={<Heart className="fill-rose-500 stroke-rose-500" />}
       />
       <Checkbox
         icon={<BookmarkIcon />}
@@ -46,7 +46,7 @@ export default function CheckboxIconDemo() {
       />
       <Checkbox
         icon={<StarIcon />}
-        checkedIcon={<StarIcon className="fill-primary" />}
+        checkedIcon={<StarIcon className="fill-yellow-500 stroke-yellow-500" />}
       />
     </div>
   );
