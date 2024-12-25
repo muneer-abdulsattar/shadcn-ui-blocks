@@ -1,6 +1,6 @@
 import { Button, ButtonProps } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { LoaderIcon, StarIcon } from "lucide-react";
+import { StarIcon } from "lucide-react";
 
 const ButtonGradient = ({ className, ...props }: ButtonProps) => (
   <Button
@@ -20,9 +20,6 @@ const GradientButtonDemo = () => (
     </ButtonGradient>
     <ButtonGradient>
       <StarIcon /> Star
-    </ButtonGradient>
-    <ButtonGradient disabled>
-      <LoaderIcon className="animate-spin" /> Loading
     </ButtonGradient>
   </div>
 );

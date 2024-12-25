@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { LoaderIcon, StarIcon } from "lucide-react";
+import { StarIcon } from "lucide-react";
 
 const RoundedButtonDemo = () => (
   <div className="flex items-center gap-2 flex-wrap">
@@ -9,9 +9,6 @@ const RoundedButtonDemo = () => (
     </Button>
     <Button className="rounded-full">
       <StarIcon /> Star
-    </Button>
-    <Button className="rounded-full" disabled>
-      <LoaderIcon className="animate-spin" /> Loading
     </Button>
   </div>
 );
