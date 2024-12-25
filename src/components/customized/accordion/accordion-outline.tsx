@@ -24,7 +24,11 @@ const items = [
 
 export default function AccordionOutlineDemo() {
   return (
-    <Accordion type="single" collapsible className="w-full space-y-2">
+    <Accordion
+      type="single"
+      collapsible
+      className="max-w-lg my-4 w-full space-y-2"
+    >
       {items.map(({ title, content }, index) => (
         <AccordionItem
           key={index}

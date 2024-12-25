@@ -28,7 +28,7 @@ export default function AccordionDefaultOpenDemo() {
       defaultValue="item-0"
       type="single"
       collapsible
-      className="w-full"
+      className="max-w-lg my-4 w-full"
     >
       {items.map(({ title, content }, index) => (
         <AccordionItem key={index} value={`item-${index}`}>

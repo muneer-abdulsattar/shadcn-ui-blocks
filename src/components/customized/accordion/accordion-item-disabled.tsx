@@ -26,7 +26,7 @@ const items = [
 
 export default function DisabledAccordionItemDemo() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className="max-w-lg my-4 w-full">
       {items.map(({ title, content, disabled }, index) => (
         <AccordionItem
           key={index}

@@ -24,7 +24,7 @@ const items = [
 
 export default function AccordionMultipleOpenDemo() {
   return (
-    <Accordion type="multiple" className="w-full">
+    <Accordion type="multiple" className="max-w-lg my-4 w-full">
       {items.map(({ title, content }, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
           <AccordionTrigger>{title}</AccordionTrigger>

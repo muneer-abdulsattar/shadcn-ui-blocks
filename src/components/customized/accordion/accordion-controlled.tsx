@@ -32,7 +32,7 @@ export default function ControlledAccordionDemo() {
     <Accordion
       type="single"
       collapsible
-      className="w-full"
+      className="max-w-lg my-4 w-full"
       value={value}
       onValueChange={setValue}
     >
