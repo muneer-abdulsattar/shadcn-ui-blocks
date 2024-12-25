@@ -7,7 +7,7 @@ export default function AlertInfoDemo() {
       <InfoIcon className="h-4 w-4" />
       <AlertTitle>Important Information</AlertTitle>
       <AlertDescription>
-        Make sure to review the recent updates and changes before proceeding.
+        Make sure to review the recent updates before proceeding.
       </AlertDescription>
     </Alert>
   );
