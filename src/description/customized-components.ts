@@ -246,6 +246,9 @@ export const customizedComponents = {
     { title: "Sticky header", type: "table", name: "sticky-header" },
     { title: "Sticky columns", type: "table", name: "sticky-columns" },
     { title: "Overflow scroll", type: "table", name: "overflow-scroll" },
+    { title: "Data Table", type: "table", name: "data-table" },
+    { title: "Data Table Density", type: "table", name: "data-table-density" },
+    { title: "Columns Visibility", type: "table", name: "columns-visibility" },
   ],
   tabs: [
     { title: "Default", type: "tabs", name: "default" },
