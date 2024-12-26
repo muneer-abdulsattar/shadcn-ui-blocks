@@ -14,7 +14,7 @@ export const CodeDialog = ({ code }: { code: string }) => (
         <Code />
       </Button>
     </DialogTrigger>
-    <DialogContent className="max-w-2xl p-0 border-none rounded-lg text-white">
+    <DialogContent className="dark max-w-2xl p-0 border-none rounded-lg text-white">
       <SyntaxHighlighter>{code}</SyntaxHighlighter>
     </DialogContent>
   </Dialog>

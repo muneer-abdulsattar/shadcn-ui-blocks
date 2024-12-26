@@ -27,8 +27,8 @@ const SyntaxHighlighter = (props: SyntaxHighlighterProps) => {
   }, [codeString]);
 
   return (
-    <ScrollArea className="h-[30rem] w-full rounded">
-      <pre>
+    <ScrollArea className="max-h-[30rem] max-w-2xl [&>div]:!overflow-x-auto rounded">
+      <pre className="border-none">
         <code
           ref={codeRef}
           className={cn("hljs", s.code)}
