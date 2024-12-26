@@ -112,7 +112,7 @@ const products = [
 
 export default function StickyHeaderTableDemo() {
   return (
-    <div className="w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
+    <div className="grid w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
       <Table>
         <TableHeader>
           <TableRow className="[&>*]:whitespace-nowrap sticky top-0 bg-background after:content-[''] after:inset-x-0 after:h-px after:bg-border after:absolute after:bottom-0">

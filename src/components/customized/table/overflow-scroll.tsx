@@ -112,7 +112,7 @@ const products = [
 
 export default function TableOverflowScrollDemo() {
   return (
-    <div className="w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
+    <div className="grid w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
       <Table>
         <TableHeader>
           <TableRow className="[&>*]:whitespace-nowrap">

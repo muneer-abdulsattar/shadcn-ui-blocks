@@ -112,7 +112,7 @@ const products = [
 
 export default function StickyColumnsTableDemo() {
   return (
-    <div className="w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
+    <div className="grid w-full [&>div]:max-h-[300px] [&>div]:border [&>div]:rounded">
       <Table>
         <TableHeader>
           <TableRow className="[&>*]:whitespace-nowrap hover:bg-background">
@@ -136,7 +136,7 @@ export default function StickyColumnsTableDemo() {
               key={product.id}
               className="group odd:bg-muted [&>td]:whitespace-nowrap [&>td]:hover:bg-blue-100 dark:[&>td]:hover:bg-blue-400"
             >
-              <TableCell className="pl-4 sticky left-0 bg-background group-odd:bg-muted group-hover:bg-blue-400">
+              <TableCell className="pl-4 sticky left-0 bg-background group-odd:bg-muted group-hover:bg-blue-100">
                 {product.id}
               </TableCell>
               <TableCell className="font-medium sticky left-[50px] bg-background group-odd:bg-muted group-hover:bg-blue-100">

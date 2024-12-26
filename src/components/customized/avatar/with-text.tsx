@@ -10,7 +10,7 @@ export default function AvatarDemo() {
       <div className="flex flex-col">
         <span className="font-semibold tracking-tight">shadcn</span>
         <span className="leading-none text-sm text-muted-foreground">
-          Shadcn UI Creator
+          Shadcn UI
         </span>
       </div>
     </div>

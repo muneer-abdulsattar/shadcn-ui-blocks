@@ -12,7 +12,7 @@ export default function AvatarWithStatusDemo() {
         <div className="h-2.5 w-2.5 ring-[2px] ring-background rounded-full bg-green-500 absolute bottom-0 right-0"></div>
       </div>
 
-      {/* Offline */}
+      {/* DND */}
       <div className="relative">
         <Avatar>
           <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
@@ -28,6 +28,15 @@ export default function AvatarWithStatusDemo() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div className="h-2.5 w-2.5 ring-[2px] ring-background rounded-full bg-yellow-500 absolute bottom-0 right-0"></div>
+      </div>
+
+      {/* Offline */}
+      <div className="relative">
+        <Avatar>
+          <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
+        <div className="h-2.5 w-2.5 ring-[2px] ring-background border-2 border-muted-foreground rounded-full bg-background absolute bottom-0 right-0"></div>
       </div>
     </div>
   );

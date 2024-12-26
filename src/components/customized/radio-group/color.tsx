@@ -3,15 +3,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 export default function RadioGroupColorDemo() {
   return (
-    <RadioGroup defaultValue="primary">
-      <div className="flex items-center space-x-2">
-        <RadioGroupItem
-          value="primary"
-          id="color-primary"
-          className="text-primary border-primary [&_svg]:fill-primary"
-        />
-        <Label htmlFor="color-primary">Primary</Label>
-      </div>
+    <RadioGroup defaultValue="indigo">
       <div className="flex items-center space-x-2">
         <RadioGroupItem
           value="green"
