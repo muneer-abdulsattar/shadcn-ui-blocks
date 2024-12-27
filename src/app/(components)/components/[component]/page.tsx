@@ -15,10 +15,14 @@ export const generateMetadata = ({
   params: { component: string };
 }) => {
   const details = componentsMap[params.component as keyof typeof componentsMap];
+  const components =
+    customizedComponents[
+      params.component as keyof typeof customizedComponents
+    ] || [];
 
   return {
-    title: details.title,
-    description: details.description,
+    title: `${components.length}+ customized Shadcn UI ${details.title} components`,
+    description: `Explore a curated collection of ${components.length}+ customized Shacn UI ${details.title} components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow.`,
   };
 };
 

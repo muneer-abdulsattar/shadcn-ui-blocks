@@ -13,9 +13,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Effortless Shadcn UI Blocks & Components | Preview & Copy",
+  title: "Customized Shadcn UI Blocks & Components | Preview & Copy",
   description:
-    "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
+    "Explore a curated collection of customized Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality Shadcn UI designs with ease.",
   keywords: [
     "Shadcn UI blocks",
     "Shadcn UI components",
@@ -30,6 +30,8 @@ export const metadata: Metadata = {
     "Copy Shadcn UI code snippets",
     "UI design components",
     "UI design blocks",
+    "Customized Shadcn UI blocks",
+    "Custom Shadcn UI components",
   ],
   icons: [
     {
@@ -51,9 +53,9 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Effortless Shadcn UI Blocks & Components| Preview & Copy",
+    title: "Customized Shadcn UI Blocks & Components | Preview & Copy",
     description:
-      "Explore a curated collection of Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality UI designs with ease.",
+      "Explore a curated collection of customized Shadcn UI blocks and components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow. Perfect for creating responsive, high-quality Shadcn UI designs with ease.",
     type: "website",
     images: [
       {

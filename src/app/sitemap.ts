@@ -6,8 +6,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const componentsSitemap: MetadataRoute.Sitemap = components.map(
     ({ url }) => ({
       url: `https://shadcn-ui-blocks.akashmoradiya.com${url}`,
-      changeFrequency: "weekly",
-      priority: 0.8,
+      changeFrequency: "daily",
+      priority: 1,
     })
   );
   const blocksCategorySitemap: MetadataRoute.Sitemap = blockCategories.map(

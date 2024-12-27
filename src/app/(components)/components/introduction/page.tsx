@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Introduction",
+  title: "Introduction - Customized Shadcn UI Components",
   description:
-    "Shadcn UI Blocks is a collection of customized Shadcn UI components and blocks.",
+    "Customized Shadcn UI components are pre-designed components that you can preview, copy, and implement directly into your projects.",
 };
 
 const Introduction = () => {

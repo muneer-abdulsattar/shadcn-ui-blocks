@@ -1,14 +1,6 @@
 import { AppSidebar } from "@/components/app-sidebar";
 import { Navbar } from "@/components/layout/navbar";
 import { SidebarProvider } from "@/components/ui/sidebar";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: {
-    template: "%s - Shadcn UI Blocks",
-    default: "Effortless Shadcn UI Component Previews & Code Snippets",
-  },
-};
 
 export default function RootLayout({
   children,

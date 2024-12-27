@@ -1,4 +1,4 @@
-import { blockCategories } from "@/blocks";
+import { blockCategories, categorizedBlocks } from "@/blocks";
 import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
 import { Navbar } from "@/components/layout/navbar";
@@ -39,9 +39,10 @@ export const generateMetadata = ({
   params: { category: string };
 }): Metadata => {
   const { category } = params;
-  const title = `${capitalize(
+  const blocks = categorizedBlocks[category];
+  const title = `${blocks.length}+ ${capitalize(
     category
-  )} section Shadcn UI blocks | Preview & Copy`;
+  )} section Shadcn UI blocks`;
   const description = `Explore beautifully designed ${category} section blocks built with Shadcn UI. Preview, customize, and copy code snippets effortlessly to enhance your website's design and functionality.`;
   const keywords = keywordsTemplate.map((keyword) =>
     keyword.replaceAll("{{category}}", capitalize(category))
