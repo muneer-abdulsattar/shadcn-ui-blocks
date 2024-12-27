@@ -1,5 +1,6 @@
-import { PuzzleIcon, Shapes, ShapesIcon } from "lucide-react";
+import { PuzzleIcon, Shapes } from "lucide-react";
 import Link from "next/link";
+import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import { BackgroundPattern } from "./background-pattern";
 
@@ -7,10 +8,10 @@ export const Hero = () => {
   return (
     <div className="flex items-center min-h-screen justify-center px-4 sm:px-6 xl:px-0">
       <div className="text-center w-full">
-        <p className="flex items-center justify-center font-medium border w-fit mx-auto py-1.5 px-4 rounded-full">
-          <ShapesIcon className="mr-2 h-5 w-5" />
+        <div className="flex items-center justify-center font-medium border w-fit mx-auto gap-2 py-1 pl-1.5 pr-3 rounded-full">
+          <Logo />
           Shadcn UI Blocks
-        </p>
+        </div>
         <h1 className="relative z-10 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl sm:max-w-[25ch] mx-auto font-bold tracking-tight leading-[1.2] lg:leading-[1.2]">
           Effortless Shadcn UI Component Previews & Code Snippets
         </h1>
