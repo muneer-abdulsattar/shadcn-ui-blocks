@@ -2,6 +2,7 @@ import ComponentBlock from "@/components/component-block";
 import { DescriptionText, MainHeading } from "@/components/typography";
 import { componentsMap } from "@/description/app-sidebar";
 import { customizedComponents } from "@/description/customized-components";
+import { generateOgImageUrl } from "@/lib/og";
 import { cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
@@ -20,9 +21,27 @@ export const generateMetadata = ({
       params.component as keyof typeof customizedComponents
     ] || [];
 
+  const title = `${components.length}+ customized Shadcn UI ${details.title} components`;
+  const description = `Explore a curated collection of ${components.length}+ customized Shacn UI ${details.title} components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow.`;
+
   return {
-    title: `${components.length}+ customized Shadcn UI ${details.title} components`,
-    description: `Explore a curated collection of ${components.length}+ customized Shacn UI ${details.title} components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow.`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [
+        {
+          url: generateOgImageUrl({
+            title,
+            type: "Component",
+          }),
+          width: 1200,
+          height: 630,
+          alt: "Customized Shadcn UI Components",
+        },
+      ],
+    },
   };
 };
 

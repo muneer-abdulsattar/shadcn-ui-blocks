@@ -2,6 +2,7 @@ import { blockCategories, categorizedBlocks } from "@/blocks";
 import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
 import { Navbar } from "@/components/layout/navbar";
+import { generateOgImageUrl } from "@/lib/og";
 import { capitalize } from "@/lib/utils";
 import { Metadata } from "next";
 
@@ -55,6 +56,17 @@ export const generateMetadata = ({
     openGraph: {
       title,
       description,
+      images: [
+        {
+          url: generateOgImageUrl({
+            title,
+            type: "Block",
+          }),
+          width: 1200,
+          height: 630,
+          alt: "Customized Shadcn UI Blocks",
+        },
+      ],
     },
     twitter: {
       title,
