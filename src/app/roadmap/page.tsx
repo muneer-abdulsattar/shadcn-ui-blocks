@@ -3,8 +3,10 @@ import { Navbar } from "@/components/layout/navbar";
 import { Card, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { roadmap, statuses } from "@/description/roadmap";
-import { cn, groupBy } from "@/lib/utils";
+import { constructMetadata } from "@/lib/metadata";
+import { absoluteUrl, cn, groupBy } from "@/lib/utils";
 import { format } from "date-fns/format";
+import { Metadata } from "next";
 import React from "react";
 
 export interface Task {
@@ -14,6 +16,15 @@ export interface Task {
   expectedCompletionDate: string;
   completionDate: string;
 }
+
+export const metadata: Metadata = constructMetadata({
+  title: "Shadcn UI Blocks Roadmap",
+  description:
+    "Shadcn UI Blocks Roadmap is a comprehensive plan outlining the development and release of Shadcn UI Blocks.",
+  alternates: {
+    canonical: absoluteUrl("/roadmap"),
+  },
+});
 
 const RoadmapPage = () => {
   const groupedRoadmap = groupBy(roadmap, "status");

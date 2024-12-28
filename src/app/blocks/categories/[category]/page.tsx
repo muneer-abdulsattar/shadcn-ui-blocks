@@ -2,8 +2,9 @@ import { blockCategories, categorizedBlocks } from "@/blocks";
 import BlockCategoryJsonLd from "@/components/blocks/category/block-category-json-ld";
 import BlockPreviewList from "@/components/blocks/category/block-preview-list";
 import { Navbar } from "@/components/layout/navbar";
+import { constructMetadata } from "@/lib/metadata";
 import { generateOgImageUrl } from "@/lib/og";
-import { capitalize } from "@/lib/utils";
+import { absoluteUrl, capitalize } from "@/lib/utils";
 import { Metadata } from "next";
 
 const keywordsTemplate = [
@@ -48,31 +49,33 @@ export const generateMetadata = ({
   const keywords = keywordsTemplate.map((keyword) =>
     keyword.replaceAll("{{category}}", capitalize(category))
   );
+  const openGraph = {
+    images: [
+      {
+        url: generateOgImageUrl({
+          title,
+          type: "Block",
+        }),
+        width: 1200,
+        height: 630,
+        alt: "Customized Shadcn UI Blocks",
+      },
+    ],
+  };
 
-  return {
+  return constructMetadata({
     title,
     description,
     keywords,
-    openGraph: {
-      title,
-      description,
-      images: [
-        {
-          url: generateOgImageUrl({
-            title,
-            type: "Block",
-          }),
-          width: 1200,
-          height: 630,
-          alt: "Customized Shadcn UI Blocks",
-        },
-      ],
-    },
+    openGraph,
     twitter: {
       title,
       description,
     },
-  };
+    alternates: {
+      canonical: absoluteUrl(`/blocks/categories/${category}`),
+    },
+  });
 };
 
 const BlockCategoryPage = ({

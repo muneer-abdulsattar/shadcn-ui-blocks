@@ -1,13 +1,18 @@
 import { CustomizedComponentsFAQ } from "@/components/customized/customized-components-faq";
 import { MainHeading, SubHeading } from "@/components/typography";
+import { constructMetadata } from "@/lib/metadata";
+import { absoluteUrl } from "@/lib/utils";
 import { Metadata } from "next";
 import React from "react";
 
-export const metadata: Metadata = {
-  title: "Introduction - Customized Shadcn UI Components",
+export const metadata: Metadata = constructMetadata({
+  title: "Introduction to Customized Shadcn UI Components",
   description:
     "Customized Shadcn UI components are pre-designed components that you can preview, copy, and implement directly into your projects.",
-};
+  alternates: {
+    canonical: absoluteUrl("/components/introduction"),
+  },
+});
 
 const Introduction = () => {
   return (

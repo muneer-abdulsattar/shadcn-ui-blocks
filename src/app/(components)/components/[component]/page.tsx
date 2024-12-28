@@ -2,8 +2,9 @@ import ComponentBlock from "@/components/component-block";
 import { DescriptionText, MainHeading } from "@/components/typography";
 import { componentsMap } from "@/description/app-sidebar";
 import { customizedComponents } from "@/description/customized-components";
+import { constructMetadata } from "@/lib/metadata";
 import { generateOgImageUrl } from "@/lib/og";
-import { cn } from "@/lib/utils";
+import { absoluteUrl, cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 export const generateStaticParams = async () => {
@@ -24,12 +25,10 @@ export const generateMetadata = ({
   const title = `${components.length}+ customized Shadcn UI ${details.title} components`;
   const description = `Explore a curated collection of ${components.length}+ customized Shacn UI ${details.title} components. Preview, customize, and copy ready-to-use code snippets to streamline your web development workflow.`;
 
-  return {
+  return constructMetadata({
     title,
     description,
     openGraph: {
-      title,
-      description,
       images: [
         {
           url: generateOgImageUrl({
@@ -42,7 +41,10 @@ export const generateMetadata = ({
         },
       ],
     },
-  };
+    alternates: {
+      canonical: absoluteUrl(`/components/${params.component}`),
+    },
+  });
 };
 
 const CustomizedComponentPage = ({

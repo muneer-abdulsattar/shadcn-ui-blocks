@@ -5,8 +5,29 @@ import FileExplorer from "@/components/blocks/file-explorer";
 import { Navbar } from "@/components/layout/navbar";
 import { DescriptionText, MainHeading } from "@/components/typography";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { constructMetadata } from "@/lib/metadata";
+import { absoluteUrl, capitalize } from "@/lib/utils";
 import { BlockProvider } from "@/providers/block-provider";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+export const generateMetadata = ({
+  params: { block },
+}: {
+  params: { block: string };
+}): Metadata => {
+  const blockDetails = blocks[block];
+
+  return constructMetadata({
+    title: `${blockDetails.title} - ${capitalize(
+      blockDetails.category
+    )} section Shadcn UI block`,
+    description: `Fully customized and responsive ${blockDetails.title} Shadcn UI block. Preview, customize, and copy ready-to-use code snippets.`,
+    alternates: {
+      canonical: absoluteUrl(`/blocks/${block}`),
+    },
+  });
+};
 
 const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
   if (!blocks[block]) notFound();
