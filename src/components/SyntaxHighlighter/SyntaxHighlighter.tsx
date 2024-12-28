@@ -6,7 +6,6 @@ import javascript from "highlight.js/lib/languages/javascript";
 import xml from "highlight.js/lib/languages/xml";
 import "highlight.js/styles/github-dark.min.css";
 import { useMemo, useRef } from "react";
-import { ScrollArea } from "../ui/scroll-area";
 import s from "./SyntaxHighlighter.module.css";
 
 interface SyntaxHighlighterProps {
@@ -27,15 +26,13 @@ const SyntaxHighlighter = (props: SyntaxHighlighterProps) => {
   }, [codeString]);
 
   return (
-    <ScrollArea className="max-h-[30rem] max-w-2xl [&>div]:!overflow-x-auto rounded">
-      <pre className="border-none">
-        <code
-          ref={codeRef}
-          className={cn("hljs", s.code)}
-          dangerouslySetInnerHTML={{ __html: result?.value }}
-        />
-      </pre>
-    </ScrollArea>
+    <pre className="border-none">
+      <code
+        ref={codeRef}
+        className={cn("hljs", s.code)}
+        dangerouslySetInnerHTML={{ __html: result?.value }}
+      />
+    </pre>
   );
 };
 
