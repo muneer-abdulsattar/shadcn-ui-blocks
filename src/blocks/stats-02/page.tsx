@@ -15,7 +15,9 @@ const Stats02Page = () => {
 
         <div className="mt-16 sm:mt-24 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-16 justify-center">
           <div>
-            <span className="text-5xl font-bold text-primary">900+</span>
+            <span className="text-5xl md:text-6xl font-black text-indigo-500">
+              900+
+            </span>
             <p className="mt-6 font-bold text-xl">Global styles + variables</p>
             <p className="mt-2 text-[17px] text-foreground/70 font-medium">
               Super smart global color, typography and effects styles +
@@ -23,7 +25,9 @@ const Stats02Page = () => {
             </p>
           </div>
           <div>
-            <span className="text-5xl font-bold text-primary">10,000+</span>
+            <span className="text-5xl md:text-6xl font-black text-rose-500">
+              10,000+
+            </span>
             <p className="mt-6 font-bold text-xl">Components and variants</p>
             <p className="mt-2 text-[17px] text-foreground/70 font-medium">
               We&apos;ve thought of everything you need so you don&apos;t have
@@ -31,14 +35,18 @@ const Stats02Page = () => {
             </p>
           </div>
           <div>
-            <span className="text-5xl font-bold text-primary">420+</span>
+            <span className="text-5xl md:text-6xl font-black text-emerald-500">
+              420+
+            </span>
             <p className="mt-6 font-bold text-xl">Page design examples</p>
             <p className="mt-2 text-[17px] text-foreground/70 font-medium">
               A whopping 420+ ready-to-go desktop and mobile page examples.
             </p>
           </div>
           <div>
-            <span className="text-5xl font-bold text-primary">2,000+</span>
+            <span className="text-5xl md:text-6xl font-black text-blue-500">
+              2,000+
+            </span>
             <p className="mt-6 font-bold text-xl">Icons and logos</p>
             <p className="mt-2 text-[17px] text-foreground/70 font-medium">
               All the icons you&apos;ll need, including country flags and

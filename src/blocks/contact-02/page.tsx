@@ -81,7 +81,7 @@ const Contact02Page = () => (
         </div>
 
         {/* Form */}
-        <Card className="bg-primary/5 shadow-none">
+        <Card className="bg-secondary/10 shadow-none">
           <CardContent className="p-6 md:p-10">
             <form>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-5">
