@@ -11,36 +11,28 @@ const ButtonsWithTooltip = () => (
       <TooltipTrigger asChild>
         <Button variant="outline">Left</Button>
       </TooltipTrigger>
-      <TooltipContent side="left">
-        <p>Left tooltip</p>
-      </TooltipContent>
+      <TooltipContent side="left">Left tooltip</TooltipContent>
     </Tooltip>
 
     <Tooltip>
       <TooltipTrigger asChild>
         <Button variant="outline">Top</Button>
       </TooltipTrigger>
-      <TooltipContent side="top">
-        <p>Top tooltip</p>
-      </TooltipContent>
+      <TooltipContent side="top">Top tooltip</TooltipContent>
     </Tooltip>
 
     <Tooltip>
       <TooltipTrigger asChild>
         <Button variant="outline">Bottom</Button>
       </TooltipTrigger>
-      <TooltipContent side="bottom">
-        <p>Bottom tooltip</p>
-      </TooltipContent>
+      <TooltipContent side="bottom">Bottom tooltip</TooltipContent>
     </Tooltip>
 
     <Tooltip>
       <TooltipTrigger asChild>
         <Button variant="outline">Right</Button>
       </TooltipTrigger>
-      <TooltipContent side="right">
-        <p>Right tooltip</p>
-      </TooltipContent>
+      <TooltipContent side="right">Right tooltip</TooltipContent>
     </Tooltip>
   </div>
 );
