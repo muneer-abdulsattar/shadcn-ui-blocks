@@ -5,7 +5,7 @@ import * as React from "react";
 import { Badge } from "@/components/ui/badge";
 import * as SliderPrimitive from "@radix-ui/react-slider";
 
-export default function SliderWithStickyLabelDemo() {
+export default function SliderWithHoverStickyLabelDemo() {
   const [progress, setProgress] = React.useState([30]);
 
   return (
@@ -21,9 +21,9 @@ export default function SliderWithStickyLabelDemo() {
           <SliderPrimitive.Range className="absolute h-full bg-primary" />
         </SliderPrimitive.Track>
 
-        <SliderPrimitive.Thumb className="block h-4 w-4 rounded-full border border-primary/50 bg-background shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
+        <SliderPrimitive.Thumb className="group block h-4 w-4 rounded-full border border-primary/50 bg-background shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50">
           {/* Sticky label */}
-          <Badge className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 -top-4">
+          <Badge className="scale-0 group-hover:scale-100 transition-transform absolute left-1/2 -translate-x-1/2 -translate-y-1/2 -top-4">
             {progress[0]}%
           </Badge>
         </SliderPrimitive.Thumb>
