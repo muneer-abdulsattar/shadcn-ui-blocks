@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeToggle } from "@/components/app-sidebar/theme-toggle";
 import { CSPostHogProvider } from "@/providers/posthog-provider";
+import { WebSite, WithContext } from "schema-dts";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -73,6 +74,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd: WithContext<WebSite> = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Shadcn UI Blocks",
+    url: "https://${process.env.NEXT_PUBLIC_APP_URL}",
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -82,6 +90,13 @@ export default function RootLayout({
         />
       </head>
       <body className={cn(dmSans.className, "antialiased")}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
+
         <CSPostHogProvider>
           <ThemeProvider attribute="class">
             <TooltipProvider>
