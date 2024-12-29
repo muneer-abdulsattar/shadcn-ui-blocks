@@ -1,6 +1,4 @@
-import { Button } from "@/components/ui/button";
 import {
-  ArrowRight,
   BookCheck,
   ChartPie,
   FolderSync,
