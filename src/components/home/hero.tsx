@@ -1,6 +1,5 @@
 import { PuzzleIcon, Shapes } from "lucide-react";
 import Link from "next/link";
-import { Logo } from "../logo";
 import { Button } from "../ui/button";
 import { BackgroundPattern } from "./background-pattern";
 
@@ -8,10 +7,20 @@ export const Hero = () => {
   return (
     <div className="flex items-center min-h-screen justify-center px-4 sm:px-6 xl:px-0">
       <div className="text-center w-full">
-        <div className="flex items-center justify-center font-medium border w-fit mx-auto gap-2 py-1 pl-1.5 pr-3 rounded-full">
-          <Logo />
-          Shadcn UI Blocks
-        </div>
+        <a
+          href="https://www.producthunt.com/products/shadcn-ui-blocks?utm_source=badge-follow&utm_medium=badge&utm_souce=badge-shadcn&#0045;ui&#0045;blocks"
+          target="_blank"
+          className="relative z-10 w-fit mx-auto block"
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=848798&theme=light"
+            alt="Shadcn&#0032;UI&#0032;Blocks - Customized&#0032;Shadcn&#0032;UI&#0032;Blocks&#0032;&#0038;&#0032;Components | Product Hunt"
+            style={{ width: 250, height: 54 }}
+            width="250"
+            height="54"
+          />
+        </a>
         <h1 className="relative z-10 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl sm:max-w-[25ch] mx-auto font-bold tracking-tight leading-[1.2] lg:leading-[1.2]">
           Effortless Shadcn UI Component Previews & Code Snippets
         </h1>
