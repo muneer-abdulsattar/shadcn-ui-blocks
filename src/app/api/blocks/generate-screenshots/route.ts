@@ -84,14 +84,17 @@ export async function POST(req: Request) {
       return new Response("Unauthorized", { status: 401 });
     }
 
-    const promises = blockList.map((block) => {
+    for (const block of blockList) {
       const url = `${requestUrl.origin}/blocks/${block.name}/preview`;
 
-      return captureScreenshot(url, {
-        fileName: `${block.name}.${BLOCK_SCREENSHOT_EXTENSION}`,
-      });
-    });
-    await Promise.allSettled(promises);
+      try {
+        await captureScreenshot(url, {
+          fileName: `${block.name}.${BLOCK_SCREENSHOT_EXTENSION}`,
+        });
+      } catch (error) {
+        console.error(`Failed to capture screenshot for ${block.name}:`, error);
+      }
+    }
 
     return new Response("Screenshots generated successfully", { status: 201 });
   } catch (error) {

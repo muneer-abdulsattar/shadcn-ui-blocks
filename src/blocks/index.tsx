@@ -630,6 +630,90 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "features-01": {
+    name: "features-01",
+    title: "Features 01",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-01/page.tsx",
+      },
+    ],
+  },
+  "features-02": {
+    name: "features-02",
+    title: "Features 02",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-02/page.tsx",
+      },
+    ],
+  },
+  "features-03": {
+    name: "features-03",
+    title: "Features 03",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-03/page.tsx",
+      },
+    ],
+  },
+  "features-04": {
+    name: "features-04",
+    title: "Features 04",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-04/page.tsx",
+      },
+    ],
+  },
+  "features-05": {
+    name: "features-05",
+    title: "Features 05",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-05/page.tsx",
+      },
+    ],
+  },
+  "features-06": {
+    name: "features-06",
+    title: "Features 06",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-06/page.tsx",
+      },
+    ],
+  },
+  "features-07": {
+    name: "features-07",
+    title: "Features 07",
+    category: "features",
+    component: React.lazy(() => import("@/blocks/features-07/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/features-07/page.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
