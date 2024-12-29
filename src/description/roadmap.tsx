@@ -13,10 +13,18 @@ export const roadmap: Task[] = [
   {
     title: "20+ Premium Shadcn UI Blocks",
     description:
-      "Addition of new components and blocks, including a new set of cards.",
-    expectedCompletionDate: "2025-01-01",
-    completionDate: "2025-01-01",
+      "Addition of new blocks, including hero section, testimonials section, FAQ section, and more.",
+    expectedCompletionDate: "2025-01-07",
+    completionDate: "2025-01-07",
     status: "inProgress",
+  },
+  {
+    title: "Features section Shadcn UI Blocks",
+    description:
+      "Addition of new fully responsive blocks for features section.",
+    expectedCompletionDate: "2025-12-29",
+    completionDate: "2025-12-29",
+    status: "completed",
   },
   {
     title: "Categories & Search Filter",
