@@ -53,6 +53,9 @@ export const customizedComponents = {
     { title: "Warning", type: "alert", name: "alert-warning" },
     { title: "Info", type: "alert", name: "alert-info" },
     { title: "With background", type: "alert", name: "with-background" },
+    { title: "Soft", type: "alert", name: "alert-soft" },
+    { title: "Bootstrap", type: "alert", name: "alert-bootstrap" },
+    { title: "Callout", type: "alert", name: "alert-callout" },
     { title: "With actions", type: "alert", name: "with-actions" },
   ],
   avatar: [
