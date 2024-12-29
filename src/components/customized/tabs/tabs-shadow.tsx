@@ -25,7 +25,7 @@ const tabs = [
   },
 ];
 
-export default function TabsSeparatedDemo() {
+export default function TabsShadowDemo() {
   return (
     <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
       <TabsList className="p-0 h-auto bg-background gap-1">
@@ -33,7 +33,7 @@ export default function TabsSeparatedDemo() {
           <TabsTrigger
             key={tab.value}
             value={tab.value}
-            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            className="data-[state=active]:shadow-[0_0_8px_1px_rgba(0,0,0,0.1)] dark:data-[state=active]:shadow-[0_0_8px_1px_rgba(255,255,255,0.2)]"
           >
             <code className="text-[13px]">{tab.name}</code>
           </TabsTrigger>

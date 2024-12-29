@@ -25,7 +25,7 @@ const tabs = [
   },
 ];
 
-export default function TabsSeparatedDemo() {
+export default function TabsBorderedDemo() {
   return (
     <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
       <TabsList className="p-0 h-auto bg-background gap-1">
@@ -33,7 +33,7 @@ export default function TabsSeparatedDemo() {
           <TabsTrigger
             key={tab.value}
             value={tab.value}
-            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            className="border border-transparent data-[state=active]:border-border data-[state=active]:shadow-none"
           >
             <code className="text-[13px]">{tab.name}</code>
           </TabsTrigger>

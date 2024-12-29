@@ -25,10 +25,10 @@ const tabs = [
   },
 ];
 
-export default function TabsSeparatedDemo() {
+export default function TabsBoxDemo() {
   return (
     <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
-      <TabsList className="p-0 h-auto bg-background gap-1">
+      <TabsList className="p-1 h-auto bg-background gap-1 border">
         {tabs.map((tab) => (
           <TabsTrigger
             key={tab.value}

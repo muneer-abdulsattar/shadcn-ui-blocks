@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Copy } from "lucide-react";
@@ -7,6 +8,7 @@ const tabs = [
     name: "pnpm",
     value: "pnpm",
     content: "pnpm dlx shadcn@latest add tabs",
+    count: 9,
   },
   {
     name: "npm",
@@ -17,6 +19,7 @@ const tabs = [
     name: "yarn",
     value: "yarn",
     content: "npx shadcn@latest add tabs",
+    count: 3,
   },
   {
     name: "bun",
@@ -25,17 +28,25 @@ const tabs = [
   },
 ];
 
-export default function TabsSeparatedDemo() {
+export default function TabsWithBadgeDemo() {
   return (
     <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
-      <TabsList className="p-0 h-auto bg-background gap-1">
+      <TabsList className="w-full p-0 bg-background justify-start border-b rounded-none gap-1">
         {tabs.map((tab) => (
           <TabsTrigger
             key={tab.value}
             value={tab.value}
-            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            className="rounded-none bg-background h-full data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-primary"
           >
-            <code className="text-[13px]">{tab.name}</code>
+            <code className="text-[13px]">{tab.name}</code>{" "}
+            {!!tab.count && (
+              <Badge
+                variant="secondary"
+                className="ml-2 px-1 py-0 text-xs rounded-full"
+              >
+                {tab.count}
+              </Badge>
+            )}
           </TabsTrigger>
         ))}
       </TabsList>

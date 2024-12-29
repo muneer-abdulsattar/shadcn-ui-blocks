@@ -25,15 +25,15 @@ const tabs = [
   },
 ];
 
-export default function TabsSeparatedDemo() {
+export default function TabsSharpDemo() {
   return (
     <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
-      <TabsList className="p-0 h-auto bg-background gap-1">
+      <TabsList className="w-full p-0 bg-background justify-start border-b rounded-none">
         {tabs.map((tab) => (
           <TabsTrigger
             key={tab.value}
             value={tab.value}
-            className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            className="rounded-none bg-background h-full data-[state=active]:shadow-none border border-b-[3px] border-transparent data-[state=active]:border-primary"
           >
             <code className="text-[13px]">{tab.name}</code>
           </TabsTrigger>
@@ -42,9 +42,13 @@ export default function TabsSeparatedDemo() {
 
       {tabs.map((tab) => (
         <TabsContent key={tab.value} value={tab.value}>
-          <div className="h-10 flex items-center justify-between border gap-2 rounded-md pl-3 pr-1.5">
+          <div className="h-10 flex items-center justify-between border gap-2 pl-3 pr-1.5">
             <code className="text-[13px]">{tab.content}</code>
-            <Button size="icon" variant="secondary" className="h-7 w-7">
+            <Button
+              size="icon"
+              variant="secondary"
+              className="h-7 w-7 rounded-none"
+            >
               <Copy className="!h-3.5 !w-3.5" />
             </Button>
           </div>

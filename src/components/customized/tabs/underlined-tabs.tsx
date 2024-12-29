@@ -1,56 +1,55 @@
+import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CircleDot, Code, GitPullRequestArrow, Settings } from "lucide-react";
+import { Copy } from "lucide-react";
 
 const tabs = [
   {
-    value: "code",
-    label: "Code",
-    icon: Code,
+    name: "pnpm",
+    value: "pnpm",
+    content: "pnpm dlx shadcn@latest add tabs",
   },
   {
-    value: "issues",
-    label: "Issues",
-    icon: CircleDot,
+    name: "npm",
+    value: "npm",
+    content: "npx shadcn@latest add tabs",
   },
   {
-    value: "pullRequests",
-    label: "Pull requests",
-    icon: GitPullRequestArrow,
+    name: "yarn",
+    value: "yarn",
+    content: "npx shadcn@latest add tabs",
   },
   {
-    value: "settings",
-    label: "Settings",
-    icon: Settings,
+    name: "bun",
+    value: "bun",
+    content: "bunx --bun shadcn@latest add tabs",
   },
 ];
 
-export default function UnderlinedTabsDemo() {
+export default function TabsUnderlinedDemo() {
   return (
-    <Tabs defaultValue={tabs[0].value} className="max-w-xs sm:max-w-full">
-      <TabsList className="w-full p-0 bg-background border-b rounded-none h-auto justify-start overflow-x-auto">
-        {tabs.map(({ value, label, icon: Icon }) => (
+    <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
+      <TabsList className="w-full p-0 bg-background justify-start border-b rounded-none">
+        {tabs.map((tab) => (
           <TabsTrigger
-            key={value}
-            value={value}
-            className="data-[state=active]:bg-none data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-orange-400 rounded-none py-3 gap-2"
+            key={tab.value}
+            value={tab.value}
+            className="rounded-none bg-background h-full data-[state=active]:shadow-none border-b-2 border-transparent data-[state=active]:border-primary"
           >
-            <Icon className="h-4 w-4" /> {label}
+            <code className="text-[13px]">{tab.name}</code>
           </TabsTrigger>
         ))}
       </TabsList>
 
-      <div className="mt-2 p-4 border rounded-md h-40 flex items-center justify-center">
-        {tabs.map(({ value, label, icon: Icon }) => (
-          <TabsContent key={value} value={value}>
-            <div className="h-10 w-10 flex items-center justify-center rounded-full bg-muted mx-auto">
-              <Icon className="h-5 w-5" />
-            </div>
-            <p className="mt-3 font-medium text-muted-foreground tracking-tight">
-              {label} content goes here!
-            </p>
-          </TabsContent>
-        ))}
-      </div>
+      {tabs.map((tab) => (
+        <TabsContent key={tab.value} value={tab.value}>
+          <div className="h-10 flex items-center justify-between border gap-2 rounded-md pl-3 pr-1.5">
+            <code className="text-[13px]">{tab.content}</code>
+            <Button size="icon" variant="secondary" className="h-7 w-7">
+              <Copy className="!h-3.5 !w-3.5" />
+            </Button>
+          </div>
+        </TabsContent>
+      ))}
     </Tabs>
   );
 }

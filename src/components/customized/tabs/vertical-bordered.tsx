@@ -20,41 +20,39 @@ const tabs = [
 
 const VerticalBorderedTabs = () => {
   return (
-    <div className="">
-      <Tabs
-        defaultValue={tabs[0].value}
-        orientation="vertical"
-        className="flex items-start gap-2"
-      >
-        <TabsList className="grid grid-cols-1 h-auto w-fit p-0 divide-y border">
-          {tabs.map((item) => (
-            <TabsTrigger
-              key={item.value}
-              value={item.value}
-              className={cn(
-                "rounded-none first:rounded-t-md last:rounded-b-md bg-background h-10 w-11 p-0",
-                "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
-              )}
-            >
-              <item.icon className="h-5 w-5" />
-            </TabsTrigger>
-          ))}
-        </TabsList>
+    <Tabs
+      defaultValue={tabs[0].value}
+      orientation="vertical"
+      className="w-full flex items-start justify-center gap-2"
+    >
+      <TabsList className="grid grid-cols-1 h-auto w-fit p-0 divide-y border shrink-0">
+        {tabs.map((item) => (
+          <TabsTrigger
+            key={item.value}
+            value={item.value}
+            className={cn(
+              "rounded-none first:rounded-t-md last:rounded-b-md bg-background h-10 w-11 p-0",
+              "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+            )}
+          >
+            <item.icon className="h-5 w-5" />
+          </TabsTrigger>
+        ))}
+      </TabsList>
 
-        <div className="flex items-center justify-center w-60 aspect-square border rounded-lg p-6">
-          {tabs.map((item) => (
-            <TabsContent key={item.value} value={item.value}>
-              <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-muted">
-                <item.icon />
-              </div>
-              <p className="text-center text-lg mt-4 font-medium text-muted-foreground tracking-tight capitalize">
-                {item.value}
-              </p>
-            </TabsContent>
-          ))}
-        </div>
-      </Tabs>
-    </div>
+      <div className="grow w-full max-w-[12rem] aspect-square flex items-center justify-center border rounded-lg p-6">
+        {tabs.map((item) => (
+          <TabsContent key={item.value} value={item.value}>
+            <div className="mx-auto h-12 w-12 flex items-center justify-center rounded-full bg-muted">
+              <item.icon />
+            </div>
+            <p className="text-center text-lg mt-4 font-medium text-muted-foreground tracking-tight capitalize">
+              {item.value}
+            </p>
+          </TabsContent>
+        ))}
+      </div>
+    </Tabs>
   );
 };
 

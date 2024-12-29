@@ -1,65 +1,51 @@
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BanIcon, MoreHorizontalIcon } from "lucide-react";
+import { Copy } from "lucide-react";
 
-const followers = [
-  { username: "jane_doe", fullName: "Jane Doe" },
-  { username: "tech_guru", fullName: "Alex Thompson" },
-  { username: "nature_lover", fullName: "Emma Green" },
-  { username: "photogirl", fullName: "Sophia Martinez" },
-  { username: "code_master", fullName: "Liam Patel" },
+const tabs = [
+  {
+    name: "pnpm",
+    value: "pnpm",
+    content: "pnpm dlx shadcn@latest add tabs",
+  },
+  {
+    name: "npm",
+    value: "npm",
+    content: "npx shadcn@latest add tabs",
+  },
+  {
+    name: "yarn",
+    value: "yarn",
+    content: "npx shadcn@latest add tabs",
+  },
+  {
+    name: "bun",
+    value: "bun",
+    content: "bunx --bun shadcn@latest add tabs",
+  },
 ];
-
-const following = [
-  { username: "startup_guy", fullName: "James Lee" },
-  { username: "design_dreamer", fullName: "Mia Wilson" },
-  { username: "art_addict", fullName: "Benjamin White" },
-  { username: "web_wizard", fullName: "Lucas Nguyen" },
-  { username: "health_nut", fullName: "Ella Singh" },
-];
-
-const UserList = ({ users }: { users: typeof following }) => (
-  <div className="space-y-4">
-    {users.map(({ username, fullName }) => (
-      <div key={username} className="flex items-center gap-2 justify-between">
-        <div className="flex items-center gap-4">
-          <div className="h-10 w-10 rounded-full bg-secondary" />
-          <div>
-            <span className="block text-sm leading-none font-semibold">
-              {fullName}
-            </span>
-            <span className="text-xs leading-none">@{username}</span>
-          </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <Button size="icon" variant="outline">
-            <MoreHorizontalIcon className="h-5 w-5" />
-          </Button>
-          <Button size="icon" variant="outline" className="text-destructive">
-            <BanIcon className="h-5 w-5" />
-          </Button>
-        </div>
-      </div>
-    ))}
-  </div>
-);
 
 export default function TabsDemo() {
   return (
-    <Tabs defaultValue="followers" className="max-w-xs w-full">
-      <TabsList className="w-full grid grid-cols-2">
-        <TabsTrigger value="followers">Followers</TabsTrigger>
-        <TabsTrigger value="following">Following</TabsTrigger>
+    <Tabs defaultValue={tabs[0].value} className="max-w-xs w-full">
+      <TabsList>
+        {tabs.map((tab) => (
+          <TabsTrigger key={tab.value} value={tab.value}>
+            <code className="text-[13px]">{tab.name}</code>
+          </TabsTrigger>
+        ))}
       </TabsList>
 
-      <div className="mt-2 p-4 border rounded-md">
-        <TabsContent value="followers">
-          <UserList users={followers} />
+      {tabs.map((tab) => (
+        <TabsContent key={tab.value} value={tab.value}>
+          <div className="h-10 flex items-center justify-between border gap-2 rounded-md pl-3 pr-1.5">
+            <code className="text-[13px]">{tab.content}</code>
+            <Button size="icon" variant="secondary" className="h-7 w-7">
+              <Copy className="!h-3.5 !w-3.5" />
+            </Button>
+          </div>
         </TabsContent>
-        <TabsContent value="following">
-          <UserList users={following} />
-        </TabsContent>
-      </div>
+      ))}
     </Tabs>
   );
 }
