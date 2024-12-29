@@ -10,9 +10,14 @@ export const customizedComponents = {
       name: "accordion-box-contained",
     },
     {
-      title: "Default Open",
+      title: "Tabs",
       type: "accordion",
-      name: "accordion-default-open",
+      name: "accordion-tabs",
+    },
+    {
+      title: "Highlight Active Item",
+      type: "accordion",
+      name: "accordion-highlight-active-item",
     },
     {
       title: "Multiple expanded at a time",
@@ -23,6 +28,16 @@ export const customizedComponents = {
       title: "Expand Icon",
       type: "accordion",
       name: "accordion-expand-icon",
+    },
+    {
+      title: "Icon",
+      type: "accordion",
+      name: "accordion-icon",
+    },
+    {
+      title: "Media Content",
+      type: "accordion",
+      name: "accordion-media-content",
     },
     {
       title: "Disabled Item",

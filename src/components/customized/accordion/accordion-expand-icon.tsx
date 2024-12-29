@@ -34,7 +34,7 @@ export default function AccordionDefaultOpenDemo() {
       {items.map(({ title, content }, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
           <AccordionPrimitive.Header className="flex">
-            <AccordionPrimitive.Trigger className="flex flex-1 items-center justify-between py-4 text-sm font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45">
+            <AccordionPrimitive.Trigger className="flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45">
               {title}
               <Plus className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" />
             </AccordionPrimitive.Trigger>

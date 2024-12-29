@@ -22,16 +22,23 @@ const items = [
   },
 ];
 
-export default function AccordionMultipleOpenDemo() {
+export default function AccordionTabsDemo() {
   return (
     <Accordion
-      defaultValue={["item-0", "item-1"]}
-      type="multiple"
-      className="max-w-lg my-4 w-full"
+      type="single"
+      collapsible
+      defaultValue="item-0"
+      className="max-w-lg my-4 w-full space-y-2"
     >
       {items.map(({ title, content }, index) => (
-        <AccordionItem key={index} value={`item-${index}`}>
-          <AccordionTrigger>{title}</AccordionTrigger>
+        <AccordionItem
+          key={index}
+          value={`item-${index}`}
+          className="border-none rounded-md px-4 data-[state=open]:bg-secondary"
+        >
+          <AccordionTrigger className="data-[state=closed]:py-2">
+            {title}
+          </AccordionTrigger>
           <AccordionContent>{content}</AccordionContent>
         </AccordionItem>
       ))}
