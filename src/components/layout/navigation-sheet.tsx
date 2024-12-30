@@ -1,3 +1,5 @@
+"use client";
+
 import { blockCategories } from "@/blocks";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,10 +14,13 @@ import Link from "next/link";
 import { Logo } from "../logo";
 import { Badge } from "../ui/badge";
 import { ScrollArea } from "../ui/scroll-area";
+import { useState } from "react";
 
 export function NavigationSheet() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="outline" className="rounded-full" size="icon">
           <Menu />
@@ -31,7 +36,9 @@ export function NavigationSheet() {
 
         <ScrollArea className="h-full pb-20">
           <div className="space-y-4 text-base pr-2.5">
-            <Link href="/">Home</Link>
+            <Link href="/" onClick={() => setOpen(false)}>
+              Home
+            </Link>
 
             <div>
               <div className="font-bold">Components</div>
@@ -41,6 +48,7 @@ export function NavigationSheet() {
                     <Link
                       href={component.url}
                       className="flex items-center gap-2"
+                      onClick={() => setOpen(false)}
                     >
                       <component.icon className="h-5 w-5 mr-2 text-muted-foreground" />
                       {component.title}
@@ -58,6 +66,7 @@ export function NavigationSheet() {
                     <Link
                       href={`/blocks/categories/${category.name}`}
                       className="flex items-center justify-between"
+                      onClick={() => setOpen(false)}
                     >
                       <span className="capitalize">{category.name}</span>
                       <Badge className="rounded-full bg-secondary/80 hover:bg-accent text-foreground shadow-none">
