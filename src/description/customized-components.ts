@@ -116,6 +116,7 @@ export const customizedComponents = {
     { title: "Neon", type: "button", name: "neon-button" },
     { title: "Rounded", type: "button", name: "rounded-button" },
     { title: "Toggle", type: "button", name: "toggle-button" },
+    { title: "Theme Toggle", type: "button", name: "theme-toggle" },
     { title: "Full Width", type: "button", name: "full-width-button" },
     { title: "Group", type: "button", name: "group-button" },
     { title: "Group 2", type: "button", name: "group-button-2" },
