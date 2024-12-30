@@ -10,6 +10,10 @@ interface BlockProps {
   title: string;
   children?: ReactNode;
   name: string;
+  credit?: {
+    label: string;
+    link: string;
+  };
   description?: ReactNode;
   type: string;
 }
@@ -19,6 +23,7 @@ const ComponentBlock: FC<BlockProps> = async ({
   type,
   description,
   name,
+  credit,
 }) => {
   const src = `src/components/customized/${type}/${name}.tsx`;
   const code = await getFileContent(src);
@@ -35,6 +40,16 @@ const ComponentBlock: FC<BlockProps> = async ({
       <div className="h-10 flex items-center justify-between pl-1 border-b border-muted">
         <div className="flex items-center gap-2">
           <span className="text-[15px] tracking-tight font-bold">{title}</span>
+          {credit && (
+            <a
+              href={credit.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-xs hover:underline hover:text-foreground text-muted-foreground"
+            >
+              (Credits to {credit?.label})
+            </a>
+          )}
           {description ? (
             <Tooltip>
               <TooltipTrigger>

@@ -161,6 +161,8 @@ export const customizedComponents = {
     { title: "Linear with label", type: "progress", name: "linear-with-label" },
     { title: "Linear color", type: "progress", name: "linear-color" },
     { title: "Rounded progress indicator", type: "progress", name: "rounded" },
+    { title: "Gradient", type: "progress", name: "gradient" },
+    { title: "Animation", type: "progress", name: "animation" },
     { title: "Circular", type: "progress", name: "circular" },
     {
       title: "Circular with label",
@@ -261,6 +263,15 @@ export const customizedComponents = {
     { title: "Pinwheel", type: "spinner", name: "spinner-pinwheel" },
     { title: "Colors", type: "spinner", name: "spinner-colors" },
     { title: "Sizes", type: "spinner", name: "spinner-sizes" },
+    {
+      title: "Swirling Effect",
+      type: "spinner",
+      name: "swirling-effect",
+      credit: {
+        label: "fffuel",
+        link: "https://www.fffuel.co/svg-spinner/",
+      },
+    },
   ],
   switch: [
     { title: "Default", type: "switch", name: "default" },
