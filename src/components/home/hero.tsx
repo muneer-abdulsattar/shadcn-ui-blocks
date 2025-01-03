@@ -8,13 +8,12 @@ export const Hero = () => {
     <div className="flex items-center min-h-screen justify-center px-4 sm:px-6 xl:px-0">
       <div className="text-center w-full">
         <a
-          href="https://www.producthunt.com/products/shadcn-ui-blocks?utm_source=badge-follow&utm_medium=badge&utm_souce=badge-shadcn&#0045;ui&#0045;blocks"
+          href="https://www.producthunt.com/posts/shadcn-ui-blocks?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-shadcn&#0045;ui&#0045;blocks"
           target="_blank"
           className="relative z-10 w-fit mx-auto block"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=848798&theme=light"
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=742606&theme=light"
             alt="Shadcn&#0032;UI&#0032;Blocks - Customized&#0032;Shadcn&#0032;UI&#0032;Blocks&#0032;&#0038;&#0032;Components | Product Hunt"
             style={{ width: 250, height: 54 }}
             width="250"
