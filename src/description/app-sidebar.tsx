@@ -9,6 +9,7 @@ import {
   MousePointerClickIcon,
   NotebookTabsIcon,
   RectangleHorizontalIcon,
+  Route,
   Rows3Icon,
   SeparatorHorizontalIcon,
   SlidersHorizontalIcon,
@@ -53,6 +54,15 @@ export const componentsMap = {
     blockName: "badge",
     columns: 3,
     description: "Displays a badge or a component that looks like a badge.",
+  },
+  breadcrumb: {
+    title: "Breadcrumb",
+    url: "/components/breadcrumb",
+    icon: Route,
+    blockName: "breadcrumb",
+    columns: 3,
+    description:
+      "Displays the path to the current resource using a hierarchy of links.",
   },
   button: {
     title: "Button",

@@ -100,6 +100,75 @@ export const customizedComponents = {
     { title: "Clickable", type: "badge", name: "clickable" },
     { title: "Clickable link", type: "badge", name: "clickable-link" },
   ],
+  breadcrumb: [
+    { title: "Default", type: "breadcrumb", name: "default" },
+    {
+      title: "Slash Separator",
+      type: "breadcrumb",
+      name: "slash-separator",
+    },
+    {
+      title: "Chevrons Separator",
+      type: "breadcrumb",
+      name: "chevrons-separator",
+    },
+    { title: "Dot Separator", type: "breadcrumb", name: "dot-separator" },
+    {
+      title: "With Icon",
+      type: "breadcrumb",
+      name: "with-icon",
+    },
+    {
+      title: "With Icon 2",
+      type: "breadcrumb",
+      name: "with-icon-2",
+    },
+    {
+      title: "With Icon and Label",
+      type: "breadcrumb",
+      name: "with-icon-and-label",
+    },
+    {
+      title: "With Icon and Label 2",
+      type: "breadcrumb",
+      name: "with-icon-and-label-2",
+    },
+    {
+      title: "With Background",
+      type: "breadcrumb",
+      name: "with-background",
+    },
+    {
+      title: "Tab Active",
+      type: "breadcrumb",
+      name: "tab-active",
+    },
+    {
+      title: "Tabs",
+      type: "breadcrumb",
+      name: "tabs",
+    },
+    {
+      title: "Tabs Outline",
+      type: "breadcrumb",
+      name: "tabs-outline",
+    },
+    {
+      title: "With Dropdown",
+      type: "breadcrumb",
+      name: "with-dropdown",
+    },
+    {
+      title: "Collapsed",
+      type: "breadcrumb",
+      name: "collapsed",
+    },
+    {
+      title: "Steps",
+      type: "breadcrumb",
+      name: "steps",
+    },
+  ],
   button: [
     { title: "Primary", type: "button", name: "primary-button" },
     { title: "Secondary", type: "button", name: "secondary-button" },
