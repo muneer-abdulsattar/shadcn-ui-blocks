@@ -3,6 +3,7 @@ import {
   CircleDotIcon,
   CircleUserRoundIcon,
   CreditCardIcon,
+  Ellipsis,
   InfoIcon,
   LoaderCircleIcon,
   LoaderIcon,
@@ -97,6 +98,14 @@ export const componentsMap = {
     columns: 3,
     description:
       "Displays a form input field or a component that looks like an input field.",
+  },
+  pagination: {
+    title: "Pagination",
+    url: "/components/pagination",
+    icon: Ellipsis,
+    blockName: "pagination",
+    columns: 3,
+    description: "Pagination with page navigation, next and previous links.",
   },
   progress: {
     title: "Progress",

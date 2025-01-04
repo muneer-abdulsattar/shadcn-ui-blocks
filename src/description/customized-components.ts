@@ -234,6 +234,66 @@ export const customizedComponents = {
     { title: "File input", type: "input", name: "file-input" },
     { title: "Dropzone", type: "input", name: "dropzone" },
   ],
+  pagination: [
+    { title: "Default", type: "pagination", name: "default" },
+    {
+      title: "Primary Button",
+      type: "pagination",
+      name: "primary-button",
+    },
+    {
+      title: "Secondary Button",
+      type: "pagination",
+      name: "secondary-button",
+    },
+    { title: "Rounded Button", type: "pagination", name: "rounded-button" },
+    {
+      title: "With Icon",
+      type: "pagination",
+      name: "icon",
+    },
+    {
+      title: "First and Last Page Buttons",
+      type: "pagination",
+      name: "first-last-page",
+    },
+    {
+      title: "Bordered",
+      type: "pagination",
+      name: "bordered",
+    },
+    {
+      title: "Tabs",
+      type: "pagination",
+      name: "tabs",
+    },
+    {
+      title: "Tabs Secondary",
+      type: "pagination",
+      name: "tabs-secondary",
+    },
+    {
+      title: "With Icon and Label",
+      type: "pagination",
+      name: "icon-and-label",
+    },
+    {
+      title: "Numberless Pagination",
+      type: "pagination",
+      name: "numberless",
+    },
+    {
+      title: "Numberless with Text",
+      type: "pagination",
+      name: "numberless-with-text",
+    },
+    { title: "With ellipsis", type: "pagination", name: "ellipsis" },
+    {
+      title: "Table Pagination",
+      type: "pagination",
+      name: "table-pagination",
+    },
+  ],
   progress: [
     { title: "Default", type: "progress", name: "default" },
     { title: "Linear with label", type: "progress", name: "linear-with-label" },
