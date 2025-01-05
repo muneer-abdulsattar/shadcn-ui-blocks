@@ -31,6 +31,7 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
         asChild
         url={item.url}
         className={cn("group/menu-button gap-x-3")}
+        tooltip={item.title}
       >
         <Link href={item.url}>
           <item.icon />
