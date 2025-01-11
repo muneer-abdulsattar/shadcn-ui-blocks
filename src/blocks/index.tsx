@@ -714,6 +714,106 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "hero-01": {
+    name: "hero-01",
+    title: "Hero 01",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-01/page.tsx",
+      },
+    ],
+  },
+  "hero-02": {
+    name: "hero-02",
+    title: "Hero 02",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-02/page.tsx",
+      },
+    ],
+  },
+  "hero-03": {
+    name: "hero-03",
+    title: "Hero 03",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-03/page.tsx",
+      },
+    ],
+  },
+  "hero-04": {
+    name: "hero-04",
+    title: "Hero 04",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-04/page.tsx",
+      },
+    ],
+  },
+  "hero-05": {
+    name: "hero-05",
+    title: "Hero 05",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-05/page.tsx",
+      },
+    ],
+  },
+  "hero-06": {
+    name: "hero-06",
+    title: "Hero 06",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-06/page.tsx",
+      },
+      {
+        path: "background-pattern.tsx",
+        target: "app/hero-06/background-pattern.tsx",
+      },
+      {
+        path: "@/components/ui/dot-pattern.tsx",
+        target: "app/components/ui/dot-pattern.tsx",
+      },
+      {
+        path: "@/components/ui/particles.tsx",
+        target: "app/components/ui/particles.tsx",
+      },
+    ],
+  },
+  "hero-07": {
+    name: "hero-07",
+    title: "Hero 07",
+    category: "hero",
+    component: React.lazy(() => import("@/blocks/hero-07/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/hero-07/page.tsx",
+      },
+      {
+        path: "@/components/ui/animated-grid-pattern.tsx",
+        target: "app/components/ui/animated-grid-pattern.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
