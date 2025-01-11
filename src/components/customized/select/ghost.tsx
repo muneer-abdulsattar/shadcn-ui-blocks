@@ -8,14 +8,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function SelectColorDemo() {
+export default function SelectGhostDemo() {
   return (
     <Select defaultValue="apple">
-      <SelectTrigger className="w-44 bg-indigo-600/25 dark:text-white text-indigo-600 border-none shadow-none">
+      <SelectTrigger className="w-44 border-none hover:bg-accent shadow-none">
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
-        <SelectGroup className="[&_div:focus]:bg-indigo-600 [&_div:focus]:text-white">
+        <SelectGroup>
           <SelectLabel>Fruits</SelectLabel>
           <SelectItem value="apple">Apple</SelectItem>
           <SelectItem value="banana">Banana</SelectItem>

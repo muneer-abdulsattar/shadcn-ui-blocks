@@ -337,11 +337,16 @@ export const customizedComponents = {
   ],
   select: [
     { title: "Default", type: "select", name: "default" },
-    { title: "Size", type: "select", name: "size" },
     { title: "Color", type: "select", name: "color" },
-    { title: "Variant", type: "select", name: "variant" },
+    { title: "Ghost", type: "select", name: "ghost" },
+    {
+      title: "Custom dropdown icon",
+      type: "select",
+      name: "custom-dropdown-icon",
+    },
     { title: "Shape", type: "select", name: "shape" },
     { title: "With an icon", type: "select", name: "with-icon" },
+    { title: "Theme Selector", type: "select", name: "theme-selector" },
     {
       title: "Select menu position",
       type: "select",
