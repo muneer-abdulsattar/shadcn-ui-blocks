@@ -814,6 +814,90 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "faq-01": {
+    name: "faq-01",
+    title: "FAQ 01",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-01/page.tsx",
+      },
+    ],
+  },
+  "faq-02": {
+    name: "faq-02",
+    title: "FAQ 02",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-02/page.tsx",
+      },
+    ],
+  },
+  "faq-03": {
+    name: "faq-03",
+    title: "FAQ 03",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-03/page.tsx",
+      },
+    ],
+  },
+  "faq-04": {
+    name: "faq-04",
+    title: "FAQ 04",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-04/page.tsx",
+      },
+    ],
+  },
+  "faq-05": {
+    name: "faq-05",
+    title: "FAQ 05",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-05/page.tsx",
+      },
+    ],
+  },
+  "faq-06": {
+    name: "faq-06",
+    title: "FAQ 06",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-06/page.tsx",
+      },
+    ],
+  },
+  "faq-07": {
+    name: "faq-07",
+    title: "FAQ 07",
+    category: "faq",
+    component: React.lazy(() => import("@/blocks/faq-07/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/faq-07/page.tsx",
+      },
+    ],
+  },
 };
 
 export const blockList = Object.values(blocks);
