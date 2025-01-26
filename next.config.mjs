@@ -1,10 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   redirects() {
+    const productionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+
+    if (productionUrl === "www.shadcnui-blocks.com") {
+      return [];
+    }
+
     return [
       {
-        source: '/:path*',
-        destination: 'https://www.shadcnui-blocks.com/:path*',
+        source: "/:path*",
+        destination: "https://www.shadcnui-blocks.com/:path*",
         permanent: true,
       },
     ];
