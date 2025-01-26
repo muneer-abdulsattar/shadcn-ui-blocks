@@ -1,5 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://www.shadcnui-blocks.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

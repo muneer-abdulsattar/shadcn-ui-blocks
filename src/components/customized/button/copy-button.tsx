@@ -6,7 +6,7 @@ import React from "react";
 
 const CopyButton = () => {
   const { isCopied, copyToClipboard } = useCopyToClipboard();
-  const link = "https://shadcn-ui-blocks.akashmoradiya.com";
+  const link = "https://www.shadcnui-blocks.com";
 
   return (
     <div className="flex items-center border rounded-full overflow-hidden p-1">

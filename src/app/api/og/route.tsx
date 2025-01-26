@@ -89,7 +89,7 @@ export async function GET(req: Request) {
               tw="flex text-xl"
               style={{ fontFamily: "DM Sans", fontWeight: "normal" }}
             >
-              shadcn-ui-blocks.akashmoradiya.com
+              shadcnui-blocks.com
             </div>
             <div
               tw="flex items-center text-xl"
