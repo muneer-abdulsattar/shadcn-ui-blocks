@@ -64,11 +64,15 @@ const CustomizedComponentPage = ({
       <DescriptionText className="mt-1">{details.description}</DescriptionText>
 
       <div
-        className={cn("mt-12 grid gap-2", {
-          "lg:grid-cols-2": details.columns === 2,
-          "sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3":
-            details.columns === 3,
-        })}
+        className={cn(
+          "mt-12 grid gap-2",
+          {
+            "lg:grid-cols-2": details.columns === 2,
+            "sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3":
+              details.columns === 3,
+          },
+          details.className
+        )}
       >
         {components.map((component, index) => (
           <ComponentBlock key={`${component.title}-${index}`} {...component} />

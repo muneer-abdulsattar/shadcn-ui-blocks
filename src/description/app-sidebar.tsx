@@ -4,9 +4,11 @@ import {
   CircleUserRoundIcon,
   CreditCardIcon,
   Ellipsis,
+  GalleryThumbnails,
   InfoIcon,
   LoaderCircleIcon,
   LoaderIcon,
+  LucideIcon,
   MousePointerClickIcon,
   NotebookTabsIcon,
   RectangleHorizontalIcon,
@@ -22,7 +24,20 @@ import {
   TriangleAlertIcon,
 } from "lucide-react";
 
-export const componentsMap = {
+interface ComponentDetails {
+  title: string;
+  url: string;
+  icon: LucideIcon;
+  blockName: string;
+  columns?: number;
+  description?: string;
+  className?: string;
+  isNew?: boolean;
+}
+
+type ComponentsMap = Record<string, ComponentDetails>;
+
+export const componentsMap: ComponentsMap = {
   accordion: {
     title: "Accordion",
     url: "/components/accordion",
@@ -80,6 +95,15 @@ export const componentsMap = {
     blockName: "card",
     columns: 3,
     description: "Displays a card with header, content, and footer.",
+  },
+  carousel: {
+    title: "Carousel",
+    url: "/components/carousel",
+    icon: GalleryThumbnails,
+    blockName: "carousel",
+    description: "A carousel with motion and swipe built using Embla.",
+    className: "xl:grid-cols-2",
+    isNew: true,
   },
   checkbox: {
     title: "Checkbox",

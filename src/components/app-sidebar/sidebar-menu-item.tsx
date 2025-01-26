@@ -12,6 +12,7 @@ interface SidebarItem {
   url: string;
   title: string;
   blockName?: string;
+  isNew?: boolean;
 }
 
 type AppSidebarMenuItemProps = React.ComponentProps<typeof SidebarMenuItem> & {
@@ -36,6 +37,9 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
         <Link href={item.url}>
           <item.icon />
           <span className="font-medium">{item.title}</span>
+          {item.isNew && (
+            <Badge className="-ml-1 py-0 rounded-full px-1.5">New</Badge>
+          )}
           {!!fileCount && (
             <Badge
               className={cn(

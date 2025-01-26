@@ -204,6 +204,17 @@ export const customizedComponents = {
     { title: "Product", type: "card", name: "product-card" },
     { title: "Testimonial", type: "card", name: "testimonial-card" },
   ],
+  carousel: [
+    { title: "Default", type: "carousel", name: "default" },
+    { title: "Multiple slides", type: "carousel", name: "multiple-slides" },
+    { title: "Vertical", type: "carousel", name: "vertical" },
+    { title: "Slide Status", type: "carousel", name: "slide-status" },
+    { title: "Slide Status 2", type: "carousel", name: "slide-status-2" },
+    { title: "Pagination", type: "carousel", name: "pagination" },
+    { title: "Footer", type: "carousel", name: "footer" },
+    { title: "Progress", type: "carousel", name: "progress" },
+    { title: "Thumbs", type: "carousel", name: "thumbs" },
+  ],
   checkbox: [
     { title: "With Text", type: "checkbox", name: "with-text" },
     { title: "Disabled", type: "checkbox", name: "disabled-checkbox" },
