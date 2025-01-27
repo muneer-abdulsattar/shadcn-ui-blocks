@@ -214,6 +214,8 @@ export const customizedComponents = {
     { title: "Footer", type: "carousel", name: "footer" },
     { title: "Progress", type: "carousel", name: "progress" },
     { title: "Thumbs", type: "carousel", name: "thumbs" },
+    { title: "Opacity", type: "carousel", name: "opacity" },
+    { title: "Scale", type: "carousel", name: "scale" },
   ],
   checkbox: [
     { title: "With Text", type: "checkbox", name: "with-text" },
