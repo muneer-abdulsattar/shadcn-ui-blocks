@@ -247,6 +247,23 @@ export const customizedComponents = {
     { title: "File input", type: "input", name: "file-input" },
     { title: "Dropzone", type: "input", name: "dropzone" },
   ],
+  "input-otp": [
+    { title: "Default", type: "input-otp", name: "default" },
+    {
+      title: "Without Separator",
+      type: "input-otp",
+      name: "without-separator",
+    },
+    { title: "Separated", type: "input-otp", name: "separated" },
+    {
+      title: "Separated 2",
+      type: "input-otp",
+      name: "separated-2",
+    },
+    { title: "Secondary", type: "input-otp", name: "secondary" },
+    { title: "Custom Separator", type: "input-otp", name: "custom-separator" },
+    { title: "Inner Shadow", type: "input-otp", name: "inner-shadow" },
+  ],
   pagination: [
     { title: "Default", type: "pagination", name: "default" },
     {

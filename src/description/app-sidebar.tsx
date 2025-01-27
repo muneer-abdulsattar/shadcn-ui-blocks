@@ -123,6 +123,16 @@ export const componentsMap: ComponentsMap = {
     description:
       "Displays a form input field or a component that looks like an input field.",
   },
+  "input-otp": {
+    title: "Input OTP",
+    url: "/components/input-otp",
+    icon: TextCursorInputIcon,
+    blockName: "input-otp",
+    columns: 3,
+    description:
+      "Accessible one-time password component with copy paste functionality.",
+    isNew: true,
+  },
   pagination: {
     title: "Pagination",
     url: "/components/pagination",
