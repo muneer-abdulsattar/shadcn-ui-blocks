@@ -246,6 +246,7 @@ export const customizedComponents = {
     { title: "With error message", type: "input", name: "with-error-message" },
     { title: "File input", type: "input", name: "file-input" },
     { title: "Dropzone", type: "input", name: "dropzone" },
+    { title: "With form", type: "input", name: "with-form" },
   ],
   "input-otp": [
     { title: "Default", type: "input-otp", name: "default" },
