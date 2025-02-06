@@ -37,18 +37,19 @@ const AppSidebarMenuItem = ({ item, ...props }: AppSidebarMenuItemProps) => {
         <Link href={item.url}>
           <item.icon />
           <span className="font-medium">{item.title}</span>
-          {item.isNew && (
-            <Badge className="-ml-1 py-0 rounded-full px-1.5">New</Badge>
-          )}
-          {!!fileCount && (
-            <Badge
-              className={cn(
-                "ml-auto py-0 px-1 min-w-[18px] inline-flex justify-center rounded-full bg-foreground/5"
-              )}
-              variant="outline"
-            >
-              {fileCount}
-            </Badge>
+          {item.isNew ? (
+            <Badge className="ml-auto py-0 rounded-full px-1.5">New</Badge>
+          ) : (
+            !!fileCount && (
+              <Badge
+                className={cn(
+                  "ml-auto py-0 px-1 min-w-[18px] inline-flex justify-center rounded-full bg-foreground/5"
+                )}
+                variant="outline"
+              >
+                {fileCount}
+              </Badge>
+            )
           )}
         </Link>
       </AppSidebarMenuButton>

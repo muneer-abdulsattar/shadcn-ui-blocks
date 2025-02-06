@@ -265,6 +265,30 @@ export const customizedComponents = {
     { title: "Custom Separator", type: "input-otp", name: "custom-separator" },
     { title: "Inner Shadow", type: "input-otp", name: "inner-shadow" },
   ],
+  "navigation-menu": [
+    { title: "Default", type: "navigation-menu", name: "default" },
+    { title: "With Icon", type: "navigation-menu", name: "with-icon" },
+    {
+      title: "Dropdown",
+      type: "navigation-menu",
+      name: "with-dropdown",
+      className: "col-span-full",
+    },
+    { title: "Active Item", type: "navigation-menu", name: "active-item" },
+    { title: "Underlined", type: "navigation-menu", name: "underlined" },
+    {
+      title: "Rich Navigation Menu",
+      type: "navigation-menu",
+      name: "rich-menu",
+      className: "col-span-full",
+    },
+    { title: "Icon", type: "navigation-menu", name: "icon" },
+    {
+      title: "Mobile Navigation",
+      type: "navigation-menu",
+      name: "mobile-navigation",
+    },
+  ],
   pagination: [
     { title: "Default", type: "pagination", name: "default" },
     {
@@ -507,7 +531,11 @@ export const customizedComponents = {
     },
     { title: "Disabled", type: "textarea", name: "disabled" },
     { title: "With label", type: "textarea", name: "with-label" },
-    { title: "Rows", type: "textarea", name: "rows" },
+    {
+      title: "Rows",
+      type: "textarea",
+      name: "rows",
+    },
     { title: "With helper text", type: "textarea", name: "with-helper-text" },
     { title: "Controlled", type: "textarea", name: "controlled" },
   ],

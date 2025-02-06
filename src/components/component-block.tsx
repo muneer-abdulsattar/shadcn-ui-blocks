@@ -5,6 +5,7 @@ import { FC, ReactNode } from "react";
 import { CopyToClipboardButton } from "./copy-to-clipboard-button";
 import { CodeDialog } from "./customized/code-dialog";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { cn } from "@/lib/utils";
 
 interface BlockProps {
   title: string;
@@ -14,6 +15,7 @@ interface BlockProps {
     label: string;
     link: string;
   };
+  className?: string;
   description?: ReactNode;
   type: string;
 }
@@ -24,6 +26,7 @@ const ComponentBlock: FC<BlockProps> = async ({
   description,
   name,
   credit,
+  className,
 }) => {
   const src = `src/components/customized/${type}/${name}.tsx`;
   const code = await getFileContent(src);
@@ -36,7 +39,9 @@ const ComponentBlock: FC<BlockProps> = async ({
   );
 
   return (
-    <div className="bg-background rounded-md px-3 flex flex-col">
+    <div
+      className={cn("bg-background rounded-md px-3 flex flex-col", className)}
+    >
       <div className="h-10 flex items-center justify-between pl-1 border-b border-muted">
         <div className="flex items-center gap-2">
           <span className="text-[15px] tracking-tight font-bold">{title}</span>

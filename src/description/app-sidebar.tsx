@@ -133,6 +133,16 @@ export const componentsMap: ComponentsMap = {
       "Accessible one-time password component with copy paste functionality.",
     isNew: true,
   },
+  "navigation-menu": {
+    title: "Navigation Menu",
+    url: "/components/navigation-menu",
+    icon: TextCursorInputIcon,
+    blockName: "navigation-menu",
+    columns: 2,
+    description: "A collection of links for navigating websites.",
+    isNew: true,
+    className: "mb-40",
+  },
   pagination: {
     title: "Pagination",
     url: "/components/pagination",
