@@ -244,6 +244,7 @@ export const customizedComponents = {
     { title: "With adornments", type: "input", name: "with-adornment" },
     { title: "With helper text", type: "input", name: "with-helper-text" },
     { title: "With error message", type: "input", name: "with-error-message" },
+    { title: "With form", type: "input", name: "with-form" },
     { title: "File input", type: "input", name: "file-input" },
     { title: "Dropzone", type: "input", name: "dropzone" },
   ],
