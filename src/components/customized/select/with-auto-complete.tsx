@@ -1,7 +1,7 @@
 "use client";
 
-import * as React from "react";
 import { X } from "lucide-react";
+import * as React from "react";
 
 import { Badge } from "@/components/ui/badge";
 import {
@@ -74,67 +74,69 @@ export default function FancyMultiSelect() {
   );
 
   return (
-    <Command className="overflow-visible">
-      <div className="rounded-md border border-input px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
-        <div className="flex flex-wrap gap-1">
-          {selected.map((country) => {
-            return (
-              <Badge
-                key={country.value}
-                variant="secondary"
-                className="select-none"
-              >
-                {country.label}
-                <X
-                  className="size-3 text-muted-foreground hover:text-foreground ml-2 cursor-pointer"
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                  }}
-                  onClick={() => {
-                    handleUnselect(country);
-                  }}
-                />
-              </Badge>
-            );
-          })}
-          <CommandPrimitive.Input
-            onKeyDown={handleKeyDown}
-            onValueChange={setInputValue}
-            value={inputValue}
-            onBlur={() => setOpen(false)}
-            onFocus={() => setOpen(true)}
-            placeholder="Select countries..."
-            className="ml-2 flex-1 bg-transparent outline-none placeholder:text-muted-foreground"
-          />
+    <div className="w-full">
+      <Command className="overflow-visible">
+        <div className="rounded-md border border-input px-3 py-2 text-sm ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+          <div className="flex flex-wrap gap-1">
+            {selected.map((country) => {
+              return (
+                <Badge
+                  key={country.value}
+                  variant="secondary"
+                  className="select-none"
+                >
+                  {country.label}
+                  <X
+                    className="size-3 text-muted-foreground hover:text-foreground ml-2 cursor-pointer"
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                    }}
+                    onClick={() => {
+                      handleUnselect(country);
+                    }}
+                  />
+                </Badge>
+              );
+            })}
+            <CommandPrimitive.Input
+              onKeyDown={handleKeyDown}
+              onValueChange={setInputValue}
+              value={inputValue}
+              onBlur={() => setOpen(false)}
+              onFocus={() => setOpen(true)}
+              placeholder="Select countries..."
+              className="ml-2 flex-1 bg-transparent outline-none placeholder:text-muted-foreground"
+            />
+          </div>
         </div>
-      </div>
-      <div className="relative mt-2">
-        <CommandList>
-          {open && !!filteredCountries.length && (
-            <div className="absolute top-0 z-10 w-full rounded-md border bg-popover text-popover-foreground shadow-md outline-none">
-              <CommandGroup className="h-full overflow-auto">
-                {filteredCountries.map((country) => {
-                  return (
-                    <CommandItem
-                      key={country.value}
-                      onMouseDown={(e) => {
-                        e.preventDefault();
-                      }}
-                      onSelect={() => {
-                        setInputValue("");
-                        setSelected((prev) => [...prev, country]);
-                      }}
-                      className={"cursor-pointer"}
-                    >
-                      {country.label}
-                    </CommandItem>
-                  );
-                })}
-              </CommandGroup>
-            </div>
-          )}
-        </CommandList>
-      </div>
-    </Command>
+        <div className="relative mt-2">
+          <CommandList>
+            {open && !!filteredCountries.length && (
+              <div className="absolute top-0 z-10 w-full rounded-md border bg-popover text-popover-foreground shadow-md outline-none">
+                <CommandGroup className="h-full overflow-auto">
+                  {filteredCountries.map((country) => {
+                    return (
+                      <CommandItem
+                        key={country.value}
+                        onMouseDown={(e) => {
+                          e.preventDefault();
+                        }}
+                        onSelect={() => {
+                          setInputValue("");
+                          setSelected((prev) => [...prev, country]);
+                        }}
+                        className={"cursor-pointer"}
+                      >
+                        {country.label}
+                      </CommandItem>
+                    );
+                  })}
+                </CommandGroup>
+              </div>
+            )}
+          </CommandList>
+        </div>
+      </Command>
+    </div>
   );
 }
