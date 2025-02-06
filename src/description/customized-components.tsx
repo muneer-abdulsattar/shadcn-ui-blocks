@@ -385,6 +385,7 @@ export const customizedComponents = {
     },
     { title: "Scrollable", type: "select", name: "scrollable" },
     { title: "Controlled", type: "select", name: "controlled" },
+    { title: "With auto complete", type: "select", name: "with-auto-complete" },
   ],
   separator: [
     { title: "Default", type: "separator", name: "default" },
