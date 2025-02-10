@@ -233,6 +233,7 @@ export const customizedComponents = {
       name: "multi-color-picker",
     },
     { title: "Card", type: "checkbox", name: "card-1" },
+    { title: "With form", type: "checkbox", name: "with-form" },
   ],
   input: [
     { title: "Default", type: "input", name: "default-input" },
