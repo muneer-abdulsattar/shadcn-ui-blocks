@@ -473,6 +473,11 @@ export const customizedComponents = {
         link: "https://www.fffuel.co/svg-spinner/",
       },
     },
+    { title: "Spinner Circle 1", type: "spinner", name: "spinner-circle-1" },
+    { title: "Spinner Circle 2", type: "spinner", name: "spinner-circle-2" },
+    { title: "Spinner Circle 3", type: "spinner", name: "spinner-circle-3" },
+    { title: "Spinner Circle 4", type: "spinner", name: "spinner-circle-4" },
+    { title: "Spinner Circle 5", type: "spinner", name: "spinner-circle-5" },
   ],
   switch: [
     { title: "Default", type: "switch", name: "default" },
