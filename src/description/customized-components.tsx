@@ -402,6 +402,7 @@ export const customizedComponents = {
     },
     { title: "Shape", type: "select", name: "shape" },
     { title: "With an icon", type: "select", name: "with-icon" },
+    { title: "With form", type: "select", name: "with-form" },
     { title: "Theme Selector", type: "select", name: "theme-selector" },
     {
       title: "Select menu position",
