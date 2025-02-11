@@ -235,6 +235,12 @@ export const customizedComponents = {
     { title: "Card", type: "checkbox", name: "card-1" },
     { title: "With form", type: "checkbox", name: "with-form" },
   ],
+  collapsible: [
+    { title: "Default", type: "collapsible", name: "default" },
+    { title: "Show More", type: "collapsible", name: "show-more" },
+    { title: "File Tree", type: "collapsible", name: "file-tree" },
+    { title: "Filters", type: "collapsible", name: "filters" },
+  ],
   input: [
     { title: "Default", type: "input", name: "default-input" },
     { title: "Ring", type: "input", name: "ring-input" },

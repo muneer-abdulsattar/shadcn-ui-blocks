@@ -1,5 +1,6 @@
 import {
   BookTextIcon,
+  ChevronsUpDown,
   CircleDotIcon,
   CircleUserRoundIcon,
   CreditCardIcon,
@@ -103,6 +104,15 @@ export const componentsMap: ComponentsMap = {
     blockName: "carousel",
     description: "A carousel with motion and swipe built using Embla.",
     className: "xl:grid-cols-2",
+    isNew: true,
+  },
+  collapsible: {
+    title: "Collapsible",
+    url: "/components/collapsible",
+    icon: ChevronsUpDown,
+    blockName: "collapsible",
+    description: "An interactive component which expands/collapses a panel.",
+    columns: 3,
     isNew: true,
   },
   checkbox: {
