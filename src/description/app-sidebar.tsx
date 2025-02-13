@@ -56,6 +56,16 @@ export const componentsMap: ComponentsMap = {
     columns: 3,
     description: "Displays a callout for user attention.",
   },
+  "alert-dialog": {
+    title: "Alert Dialog",
+    url: "/components/alert-dialog",
+    icon: TriangleAlertIcon,
+    blockName: "alert-dialog",
+    columns: 3,
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+    isNew: true,
+  },
   avatar: {
     title: "Avatar",
     url: "/components/avatar",

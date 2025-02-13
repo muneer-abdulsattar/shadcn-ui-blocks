@@ -58,6 +58,26 @@ export const customizedComponents = {
     { title: "Callout", type: "alert", name: "alert-callout" },
     { title: "With actions", type: "alert", name: "with-actions" },
   ],
+  "alert-dialog": [
+    { title: "Default", type: "alert-dialog", name: "default" },
+    { title: "With Icon", type: "alert-dialog", name: "with-icon" },
+    { title: "Destructive", type: "alert-dialog", name: "destructive" },
+    {
+      title: "Info",
+      type: "alert-dialog",
+      name: "info",
+    },
+    {
+      title: "Customized Header",
+      type: "alert-dialog",
+      name: "customized-header",
+    },
+    {
+      title: "Customized Footer",
+      type: "alert-dialog",
+      name: "customized-footer",
+    },
+  ],
   avatar: [
     { title: "Default", type: "avatar", name: "default" },
     {
