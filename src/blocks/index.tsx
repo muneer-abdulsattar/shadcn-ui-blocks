@@ -530,6 +530,82 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "testimonial-01": {
+    name: "testimonial-01",
+    title: "Testimonial 01",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-01/page.tsx",
+      },
+    ],
+  },
+  "testimonial-02": {
+    name: "testimonial-02",
+    title: "Testimonial 02",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-01/page.tsx",
+      },
+    ],
+  },
+  "testimonial-03": {
+    name: "testimonial-03",
+    title: "Testimonial 03",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-03/page.tsx",
+      },
+    ],
+  },
+  "testimonial-04": {
+    name: "testimonial-04",
+    title: "Testimonial 04",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-04/page.tsx",
+      },
+      {
+        path: "@/components/ui/marquee.tsx",
+        target: "components/ui/marquee.tsx",
+      },
+    ],
+  },
+  "testimonial-05": {
+    name: "testimonial-05",
+    title: "Testimonial 05",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-05/page.tsx",
+      },
+    ],
+  },
+  "testimonial-06": {
+    name: "testimonial-06",
+    title: "Testimonial 06",
+    category: "testimonial",
+    component: React.lazy(() => import("@/blocks/testimonial-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/testimonial-06/page.tsx",
+      },
+    ],
+  },
   "faq-01": {
     name: "faq-01",
     title: "FAQ 01",
