@@ -77,6 +77,7 @@ async function captureScreenshot(
 
 export async function POST(req: Request) {
   try {
+    const body = await req.json();
     const requestUrl = new URL(req.url);
     const secretKey = requestUrl.searchParams.get("secretKey");
 
@@ -84,15 +85,23 @@ export async function POST(req: Request) {
       return new Response("Unauthorized", { status: 401 });
     }
 
+    const categories = body?.categories || [];
+    const generateAllScreenshots = categories.length === 0;
+
     for (const block of blockList) {
       const url = `${requestUrl.origin}/blocks/${block.name}/preview`;
 
-      try {
-        await captureScreenshot(url, {
-          fileName: `${block.name}.${BLOCK_SCREENSHOT_EXTENSION}`,
-        });
-      } catch (error) {
-        console.error(`Failed to capture screenshot for ${block.name}:`, error);
+      if (generateAllScreenshots || categories.includes(block.category)) {
+        try {
+          await captureScreenshot(url, {
+            fileName: `${block.name}.${BLOCK_SCREENSHOT_EXTENSION}`,
+          });
+        } catch (error) {
+          console.error(
+            `Failed to capture screenshot for ${block.name}:`,
+            error
+          );
+        }
       }
     }
 

@@ -12,11 +12,16 @@ const protocol = url.startsWith("https") ? https : http;
 
 const apiUrl = `${url}/api/blocks/generate-screenshots?secretKey=${process.env.SCREENSHOT_GENERATION_SECRET_KEY}`;
 
+// Get block IDs from command line arguments (skip first two args as they are node and script path)
+const categories = process.argv.slice(2);
+
 const options = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
   },
+  // Add the body with block IDs
+  body: JSON.stringify({ categories }),
 };
 
 // Make the POST request
@@ -28,7 +33,8 @@ const generateBlockScreenshots = () => {
     console.error("Request Error:", error);
   });
 
-  // End the request
+  // End the request with the body
+  req.write(options.body);
   req.end();
 };
 
