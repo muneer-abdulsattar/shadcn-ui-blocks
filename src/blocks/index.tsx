@@ -606,6 +606,78 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "pricing-01": {
+    name: "pricing-01",
+    title: "Pricing 01",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-01/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-01/page.tsx",
+      },
+    ],
+  },
+  "pricing-02": {
+    name: "pricing-02",
+    title: "Pricing 02",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-02/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-02/page.tsx",
+      },
+    ],
+  },
+  "pricing-03": {
+    name: "pricing-03",
+    title: "Pricing 03",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-03/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-03/page.tsx",
+      },
+    ],
+  },
+  "pricing-04": {
+    name: "pricing-04",
+    title: "Pricing 04",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-04/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-04/page.tsx",
+      },
+    ],
+  },
+  "pricing-05": {
+    name: "pricing-05",
+    title: "Pricing 05",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-05/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-05/page.tsx",
+      },
+    ],
+  },
+  "pricing-06": {
+    name: "pricing-06",
+    title: "Pricing 06",
+    category: "pricing",
+    component: React.lazy(() => import("@/blocks/pricing-06/page.tsx")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/pricing-06/page.tsx",
+      },
+    ],
+  },
   "faq-01": {
     name: "faq-01",
     title: "FAQ 01",
