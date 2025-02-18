@@ -44,7 +44,7 @@ export const getFileTree = (files: BlockFile[]) => {
       currentTree: fileTree,
       path: source,
       isFile: true,
-      target,
+      target: target || "",
     });
   });
 

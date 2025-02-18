@@ -15,8 +15,8 @@ export function FilePreview() {
   const { copyToClipboard, isCopied } = useCopyToClipboard();
 
   useEffect(() => {
-    const filePath = activeFile.path.startsWith("@/")
-      ? activeFile.path.replace("@", "src")
+    const filePath = activeFile.path.startsWith("src/")
+      ? activeFile.path
       : `src/blocks/${block}/${activeFile.path}`;
     getFileContent(filePath).then((code) => setCode(code));
   }, [activeFile, block]);

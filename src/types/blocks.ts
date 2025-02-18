@@ -10,7 +10,7 @@ export type FileTree = TreeItem[];
 
 export interface BlockFile {
   path: string;
-  target: string;
+  target?: string;
 }
 
 export interface Block {

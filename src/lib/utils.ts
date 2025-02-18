@@ -28,5 +28,7 @@ export function groupBy<T, K extends keyof T>(
 }
 
 export function absoluteUrl(path: string) {
-  return `https://${config.appUrl}${path}`;
+  return process.env.NODE_ENV === "development"
+    ? `http://localhost:3000${path}`
+    : `https://${config.appUrl}${path}`;
 }

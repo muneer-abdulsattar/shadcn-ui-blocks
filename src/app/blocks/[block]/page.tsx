@@ -1,5 +1,5 @@
 import { blocks } from "@/blocks";
-import BlockControls from "@/components/blocks/block-controls";
+import BlockToolbar from "@/components/blocks/block-toolbar";
 import BlockPreview from "@/components/blocks/block-preview";
 import FileExplorer from "@/components/blocks/file-explorer";
 import { Navbar } from "@/components/layout/navbar";
@@ -10,6 +10,7 @@ import { absoluteUrl, capitalize } from "@/lib/utils";
 import { BlockProvider } from "@/providers/block-provider";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import registry from "../../../../registry.json";
 
 export const generateMetadata = ({
   params: { block },
@@ -30,9 +31,14 @@ export const generateMetadata = ({
 };
 
 const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
-  if (!blocks[block]) notFound();
+  const blockDetails = registry.items.find((item) => item.name === block);
+  if (!blockDetails) notFound();
 
-  const { files, title, description } = blocks[block];
+  const { title, description } = blockDetails;
+  const files = blockDetails.files.map((file) => ({
+    ...file,
+    path: file.path.replace(`src/blocks/${block}/`, ""),
+  }));
 
   return (
     <BlockProvider>
@@ -47,7 +53,7 @@ const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
               <TabsTrigger value="preview">Preview</TabsTrigger>
               <TabsTrigger value="code">Code</TabsTrigger>
             </TabsList>
-            <BlockControls />
+            <BlockToolbar />
           </div>
 
           <TabsContent value="preview">

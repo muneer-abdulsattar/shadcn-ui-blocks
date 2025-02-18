@@ -7,17 +7,22 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { blockScreens } from "@/description/blocks";
+import { absoluteUrl } from "@/lib/utils";
 import { useBlockContext } from "@/providers/block-provider";
 import { FullscreenIcon } from "lucide-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { BlockInstallCommandCopyButton } from "./block-intsall-command-copy-button";
+import V0Button from "./v0-button";
 
-const BlockControls = () => {
+const BlockToolbar = () => {
   const { block } = useParams();
   const { screenSize, setScreenSize } = useBlockContext();
 
   return (
     <div className="flex items-center gap-2">
+      <BlockInstallCommandCopyButton block={block as string} />
+      <V0Button url={absoluteUrl(`/r/${block}.json`)} />
       <div className="border rounded-md flex items-center gap-1 p-1.5 h-9">
         {blockScreens.map(({ name, icon: Icon }) => (
           <Tooltip key={name}>
@@ -53,4 +58,4 @@ const BlockControls = () => {
   );
 };
 
-export default BlockControls;
+export default BlockToolbar;

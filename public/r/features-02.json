@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "features-02",
+  "type": "registry:block",
+  "title": "Features 02",
+  "description": "A simple features block",
+  "files": [
+    {
+      "path": "src/blocks/features-02/features-02.tsx",
+      "content": "const features = [\n  {\n    title: \"Identify Opportunities\",\n    description: \"Find untapped areas to explore effortlessly.\",\n  },\n  {\n    title: \"Build Authority\",\n    description: \"Craft content that resonates and inspires trust.\",\n  },\n  {\n    title: \"Instant Insights\",\n    description: \"Get actionable insights instantly at a glance.\",\n  },\n];\n\nconst Features02Page = () => {\n  return (\n    <div className=\"min-h-screen flex items-center justify-center py-12\">\n      <div className=\"w-full\">\n        <h2 className=\"text-4xl md:text-5xl font-black tracking-tight text-center\">\n          Ignite Your Imagination\n        </h2>\n        <div className=\"mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 max-w-md sm:max-w-screen-md lg:max-w-screen-lg w-full mx-auto px-6\">\n          {features.map((feature) => (\n            <div key={feature.title} className=\"flex flex-col text-start\">\n              <div className=\"mb-5 sm:mb-6 w-full aspect-[4/5] bg-muted rounded-xl\" />\n              <span className=\"text-2xl font-bold tracking-tight\">\n                {feature.title}\n              </span>\n              <p className=\"mt-2 max-w-[25ch] text-muted-foreground/80 text-[17px] font-medium\">\n                {feature.description}\n              </p>\n            </div>\n          ))}\n        </div>\n      </div>\n    </div>\n  );\n};\n\nexport default Features02Page;\n",
+      "type": "registry:block",
+      "target": "components/features-02/features-02.tsx"
+    }
+  ]
+}

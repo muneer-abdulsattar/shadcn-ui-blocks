@@ -1,0 +1,1302 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "Shadcn UI Blocks",
+  "homepage": "https://www.shadcnui-blocks.com",
+  "items": [
+    {
+      "name": "dot-pattern",
+      "type": "registry:ui",
+      "title": "Dot Pattern",
+      "description": "A simple dot pattern",
+      "files": [
+        {
+          "path": "src/components/ui/dot-pattern.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "particles",
+      "type": "registry:ui",
+      "title": "Particles",
+      "description": "A simple particles",
+      "files": [
+        {
+          "path": "src/components/ui/particles.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "animated-grid-pattern",
+      "type": "registry:ui",
+      "title": "Animated Grid Pattern",
+      "description": "A simple animated grid pattern",
+      "files": [
+        {
+          "path": "src/components/ui/animated-grid-pattern.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "marquee",
+      "type": "registry:ui",
+      "title": "Marquee",
+      "description": "A simple marquee",
+      "files": [
+        {
+          "path": "src/components/ui/marquee.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "tailwind": {
+        "config": {
+          "theme": {
+            "extend": {
+              "animation": {
+                "marquee": "marquee var(--duration) linear infinite",
+                "marquee-vertical": "marquee-vertical var(--duration) linear infinite"
+              },
+              "keyframes": {
+                "marquee": {
+                  "from": { "transform": "translateX(0)" },
+                  "to": { "transform": "translateX(calc(-100% - var(--gap)))" }
+                },
+                "marquee-vertical": {
+                  "from": { "transform": "translateY(0)" },
+                  "to": { "transform": "translateY(calc(-100% - var(--gap)))" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "blog-01",
+      "type": "registry:block",
+      "title": "Blog 01",
+      "description": "A simple blog post list",
+      "registryDependencies": ["badge", "card", "select"],
+      "files": [
+        {
+          "path": "src/blocks/blog-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/blog/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "blog-02",
+      "type": "registry:block",
+      "title": "Blog 02",
+      "description": "A simple blog post list",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "card", "select"],
+      "files": [
+        {
+          "path": "src/blocks/blog-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/blog/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "blog-03",
+      "type": "registry:block",
+      "title": "Blog 03",
+      "description": "A simple blog post list",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "card"],
+      "files": [
+        {
+          "path": "src/blocks/blog-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/blog/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "contact-01",
+      "type": "registry:block",
+      "title": "Contact 01",
+      "description": "A simple contact form",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/contact-01/contact-01.tsx",
+          "type": "registry:block",
+          "target": "components/contact-01/contact-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "contact-02",
+      "type": "registry:block",
+      "title": "Contact 02",
+      "description": "A simple contact form",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "button",
+        "card",
+        "checkbox",
+        "input",
+        "label",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/contact-02/contact-02.tsx",
+          "type": "registry:block",
+          "target": "components/contact-02/contact-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "contact-03",
+      "type": "registry:block",
+      "title": "Contact 03",
+      "description": "A simple contact form",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/contact-03/contact-03.tsx",
+          "type": "registry:block",
+          "target": "components/contact-03/contact-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-01",
+      "type": "registry:block",
+      "title": "FAQ 01",
+      "description": "A simple FAQ component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/blocks/faq-01/faq-01.tsx",
+          "type": "registry:block",
+          "target": "components/faq-01/faq-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-02",
+      "type": "registry:block",
+      "title": "FAQ 02",
+      "description": "A simple FAQ component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/blocks/faq-02/faq-02.tsx",
+          "type": "registry:block",
+          "target": "components/faq-02/faq-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-03",
+      "type": "registry:block",
+      "title": "FAQ 03",
+      "description": "A simple FAQ component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/blocks/faq-03/faq-03.tsx",
+          "type": "registry:block",
+          "target": "components/faq-03/faq-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-04",
+      "type": "registry:block",
+      "title": "FAQ 04",
+      "description": "A simple FAQ component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/faq-04/faq-04.tsx",
+          "type": "registry:block",
+          "target": "components/faq-04/faq-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-05",
+      "type": "registry:block",
+      "title": "FAQ 05",
+      "description": "A simple FAQ component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/faq-05/faq-05.tsx",
+          "type": "registry:block",
+          "target": "components/faq-05/faq-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-06",
+      "type": "registry:block",
+      "title": "FAQ 06",
+      "description": "A simple FAQ component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/faq-06/faq-06.tsx",
+          "type": "registry:block",
+          "target": "components/faq-06/faq-06.tsx"
+        }
+      ]
+    },
+    {
+      "name": "faq-07",
+      "type": "registry:block",
+      "title": "FAQ 07",
+      "description": "A simple FAQ component",
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/blocks/faq-07/faq-07.tsx",
+          "type": "registry:block",
+          "target": "components/faq-07/faq-07.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-01",
+      "type": "registry:block",
+      "title": "Features 01",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/features-01/features-01.tsx",
+          "type": "registry:block",
+          "target": "components/features-01/features-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-02",
+      "type": "registry:block",
+      "title": "Features 02",
+      "description": "A simple features block",
+      "files": [
+        {
+          "path": "src/blocks/features-02/features-02.tsx",
+          "type": "registry:block",
+          "target": "components/features-02/features-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-03",
+      "type": "registry:block",
+      "title": "Features 03",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/blocks/features-03/features-03.tsx",
+          "type": "registry:block",
+          "target": "components/features-03/features-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-04",
+      "type": "registry:block",
+      "title": "Features 04",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/blocks/features-04/features-04.tsx",
+          "type": "registry:block",
+          "target": "components/features-04/features-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-05",
+      "type": "registry:block",
+      "title": "Features 05",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["card"],
+      "files": [
+        {
+          "path": "src/blocks/features-05/features-05.tsx",
+          "type": "registry:block",
+          "target": "components/features-05/features-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-06",
+      "type": "registry:block",
+      "title": "Features 06",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/blocks/features-06/features-06.tsx",
+          "type": "registry:block",
+          "target": "components/features-06/features-06.tsx"
+        }
+      ]
+    },
+    {
+      "name": "features-07",
+      "type": "registry:block",
+      "title": "Features 07",
+      "description": "A simple features block",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/features-07/features-07.tsx",
+          "type": "registry:block",
+          "target": "components/features-07/features-07.tsx"
+        }
+      ]
+    },
+    {
+      "name": "footer-01",
+      "type": "registry:block",
+      "title": "Footer 01",
+      "description": "A simple footer block",
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "src/blocks/footer-01/footer-01.tsx",
+          "type": "registry:block",
+          "target": "components/footer-01/footer-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "footer-02",
+      "type": "registry:block",
+      "title": "Footer 02",
+      "description": "A simple footer block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "src/blocks/footer-02/footer-02.tsx",
+          "type": "registry:block",
+          "target": "components/footer-02/footer-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "footer-03",
+      "type": "registry:block",
+      "title": "Footer 03",
+      "description": "A simple footer block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/footer-03/footer-03.tsx",
+          "type": "registry:block",
+          "target": "components/footer-03/footer-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "footer-04",
+      "type": "registry:block",
+      "title": "Footer 04",
+      "description": "A simple footer block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/footer-04/footer-04.tsx",
+          "type": "registry:block",
+          "target": "components/footer-04/footer-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "footer-05",
+      "type": "registry:block",
+      "title": "Footer 05",
+      "description": "A simple footer block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "src/blocks/footer-05/footer-05.tsx",
+          "type": "registry:block",
+          "target": "components/footer-05/footer-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-01",
+      "type": "registry:block",
+      "title": "Hero 01",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
+      "files": [
+        {
+          "path": "src/blocks/hero-01/hero-01.tsx",
+          "type": "registry:block",
+          "target": "components/hero-01/hero-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-02",
+      "type": "registry:block",
+      "title": "Hero 02",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
+      "files": [
+        {
+          "path": "src/blocks/hero-02/hero-02.tsx",
+          "type": "registry:block",
+          "target": "components/hero-02/hero-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-03",
+      "type": "registry:block",
+      "title": "Hero 03",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
+      "files": [
+        {
+          "path": "src/blocks/hero-03/hero-03.tsx",
+          "type": "registry:block",
+          "target": "components/hero-03/hero-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-04",
+      "type": "registry:block",
+      "title": "Hero 04",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
+      "files": [
+        {
+          "path": "src/blocks/hero-04/hero-04.tsx",
+          "type": "registry:block",
+          "target": "components/hero-04/hero-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-05",
+      "type": "registry:block",
+      "title": "Hero 05",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button"],
+      "files": [
+        {
+          "path": "src/blocks/hero-05/hero-05.tsx",
+          "type": "registry:block",
+          "target": "components/hero-05/hero-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-06",
+      "type": "registry:block",
+      "title": "Hero 06",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react", "next-themes"],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "https://www.shadcnui-blocks.com/r/dot-pattern.json",
+        "https://www.shadcnui-blocks.com/r/particles.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/hero-06/hero-06.tsx",
+          "type": "registry:block",
+          "target": "components/hero-06/hero-06.tsx"
+        },
+        {
+          "path": "src/blocks/hero-06/background-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/hero-06/background-pattern.tsx"
+        }
+      ]
+    },
+    {
+      "name": "hero-07",
+      "type": "registry:block",
+      "title": "Hero 07",
+      "description": "A simple hero block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "https://www.shadcnui-blocks.com/r/animated-grid-pattern.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/hero-07/hero-07.tsx",
+          "type": "registry:block",
+          "target": "components/hero-07/hero-07.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-01",
+      "type": "registry:block",
+      "title": "Login 01",
+      "description": "A simple login block",
+      "dependencies": ["react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/login-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-02",
+      "type": "registry:block",
+      "title": "Login 02",
+      "description": "A simple login block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/login-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-03",
+      "type": "registry:block",
+      "title": "Login 03",
+      "description": "A simple login block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/login-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-04",
+      "type": "registry:block",
+      "title": "Login 04",
+      "description": "A simple login block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/login-04/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "login-05",
+      "type": "registry:block",
+      "title": "Login 05",
+      "description": "A simple login block",
+      "dependencies": [
+        "@hookform/resolvers",
+        "lucide-react",
+        "react-hook-form",
+        "zod"
+      ],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/login-05/page.tsx",
+          "type": "registry:page",
+          "target": "app/login/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-01",
+      "type": "registry:block",
+      "title": "Logos 01",
+      "description": "A simple logos block",
+      "files": [
+        {
+          "path": "src/blocks/logos-01/logos-01.tsx",
+          "type": "registry:block",
+          "target": "components/logos-01/logos-01.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-01/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-02",
+      "type": "registry:block",
+      "title": "Logos 02",
+      "description": "A simple logos block",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/blocks/logos-02/logos-02.tsx",
+          "type": "registry:block",
+          "target": "components/logos-02/logos-02.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-02/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-03",
+      "type": "registry:block",
+      "title": "Logos 03",
+      "description": "A simple logos block",
+      "files": [
+        {
+          "path": "src/blocks/logos-03/logos-03.tsx",
+          "type": "registry:block",
+          "target": "components/logos-03/logos-03.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-03/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-04",
+      "type": "registry:block",
+      "title": "Logos 04",
+      "description": "A simple logos block",
+      "files": [
+        {
+          "path": "src/blocks/logos-04/logos-04.tsx",
+          "type": "registry:block",
+          "target": "components/logos-04/logos-04.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-04/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-05",
+      "type": "registry:block",
+      "title": "Logos 05",
+      "description": "A simple logos block",
+      "files": [
+        {
+          "path": "src/blocks/logos-05/logos-05.tsx",
+          "type": "registry:block",
+          "target": "components/logos-05/logos-05.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-05/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-06",
+      "type": "registry:block",
+      "title": "Logos 06",
+      "description": "A simple logos block",
+      "registryDependencies": [
+        "https://www.shadcnui-blocks.com/r/marquee.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/logos-06/logos-06.tsx",
+          "type": "registry:block",
+          "target": "components/logos-06/logos-06.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-06/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "logos-07",
+      "type": "registry:block",
+      "title": "Logos 07",
+      "description": "A simple logos block",
+      "registryDependencies": [
+        "https://www.shadcnui-blocks.com/r/marquee.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/logos-07/logos-07.tsx",
+          "type": "registry:block",
+          "target": "components/logos-07/logos-07.tsx"
+        },
+        {
+          "path": "src/components/logos.tsx",
+          "type": "registry:component",
+          "target": "components/logos-07/logos.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-01",
+      "type": "registry:block",
+      "title": "Navbar 01",
+      "description": "A simple navbar block",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["button", "navigation-menu", "sheet"],
+      "files": [
+        {
+          "path": "src/blocks/navbar-01/navbar-01.tsx",
+          "type": "registry:block",
+          "target": "components/navbar-01/navbar-01.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-01/logo.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-01/logo.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-01/nav-menu.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-01/nav-menu.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-01/navigation-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-01/navigation-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-02",
+      "type": "registry:block",
+      "title": "Navbar 02",
+      "description": "A simple navbar block",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["button", "navigation-menu", "sheet"],
+      "files": [
+        {
+          "path": "src/blocks/navbar-02/navbar-02.tsx",
+          "type": "registry:block",
+          "target": "components/navbar-02/navbar-02.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-02/logo.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-02/logo.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-02/nav-menu.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-02/nav-menu.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-02/navigation-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-02/navigation-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-03",
+      "type": "registry:block",
+      "title": "Navbar 03",
+      "description": "A simple navbar block",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["button", "navigation-menu", "sheet"],
+      "files": [
+        {
+          "path": "src/blocks/navbar-03/navbar-03.tsx",
+          "type": "registry:block",
+          "target": "components/navbar-03/navbar-03.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-03/logo.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-03/logo.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-03/nav-menu.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-03/nav-menu.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-03/navigation-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-03/navigation-sheet.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-03/config.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-03/config.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-04",
+      "type": "registry:block",
+      "title": "Navbar 04",
+      "description": "A simple navbar block",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["button", "navigation-menu", "sheet"],
+      "files": [
+        {
+          "path": "src/blocks/navbar-04/navbar-04.tsx",
+          "type": "registry:block",
+          "target": "components/navbar-04/navbar-04.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-04/logo.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-04/logo.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-04/nav-menu.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-04/nav-menu.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-04/navigation-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-04/navigation-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-05",
+      "type": "registry:block",
+      "title": "Navbar 05",
+      "description": "A simple navbar block",
+      "dependencies": ["@radix-ui/react-navigation-menu"],
+      "registryDependencies": ["button", "input", "navigation-menu", "sheet"],
+      "files": [
+        {
+          "path": "src/blocks/navbar-05/navbar-05.tsx",
+          "type": "registry:block",
+          "target": "components/navbar-05/navbar-05.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-05/logo.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-05/logo.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-05/nav-menu.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-05/nav-menu.tsx"
+        },
+        {
+          "path": "src/blocks/navbar-05/navigation-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/navbar-05/navigation-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-01",
+      "type": "registry:block",
+      "title": "Pricing 01",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/pricing-01/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-02",
+      "type": "registry:block",
+      "title": "Pricing 02",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/pricing-02/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-03",
+      "type": "registry:block",
+      "title": "Pricing 03",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "separator",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/pricing-03/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-04",
+      "type": "registry:block",
+      "title": "Pricing 04",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "separator",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/pricing-04/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-05",
+      "type": "registry:block",
+      "title": "Pricing 05",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/pricing-05/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "pricing-06",
+      "type": "registry:block",
+      "title": "Pricing 06",
+      "description": "A simple pricing block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge", "button", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/pricing-06/page.tsx",
+          "type": "registry:page",
+          "target": "app/pricing/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-01",
+      "type": "registry:block",
+      "title": "Signup 01",
+      "description": "A simple signup block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/signup-01/page.tsx",
+          "type": "registry:block",
+          "target": "app/signup/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-02",
+      "type": "registry:block",
+      "title": "Signup 02",
+      "description": "A simple signup block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/signup-02/page.tsx",
+          "type": "registry:block",
+          "target": "app/signup/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-03",
+      "type": "registry:block",
+      "title": "Signup 03",
+      "description": "A simple signup block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/signup-03/page.tsx",
+          "type": "registry:block",
+          "target": "app/signup/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-04",
+      "type": "registry:block",
+      "title": "Signup 04",
+      "description": "A simple signup block",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod"],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/signup-04/page.tsx",
+          "type": "registry:block",
+          "target": "app/signup/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "signup-05",
+      "type": "registry:block",
+      "title": "Signup 05",
+      "description": "A simple signup block",
+      "dependencies": [
+        "@hookform/resolvers",
+        "lucide-react",
+        "react-hook-form",
+        "zod"
+      ],
+      "registryDependencies": ["button", "form", "input", "separator"],
+      "files": [
+        {
+          "path": "src/blocks/signup-05/page.tsx",
+          "type": "registry:block",
+          "target": "app/signup/page.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-01",
+      "type": "registry:block",
+      "title": "Stats 01",
+      "description": "A simple stats block",
+      "files": [
+        {
+          "path": "src/blocks/stats-01/stats-01.tsx",
+          "type": "registry:block",
+          "target": "components/stats-01/stats-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-02",
+      "type": "registry:block",
+      "title": "Stats 02",
+      "description": "A simple stats block",
+      "files": [
+        {
+          "path": "src/blocks/stats-02/stats-02.tsx",
+          "type": "registry:block",
+          "target": "components/stats-02/stats-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "team-01",
+      "type": "registry:block",
+      "title": "Team 01",
+      "description": "A simple team block",
+      "files": [
+        {
+          "path": "src/blocks/team-01/team-01.tsx",
+          "type": "registry:block",
+          "target": "components/team-01/team-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "team-02",
+      "type": "registry:block",
+      "title": "Team 02",
+      "description": "A simple team block",
+      "files": [
+        {
+          "path": "src/blocks/team-02/team-02.tsx",
+          "type": "registry:block",
+          "target": "components/team-02/team-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "team-03",
+      "type": "registry:block",
+      "title": "Team 03",
+      "description": "A simple team block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/blocks/team-03/team-03.tsx",
+          "type": "registry:block",
+          "target": "components/team-03/team-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "team-04",
+      "type": "registry:block",
+      "title": "Team 04",
+      "description": "A simple team block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/blocks/team-04/team-04.tsx",
+          "type": "registry:block",
+          "target": "components/team-04/team-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "team-05",
+      "type": "registry:block",
+      "title": "Team 05",
+      "description": "A simple team block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/blocks/team-05/team-05.tsx",
+          "type": "registry:block",
+          "target": "components/team-05/team-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-01",
+      "type": "registry:block",
+      "title": "Testimonial 01",
+      "description": "A simple testimonial block",
+      "registryDependencies": ["avatar", "button"],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-01/testimonial-01.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-01/testimonial-01.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-02",
+      "type": "registry:block",
+      "title": "Testimonial 02",
+      "description": "A simple testimonial block",
+      "registryDependencies": ["avatar", "button"],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-02/testimonial-02.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-02/testimonial-02.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-03",
+      "type": "registry:block",
+      "title": "Testimonial 03",
+      "description": "A simple testimonial block",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-03/testimonial-03.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-03/testimonial-03.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-04",
+      "type": "registry:block",
+      "title": "Testimonial 04",
+      "description": "A simple testimonial block",
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "https://www.shadcnui-blocks.com/r/marquee.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-04/testimonial-04.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-04/testimonial-04.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-05",
+      "type": "registry:block",
+      "title": "Testimonial 05",
+      "description": "A simple testimonial block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-05/testimonial-05.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-05/testimonial-05.tsx"
+        }
+      ]
+    },
+    {
+      "name": "testimonial-06",
+      "type": "registry:block",
+      "title": "Testimonial 06",
+      "description": "A simple testimonial block",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["avatar", "carousel"],
+      "files": [
+        {
+          "path": "src/blocks/testimonial-06/testimonial-06.tsx",
+          "type": "registry:block",
+          "target": "components/testimonial-06/testimonial-06.tsx"
+        }
+      ]
+    }
+  ]
+}

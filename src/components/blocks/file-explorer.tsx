@@ -1,11 +1,11 @@
 "use client";
 
 import { getFileTree } from "@/lib/blocks";
-import { Block } from "@/types/blocks";
+import { BlockFile } from "@/types/blocks";
 import { FileTree } from "./file-tree";
 import { FilePreview } from "./file-preview";
 
-const FileExplorer = ({ files }: { files: Block["files"] }) => {
+const FileExplorer = ({ files }: { files: BlockFile[] }) => {
   const fileTree = getFileTree(files);
 
   return (
