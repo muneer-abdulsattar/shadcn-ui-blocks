@@ -13,7 +13,7 @@ export const BlockInstallCommandCopyButton = ({ block }: { block: string }) => {
   return (
     <Button
       variant="outline"
-      className="font-mono text-xs"
+      className="font-mono text-xs shadow-none"
       onClick={() => copyToClipboard(installCommand)}
     >
       {isCopied ? <Check className="text-green-500" /> : <Terminal />}

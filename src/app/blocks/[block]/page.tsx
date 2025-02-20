@@ -11,6 +11,7 @@ import { BlockProvider } from "@/providers/block-provider";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import registry from "../../../../registry.json";
+import BlockDetails from "@/components/blocks/block-details";
 
 export const generateMetadata = ({
   params: { block },
@@ -45,7 +46,9 @@ const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
       <Navbar />
       <div className="max-w-screen-2xl mx-auto py-8 px-4">
         <MainHeading>{title}</MainHeading>
-        {description && <DescriptionText>{description}</DescriptionText>}
+        {description && (
+          <DescriptionText className="mt-1">{description}</DescriptionText>
+        )}
 
         <Tabs defaultValue="preview" className="mt-6">
           <div className="mb-4 flex items-center gap-2 justify-between pr-1.5">
@@ -63,6 +66,8 @@ const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
             <FileExplorer files={files} />
           </TabsContent>
         </Tabs>
+
+        <BlockDetails />
       </div>
     </BlockProvider>
   );
