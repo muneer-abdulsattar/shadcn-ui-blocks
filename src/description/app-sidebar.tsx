@@ -1,5 +1,6 @@
 import {
   BookTextIcon,
+  ChevronDownIcon,
   ChevronsUpDown,
   CircleDotIcon,
   CircleUserRoundIcon,
@@ -114,7 +115,6 @@ export const componentsMap: ComponentsMap = {
     blockName: "carousel",
     description: "A carousel with motion and swipe built using Embla.",
     className: "xl:grid-cols-2",
-    isNew: true,
   },
   collapsible: {
     title: "Collapsible",
@@ -134,6 +134,16 @@ export const componentsMap: ComponentsMap = {
     description:
       "A control that allows the user to toggle between checked and not checked.",
   },
+  "dropdown-menu": {
+    title: "Dropdown Menu",
+    url: "/components/dropdown-menu",
+    icon: ChevronDownIcon,
+    blockName: "dropdown-menu",
+    columns: 3,
+    description:
+      "Displays a menu to the user — such as a set of actions or functions — triggered by a button.",
+    isNew: true,
+  },
   input: {
     title: "Input",
     url: "/components/input",
@@ -151,7 +161,6 @@ export const componentsMap: ComponentsMap = {
     columns: 3,
     description:
       "Accessible one-time password component with copy paste functionality.",
-    isNew: true,
   },
   "navigation-menu": {
     title: "Navigation Menu",
@@ -160,7 +169,6 @@ export const componentsMap: ComponentsMap = {
     blockName: "navigation-menu",
     columns: 2,
     description: "A collection of links for navigating websites.",
-    isNew: true,
     className: "mb-40",
   },
   pagination: {

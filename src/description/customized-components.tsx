@@ -261,6 +261,32 @@ export const customizedComponents = {
     { title: "File Tree", type: "collapsible", name: "file-tree" },
     { title: "Filters", type: "collapsible", name: "filters" },
   ],
+  "dropdown-menu": [
+    { title: "Default", type: "dropdown-menu", name: "default" },
+    { title: "With Icon", type: "dropdown-menu", name: "with-icon" },
+    { title: "Checkboxes", type: "dropdown-menu", name: "checkboxes" },
+    { title: "Radio Group", type: "dropdown-menu", name: "radio-group" },
+    {
+      title: "With Sub Menu",
+      type: "dropdown-menu",
+      name: "with-sub-menu",
+    },
+    {
+      title: "With Shortcuts",
+      type: "dropdown-menu",
+      name: "with-shortcuts",
+    },
+    {
+      title: "Complex Menu",
+      type: "dropdown-menu",
+      name: "complex-menu",
+    },
+    {
+      title: "Workspace Switcher",
+      type: "dropdown-menu",
+      name: "workspace-switcher",
+    },
+  ],
   input: [
     { title: "Default", type: "input", name: "default-input" },
     { title: "Ring", type: "input", name: "ring-input" },
