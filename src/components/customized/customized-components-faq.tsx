@@ -42,7 +42,7 @@ export function CustomizedComponentsFAQ() {
       <Accordion type="multiple" className="w-full border-t">
         {items.map(({ title, content }, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className="text-left font-semibold text-[17px] tracking-tight py-3 gap-3">
+            <AccordionTrigger className="text-left font-semibold text-[17px] py-3 gap-3">
               {title}
             </AccordionTrigger>
             <AccordionContent className="text-base text-foreground/80">

@@ -124,11 +124,11 @@ html.dark .shiki span {
 }
 
 /* Block preview */
-.block-preview-wrapper {
+/* .block-preview-wrapper {
   --secondary: 224.3 76.3% 48%;
   --secondary-foreground: 0 0% 100%;
 }
 .dark .block-preview-wrapper {
   --secondary: 221.2 100.2% 62.3%;
   --secondary-foreground: 0 0% 100%;
-}
+} */

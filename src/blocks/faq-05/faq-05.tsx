@@ -50,7 +50,7 @@ const FAQ05 = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="max-w-screen-lg">
-        <h2 className="text-4xl md:text-5xl !leading-[1.15] font-black tracking-tighter text-center">
+        <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight text-center">
           Frequently Asked Questions
         </h2>
         <p className="mt-3 text-lg text-center text-muted-foreground">
@@ -63,7 +63,7 @@ const FAQ05 = () => {
               <div className="h-10 w-10 flex items-center justify-center rounded-full bg-accent">
                 <Icon />
               </div>
-              <div className="mt-3 mb-2 flex items-start gap-2 text-2xl font-bold tracking-tighter">
+              <div className="mt-3 mb-2 flex items-start gap-2 text-[1.35rem] font-semibold tracking-tight">
                 <span>{question}</span>
               </div>
               <p>{answer}</p>

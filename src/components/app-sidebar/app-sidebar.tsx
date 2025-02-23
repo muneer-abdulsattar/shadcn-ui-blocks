@@ -1,5 +1,3 @@
-import { ShapesIcon } from "lucide-react";
-
 import {
   Sidebar,
   SidebarContent,
@@ -10,17 +8,18 @@ import {
   SidebarMenu,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
-import Link from "next/link";
-import AppSidebarMenuItem from "./sidebar-menu-item";
 import { groups } from "@/description/app-sidebar";
+import Link from "next/link";
+import { Logo } from "../logo";
+import AppSidebarMenuItem from "./sidebar-menu-item";
 
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="relative flex-row items-center justify-between p-4 group-data-[state=collapsed]:p-3 group-data-[state=collapsed]:justify-center border-b">
         <Link href="/">
-          <div className="flex items-center font-bold gap-2">
-            <ShapesIcon className="h-5 w-5" />
+          <div className="text-foreground flex items-center font-bold gap-2">
+            <Logo className="h-7 w-7" />
             <span className="group-data-[state=collapsed]:hidden whitespace-nowrap">
               Shadcn UI Blocks
             </span>

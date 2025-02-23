@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,7 +8,7 @@ import { ThemeToggle } from "@/components/app-sidebar/theme-toggle";
 import { CSPostHogProvider } from "@/providers/posthog-provider";
 import { WebSite, WithContext } from "schema-dts";
 
-const dmSans = DM_Sans({
+const geist = Geist({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -89,7 +89,7 @@ export default function RootLayout({
           content="xqbQoq68oIz9cbsrLZP3hXQmLmG0QTIcxjb7qLEMb3Y"
         />
       </head>
-      <body className={cn(dmSans.className, "antialiased")}>
+      <body className={cn(geist.className, "antialiased")}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

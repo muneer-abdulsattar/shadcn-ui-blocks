@@ -15,7 +15,7 @@ export function FAQ() {
       <Accordion type="multiple" className="w-full border-t">
         {faq.map(({ title, content }, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className="text-left font-semibold text-[17px] tracking-tight py-3 gap-3">
+            <AccordionTrigger className="text-left font-semibold text-lg py-3 gap-3">
               {title}
             </AccordionTrigger>
             <AccordionContent className="text-base">{content}</AccordionContent>

@@ -77,7 +77,7 @@ const Blog03Page = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-10 lg:py-16 px-6 xl:px-0 flex flex-col lg:flex-row items-start gap-12">
       <div>
-        <h2 className="text-3xl font-black tracking-tight">Posts</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
 
         <div className="mt-4 space-y-12">
           {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
@@ -95,7 +95,7 @@ const Blog03Page = () => {
                   </Badge>
                 </div>
 
-                <h3 className="mt-4 text-2xl font-bold tracking-tight">
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight">
                   A beginner&apos;s guide to blackchain for engineers
                 </h3>
                 <p className="mt-2 text-muted-foreground line-clamp-3 text-ellipsis">
@@ -104,7 +104,7 @@ const Blog03Page = () => {
                   adipisci voluptatibus. Nulla sint repudiandae fugiat tenetur
                   dolores.
                 </p>
-                <div className="mt-4 flex items-center gap-6 text-muted-foreground text-sm font-semibold">
+                <div className="mt-4 flex items-center gap-6 text-muted-foreground text-sm font-medium">
                   <div className="flex items-center gap-2">
                     <ClockIcon className="h-4 w-4" /> 5 min read
                   </div>
@@ -118,7 +118,7 @@ const Blog03Page = () => {
         </div>
       </div>
       <aside className="sticky top-8 shrink-0 lg:max-w-sm w-full">
-        <h3 className="text-3xl font-black tracking-tight">Categories</h3>
+        <h3 className="text-3xl font-bold tracking-tight">Categories</h3>
         <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-2">
           {categories.map((category) => (
             <div
@@ -130,7 +130,7 @@ const Blog03Page = () => {
             >
               <div className="flex items-center gap-3">
                 <category.icon className={cn("h-5 w-5", category.color)} />
-                <span className="font-semibold">{category.name}</span>
+                <span className="font-medium">{category.name}</span>
               </div>
               <Badge className="px-1.5 rounded-full">
                 {category.totalPosts}

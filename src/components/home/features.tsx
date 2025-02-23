@@ -31,7 +31,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Fully responsive
                   </h6>
                   <p className="text-sm text-foreground/90">
@@ -42,7 +42,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Easily preview and copy
                   </h6>
                   <p className="text-sm text-foreground/90">
@@ -53,7 +53,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Absolutely Free to Use
                   </h6>
                   <p className="text-sm text-foreground/90">
@@ -91,7 +91,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Multiple Variants
                   </h6>
                   <p className="text-sm text-foreground/90">
@@ -103,7 +103,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Fully Customizable
                   </h6>
                   <p className="text-sm text-foreground/90">
@@ -115,7 +115,7 @@ export const Features = () => {
               <li className="flex items-start gap-2">
                 <CircleCheck className="h-[18px] w-[18px]" />
                 <div>
-                  <h6 className="leading-[18px] font-semibold">
+                  <h6 className="mb-0.5 leading-[18px] font-semibold">
                     Absolutely Free to Use
                   </h6>
                   <p className="text-sm text-foreground/90">

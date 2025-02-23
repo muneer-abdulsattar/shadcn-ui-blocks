@@ -18,7 +18,7 @@ export default function PricingCard() {
   return (
     <Card className="max-w-xs">
       <CardHeader>
-        <CardTitle className="text-2xl font-extrabold">Pro Plan</CardTitle>
+        <CardTitle className="text-2xl font-bold">Pro Plan</CardTitle>
         <CardDescription>
           For teams that need advanced scheduling tools to streamline workflows
           and enhance collaboration, ensuring every meeting is productive and on
@@ -26,7 +26,7 @@ export default function PricingCard() {
         </CardDescription>
       </CardHeader>
       <CardContent className="text-sm text-muted-foreground flex items-end leading-6">
-        <span className="text-4xl leading-none font-extrabold text-foreground">
+        <span className="text-4xl leading-none font-bold text-foreground">
           $20
         </span>
         <span className="ml-1.5 mr-1">/mo</span>

@@ -68,11 +68,11 @@ const FAQ03 = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-screen-lg">
-        <h2 className="text-4xl md:text-5xl !leading-[1.15] font-black tracking-tight">
+        <h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight">
           Frequently Asked Questions
         </h2>
 
-        <div className="mt-6 w-full grid md:grid-cols-2 gap-10">
+        <div className="mt-6 w-full grid md:grid-cols-2 gap-x-10">
           <Accordion
             type="single"
             collapsible
@@ -85,7 +85,7 @@ const FAQ03 = () => {
                 <AccordionPrimitive.Header className="flex">
                   <AccordionPrimitive.Trigger
                     className={cn(
-                      "flex flex-1 items-center justify-between py-4 font-semibold tracking-tight transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
+                      "flex flex-1 items-center justify-between py-4 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
                       "text-start text-lg"
                     )}
                   >

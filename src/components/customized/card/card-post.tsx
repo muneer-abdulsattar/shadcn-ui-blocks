@@ -38,7 +38,7 @@ export default function CardPost() {
       <CardContent className="p-0">
         <div className="relative aspect-video bg-muted border-y" />
         <div className="pt-3 pb-4 px-6">
-          <h2 className="font-bold tracking-tight">Exploring New Horizons</h2>
+          <h2 className="font-semibold">Exploring New Horizons</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Had an amazing time discovering hidden gems! 🌄 Can&apos;t wait to
             share more from this journey.{" "}

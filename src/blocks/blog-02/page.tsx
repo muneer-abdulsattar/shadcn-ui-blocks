@@ -14,7 +14,7 @@ const Blog02Page = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
       <div className="flex items-end justify-between">
-        <h2 className="text-3xl font-black tracking-tight">Posts</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
         <Select defaultValue="recommended">
           <SelectTrigger className="w-[180px]">
             <SelectValue />
@@ -38,12 +38,12 @@ const Blog02Page = () => {
                 <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
                   Technology
                 </Badge>
-                <span className="font-semibold text-sm text-muted-foreground">
+                <span className="font-medium text-xs text-muted-foreground">
                   5 min read
                 </span>
               </div>
 
-              <h3 className="mt-4 text-2xl font-bold tracking-tight">
+              <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
                 A beginner&apos;s guide to blackchain for engineers
               </h3>
               <p className="mt-2 text-muted-foreground">

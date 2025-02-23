@@ -30,7 +30,7 @@ const Introduction = () => {
           It&apos;s a collection of customized components that you can preview,
           copy and paste into your apps.
         </p>
-        <SubHeading>Why shadcn ui customized components?</SubHeading>
+        <SubHeading>Why Shadcn UI customized components?</SubHeading>
         <p>
           Shadcn UI is a powerful design system offering reusable components and
           utilities to build cohesive designs. However, its many customization
@@ -45,7 +45,7 @@ const Introduction = () => {
         </blockquote>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12 max-w-prose">
         <CustomizedComponentsFAQ />
       </div>
     </div>

@@ -5,7 +5,7 @@ const Features03Page = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="w-full max-w-screen-lg mx-auto py-12 px-6">
-        <h2 className="text-3xl leading-10 sm:text-4xl md:text-[40px] md:leading-[3.25rem] font-black tracking-tight">
+        <h2 className="text-3xl leading-10 sm:text-4xl md:text-[40px] md:leading-[3.25rem] font-bold tracking-tight">
           Design and Engage: <br />
           Build Smarter Spaces and Strategies
         </h2>
@@ -15,7 +15,7 @@ const Features03Page = () => {
             {/* Media 1 Mobile */}
             <div className="md:hidden mb-6 aspect-video w-full bg-background border rounded-xl"></div>
 
-            <span className="text-2xl font-bold tracking-tight">
+            <span className="text-2xl font-semibold tracking-tight">
               Plan Smarter
             </span>
 
@@ -54,7 +54,7 @@ const Features03Page = () => {
             {/* Media 2 Mobile */}
             <div className="md:hidden mb-6 aspect-video w-full bg-background border rounded-xl"></div>
 
-            <span className="text-2xl font-bold tracking-tight">
+            <span className="text-2xl font-semibold tracking-tight">
               Plan Smarter
             </span>
 

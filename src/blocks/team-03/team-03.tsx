@@ -52,19 +52,17 @@ const Team03Page = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center py-8 sm:py-16 px-6 lg:px-8 max-w-screen-xl mx-auto gap-14">
       <div className="sm:max-w-sm lg:max-w-xs">
-        <b className="text-primary">Our team</b>
-        <h2 className="mt-3 text-3xl md:text-4xl font-black tracking-tight">
-          Leadership team
+        <b className="text-muted-foreground font-semibold">Our team</b>
+        <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">
+          Leadership Team
         </h2>
         <p className="mt-4 text-base sm:text-lg">
           We&apos;re a cross-disciplinary team that loves to create great
           experiences for our customers.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-end gap-3">
-          <Button size="lg" className="font-semibold">
-            Open Positions
-          </Button>
-          <Button size="lg" variant="outline" className="font-semibold">
+          <Button size="lg">Open Positions</Button>
+          <Button size="lg" variant="outline">
             About Us
           </Button>
         </div>
@@ -81,12 +79,12 @@ const Team03Page = () => {
               height={120}
             />
             <div>
-              <h3 className="text-lg font-bold">{member.name}</h3>
-              <p className="text-secondary">{member.title}</p>
-              <p className="mt-2 text-muted-foreground">{member.bio}</p>
+              <h3 className="text-lg font-semibold">{member.name}</h3>
+              <p className="text-muted-foreground text-sm">{member.title}</p>
+              <p className="mt-2">{member.bio}</p>
               <div className="mt-4 flex items-center gap-2.5">
                 <Button
-                  className="bg-muted hover:bg-muted shadow-none"
+                  className="bg-accent hover:bg-accent shadow-none"
                   size="icon"
                   asChild
                 >
@@ -95,7 +93,7 @@ const Team03Page = () => {
                   </Link>
                 </Button>
                 <Button
-                  className="bg-muted hover:bg-muted shadow-none"
+                  className="bg-accent hover:bg-accent shadow-none"
                   size="icon"
                   asChild
                 >
@@ -104,7 +102,7 @@ const Team03Page = () => {
                   </Link>
                 </Button>
                 <Button
-                  className="bg-muted hover:bg-muted shadow-none"
+                  className="bg-accent hover:bg-accent shadow-none"
                   size="icon"
                   asChild
                 >

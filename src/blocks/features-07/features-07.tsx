@@ -69,7 +69,7 @@ const Features07Page = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-xl w-full py-10 px-6">
-        <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-black tracking-tight max-w-xl md:text-center md:mx-auto">
+        <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
           Boost Your Strategy with Smart Features
         </h2>
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -78,10 +78,10 @@ const Features07Page = () => {
               <div className="flex gap-6 hover:ring rounded-lg p-2 -mx-2 sm:mx-0 max-w-lg">
                 <div className="h-24 aspect-square shrink-0 rounded-lg bg-muted" />
                 <div className="">
-                  <span className="font-bold tracking-tight text-lg">
+                  <span className="font-semibold tracking-tight text-lg">
                     {feature.title}
                   </span>
-                  <p className="mt-1 text-sm text-muted-foreground font-medium">
+                  <p className="mt-1 text-sm text-muted-foreground">
                     {feature.description}
                   </p>
                 </div>

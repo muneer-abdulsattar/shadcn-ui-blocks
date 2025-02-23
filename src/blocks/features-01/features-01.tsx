@@ -51,10 +51,10 @@ const Features01Page = () => {
   return (
     <div className="min-h-screen flex items-center justify-center py-12">
       <div>
-        <h2 className="text-5xl md:text-6xl font-black tracking-tight text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
           Unleash Your Creativity
         </h2>
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto px-6">
+        <div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto px-6">
           {features.map((feature) => (
             <div
               key={feature.title}
@@ -63,9 +63,7 @@ const Features01Page = () => {
               <div className="mb-3 h-10 w-10 flex items-center justify-center bg-muted rounded-full">
                 <feature.icon className="h-6 w-6" />
               </div>
-              <span className="text-lg font-bold tracking-tight">
-                {feature.title}
-              </span>
+              <span className="text-lg font-semibold">{feature.title}</span>
               <p className="mt-1 text-foreground/80 text-[15px]">
                 {feature.description}
               </p>

@@ -12,7 +12,7 @@ const Blog01Page = () => {
   return (
     <div className="max-w-screen-xl mx-auto py-16 px-6 xl:px-0">
       <div className="flex items-end justify-between">
-        <h2 className="text-3xl font-black tracking-tight">Posts</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
         <Select defaultValue="recommended">
           <SelectTrigger className="w-[180px]">
             <SelectValue />
@@ -34,7 +34,7 @@ const Blog01Page = () => {
             <CardContent className="pt-4 pb-5">
               <Badge>Technology</Badge>
 
-              <h3 className="mt-4 text-2xl font-bold tracking-tight">
+              <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
                 What is the future of web development?
               </h3>
               <div className="mt-6 flex items-center justify-between">

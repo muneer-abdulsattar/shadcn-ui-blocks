@@ -62,8 +62,8 @@ const teamMembers = [
 const Team02Page = () => {
   return (
     <div className="flex flex-col justify-center py-8 sm:pt-12 sm:pb-20 px-6 lg:px-8 max-w-screen-xl mx-auto">
-      <b className="text-secondary">Our team</b>
-      <h2 className="mt-3 text-2xl md:text-4xl font-black tracking-tight">
+      <b className="text-muted-foreground font-semibold">Our team</b>
+      <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tighter">
         Some of the people you&apos;ll be working with
       </h2>
       <p className="mt-4 text-base sm:text-lg">
@@ -80,9 +80,9 @@ const Team02Page = () => {
               width={120}
               height={120}
             />
-            <h3 className="mt-4 text-lg font-bold">{member.name}</h3>
-            <p className="text-secondary">{member.title}</p>
-            <p className="mt-3 text-muted-foreground">{member.bio}</p>
+            <h3 className="mt-4 text-lg font-semibold">{member.name}</h3>
+            <p className="text-muted-foreground text-sm">{member.title}</p>
+            <p className="mt-3">{member.bio}</p>
           </div>
         ))}
       </div>

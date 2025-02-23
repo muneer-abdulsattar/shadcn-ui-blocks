@@ -44,7 +44,7 @@ const Features06Page = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-screen-lg w-full py-10 px-6">
-        <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-black tracking-tight max-w-xl md:text-center md:mx-auto">
+        <h2 className="text-4xl md:text-5xl md:leading-[3.5rem] font-bold tracking-tight max-w-xl md:text-center md:mx-auto">
           Boost Your Strategy with Smart Features
         </h2>
         <div className="mt-8 md:mt-16 w-full mx-auto space-y-20">
@@ -55,10 +55,10 @@ const Features06Page = () => {
             >
               <div className="w-full aspect-[6/4] bg-muted rounded-xl border border-border/50 basis-1/2" />
               <div className="basis-1/2 shrink-0">
-                <span className="uppercase font-semibold tracking-tight">
+                <span className="uppercase font-semibold text-sm text-muted-foreground">
                   {feature.category}
                 </span>
-                <h4 className="my-3 text-3xl font-bold tracking-tighter">
+                <h4 className="my-3 text-3xl font-semibold tracking-tight">
                   {feature.title}
                 </h4>
                 <p className="text-muted-foreground text-[17px]">

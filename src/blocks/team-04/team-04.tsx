@@ -66,7 +66,7 @@ const Team04Page = () => {
   return (
     <div className="flex flex-col justify-center py-8 sm:py-16 px-6 lg:px-8 max-w-screen-xl mx-auto gap-16">
       <div className="text-center max-w-2xl mx-auto">
-        <b className="text-center text-secondary text-base">
+        <b className="text-center text-muted-foreground text-base font-semibold">
           We&apos;re hiring!
         </b>
         <h2 className="mt-3 text-4xl sm:text-5xl font-bold tracking-tight">
@@ -77,10 +77,8 @@ const Team04Page = () => {
           and foster a culture that empowers you to do you best work.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-center gap-3">
-          <Button size="lg" className="font-semibold">
-            Open Positions
-          </Button>
-          <Button size="lg" variant="outline" className="font-semibold">
+          <Button size="lg">Open Positions</Button>
+          <Button size="lg" variant="outline">
             About Us
           </Button>
         </div>
@@ -90,18 +88,18 @@ const Team04Page = () => {
         {teamMembers.map((member) => (
           <div
             key={member.name}
-            className="flex flex-col items-center text-center bg-muted py-8 px-6 rounded-lg"
+            className="flex flex-col items-center text-center bg-accent py-8 px-6 rounded-lg"
           >
             <Image
               src={member.imageUrl}
               alt={member.name}
-              className="shrink-0 h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover bg-muted-foreground/50"
+              className="shrink-0 h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover bg-accent"
               width={120}
               height={120}
             />
-            <h3 className="mt-5 text-lg font-bold">{member.name}</h3>
-            <p className="text-secondary">{member.title}</p>
-            <p className="mt-2 mb-6 text-muted-foreground">{member.bio}</p>
+            <h3 className="mt-5 text-lg font-semibold">{member.name}</h3>
+            <p className="text-muted-foreground text-sm">{member.title}</p>
+            <p className="mt-2 mb-6">{member.bio}</p>
             <div className="mt-auto flex items-center gap-4">
               <Link href="#" target="_blank">
                 <TwitterIcon className="stroke-muted-foreground h-5 w-5" />

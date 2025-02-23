@@ -69,9 +69,7 @@ const Pricing04 = () => {
 
   return (
     <div className="min-h-screen bg-accent flex flex-col items-center justify-center py-12 px-6">
-      <h1 className="text-5xl font-extrabold text-center tracking-tight">
-        Pricing
-      </h1>
+      <h1 className="text-5xl font-bold text-center tracking-tight">Pricing</h1>
       <Tabs
         value={selectedBillingPeriod}
         onValueChange={setSelectedBillingPeriod}

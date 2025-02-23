@@ -14,7 +14,7 @@ const TestimonialCard = () => {
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
           <div className="flex flex-col gap-1">
-            <span className="text-[15px] leading-none font-bold tracking-tight">
+            <span className="text-[15px] leading-none font-semibold">
               shadcn
             </span>
             <span className="text-sm leading-none text-muted-foreground">

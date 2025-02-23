@@ -44,7 +44,7 @@ const ComponentBlock: FC<BlockProps> = async ({
     >
       <div className="h-10 flex items-center justify-between pl-1 border-b border-muted">
         <div className="flex items-center gap-2">
-          <span className="text-[15px] tracking-tight font-bold">{title}</span>
+          <span className="text-[15px] font-semibold">{title}</span>
           {credit && (
             <a
               href={credit.link}

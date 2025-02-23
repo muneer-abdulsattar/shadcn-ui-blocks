@@ -21,7 +21,7 @@ const Hero07 = () => {
         <Badge className="bg-gradient-to-br via-70% from-primary via-muted/30 to-primary rounded-full py-1 border-none">
           Just released v1.0.0
         </Badge>
-        <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-black leading-[1.1] tracking-tight">
+        <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight">
           Customized Shadcn UI Blocks & Components
         </h1>
         <p className="mt-6 text-[17px] md:text-lg">
