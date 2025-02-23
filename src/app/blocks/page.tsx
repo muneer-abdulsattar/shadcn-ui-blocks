@@ -12,11 +12,12 @@ export const metadata: Metadata = {
   },
 };
 
-const BlocksPage = ({
-  searchParams,
-}: {
-  searchParams: { columns: string; q: string };
-}) => {
+const BlocksPage = async (
+  props: {
+    searchParams: Promise<{ columns: string; q: string }>;
+  }
+) => {
+  const searchParams = await props.searchParams;
   return (
     <>
       <Navbar />

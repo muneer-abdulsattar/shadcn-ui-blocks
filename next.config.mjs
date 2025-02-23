@@ -28,11 +28,10 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    outputFileTracingIncludes: {
-      "/blocks/*": ["./src/**/*"],
-    },
+  outputFileTracingIncludes: {
+    "/blocks/*": ["./src/**/*"],
   },
+  experimental: {},
 };
 
 export default nextConfig;

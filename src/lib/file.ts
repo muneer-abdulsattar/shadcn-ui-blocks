@@ -3,7 +3,9 @@
 import path from "path";
 import fs from "fs";
 
-export const getNumberOfFilesInsideDirectory = (directoryPath: string) => {
+export const getNumberOfFilesInsideDirectory = async (
+  directoryPath: string
+) => {
   try {
     const directoryFullPath = path.join(process.cwd(), directoryPath);
 

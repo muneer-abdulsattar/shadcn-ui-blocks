@@ -6,7 +6,7 @@ import {
   transformerRemoveLineBreak,
 } from "@shikijs/transformers";
 import { Loader2Icon } from "lucide-react";
-import { useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState, type JSX } from "react";
 
 export function CodeBlock({
   initial,

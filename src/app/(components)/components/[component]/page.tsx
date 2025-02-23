@@ -8,14 +8,15 @@ import { absoluteUrl, cn } from "@/lib/utils";
 import { notFound } from "next/navigation";
 
 export const generateStaticParams = async () => {
-  return Object.keys(componentsMap);
+  return Object.keys(componentsMap).map((component) => ({
+    component,
+  }));
 };
 
-export const generateMetadata = ({
-  params,
-}: {
-  params: { component: string };
+export const generateMetadata = async (props: {
+  params: Promise<{ component: string }>;
 }) => {
+  const params = await props.params;
   const details = componentsMap[params.component as keyof typeof componentsMap];
   const components =
     customizedComponents[
@@ -47,11 +48,12 @@ export const generateMetadata = ({
   });
 };
 
-const CustomizedComponentPage = ({
-  params: { component },
-}: {
-  params: { component: string };
+const CustomizedComponentPage = async (props: {
+  params: Promise<{ component: string }>;
 }) => {
+  const params = await props.params;
+  const { component } = params;
+
   const details = componentsMap[component as keyof typeof componentsMap];
   const components =
     customizedComponents[component as keyof typeof customizedComponents] || [];

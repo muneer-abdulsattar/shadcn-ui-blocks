@@ -4,11 +4,10 @@ import { absoluteUrl } from "@/lib/utils";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-export const generateMetadata = ({
-  params: { block },
-}: {
-  params: { block: string };
-}): Metadata => {
+export const generateMetadata = async (props: {
+  params: Promise<{ block: string }>;
+}): Promise<Metadata> => {
+  const { block } = await props.params;
   const blockDetails = blocks[block];
 
   return constructMetadata({
@@ -20,11 +19,12 @@ export const generateMetadata = ({
   });
 };
 
-const BlockPreviewPage = ({
-  params: { block },
-}: {
-  params: { block: string };
+const BlockPreviewPage = async (props: {
+  params: Promise<{ block: string }>;
 }) => {
+  const params = await props.params;
+  const { block } = params;
+
   if (!blocks[block]) notFound();
 
   const { component: Component } = blocks[block];

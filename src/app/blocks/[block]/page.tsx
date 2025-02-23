@@ -13,11 +13,10 @@ import { notFound } from "next/navigation";
 import registry from "../../../../registry.json";
 import BlockDetails from "@/components/blocks/block-details";
 
-export const generateMetadata = ({
-  params: { block },
-}: {
-  params: { block: string };
-}): Metadata => {
+export const generateMetadata = async (props: {
+  params: Promise<{ block: string }>;
+}): Promise<Metadata> => {
+  const { block } = await props.params;
   const blockDetails = blocks[block];
 
   return constructMetadata({
@@ -31,7 +30,10 @@ export const generateMetadata = ({
   });
 };
 
-const BlockPage = ({ params: { block } }: { params: { block: string } }) => {
+const BlockPage = async (props: { params: Promise<{ block: string }> }) => {
+  const params = await props.params;
+  const { block } = params;
+
   const blockDetails = registry.items.find((item) => item.name === block);
   if (!blockDetails) notFound();
 

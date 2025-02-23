@@ -35,11 +35,12 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export const generateMetadata = ({
-  params,
-}: {
-  params: { category: string };
-}): Metadata => {
+export const generateMetadata = async (
+  props: {
+    params: Promise<{ category: string }>;
+  }
+): Promise<Metadata> => {
+  const params = await props.params;
   const { category } = params;
   const blocks = categorizedBlocks[category];
   const title = `${blocks.length}+ ${capitalize(
@@ -78,13 +79,14 @@ export const generateMetadata = ({
   });
 };
 
-const BlockCategoryPage = ({
-  params,
-  searchParams,
-}: {
-  params: { category: string };
-  searchParams: { columns: string; q: string };
-}) => {
+const BlockCategoryPage = async (
+  props: {
+    params: Promise<{ category: string }>;
+    searchParams: Promise<{ columns: string; q: string }>;
+  }
+) => {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   const { category } = params;
 
   return (
