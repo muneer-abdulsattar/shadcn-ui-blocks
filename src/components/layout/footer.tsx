@@ -49,8 +49,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {footerSections.map(({ title, links }) => (
-            <div key={title}>
+          {footerSections.map(({ title, links }, index) => (
+            <div key={index}>
               <h6 className="font-semibold">{title}</h6>
               <ul className="mt-6 space-y-4">
                 {links.map(({ title, href }) => (
