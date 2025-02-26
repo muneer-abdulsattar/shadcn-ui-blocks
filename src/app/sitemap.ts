@@ -41,6 +41,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
       lastModified,
     },
+    {
+      url: "https://www.shadcnui-blocks.com/templates",
+      changeFrequency: "daily",
+      priority: 1,
+      lastModified,
+    },
     ...componentsSitemap,
     ...blocksCategorySitemap,
   ];
