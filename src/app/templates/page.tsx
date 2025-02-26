@@ -70,7 +70,7 @@ export default function TemplatesPage() {
       {/* Main */}
       <section
         id="templates"
-        className="container max-w-screen-lg py-20 mx-auto"
+        className="container max-w-screen-lg py-20 mx-auto px-6"
       >
         <div className="space-y-14">
           {categories.map((category) => {

@@ -1,4 +1,4 @@
-import { GitFork, Star } from "lucide-react";
+import { Eye, GitFork, Star } from "lucide-react";
 import { format } from "date-fns/format";
 import { isValid } from "date-fns/isValid";
 
@@ -7,10 +7,26 @@ export default async function GithubStarsAndForks({ repo }: { repo: string }) {
     next: { revalidate: 60 * 5 },
   });
   const data = await response.json();
+  const viewsResponse = await fetch(
+    `https://api.github.com/repos/${repo}/traffic/views`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      },
+      next: { revalidate: 60 * 5 },
+    }
+  );
+  const views = await viewsResponse.json();
 
   return (
-    <div className="flex items-center justify-between gap-5">
+    <div className="flex flex-col gap-5">
       <div className="flex items-center gap-5 text-muted-foreground text-sm">
+        <div className="flex items-center gap-2">
+          <Eye className="text-foreground h-5 w-5" />
+          <span className="whitespace-nowrap">
+            {views?.uniques} {views?.uniques > 1 ? "views" : "view"}
+          </span>
+        </div>
         <div className="flex items-center gap-2">
           <Star className="text-foreground h-5 w-5" />
           <span className="whitespace-nowrap">
