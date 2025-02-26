@@ -84,9 +84,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta
-          name="google-site-verification"
-          content="xqbQoq68oIz9cbsrLZP3hXQmLmG0QTIcxjb7qLEMb3Y"
+        <script
+          defer
+          data-website-id="67bf0ef528e2eaab259e0c50"
+          data-domain="www.shadcnui-blocks.com"
+          src="https://datafa.st/js/script.js"
         />
       </head>
       <body className={cn(geist.className, "antialiased")}>
