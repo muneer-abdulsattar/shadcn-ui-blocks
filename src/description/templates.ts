@@ -69,6 +69,27 @@ export const templates = [
     ],
     sections: ["Hero", "Features", "Pricing", "FAQ", "CTA Banner", "Footer"],
   },
+  {
+    name: "Minimal Portfolio",
+    description:
+      "A beautifully designed developer portfolio template with a clean and modern look.",
+    image: "/images/templates/minimal-portfolio.png",
+    repo: "akash3444/portfolio-template",
+    slug: "minimal-portfolio",
+    category: categoriesMap.portfolio,
+    url: "https://shadcn-portfolio-template.vercel.app/",
+    features: [
+      "Next 15",
+      "React 19",
+      "Tailwind CSS 4",
+      "Shadcn UI",
+      "TypeScript",
+      "Dark Mode Support",
+      "Responsive Design",
+      "SEO Optimized",
+    ],
+    sections: ["Hero", "About", "Experience", "Projects", "Footer"],
+  },
 ] as Template[];
 
 const getCategorizedTemplates = () => {

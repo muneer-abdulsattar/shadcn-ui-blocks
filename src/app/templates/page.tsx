@@ -78,7 +78,7 @@ export default function TemplatesPage() {
 
             return (
               <div key={category.slug}>
-                <h2 className="mb-5 text-3xl sm:text-4xl font-bold">
+                <h2 className="mb-5 text-3xl sm:text-4xl font-bold tracking-tight">
                   {category.name} Templates
                 </h2>
                 {templates?.length ? (
