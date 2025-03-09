@@ -531,6 +531,90 @@ export const blocks: Record<string, Block> = {
       },
     ],
   },
+  "timeline-01": {
+    name: "timeline-01",
+    title: "Timeline 01",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-01/timeline-01")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-01/timeline-01.tsx",
+      },
+    ],
+  },
+  "timeline-02": {
+    name: "timeline-02",
+    title: "Timeline 02",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-02/timeline-02")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-02/timeline-02.tsx",
+      },
+    ],
+  },
+  "timeline-03": {
+    name: "timeline-03",
+    title: "Timeline 03",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-03/timeline-03")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-03/timeline-03.tsx",
+      },
+    ],
+  },
+  "timeline-04": {
+    name: "timeline-04",
+    title: "Timeline 04",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-04/timeline-04")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-04/timeline-04.tsx",
+      },
+    ],
+  },
+  "timeline-05": {
+    name: "timeline-05",
+    title: "Timeline 05",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-05/timeline-05")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-05/timeline-05.tsx",
+      },
+    ],
+  },
+  "timeline-06": {
+    name: "timeline-06",
+    title: "Timeline 06",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-06/timeline-06")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-06/timeline-06.tsx",
+      },
+    ],
+  },
+  "timeline-07": {
+    name: "timeline-07",
+    title: "Timeline 07",
+    category: "timeline",
+    component: React.lazy(() => import("@/blocks/timeline-07/timeline-07")),
+    files: [
+      {
+        path: "page.tsx",
+        target: "app/timeline-07/timeline-07.tsx",
+      },
+    ],
+  },
   "testimonial-01": {
     name: "testimonial-01",
     title: "Testimonial 01",
