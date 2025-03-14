@@ -8,6 +8,11 @@ import {
   CodeToHastOptions,
 } from "shiki/bundle/web";
 import { cn } from "./utils";
+import {
+  transformerNotationDiff,
+  transformerNotationHighlight,
+  transformerRemoveLineBreak,
+} from "@shikijs/transformers";
 
 export async function highlight(
   code: string,
@@ -31,5 +36,20 @@ export async function highlight(
         />
       ),
     },
+  });
+}
+
+export async function getHighlightedCodeNodes(code: string) {
+  return await highlight(code, {
+    lang: "tsx",
+    themes: {
+      light: "github-light-default",
+      dark: "github-dark-default",
+    },
+    transformers: [
+      transformerNotationDiff(),
+      transformerNotationHighlight(),
+      transformerRemoveLineBreak(),
+    ],
   });
 }

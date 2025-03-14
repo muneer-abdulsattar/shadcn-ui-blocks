@@ -1,10 +1,5 @@
 "use client";
-import { highlight } from "@/lib/shiki";
-import {
-  transformerNotationDiff,
-  transformerNotationHighlight,
-  transformerRemoveLineBreak,
-} from "@shikijs/transformers";
+import { getHighlightedCodeNodes } from "@/lib/shiki";
 import { Loader2Icon } from "lucide-react";
 import { useLayoutEffect, useState, type JSX } from "react";
 
@@ -18,18 +13,7 @@ export function CodeBlock({
   const [nodes, setNodes] = useState(initial);
 
   useLayoutEffect(() => {
-    void highlight(code, {
-      lang: "tsx",
-      themes: {
-        light: "github-light-default",
-        dark: "github-dark-default",
-      },
-      transformers: [
-        transformerNotationDiff(),
-        transformerNotationHighlight(),
-        transformerRemoveLineBreak(),
-      ],
-    }).then(setNodes);
+    getHighlightedCodeNodes(code).then(setNodes);
   }, [code]);
 
   return (

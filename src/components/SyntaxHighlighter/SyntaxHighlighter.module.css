@@ -1,6 +1,0 @@
-.code {
-  @apply text-sm rounded !pl-5 !py-6;
-}
-.code span {
-    @apply leading-[1.63rem];
-}
