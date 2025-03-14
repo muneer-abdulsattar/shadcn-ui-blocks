@@ -54,7 +54,10 @@ export default function SelectWithFormDemo() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-full">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="max-w-sm mx-auto space-y-4 w-full"
+      >
         <SelectWithForm<schemaType>
           name="country"
           title="Select country"

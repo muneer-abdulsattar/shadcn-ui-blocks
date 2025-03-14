@@ -44,7 +44,6 @@ export const customizedComponents = {
       type: "accordion",
       name: "accordion-item-disabled",
     },
-    { title: "Controlled", type: "accordion", name: "accordion-controlled" },
   ],
   alert: [
     { title: "Primary", type: "alert", name: "default" },
@@ -289,7 +288,7 @@ export const customizedComponents = {
   ],
   input: [
     { title: "Default", type: "input", name: "default-input" },
-    { title: "Ring", type: "input", name: "ring-input" },
+    { title: "With ring", type: "input", name: "ring-input" },
     { title: "Filled", type: "input", name: "filled-input" },
     { title: "Disabled", type: "input", name: "disabled-input" },
     { title: "With label", type: "input", name: "with-label" },
@@ -434,7 +433,7 @@ export const customizedComponents = {
   ],
   "radio-group": [
     { title: "Default", type: "radio-group", name: "default" },
-    { title: "Orientation", type: "radio-group", name: "orientation" },
+    { title: "Horizontal", type: "radio-group", name: "horizontal" },
     { title: "Disabled", type: "radio-group", name: "disabled" },
     { title: "Color", type: "radio-group", name: "color" },
     { title: "Size", type: "radio-group", name: "size" },
@@ -445,7 +444,7 @@ export const customizedComponents = {
   ],
   select: [
     { title: "Default", type: "select", name: "default" },
-    { title: "Color", type: "select", name: "color" },
+    { title: "Background Color", type: "select", name: "background-color" },
     { title: "Ghost", type: "select", name: "ghost" },
     {
       title: "Custom dropdown icon",

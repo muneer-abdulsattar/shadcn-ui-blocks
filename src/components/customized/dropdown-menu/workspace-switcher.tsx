@@ -34,7 +34,7 @@ export default function WorkspaceSwitcher() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center gap-2 border hover:bg-accent py-1.5 px-2 rounded-md">
+      <DropdownMenuTrigger className="flex items-center gap-2 bg-accent py-2.5 px-3 rounded-lg">
         <Avatar className="rounded-lg h-8 w-8">
           <AvatarFallback className="rounded-lg bg-primary text-primary-foreground">
             {selectedWorkspace.name[0]}

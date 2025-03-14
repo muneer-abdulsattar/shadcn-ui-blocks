@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function SelectColorDemo() {
+export default function SelectBackgroundColorDemo() {
   return (
     <Select defaultValue="apple">
       <SelectTrigger className="w-44 bg-indigo-600/25 dark:text-white text-indigo-600 border-none shadow-none">

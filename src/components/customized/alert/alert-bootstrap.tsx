@@ -7,7 +7,7 @@ import {
 
 export default function AlertCalloutDemo() {
   return (
-    <div className="space-y-4">
+    <div className="w-full space-y-4">
       <Alert className="bg-emerald-500/10 dark:bg-emerald-600/30 border-emerald-300 dark:border-emerald-600/70">
         <CircleFadingArrowUpIcon className="h-4 w-4 !text-emerald-500" />
         <AlertTitle>Your action has been completed successfully.</AlertTitle>
