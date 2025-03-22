@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-10",
+  "type": "registry:component",
+  "title": "Avatar with Ring",
+  "description": "Avatar with ring component",
+  "registryDependencies": [
+    "avatar"
+  ],
+  "files": [
+    {
+      "path": "src/components/customized/avatar/avatar-10.tsx",
+      "content": "import { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nexport default function AvatarWithRingDemo() {\n  return (\n    <Avatar className=\"ring-2 ring-green-500 ring-offset-[3px] ring-offset-background\">\n      <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

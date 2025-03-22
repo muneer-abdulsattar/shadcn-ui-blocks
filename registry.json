@@ -1407,111 +1407,111 @@
       ]
     },
     {
-      "name": "accordion-default",
+      "name": "accordion-01",
       "type": "registry:component",
       "title": "Default Accordion",
       "description": "A default accordion component",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/default.tsx",
+          "path": "src/components/customized/accordion/accordion-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-outline",
+      "name": "accordion-02",
       "type": "registry:component",
       "title": "Outline Accordion",
       "description": "An outline styled accordion",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-outline.tsx",
+          "path": "src/components/customized/accordion/accordion-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-box",
+      "name": "accordion-03",
       "type": "registry:component",
       "title": "Box Accordion",
       "description": "A box styled accordion",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-box.tsx",
+          "path": "src/components/customized/accordion/accordion-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-contained",
+      "name": "accordion-04",
       "type": "registry:component",
       "title": "Contained Accordion",
       "description": "A contained accordion component",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-contained.tsx",
+          "path": "src/components/customized/accordion/accordion-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-box-contained",
+      "name": "accordion-05",
       "type": "registry:component",
       "title": "Box Contained Accordion",
       "description": "A box-contained accordion component",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-box-contained.tsx",
+          "path": "src/components/customized/accordion/accordion-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-tabs",
+      "name": "accordion-06",
       "type": "registry:component",
       "title": "Tabs Accordion",
       "description": "A tabs-styled accordion component",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-tabs.tsx",
+          "path": "src/components/customized/accordion/accordion-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-highlight-active-item",
+      "name": "accordion-07",
       "type": "registry:component",
       "title": "Highlight Active Item Accordion",
       "description": "An accordion that highlights the active item",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-highlight-active-item.tsx",
+          "path": "src/components/customized/accordion/accordion-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-multiple-open",
+      "name": "accordion-08",
       "type": "registry:component",
       "title": "Multiple Expanded at a time Accordion",
       "description": "An accordion that allows multiple items to be expanded at once",
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-multiple-open.tsx",
+          "path": "src/components/customized/accordion/accordion-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-expand-icon",
+      "name": "accordion-09",
       "type": "registry:component",
       "title": "Expand Icon Accordion",
       "description": "An accordion with a custom expand icon",
@@ -1519,13 +1519,13 @@
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-expand-icon.tsx",
+          "path": "src/components/customized/accordion/accordion-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-icon",
+      "name": "accordion-10",
       "type": "registry:component",
       "title": "Icon Accordion",
       "description": "An accordion with icons",
@@ -1533,13 +1533,13 @@
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-icon.tsx",
+          "path": "src/components/customized/accordion/accordion-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-media-content",
+      "name": "accordion-11",
       "type": "registry:component",
       "title": "Media Content Accordion",
       "description": "An accordion with media content",
@@ -1547,13 +1547,13 @@
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-media-content.tsx",
+          "path": "src/components/customized/accordion/accordion-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "accordion-item-disabled",
+      "name": "accordion-12",
       "type": "registry:component",
       "title": "Disabled Item Accordion",
       "description": "An accordion with disabled items",
@@ -1561,13 +1561,13 @@
       "registryDependencies": ["accordion"],
       "files": [
         {
-          "path": "src/components/customized/accordion/accordion-item-disabled.tsx",
+          "path": "src/components/customized/accordion/accordion-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-default",
+      "name": "alert-01",
       "type": "registry:component",
       "title": "Primary Alert",
       "description": "A primary alert component",
@@ -1575,13 +1575,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/default.tsx",
+          "path": "src/components/customized/alert/alert-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-destructive",
+      "name": "alert-02",
       "type": "registry:component",
       "title": "Destructive Alert",
       "description": "A destructive alert component",
@@ -1589,13 +1589,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-destructive.tsx",
+          "path": "src/components/customized/alert/alert-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-success",
+      "name": "alert-03",
       "type": "registry:component",
       "title": "Success Alert",
       "description": "A success alert component",
@@ -1603,13 +1603,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-success.tsx",
+          "path": "src/components/customized/alert/alert-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-warning",
+      "name": "alert-04",
       "type": "registry:component",
       "title": "Warning Alert",
       "description": "A warning alert component",
@@ -1617,13 +1617,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-warning.tsx",
+          "path": "src/components/customized/alert/alert-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-info",
+      "name": "alert-05",
       "type": "registry:component",
       "title": "Info Alert",
       "description": "An info alert component",
@@ -1631,13 +1631,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-info.tsx",
+          "path": "src/components/customized/alert/alert-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-with-background",
+      "name": "alert-06",
       "type": "registry:component",
       "title": "Alert With Background",
       "description": "An alert with background component",
@@ -1645,13 +1645,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/with-background.tsx",
+          "path": "src/components/customized/alert/alert-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-soft",
+      "name": "alert-07",
       "type": "registry:component",
       "title": "Soft Alert",
       "description": "A soft alert component",
@@ -1659,13 +1659,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-soft.tsx",
+          "path": "src/components/customized/alert/alert-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-bootstrap",
+      "name": "alert-08",
       "type": "registry:component",
       "title": "Bootstrap Alert",
       "description": "A bootstrap-styled alert component",
@@ -1673,13 +1673,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-bootstrap.tsx",
+          "path": "src/components/customized/alert/alert-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-callout",
+      "name": "alert-09",
       "type": "registry:component",
       "title": "Callout Alert",
       "description": "A callout alert component",
@@ -1687,13 +1687,13 @@
       "registryDependencies": ["alert"],
       "files": [
         {
-          "path": "src/components/customized/alert/alert-callout.tsx",
+          "path": "src/components/customized/alert/alert-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-with-actions",
+      "name": "alert-10",
       "type": "registry:component",
       "title": "Alert With Actions",
       "description": "An alert with actions component",
@@ -1701,26 +1701,26 @@
       "registryDependencies": ["alert", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert/with-actions.tsx",
+          "path": "src/components/customized/alert/alert-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-default",
+      "name": "alert-dialog-01",
       "type": "registry:component",
       "title": "Default Alert Dialog",
       "description": "A default alert dialog component",
       "registryDependencies": ["alert-dialog", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/default.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-with-icon",
+      "name": "alert-dialog-02",
       "type": "registry:component",
       "title": "Alert Dialog With Icon",
       "description": "An alert dialog with icon component",
@@ -1728,13 +1728,13 @@
       "registryDependencies": ["alert-dialog", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/with-icon.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-destructive",
+      "name": "alert-dialog-03",
       "type": "registry:component",
       "title": "Destructive Alert Dialog",
       "description": "A destructive alert dialog component",
@@ -1742,13 +1742,13 @@
       "registryDependencies": ["alert-dialog", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/destructive.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-info",
+      "name": "alert-dialog-04",
       "type": "registry:component",
       "title": "Info Alert Dialog",
       "description": "An info alert dialog component",
@@ -1756,13 +1756,13 @@
       "registryDependencies": ["alert-dialog", "button", "badge"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/info.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-customized-header",
+      "name": "alert-dialog-05",
       "type": "registry:component",
       "title": "Customized Header Alert Dialog",
       "description": "An alert dialog with customized header",
@@ -1770,13 +1770,13 @@
       "registryDependencies": ["alert-dialog", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/customized-header.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "alert-dialog-customized-footer",
+      "name": "alert-dialog-06",
       "type": "registry:component",
       "title": "Customized Footer Alert Dialog",
       "description": "An alert dialog with customized footer",
@@ -1784,65 +1784,65 @@
       "registryDependencies": ["alert-dialog", "button"],
       "files": [
         {
-          "path": "src/components/customized/alert-dialog/customized-footer.tsx",
+          "path": "src/components/customized/alert-dialog/alert-dialog-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-default",
+      "name": "avatar-01",
       "type": "registry:component",
       "title": "Default Avatar",
       "description": "A default avatar component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/default.tsx",
+          "path": "src/components/customized/avatar/avatar-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-clickable",
+      "name": "avatar-02",
       "type": "registry:component",
       "title": "Clickable Avatar",
       "description": "A clickable avatar component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/clickable.tsx",
+          "path": "src/components/customized/avatar/avatar-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-tooltip",
+      "name": "avatar-03",
       "type": "registry:component",
       "title": "Avatar with Tooltip",
       "description": "An avatar with tooltip component",
       "registryDependencies": ["avatar", "tooltip"],
       "files": [
         {
-          "path": "src/components/customized/avatar/tooltip.tsx",
+          "path": "src/components/customized/avatar/avatar-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-with-text",
+      "name": "avatar-04",
       "type": "registry:component",
       "title": "Avatar with Text",
       "description": "An avatar with text component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/with-text.tsx",
+          "path": "src/components/customized/avatar/avatar-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-hover-card",
+      "name": "avatar-05",
       "type": "registry:component",
       "title": "Avatar with Hover Card",
       "description": "An avatar with hover card component",
@@ -1850,52 +1850,52 @@
       "registryDependencies": ["avatar", "hover-card"],
       "files": [
         {
-          "path": "src/components/customized/avatar/hover-card.tsx",
+          "path": "src/components/customized/avatar/avatar-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-size",
+      "name": "avatar-06",
       "type": "registry:component",
       "title": "Avatar Size",
       "description": "Different sizes of avatar component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/size.tsx",
+          "path": "src/components/customized/avatar/avatar-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-color",
+      "name": "avatar-07",
       "type": "registry:component",
       "title": "Avatar Color",
       "description": "Different colors of avatar component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/color.tsx",
+          "path": "src/components/customized/avatar/avatar-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-shape",
+      "name": "avatar-08",
       "type": "registry:component",
       "title": "Avatar Shape",
       "description": "Different shapes of avatar component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/shape.tsx",
+          "path": "src/components/customized/avatar/avatar-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-fallback",
+      "name": "avatar-09",
       "type": "registry:component",
       "title": "Avatar Fallback",
       "description": "Avatar with fallback component",
@@ -1903,195 +1903,195 @@
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/fallback.tsx",
+          "path": "src/components/customized/avatar/avatar-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-with-ring",
+      "name": "avatar-10",
       "type": "registry:component",
       "title": "Avatar with Ring",
       "description": "Avatar with ring component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/with-ring.tsx",
+          "path": "src/components/customized/avatar/avatar-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-status",
+      "name": "avatar-11",
       "type": "registry:component",
       "title": "Avatar Status",
       "description": "Avatar with status indicator component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/status.tsx",
+          "path": "src/components/customized/avatar/avatar-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-group",
+      "name": "avatar-12",
       "type": "registry:component",
       "title": "Avatar Group",
       "description": "Group of avatars component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/group.tsx",
+          "path": "src/components/customized/avatar/avatar-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "avatar-max-group",
+      "name": "avatar-13",
       "type": "registry:component",
       "title": "Avatar Group with Max",
       "description": "Group of avatars with maximum limit component",
       "registryDependencies": ["avatar"],
       "files": [
         {
-          "path": "src/components/customized/avatar/max-avatar-group.tsx",
+          "path": "src/components/customized/avatar/avatar-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-default",
+      "name": "badge-01",
       "type": "registry:component",
       "title": "Default Badge",
       "description": "A default badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/default.tsx",
+          "path": "src/components/customized/badge/badge-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-secondary",
+      "name": "badge-02",
       "type": "registry:component",
       "title": "Secondary Badge",
       "description": "A secondary badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/secondary.tsx",
+          "path": "src/components/customized/badge/badge-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-outline",
+      "name": "badge-03",
       "type": "registry:component",
       "title": "Outline Badge",
       "description": "An outline badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/outline.tsx",
+          "path": "src/components/customized/badge/badge-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-destructive",
+      "name": "badge-04",
       "type": "registry:component",
       "title": "Destructive Badge",
       "description": "A destructive badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/destructive.tsx",
+          "path": "src/components/customized/badge/badge-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-rounded",
+      "name": "badge-05",
       "type": "registry:component",
       "title": "Rounded Badge",
       "description": "A rounded badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/rounded.tsx",
+          "path": "src/components/customized/badge/badge-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-gradient",
+      "name": "badge-06",
       "type": "registry:component",
       "title": "Gradient Badge",
       "description": "A gradient badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/gradient.tsx",
+          "path": "src/components/customized/badge/badge-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-gradient-outline",
+      "name": "badge-07",
       "type": "registry:component",
       "title": "Gradient Outline Badge",
       "description": "A gradient outline badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/gradient-outline.tsx",
+          "path": "src/components/customized/badge/badge-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-soft",
+      "name": "badge-08",
       "type": "registry:component",
       "title": "Soft Badge",
       "description": "A soft badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/soft.tsx",
+          "path": "src/components/customized/badge/badge-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-status",
+      "name": "badge-09",
       "type": "registry:component",
       "title": "Status Badge",
       "description": "A status badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/status.tsx",
+          "path": "src/components/customized/badge/badge-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-with-image",
+      "name": "badge-10",
       "type": "registry:component",
       "title": "Badge with Image",
       "description": "A badge with image component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/with-image.tsx",
+          "path": "src/components/customized/badge/badge-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-with-icon",
+      "name": "badge-11",
       "type": "registry:component",
       "title": "Badge with Icon",
       "description": "A badge with icon component",
@@ -2099,130 +2099,130 @@
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/with-icon.tsx",
+          "path": "src/components/customized/badge/badge-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-clickable",
+      "name": "badge-12",
       "type": "registry:component",
       "title": "Clickable Badge",
       "description": "A clickable badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/clickable.tsx",
+          "path": "src/components/customized/badge/badge-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "badge-clickable-link",
+      "name": "badge-13",
       "type": "registry:component",
       "title": "Clickable Link Badge",
       "description": "A clickable link badge component",
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/badge/clickable-link.tsx",
+          "path": "src/components/customized/badge/badge-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-primary",
+      "name": "button-01",
       "type": "registry:component",
       "title": "Primary Button",
       "description": "A primary button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/primary-button.tsx",
+          "path": "src/components/customized/button/button-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-secondary",
+      "name": "button-02",
       "type": "registry:component",
       "title": "Secondary Button",
       "description": "A secondary button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/secondary-button.tsx",
+          "path": "src/components/customized/button/button-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-destructive",
+      "name": "button-03",
       "type": "registry:component",
       "title": "Destructive Button",
       "description": "A destructive button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/destructive-button.tsx",
+          "path": "src/components/customized/button/button-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-outline",
+      "name": "button-04",
       "type": "registry:component",
       "title": "Outline Button",
       "description": "An outline button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/outline-button.tsx",
+          "path": "src/components/customized/button/button-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-ghost",
+      "name": "button-08",
       "type": "registry:component",
       "title": "Ghost Button",
       "description": "A ghost button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/ghost-button.tsx",
+          "path": "src/components/customized/button/button-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-full-width",
+      "name": "button-17",
       "type": "registry:component",
       "title": "Full Width Button",
       "description": "A full width button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/full-width-button.tsx",
+          "path": "src/components/customized/button/button-17.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-group",
+      "name": "button-18",
       "type": "registry:component",
       "title": "Button Group",
       "description": "A button group component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/group-button.tsx",
+          "path": "src/components/customized/button/button-18.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-group-2",
+      "name": "button-19",
       "type": "registry:component",
       "title": "Button Group 2",
       "description": "Another button group component",
@@ -2230,26 +2230,26 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/group-button-2.tsx",
+          "path": "src/components/customized/button/button-19.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-with-tooltip",
+      "name": "button-22",
       "type": "registry:component",
       "title": "Button with Tooltip",
       "description": "A button with tooltip component",
       "registryDependencies": ["button", "tooltip"],
       "files": [
         {
-          "path": "src/components/customized/button/with-tooltip.tsx",
+          "path": "src/components/customized/button/button-22.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-theme-toggle",
+      "name": "button-16",
       "type": "registry:component",
       "title": "Theme Toggle Button",
       "description": "A theme toggle button component",
@@ -2257,13 +2257,13 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/theme-toggle.tsx",
+          "path": "src/components/customized/button/button-16.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-copy",
+      "name": "button-20",
       "type": "registry:component",
       "title": "Copy Button",
       "description": "A copy button component",
@@ -2271,26 +2271,26 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/copy-button.tsx",
+          "path": "src/components/customized/button/button-20.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-rounded",
+      "name": "button-14",
       "type": "registry:component",
       "title": "Rounded Button",
       "description": "A rounded button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/rounded-button.tsx",
+          "path": "src/components/customized/button/button-14.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-toggle",
+      "name": "button-15",
       "type": "registry:component",
       "title": "Toggle Button",
       "description": "A toggle button component",
@@ -2298,13 +2298,13 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/toggle-button.tsx",
+          "path": "src/components/customized/button/button-15.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-social",
+      "name": "button-11",
       "type": "registry:component",
       "title": "Social Button",
       "description": "A social button component",
@@ -2312,26 +2312,26 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/social-button.tsx",
+          "path": "src/components/customized/button/button-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-social-login",
+      "name": "button-12",
       "type": "registry:component",
       "title": "Social Login Button",
       "description": "A social login button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/social-login-button.tsx",
+          "path": "src/components/customized/button/button-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-split",
+      "name": "button-07",
       "type": "registry:component",
       "title": "Split Button",
       "description": "A split button component",
@@ -2339,13 +2339,13 @@
       "registryDependencies": ["button", "dropdown-menu"],
       "files": [
         {
-          "path": "src/components/customized/button/split-button.tsx",
+          "path": "src/components/customized/button/button-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-loading",
+      "name": "button-06",
       "type": "registry:component",
       "title": "Loading Button",
       "description": "A loading button component",
@@ -2353,26 +2353,26 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/loading-button.tsx",
+          "path": "src/components/customized/button/button-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-gradient",
+      "name": "button-09",
       "type": "registry:component",
       "title": "Gradient Button",
       "description": "A gradient button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/gradient-button.tsx",
+          "path": "src/components/customized/button/button-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-icon",
+      "name": "button-05",
       "type": "registry:component",
       "title": "Icon Button",
       "description": "An icon button component",
@@ -2380,13 +2380,13 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/icon-button.tsx",
+          "path": "src/components/customized/button/button-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-neon",
+      "name": "button-13",
       "type": "registry:component",
       "title": "Neon Button",
       "description": "A neon button component",
@@ -2394,13 +2394,13 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/neon-button.tsx",
+          "path": "src/components/customized/button/button-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-with-tap-animation",
+      "name": "button-23",
       "type": "registry:component",
       "title": "Button with Tap Animation",
       "description": "A button with tap animation component",
@@ -2408,26 +2408,26 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/with-tap-animation.tsx",
+          "path": "src/components/customized/button/button-23.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-link",
+      "name": "button-10",
       "type": "registry:component",
       "title": "Link Button",
       "description": "A link button component",
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/link-button.tsx",
+          "path": "src/components/customized/button/button-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "button-with-badge",
+      "name": "button-21",
       "type": "registry:component",
       "title": "Button with Badge",
       "description": "A button with badge component",
@@ -2435,52 +2435,52 @@
       "registryDependencies": ["button"],
       "files": [
         {
-          "path": "src/components/customized/button/with-badge.tsx",
+          "path": "src/components/customized/button/button-21.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-default",
+      "name": "card-01",
       "type": "registry:component",
       "title": "Default Card",
       "description": "A default card component",
       "registryDependencies": ["card", "button", "input", "label", "select"],
       "files": [
         {
-          "path": "src/components/customized/card/default.tsx",
+          "path": "src/components/customized/card/card-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-with-background",
+      "name": "card-02",
       "type": "registry:component",
       "title": "Card with Background",
       "description": "A card with background component",
       "registryDependencies": ["card", "button", "input", "label", "select"],
       "files": [
         {
-          "path": "src/components/customized/card/with-background.tsx",
+          "path": "src/components/customized/card/card-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-create-account",
+      "name": "card-03",
       "type": "registry:component",
       "title": "Create Account Card",
       "description": "A create account card component",
       "registryDependencies": ["card", "button", "input", "label", "separator"],
       "files": [
         {
-          "path": "src/components/customized/card/create-account.tsx",
+          "path": "src/components/customized/card/card-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-product",
+      "name": "card-07",
       "type": "registry:component",
       "title": "Product Card",
       "description": "A product card component",
@@ -2488,26 +2488,26 @@
       "registryDependencies": ["card", "button"],
       "files": [
         {
-          "path": "src/components/customized/card/product-card.tsx",
+          "path": "src/components/customized/card/card-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-banner",
+      "name": "card-04",
       "type": "registry:component",
       "title": "Banner Card",
       "description": "A banner card component",
       "registryDependencies": ["card", "button"],
       "files": [
         {
-          "path": "src/components/customized/card/card-banner.tsx",
+          "path": "src/components/customized/card/card-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-pricing",
+      "name": "card-05",
       "type": "registry:component",
       "title": "Pricing Card",
       "description": "A pricing card component",
@@ -2515,13 +2515,13 @@
       "registryDependencies": ["card", "button", "tooltip"],
       "files": [
         {
-          "path": "src/components/customized/card/card-pricing.tsx",
+          "path": "src/components/customized/card/card-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-testimonial",
+      "name": "card-08",
       "type": "registry:component",
       "title": "Testimonial Card",
       "description": "A testimonial card component",
@@ -2529,13 +2529,13 @@
       "registryDependencies": ["card", "avatar"],
       "files": [
         {
-          "path": "src/components/customized/card/testimonial-card.tsx",
+          "path": "src/components/customized/card/card-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "card-post",
+      "name": "card-06",
       "type": "registry:component",
       "title": "Post Card",
       "description": "A post card component",
@@ -2543,52 +2543,52 @@
       "registryDependencies": ["card", "button", "separator"],
       "files": [
         {
-          "path": "src/components/customized/card/card-post.tsx",
+          "path": "src/components/customized/card/card-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-disabled",
+      "name": "checkbox-02",
       "type": "registry:component",
       "title": "Disabled Checkbox",
       "description": "A disabled checkbox component",
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/disabled-checkbox.tsx",
+          "path": "src/components/customized/checkbox/checkbox-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-with-text",
+      "name": "checkbox-01",
       "type": "registry:component",
       "title": "Checkbox with Text",
       "description": "A checkbox with text component",
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/with-text.tsx",
+          "path": "src/components/customized/checkbox/checkbox-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-controlled",
+      "name": "checkbox-06",
       "type": "registry:component",
       "title": "Controlled Checkbox",
       "description": "A controlled checkbox component",
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/controlled.tsx",
+          "path": "src/components/customized/checkbox/checkbox-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-indeterminate",
+      "name": "checkbox-03",
       "type": "registry:component",
       "title": "Indeterminate Checkbox",
       "description": "An indeterminate checkbox component",
@@ -2596,52 +2596,52 @@
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/indeterminate.tsx",
+          "path": "src/components/customized/checkbox/checkbox-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-colors",
+      "name": "checkbox-07",
       "type": "registry:component",
       "title": "Checkbox Colors",
       "description": "Different colors of checkbox component",
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/colors.tsx",
+          "path": "src/components/customized/checkbox/checkbox-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-sizes",
+      "name": "checkbox-08",
       "type": "registry:component",
       "title": "Checkbox Sizes",
       "description": "Different sizes of checkbox component",
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/sizes.tsx",
+          "path": "src/components/customized/checkbox/checkbox-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-horizontal-group",
+      "name": "checkbox-04",
       "type": "registry:component",
       "title": "Horizontal Checkbox Group",
       "description": "A horizontal checkbox group component",
       "registryDependencies": ["checkbox", "label"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/horizontal-group.tsx",
+          "path": "src/components/customized/checkbox/checkbox-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-icon",
+      "name": "checkbox-09",
       "type": "registry:component",
       "title": "Icon Checkbox",
       "description": "A checkbox with custom icon component",
@@ -2652,39 +2652,39 @@
       ],
       "files": [
         {
-          "path": "src/components/customized/checkbox/icon.tsx",
+          "path": "src/components/customized/checkbox/checkbox-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-card",
+      "name": "checkbox-11",
       "type": "registry:component",
       "title": "Card Checkbox",
       "description": "A card checkbox component",
       "dependencies": ["lucide-react", "@radix-ui/react-checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/card-1.tsx",
+          "path": "src/components/customized/checkbox/checkbox-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-multi-color-picker",
+      "name": "checkbox-10",
       "type": "registry:component",
       "title": "Multi Color Picker Checkbox",
       "description": "A multi color picker checkbox component",
       "dependencies": ["lucide-react", "@radix-ui/react-checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/multi-color-picker.tsx",
+          "path": "src/components/customized/checkbox/checkbox-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-vertical-group",
+      "name": "checkbox-05",
       "type": "registry:component",
       "title": "Vertical Checkbox Group",
       "description": "A vertical checkbox group component",
@@ -2692,13 +2692,13 @@
       "registryDependencies": ["checkbox"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/vertical-group.tsx",
+          "path": "src/components/customized/checkbox/checkbox-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "checkbox-with-form",
+      "name": "checkbox-12",
       "type": "registry:component",
       "title": "Checkbox with Form",
       "description": "A checkbox with form component",
@@ -2706,39 +2706,39 @@
       "registryDependencies": ["checkbox", "form", "button"],
       "files": [
         {
-          "path": "src/components/customized/checkbox/with-form.tsx",
+          "path": "src/components/customized/checkbox/checkbox-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-default",
+      "name": "dropdown-menu-01",
       "type": "registry:component",
       "title": "Default Dropdown Menu",
       "description": "A default dropdown menu component",
       "registryDependencies": ["dropdown-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/default.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-checkboxes",
+      "name": "dropdown-menu-03",
       "type": "registry:component",
       "title": "Dropdown Menu with Checkboxes",
       "description": "A dropdown menu with checkboxes component",
       "registryDependencies": ["dropdown-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/checkboxes.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-with-icon",
+      "name": "dropdown-menu-02",
       "type": "registry:component",
       "title": "Dropdown Menu with Icon",
       "description": "A dropdown menu with icon component",
@@ -2746,13 +2746,13 @@
       "registryDependencies": ["dropdown-menu", "avatar"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/with-icon.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-radio-group",
+      "name": "dropdown-menu-04",
       "type": "registry:component",
       "title": "Dropdown Menu with Radio Group",
       "description": "A dropdown menu with radio group component",
@@ -2760,13 +2760,13 @@
       "registryDependencies": ["dropdown-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/radio-group.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-with-sub-menu",
+      "name": "dropdown-menu-05",
       "type": "registry:component",
       "title": "Dropdown Menu with Sub Menu",
       "description": "A dropdown menu with sub menu component",
@@ -2774,13 +2774,13 @@
       "registryDependencies": ["dropdown-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/with-sub-menu.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-complex",
+      "name": "dropdown-menu-07",
       "type": "registry:component",
       "title": "Complex Dropdown Menu",
       "description": "A complex dropdown menu component",
@@ -2788,13 +2788,13 @@
       "registryDependencies": ["dropdown-menu", "avatar"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/complex-menu.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-with-shortcuts",
+      "name": "dropdown-menu-06",
       "type": "registry:component",
       "title": "Dropdown Menu with Shortcuts",
       "description": "A dropdown menu with keyboard shortcuts component",
@@ -2802,13 +2802,13 @@
       "registryDependencies": ["dropdown-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/with-shortcuts.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "dropdown-menu-workspace-switcher",
+      "name": "dropdown-menu-08",
       "type": "registry:component",
       "title": "Workspace Switcher Dropdown Menu",
       "description": "A workspace switcher dropdown menu component",
@@ -2816,91 +2816,91 @@
       "registryDependencies": ["dropdown-menu", "avatar"],
       "files": [
         {
-          "path": "src/components/customized/dropdown-menu/workspace-switcher.tsx",
+          "path": "src/components/customized/dropdown-menu/dropdown-menu-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-default",
+      "name": "input-01",
       "type": "registry:component",
       "title": "Default Input",
       "description": "A default input component",
       "registryDependencies": ["input"],
       "files": [
         {
-          "path": "src/components/customized/input/default-input.tsx",
+          "path": "src/components/customized/input/input-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-filled",
+      "name": "input-03",
       "type": "registry:component",
       "title": "Filled Input",
       "description": "A filled input component",
       "registryDependencies": ["input"],
       "files": [
         {
-          "path": "src/components/customized/input/filled-input.tsx",
+          "path": "src/components/customized/input/input-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-disabled",
+      "name": "input-04",
       "type": "registry:component",
       "title": "Disabled Input",
       "description": "A disabled input component",
       "registryDependencies": ["input"],
       "files": [
         {
-          "path": "src/components/customized/input/disabled-input.tsx",
+          "path": "src/components/customized/input/input-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-helper-text",
+      "name": "input-08",
       "type": "registry:component",
       "title": "Input with Helper Text",
       "description": "An input with helper text component",
       "registryDependencies": ["input", "label"],
       "files": [
         {
-          "path": "src/components/customized/input/with-helper-text.tsx",
+          "path": "src/components/customized/input/input-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-error-message",
+      "name": "input-09",
       "type": "registry:component",
       "title": "Input with Error Message",
       "description": "An input with error message component",
       "registryDependencies": ["input", "label"],
       "files": [
         {
-          "path": "src/components/customized/input/with-error-message.tsx",
+          "path": "src/components/customized/input/input-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-file",
+      "name": "input-11",
       "type": "registry:component",
       "title": "File Input",
       "description": "A file input component",
       "registryDependencies": ["input", "label"],
       "files": [
         {
-          "path": "src/components/customized/input/file-input.tsx",
+          "path": "src/components/customized/input/input-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-dropzone",
+      "name": "input-12",
       "type": "registry:component",
       "title": "Dropzone Input",
       "description": "A dropzone input component",
@@ -2908,26 +2908,26 @@
       "registryDependencies": ["input", "label"],
       "files": [
         {
-          "path": "src/components/customized/input/dropzone.tsx",
+          "path": "src/components/customized/input/input-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-ring",
+      "name": "input-02",
       "type": "registry:component",
       "title": "Ring Input",
       "description": "A ring input component",
       "registryDependencies": ["input"],
       "files": [
         {
-          "path": "src/components/customized/input/ring-input.tsx",
+          "path": "src/components/customized/input/input-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-form",
+      "name": "input-10",
       "type": "registry:component",
       "title": "Input with Form",
       "description": "An input with form component",
@@ -2935,26 +2935,26 @@
       "registryDependencies": ["input", "form", "button"],
       "files": [
         {
-          "path": "src/components/customized/input/with-form.tsx",
+          "path": "src/components/customized/input/input-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-button",
+      "name": "input-06",
       "type": "registry:component",
       "title": "Input with Button",
       "description": "An input with button component",
       "registryDependencies": ["input", "button"],
       "files": [
         {
-          "path": "src/components/customized/input/with-button.tsx",
+          "path": "src/components/customized/input/input-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-adornment",
+      "name": "input-07",
       "type": "registry:component",
       "title": "Input with Adornment",
       "description": "An input with adornment component",
@@ -2962,39 +2962,39 @@
       "registryDependencies": ["input", "button"],
       "files": [
         {
-          "path": "src/components/customized/input/with-adornment.tsx",
+          "path": "src/components/customized/input/input-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-with-label",
+      "name": "input-05",
       "type": "registry:component",
       "title": "Input with Label",
       "description": "An input with label component",
       "registryDependencies": ["input", "label"],
       "files": [
         {
-          "path": "src/components/customized/input/with-label.tsx",
+          "path": "src/components/customized/input/input-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-default",
+      "name": "breadcrumb-01",
       "type": "registry:component",
       "title": "Default Breadcrumb",
       "description": "A default breadcrumb component",
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/default.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-icon",
+      "name": "breadcrumb-05",
       "type": "registry:component",
       "title": "Breadcrumb with Icon",
       "description": "A breadcrumb with icon component",
@@ -3002,13 +3002,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-icon.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-icon-2",
+      "name": "breadcrumb-06",
       "type": "registry:component",
       "title": "Breadcrumb with Icon (Alternate)",
       "description": "An alternate breadcrumb with icon component",
@@ -3016,13 +3016,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-icon-2.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-icon-and-label",
+      "name": "breadcrumb-07",
       "type": "registry:component",
       "title": "Breadcrumb with Icon and Label",
       "description": "A breadcrumb with icon and label component",
@@ -3030,13 +3030,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-icon-and-label.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-icon-and-label-2",
+      "name": "breadcrumb-08",
       "type": "registry:component",
       "title": "Breadcrumb with Icon and Label (Alternate)",
       "description": "An alternate breadcrumb with icon and label component",
@@ -3044,13 +3044,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-icon-and-label-2.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-dropdown",
+      "name": "breadcrumb-13",
       "type": "registry:component",
       "title": "Breadcrumb with Dropdown",
       "description": "A breadcrumb with dropdown component",
@@ -3058,13 +3058,13 @@
       "registryDependencies": ["breadcrumb", "dropdown-menu"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-dropdown.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-tab-active",
+      "name": "breadcrumb-10",
       "type": "registry:component",
       "title": "Breadcrumb with Tab Active",
       "description": "A breadcrumb with tab active component",
@@ -3072,13 +3072,13 @@
       "registryDependencies": ["breadcrumb", "badge"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/tab-active.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-collapsed",
+      "name": "breadcrumb-14",
       "type": "registry:component",
       "title": "Collapsed Breadcrumb",
       "description": "A collapsed breadcrumb component",
@@ -3086,13 +3086,13 @@
       "registryDependencies": ["breadcrumb", "dropdown-menu"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/collapsed.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-14.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-with-background",
+      "name": "breadcrumb-09",
       "type": "registry:component",
       "title": "Breadcrumb with Background",
       "description": "A breadcrumb with background component",
@@ -3100,13 +3100,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/with-background.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-tabs",
+      "name": "breadcrumb-11",
       "type": "registry:component",
       "title": "Tabs Breadcrumb",
       "description": "A tabs breadcrumb component",
@@ -3114,13 +3114,13 @@
       "registryDependencies": ["breadcrumb", "badge"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/tabs.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-tabs-outline",
+      "name": "breadcrumb-12",
       "type": "registry:component",
       "title": "Tabs Outline Breadcrumb",
       "description": "A tabs outline breadcrumb component",
@@ -3128,13 +3128,13 @@
       "registryDependencies": ["breadcrumb", "badge"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/tabs-outline.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-steps",
+      "name": "breadcrumb-15",
       "type": "registry:component",
       "title": "Steps Breadcrumb",
       "description": "A steps breadcrumb component",
@@ -3142,26 +3142,26 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/steps.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-15.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-chevrons-separator",
+      "name": "breadcrumb-03",
       "type": "registry:component",
       "title": "Breadcrumb with Chevrons Separator",
       "description": "A breadcrumb with chevrons separator component",
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/chevrons-separator.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-dot-separator",
+      "name": "breadcrumb-04",
       "type": "registry:component",
       "title": "Breadcrumb with Dot Separator",
       "description": "A breadcrumb with dot separator component",
@@ -3169,13 +3169,13 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/dot-separator.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "breadcrumb-slash-separator",
+      "name": "breadcrumb-02",
       "type": "registry:component",
       "title": "Breadcrumb with Slash Separator",
       "description": "A breadcrumb with slash separator component",
@@ -3183,156 +3183,156 @@
       "registryDependencies": ["breadcrumb"],
       "files": [
         {
-          "path": "src/components/customized/breadcrumb/slash-separator.tsx",
+          "path": "src/components/customized/breadcrumb/breadcrumb-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-default",
+      "name": "carousel-01",
       "type": "registry:component",
       "title": "Default Carousel",
       "description": "A default carousel component",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/default.tsx",
+          "path": "src/components/customized/carousel/carousel-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-multiple-slides",
+      "name": "carousel-02",
       "type": "registry:component",
       "title": "Carousel with Multiple Slides",
       "description": "A carousel displaying multiple slides at once",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/multiple-slides.tsx",
+          "path": "src/components/customized/carousel/carousel-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-vertical",
+      "name": "carousel-03",
       "type": "registry:component",
       "title": "Vertical Carousel",
       "description": "A vertical orientation carousel",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/vertical.tsx",
+          "path": "src/components/customized/carousel/carousel-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-slide-status",
+      "name": "carousel-04",
       "type": "registry:component",
       "title": "Carousel with Slide Status",
       "description": "A carousel with slide status indicator",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/slide-status.tsx",
+          "path": "src/components/customized/carousel/carousel-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-slide-status-2",
+      "name": "carousel-05",
       "type": "registry:component",
       "title": "Carousel with Slide Status (Alternate)",
       "description": "An alternate carousel with slide status indicator",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/slide-status-2.tsx",
+          "path": "src/components/customized/carousel/carousel-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-pagination",
+      "name": "carousel-06",
       "type": "registry:component",
       "title": "Carousel with Pagination",
       "description": "A carousel with pagination controls",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/pagination.tsx",
+          "path": "src/components/customized/carousel/carousel-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-footer",
+      "name": "carousel-07",
       "type": "registry:component",
       "title": "Carousel with Footer",
       "description": "A carousel with a footer section",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/footer.tsx",
+          "path": "src/components/customized/carousel/carousel-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-progress",
+      "name": "carousel-08",
       "type": "registry:component",
       "title": "Carousel with Progress Bar",
       "description": "A carousel with a progress bar indicator",
       "registryDependencies": ["carousel", "card", "progress"],
       "files": [
         {
-          "path": "src/components/customized/carousel/progress.tsx",
+          "path": "src/components/customized/carousel/carousel-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-thumbs",
+      "name": "carousel-09",
       "type": "registry:component",
       "title": "Carousel with Thumbnails",
       "description": "A carousel with thumbnail navigation",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/thumbs.tsx",
+          "path": "src/components/customized/carousel/carousel-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-opacity",
+      "name": "carousel-10",
       "type": "registry:component",
       "title": "Carousel with Opacity Transition",
       "description": "A carousel with opacity transition effects",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/opacity.tsx",
+          "path": "src/components/customized/carousel/carousel-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "carousel-scale",
+      "name": "carousel-11",
       "type": "registry:component",
       "title": "Carousel with Scale Transition",
       "description": "A carousel with scale transition effects",
       "registryDependencies": ["carousel", "card"],
       "files": [
         {
-          "path": "src/components/customized/carousel/scale.tsx",
+          "path": "src/components/customized/carousel/carousel-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "collapsible-default",
+      "name": "collapsible-01",
       "type": "registry:component",
       "title": "Default Collapsible",
       "description": "A default collapsible component",
@@ -3340,13 +3340,13 @@
       "registryDependencies": ["collapsible", "button"],
       "files": [
         {
-          "path": "src/components/customized/collapsible/default.tsx",
+          "path": "src/components/customized/collapsible/collapsible-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "collapsible-show-more",
+      "name": "collapsible-02",
       "type": "registry:component",
       "title": "Show More Collapsible",
       "description": "A collapsible component with show more functionality",
@@ -3354,13 +3354,13 @@
       "registryDependencies": ["collapsible", "button"],
       "files": [
         {
-          "path": "src/components/customized/collapsible/show-more.tsx",
+          "path": "src/components/customized/collapsible/collapsible-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "collapsible-file-tree",
+      "name": "collapsible-03",
       "type": "registry:component",
       "title": "File Tree Collapsible",
       "description": "A collapsible component for displaying file trees",
@@ -3368,13 +3368,13 @@
       "registryDependencies": ["collapsible"],
       "files": [
         {
-          "path": "src/components/customized/collapsible/file-tree.tsx",
+          "path": "src/components/customized/collapsible/collapsible-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "collapsible-filters",
+      "name": "collapsible-04",
       "type": "registry:component",
       "title": "Filters Collapsible",
       "description": "A collapsible component for filter options",
@@ -3388,78 +3388,78 @@
       ],
       "files": [
         {
-          "path": "src/components/customized/collapsible/filters.tsx",
+          "path": "src/components/customized/collapsible/collapsible-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-default",
+      "name": "input-otp-01",
       "type": "registry:component",
       "title": "Default OTP Input",
       "description": "A default one-time password input component",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/default.tsx",
+          "path": "src/components/customized/input-otp/input-otp-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-separated",
+      "name": "input-otp-03",
       "type": "registry:component",
       "title": "Separated OTP Input",
       "description": "An OTP input with separated input fields",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/separated.tsx",
+          "path": "src/components/customized/input-otp/input-otp-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-separated-2",
+      "name": "input-otp-04",
       "type": "registry:component",
       "title": "Separated OTP Input (Alternate)",
       "description": "An alternate style of separated OTP input fields",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/separated-2.tsx",
+          "path": "src/components/customized/input-otp/input-otp-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-secondary",
+      "name": "input-otp-05",
       "type": "registry:component",
       "title": "Secondary OTP Input",
       "description": "An OTP input with secondary styling",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/secondary.tsx",
+          "path": "src/components/customized/input-otp/input-otp-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-without-separator",
+      "name": "input-otp-02",
       "type": "registry:component",
       "title": "OTP Input Without Separator",
       "description": "An OTP input without separators between fields",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/without-separator.tsx",
+          "path": "src/components/customized/input-otp/input-otp-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-custom-separator",
+      "name": "input-otp-06",
       "type": "registry:component",
       "title": "OTP Input with Custom Separator",
       "description": "An OTP input with custom separator between fields",
@@ -3467,39 +3467,39 @@
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/custom-separator.tsx",
+          "path": "src/components/customized/input-otp/input-otp-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "input-otp-inner-shadow",
+      "name": "input-otp-07",
       "type": "registry:component",
       "title": "OTP Input with Inner Shadow",
       "description": "An OTP input with inner shadow styling",
       "registryDependencies": ["input-otp"],
       "files": [
         {
-          "path": "src/components/customized/input-otp/inner-shadow.tsx",
+          "path": "src/components/customized/input-otp/input-otp-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-default",
+      "name": "navigation-menu-01",
       "type": "registry:component",
       "title": "Default Navigation Menu",
       "description": "A default navigation menu component",
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/default.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-icon",
+      "name": "navigation-menu-07",
       "type": "registry:component",
       "title": "Navigation Menu with Icons",
       "description": "A navigation menu with icon elements",
@@ -3507,13 +3507,13 @@
       "registryDependencies": ["navigation-menu", "button"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/icon.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-active-item",
+      "name": "navigation-menu-04",
       "type": "registry:component",
       "title": "Navigation Menu with Active Item",
       "description": "A navigation menu with active item styling",
@@ -3521,13 +3521,13 @@
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/active-item.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-underlined",
+      "name": "navigation-menu-05",
       "type": "registry:component",
       "title": "Underlined Navigation Menu",
       "description": "A navigation menu with underlined styling",
@@ -3535,13 +3535,13 @@
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/underlined.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-mobile-navigation",
+      "name": "navigation-menu-08",
       "type": "registry:component",
       "title": "Mobile Navigation Menu",
       "description": "A mobile-friendly navigation menu",
@@ -3549,13 +3549,13 @@
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/mobile-navigation.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-with-icon",
+      "name": "navigation-menu-02",
       "type": "registry:component",
       "title": "Navigation Menu with Icon",
       "description": "A navigation menu with icon integration",
@@ -3563,13 +3563,13 @@
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/with-icon.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-rich-menu",
+      "name": "navigation-menu-06",
       "type": "registry:component",
       "title": "Rich Navigation Menu",
       "description": "A feature-rich navigation menu with advanced styling",
@@ -3577,39 +3577,39 @@
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/rich-menu.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "navigation-menu-with-dropdown",
+      "name": "navigation-menu-03",
       "type": "registry:component",
       "title": "Navigation Menu with Dropdown",
       "description": "A navigation menu with dropdown functionality",
       "registryDependencies": ["navigation-menu"],
       "files": [
         {
-          "path": "src/components/customized/navigation-menu/with-dropdown.tsx",
+          "path": "src/components/customized/navigation-menu/navigation-menu-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-default",
+      "name": "pagination-01",
       "type": "registry:component",
       "title": "Default Pagination",
       "description": "A default pagination component",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/default.tsx",
+          "path": "src/components/customized/pagination/pagination-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-icon-and-label",
+      "name": "pagination-10",
       "type": "registry:component",
       "title": "Pagination with Icon and Label",
       "description": "A pagination component with icons and labels",
@@ -3617,65 +3617,65 @@
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/icon-and-label.tsx",
+          "path": "src/components/customized/pagination/pagination-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-icon",
+      "name": "pagination-05",
       "type": "registry:component",
       "title": "Pagination with Icon",
       "description": "A pagination component with icons",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/icon.tsx",
+          "path": "src/components/customized/pagination/pagination-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-bordered",
+      "name": "pagination-07",
       "type": "registry:component",
       "title": "Bordered Pagination",
       "description": "A pagination component with bordered styling",
       "registryDependencies": ["pagination", "button"],
       "files": [
         {
-          "path": "src/components/customized/pagination/bordered.tsx",
+          "path": "src/components/customized/pagination/pagination-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-rounded-button",
+      "name": "pagination-04",
       "type": "registry:component",
       "title": "Pagination with Rounded Buttons",
       "description": "A pagination component with rounded button styling",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/rounded-button.tsx",
+          "path": "src/components/customized/pagination/pagination-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-tabs",
+      "name": "pagination-08",
       "type": "registry:component",
       "title": "Tabs Pagination",
       "description": "A pagination component with tabs styling",
       "registryDependencies": ["pagination", "button"],
       "files": [
         {
-          "path": "src/components/customized/pagination/tabs.tsx",
+          "path": "src/components/customized/pagination/pagination-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-first-last-page",
+      "name": "pagination-06",
       "type": "registry:component",
       "title": "Pagination with First/Last Page",
       "description": "A pagination component with first and last page navigation",
@@ -3683,65 +3683,65 @@
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/first-last-page.tsx",
+          "path": "src/components/customized/pagination/pagination-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-tabs-secondary",
+      "name": "pagination-09",
       "type": "registry:component",
       "title": "Secondary Tabs Pagination",
       "description": "A pagination component with secondary tabs styling",
       "registryDependencies": ["pagination", "button"],
       "files": [
         {
-          "path": "src/components/customized/pagination/tabs-secondary.tsx",
+          "path": "src/components/customized/pagination/pagination-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-numberless",
+      "name": "pagination-11",
       "type": "registry:component",
       "title": "Numberless Pagination",
       "description": "A pagination component without page numbers",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/numberless.tsx",
+          "path": "src/components/customized/pagination/pagination-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-numberless-with-text",
+      "name": "pagination-12",
       "type": "registry:component",
       "title": "Numberless Pagination with Text",
       "description": "A pagination component without numbers but with text",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/numberless-with-text.tsx",
+          "path": "src/components/customized/pagination/pagination-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-ellipsis",
+      "name": "pagination-13",
       "type": "registry:component",
       "title": "Pagination with Ellipsis",
       "description": "A pagination component with ellipsis for long page ranges",
       "registryDependencies": ["pagination"],
       "files": [
         {
-          "path": "src/components/customized/pagination/ellipsis.tsx",
+          "path": "src/components/customized/pagination/pagination-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-table-pagination",
+      "name": "pagination-14",
       "type": "registry:component",
       "title": "Table Pagination",
       "description": "A pagination component designed for tables",
@@ -3749,319 +3749,319 @@
       "registryDependencies": ["pagination", "button", "select", "label"],
       "files": [
         {
-          "path": "src/components/customized/pagination/table-pagination.tsx",
+          "path": "src/components/customized/pagination/pagination-14.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-primary-button",
+      "name": "pagination-02",
       "type": "registry:component",
       "title": "Pagination with Primary Buttons",
       "description": "A pagination component with primary button styling",
       "registryDependencies": ["pagination", "button"],
       "files": [
         {
-          "path": "src/components/customized/pagination/primary-button.tsx",
+          "path": "src/components/customized/pagination/pagination-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "pagination-secondary-button",
+      "name": "pagination-03",
       "type": "registry:component",
       "title": "Pagination with Secondary Buttons",
       "description": "A pagination component with secondary button styling",
       "registryDependencies": ["pagination", "button"],
       "files": [
         {
-          "path": "src/components/customized/pagination/secondary-button.tsx",
+          "path": "src/components/customized/pagination/pagination-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-default",
+      "name": "progress-01",
       "type": "registry:component",
       "title": "Default Progress",
       "description": "A default linear progress component",
       "registryDependencies": ["progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/default.tsx",
+          "path": "src/components/customized/progress/progress-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-linear-with-label",
+      "name": "progress-02",
       "type": "registry:component",
       "title": "Linear Progress with Label",
       "description": "A linear progress component with label",
       "registryDependencies": ["progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/linear-with-label.tsx",
+          "path": "src/components/customized/progress/progress-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-rounded",
+      "name": "progress-04",
       "type": "registry:component",
       "title": "Rounded Progress",
       "description": "A progress component with rounded styling",
       "registryDependencies": ["progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/rounded.tsx",
+          "path": "src/components/customized/progress/progress-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-linear-color",
+      "name": "progress-03",
       "type": "registry:component",
       "title": "Linear Progress with Custom Color",
       "description": "A linear progress component with custom color",
       "registryDependencies": ["progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/linear-color.tsx",
+          "path": "src/components/customized/progress/progress-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular",
+      "name": "progress-07",
       "type": "registry:component",
       "title": "Circular Progress",
       "description": "A circular progress component",
       "files": [
         {
-          "path": "src/components/customized/progress/circular.tsx",
+          "path": "src/components/customized/progress/progress-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular-color",
+      "name": "progress-10",
       "type": "registry:component",
       "title": "Circular Progress with Custom Color",
       "description": "A circular progress component with custom color",
       "files": [
         {
-          "path": "src/components/customized/progress/circular-color.tsx",
+          "path": "src/components/customized/progress/progress-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular-with-label",
+      "name": "progress-08",
       "type": "registry:component",
       "title": "Circular Progress with Label",
       "description": "A circular progress component with label",
       "files": [
         {
-          "path": "src/components/customized/progress/circular-with-label.tsx",
+          "path": "src/components/customized/progress/progress-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular-with-custom-label",
+      "name": "progress-09",
       "type": "registry:component",
       "title": "Circular Progress with Custom Label",
       "description": "A circular progress component with custom label",
       "files": [
         {
-          "path": "src/components/customized/progress/circular-with-custom-label.tsx",
+          "path": "src/components/customized/progress/progress-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular-progress-shape",
+      "name": "progress-11",
       "type": "registry:component",
       "title": "Circular Progress with Custom Shape",
       "description": "A circular progress component with custom shape",
       "files": [
         {
-          "path": "src/components/customized/progress/circular-progress-shape.tsx",
+          "path": "src/components/customized/progress/progress-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-circular-stroke-width",
+      "name": "progress-12",
       "type": "registry:component",
       "title": "Circular Progress with Custom Stroke Width",
       "description": "A circular progress component with custom stroke width",
       "files": [
         {
-          "path": "src/components/customized/progress/circular-stroke-width.tsx",
+          "path": "src/components/customized/progress/progress-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-gradient",
+      "name": "progress-05",
       "type": "registry:component",
       "title": "Gradient Progress",
       "description": "A progress component with gradient styling",
       "registryDependencies": ["progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/gradient.tsx",
+          "path": "src/components/customized/progress/progress-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "progress-animation",
+      "name": "progress-06",
       "type": "registry:component",
       "title": "Animated Progress",
       "description": "A progress component with animation effects",
       "dependencies": ["@radix-ui/react-progress"],
       "files": [
         {
-          "path": "src/components/customized/progress/animation.tsx",
+          "path": "src/components/customized/progress/progress-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-default",
+      "name": "radio-group-01",
       "type": "registry:component",
       "title": "Default Radio Group",
       "description": "A default radio group component",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/default.tsx",
+          "path": "src/components/customized/radio-group/radio-group-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-disabled",
+      "name": "radio-group-03",
       "type": "registry:component",
       "title": "Disabled Radio Group",
       "description": "A radio group component with disabled options",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/disabled.tsx",
+          "path": "src/components/customized/radio-group/radio-group-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-size",
+      "name": "radio-group-05",
       "type": "registry:component",
       "title": "Radio Group with Custom Size",
       "description": "A radio group component with custom size options",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/size.tsx",
+          "path": "src/components/customized/radio-group/radio-group-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-cards-1",
+      "name": "radio-group-07",
       "type": "registry:component",
       "title": "Radio Group with Cards (Style 1)",
       "description": "A radio group component with card-style options (style 1)",
       "registryDependencies": ["radio-group"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/cards-1.tsx",
+          "path": "src/components/customized/radio-group/radio-group-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-cards-2",
+      "name": "radio-group-08",
       "type": "registry:component",
       "title": "Radio Group with Cards (Style 2)",
       "description": "A radio group component with card-style options (style 2)",
       "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/cards-2.tsx",
+          "path": "src/components/customized/radio-group/radio-group-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-cards-3",
+      "name": "radio-group-09",
       "type": "registry:component",
       "title": "Radio Group with Cards (Style 3)",
       "description": "A radio group component with card-style options (style 3)",
       "registryDependencies": ["radio-group", "card", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/cards-3.tsx",
+          "path": "src/components/customized/radio-group/radio-group-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-horizontal",
+      "name": "radio-group-02",
       "type": "registry:component",
       "title": "Horizontal Radio Group",
       "description": "A radio group component with horizontal layout",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/horizontal.tsx",
+          "path": "src/components/customized/radio-group/radio-group-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-color",
+      "name": "radio-group-04",
       "type": "registry:component",
       "title": "Radio Group with Custom Colors",
       "description": "A radio group component with custom color options",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/color.tsx",
+          "path": "src/components/customized/radio-group/radio-group-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "radio-group-variant",
+      "name": "radio-group-06",
       "type": "registry:component",
       "title": "Radio Group with Variant Styling",
       "description": "A radio group component with variant styling options",
       "registryDependencies": ["radio-group", "label"],
       "files": [
         {
-          "path": "src/components/customized/radio-group/variant.tsx",
+          "path": "src/components/customized/radio-group/radio-group-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-default",
+      "name": "select-01",
       "type": "registry:component",
       "title": "Default Select",
       "description": "A default select component",
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/default.tsx",
+          "path": "src/components/customized/select/select-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-with-icon",
+      "name": "select-06",
       "type": "registry:component",
       "title": "Select with Icon",
       "description": "A select component with icon integration",
@@ -4069,52 +4069,52 @@
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/with-icon.tsx",
+          "path": "src/components/customized/select/select-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-controlled",
+      "name": "select-11",
       "type": "registry:component",
       "title": "Controlled Select",
       "description": "A controlled select component",
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/controlled.tsx",
+          "path": "src/components/customized/select/select-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-scrollable",
+      "name": "select-10",
       "type": "registry:component",
       "title": "Scrollable Select",
       "description": "A select component with scrollable options",
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/scrollable.tsx",
+          "path": "src/components/customized/select/select-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-menu-position",
+      "name": "select-09",
       "type": "registry:component",
       "title": "Select with Custom Menu Position",
       "description": "A select component with custom menu position",
       "registryDependencies": ["select", "label"],
       "files": [
         {
-          "path": "src/components/customized/select/select-menu-position.tsx",
+          "path": "src/components/customized/select/select-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-custom-dropdown-icon",
+      "name": "select-04",
       "type": "registry:component",
       "title": "Select with Custom Dropdown Icon",
       "description": "A select component with custom dropdown icon",
@@ -4122,39 +4122,39 @@
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/custom-dropdown-icon.tsx",
+          "path": "src/components/customized/select/select-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-ghost",
+      "name": "select-03",
       "type": "registry:component",
       "title": "Ghost Select",
       "description": "A select component with ghost styling",
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/ghost.tsx",
+          "path": "src/components/customized/select/select-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-shape",
+      "name": "select-05",
       "type": "registry:component",
       "title": "Select with Custom Shape",
       "description": "A select component with custom shape styling",
       "registryDependencies": ["select", "label"],
       "files": [
         {
-          "path": "src/components/customized/select/shape.tsx",
+          "path": "src/components/customized/select/select-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-theme-selector",
+      "name": "select-08",
       "type": "registry:component",
       "title": "Theme Selector Select",
       "description": "A select component for theme selection",
@@ -4162,13 +4162,13 @@
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/theme-selector.tsx",
+          "path": "src/components/customized/select/select-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-with-auto-complete",
+      "name": "select-12",
       "type": "registry:component",
       "title": "Select with Auto-Complete",
       "description": "A select component with auto-complete functionality",
@@ -4176,26 +4176,26 @@
       "registryDependencies": ["select", "command", "badge"],
       "files": [
         {
-          "path": "src/components/customized/select/with-auto-complete.tsx",
+          "path": "src/components/customized/select/select-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-background-color",
+      "name": "select-02",
       "type": "registry:component",
       "title": "Select with Background Color",
       "description": "A select component with custom background color",
       "registryDependencies": ["select"],
       "files": [
         {
-          "path": "src/components/customized/select/background-color.tsx",
+          "path": "src/components/customized/select/select-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "select-with-form",
+      "name": "select-07",
       "type": "registry:component",
       "title": "Select with Form Integration",
       "description": "A select component integrated with form handling",
@@ -4203,85 +4203,85 @@
       "registryDependencies": ["select", "form"],
       "files": [
         {
-          "path": "src/components/customized/select/with-form.tsx",
+          "path": "src/components/customized/select/select-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-default",
+      "name": "separator-01",
       "type": "registry:component",
       "title": "Default Separator",
       "description": "A default separator component",
       "registryDependencies": ["separator"],
       "files": [
         {
-          "path": "src/components/customized/separator/default.tsx",
+          "path": "src/components/customized/separator/separator-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-dashed",
+      "name": "separator-04",
       "type": "registry:component",
       "title": "Dashed Separator",
       "description": "A dashed separator component",
       "registryDependencies": ["separator", "card", "input", "label", "button"],
       "files": [
         {
-          "path": "src/components/customized/separator/separator-dashed.tsx",
+          "path": "src/components/customized/separator/separator-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-vertical",
+      "name": "separator-05",
       "type": "registry:component",
       "title": "Vertical Separator",
       "description": "A vertical separator component",
       "registryDependencies": ["separator", "button", "input", "label"],
       "files": [
         {
-          "path": "src/components/customized/separator/separator-vertical.tsx",
+          "path": "src/components/customized/separator/separator-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-with-chip-horizontal",
+      "name": "separator-03",
       "type": "registry:component",
       "title": "Horizontal Separator with Chip",
       "description": "A horizontal separator with chip component",
       "registryDependencies": ["separator", "button", "input", "label", "card"],
       "files": [
         {
-          "path": "src/components/customized/separator/with-chip-horizontal.tsx",
+          "path": "src/components/customized/separator/separator-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-with-chip-vertical",
+      "name": "separator-06",
       "type": "registry:component",
       "title": "Vertical Separator with Chip",
       "description": "A vertical separator with chip component",
       "registryDependencies": ["separator", "button", "input", "label"],
       "files": [
         {
-          "path": "src/components/customized/separator/with-chip-vertical.tsx",
+          "path": "src/components/customized/separator/separator-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "separator-with-label-horizontal",
+      "name": "separator-02",
       "type": "registry:component",
       "title": "Horizontal Separator with Label",
       "description": "A horizontal separator with label component",
       "registryDependencies": ["separator", "button", "input", "label", "card"],
       "files": [
         {
-          "path": "src/components/customized/separator/with-label-horizontal.tsx",
+          "path": "src/components/customized/separator/separator-02.tsx",
           "type": "registry:component"
         }
       ]
@@ -4300,137 +4300,137 @@
       ]
     },
     {
-      "name": "slider-default",
+      "name": "slider-01",
       "type": "registry:component",
       "title": "Default Slider",
       "description": "A default slider component",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/default.tsx",
+          "path": "src/components/customized/slider/slider-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-disabled",
+      "name": "slider-02",
       "type": "registry:component",
       "title": "Disabled Slider",
       "description": "A disabled slider component",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/disabled.tsx",
+          "path": "src/components/customized/slider/slider-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-size",
+      "name": "slider-03",
       "type": "registry:component",
       "title": "Slider Size",
       "description": "A slider component with different sizes",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/size.tsx",
+          "path": "src/components/customized/slider/slider-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-color",
+      "name": "slider-04",
       "type": "registry:component",
       "title": "Slider Color",
       "description": "A slider component with different colors",
       "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/color.tsx",
+          "path": "src/components/customized/slider/slider-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-shape",
+      "name": "slider-05",
       "type": "registry:component",
       "title": "Slider Shape",
       "description": "A slider component with different shapes",
       "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/shape.tsx",
+          "path": "src/components/customized/slider/slider-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-with-label",
+      "name": "slider-06",
       "type": "registry:component",
       "title": "Slider with Label",
       "description": "A slider component with a label",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/with-label.tsx",
+          "path": "src/components/customized/slider/slider-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-vertical",
+      "name": "slider-13",
       "type": "registry:component",
       "title": "Vertical Slider",
       "description": "A vertical slider component",
       "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/vertical.tsx",
+          "path": "src/components/customized/slider/slider-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-thumb-icon",
+      "name": "slider-07",
       "type": "registry:component",
       "title": "Slider with Thumb Icon",
       "description": "A slider component with a custom thumb icon",
       "dependencies": ["@radix-ui/react-slider", "lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/slider/thumb-icon.tsx",
+          "path": "src/components/customized/slider/slider-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-audio-slider",
+      "name": "slider-08",
       "type": "registry:component",
       "title": "Audio Slider",
       "description": "A slider component designed for audio controls",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/audio-slider.tsx",
+          "path": "src/components/customized/slider/slider-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-marks",
+      "name": "slider-09",
       "type": "registry:component",
       "title": "Slider with Marks",
       "description": "A slider component with marks for specific values",
       "registryDependencies": ["slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/marks.tsx",
+          "path": "src/components/customized/slider/slider-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-sticky-label",
+      "name": "slider-10",
       "type": "registry:component",
       "title": "Slider with Sticky Label",
       "description": "A slider component with a sticky label",
@@ -4438,13 +4438,13 @@
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/slider/sticky-label.tsx",
+          "path": "src/components/customized/slider/slider-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-sticky-label-hover",
+      "name": "slider-11",
       "type": "registry:component",
       "title": "Slider with Sticky Label on Hover",
       "description": "A slider component with a sticky label that appears on hover",
@@ -4452,13 +4452,13 @@
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/slider/sticky-label-hover.tsx",
+          "path": "src/components/customized/slider/slider-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-sticky-label-arrow",
+      "name": "slider-12",
       "type": "registry:component",
       "title": "Slider with Sticky Label Arrow",
       "description": "A slider component with a sticky label with arrow",
@@ -4466,371 +4466,371 @@
       "registryDependencies": ["badge"],
       "files": [
         {
-          "path": "src/components/customized/slider/sticky-label-arrow.tsx",
+          "path": "src/components/customized/slider/slider-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-range",
+      "name": "slider-14",
       "type": "registry:component",
       "title": "Range Slider",
       "description": "A range slider component",
       "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/range.tsx",
+          "path": "src/components/customized/slider/slider-14.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "slider-multiple-thumbs",
+      "name": "slider-15",
       "type": "registry:component",
       "title": "Slider with Multiple Thumbs",
       "description": "A slider component with multiple thumbs",
       "dependencies": ["@radix-ui/react-slider"],
       "files": [
         {
-          "path": "src/components/customized/slider/multiple-thumbs.tsx",
+          "path": "src/components/customized/slider/slider-15.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-default",
+      "name": "spinner-01",
       "type": "registry:component",
       "title": "Default Spinner",
       "description": "A default spinner component",
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/spinner/default.tsx",
+          "path": "src/components/customized/spinner/spinner-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle",
+      "name": "spinner-02",
       "type": "registry:component",
       "title": "Circle Spinner",
       "description": "A circular spinner component",
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle.tsx",
+          "path": "src/components/customized/spinner/spinner-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-pinwheel",
+      "name": "spinner-03",
       "type": "registry:component",
       "title": "Pinwheel Spinner",
       "description": "A pinwheel spinner component",
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-pinwheel.tsx",
+          "path": "src/components/customized/spinner/spinner-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-colors",
+      "name": "spinner-04",
       "type": "registry:component",
       "title": "Spinner Colors",
       "description": "A spinner component with different colors",
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-colors.tsx",
+          "path": "src/components/customized/spinner/spinner-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-sizes",
+      "name": "spinner-05",
       "type": "registry:component",
       "title": "Spinner Sizes",
       "description": "A spinner component with different sizes",
       "dependencies": ["lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-sizes.tsx",
+          "path": "src/components/customized/spinner/spinner-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-swirling-effect",
+      "name": "spinner-06",
       "type": "registry:component",
       "title": "Swirling Effect Spinner",
       "description": "A spinner component with swirling effect",
       "files": [
         {
-          "path": "src/components/customized/spinner/swirling-effect.tsx",
+          "path": "src/components/customized/spinner/spinner-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle-1",
+      "name": "spinner-07",
       "type": "registry:component",
       "title": "Spinner Circle 1",
       "description": "A circle spinner component variation 1",
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle-1.tsx",
+          "path": "src/components/customized/spinner/spinner-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle-2",
+      "name": "spinner-08",
       "type": "registry:component",
       "title": "Spinner Circle 2",
       "description": "A circle spinner component variation 2",
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle-2.tsx",
+          "path": "src/components/customized/spinner/spinner-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle-3",
+      "name": "spinner-09",
       "type": "registry:component",
       "title": "Spinner Circle 3",
       "description": "A circle spinner component variation 3",
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle-3.tsx",
+          "path": "src/components/customized/spinner/spinner-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle-4",
+      "name": "spinner-10",
       "type": "registry:component",
       "title": "Spinner Circle 4",
       "description": "A circle spinner component variation 4",
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle-4.tsx",
+          "path": "src/components/customized/spinner/spinner-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "spinner-circle-5",
+      "name": "spinner-11",
       "type": "registry:component",
       "title": "Spinner Circle 5",
       "description": "A circle spinner component variation 5",
       "files": [
         {
-          "path": "src/components/customized/spinner/spinner-circle-5.tsx",
+          "path": "src/components/customized/spinner/spinner-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-default",
+      "name": "switch-01",
       "type": "registry:component",
       "title": "Default Switch",
       "description": "A default switch component",
       "registryDependencies": ["switch"],
       "files": [
         {
-          "path": "src/components/customized/switch/default.tsx",
+          "path": "src/components/customized/switch/switch-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-with-label",
+      "name": "switch-02",
       "type": "registry:component",
       "title": "Switch with Label",
       "description": "A switch component with a label",
       "registryDependencies": ["switch", "label"],
       "files": [
         {
-          "path": "src/components/customized/switch/with-label.tsx",
+          "path": "src/components/customized/switch/switch-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-disabled",
+      "name": "switch-03",
       "type": "registry:component",
       "title": "Disabled Switch",
       "description": "A disabled switch component",
       "registryDependencies": ["switch", "label"],
       "files": [
         {
-          "path": "src/components/customized/switch/disabled.tsx",
+          "path": "src/components/customized/switch/switch-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-colors",
+      "name": "switch-04",
       "type": "registry:component",
       "title": "Switch Colors",
       "description": "A switch component with different colors",
       "registryDependencies": ["switch"],
       "files": [
         {
-          "path": "src/components/customized/switch/colors.tsx",
+          "path": "src/components/customized/switch/switch-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-sizes",
+      "name": "switch-05",
       "type": "registry:component",
       "title": "Switch Sizes",
       "description": "A switch component with different sizes",
       "dependencies": ["@radix-ui/react-switch"],
       "files": [
         {
-          "path": "src/components/customized/switch/sizes.tsx",
+          "path": "src/components/customized/switch/switch-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-controlled",
+      "name": "switch-06",
       "type": "registry:component",
       "title": "Controlled Switch",
       "description": "A controlled switch component",
       "registryDependencies": ["switch"],
       "files": [
         {
-          "path": "src/components/customized/switch/controlled.tsx",
+          "path": "src/components/customized/switch/switch-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "switch-customization",
+      "name": "switch-07",
       "type": "registry:component",
       "title": "Switch Customization",
       "description": "A customized switch component",
       "dependencies": ["@radix-ui/react-switch", "lucide-react"],
       "files": [
         {
-          "path": "src/components/customized/switch/customization.tsx",
+          "path": "src/components/customized/switch/switch-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-default",
+      "name": "table-01",
       "type": "registry:component",
       "title": "Default Table",
       "description": "A default table component",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/default.tsx",
+          "path": "src/components/customized/table/table-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-bordered",
+      "name": "table-02",
       "type": "registry:component",
       "title": "Bordered Table",
       "description": "A bordered table component",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/bordered.tsx",
+          "path": "src/components/customized/table/table-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-striped-rows",
+      "name": "table-03",
       "type": "registry:component",
       "title": "Striped Rows Table",
       "description": "A table with striped rows",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/striped-rows.tsx",
+          "path": "src/components/customized/table/table-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-rounded-corners",
+      "name": "table-04",
       "type": "registry:component",
       "title": "Rounded Corners Table",
       "description": "A table with rounded corners",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/rounded-corners.tsx",
+          "path": "src/components/customized/table/table-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-with-pagination",
+      "name": "table-05",
       "type": "registry:component",
       "title": "Table with Pagination",
       "description": "A table with pagination",
       "registryDependencies": ["table", "pagination"],
       "files": [
         {
-          "path": "src/components/customized/table/with-pagination.tsx",
+          "path": "src/components/customized/table/table-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-sticky-header",
+      "name": "table-06",
       "type": "registry:component",
       "title": "Sticky Header Table",
       "description": "A table with sticky header",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/sticky-header.tsx",
+          "path": "src/components/customized/table/table-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-sticky-columns",
+      "name": "table-07",
       "type": "registry:component",
       "title": "Sticky Columns Table",
       "description": "A table with sticky columns",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/sticky-columns.tsx",
+          "path": "src/components/customized/table/table-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-overflow-scroll",
+      "name": "table-08",
       "type": "registry:component",
       "title": "Overflow Scroll Table",
       "description": "A table with overflow scroll",
       "registryDependencies": ["table"],
       "files": [
         {
-          "path": "src/components/customized/table/overflow-scroll.tsx",
+          "path": "src/components/customized/table/table-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-data-table",
+      "name": "table-09",
       "type": "registry:component",
       "title": "Data Table",
       "description": "A data table component",
@@ -4844,13 +4844,13 @@
       ],
       "files": [
         {
-          "path": "src/components/customized/table/data-table.tsx",
+          "path": "src/components/customized/table/table-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-data-table-density",
+      "name": "table-10",
       "type": "registry:component",
       "title": "Data Table Density",
       "description": "A data table with density controls",
@@ -4864,13 +4864,13 @@
       ],
       "files": [
         {
-          "path": "src/components/customized/table/data-table-density.tsx",
+          "path": "src/components/customized/table/table-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "table-columns-visibility",
+      "name": "table-11",
       "type": "registry:component",
       "title": "Columns Visibility Table",
       "description": "A table with columns visibility control",
@@ -4884,13 +4884,13 @@
       ],
       "files": [
         {
-          "path": "src/components/customized/table/columns-visibility.tsx",
+          "path": "src/components/customized/table/table-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-default",
+      "name": "tabs-01",
       "type": "registry:component",
       "title": "Default Tabs",
       "description": "Default tabs component",
@@ -4898,13 +4898,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/default.tsx",
+          "path": "src/components/customized/tabs/tabs-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-underlined",
+      "name": "tabs-02",
       "type": "registry:component",
       "title": "Underlined Tabs",
       "description": "Tabs with underlined style",
@@ -4912,13 +4912,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/underlined-tabs.tsx",
+          "path": "src/components/customized/tabs/tabs-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-separated",
+      "name": "tabs-03",
       "type": "registry:component",
       "title": "Separated Tabs",
       "description": "Tabs with separated style",
@@ -4926,13 +4926,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/separated-tabs.tsx",
+          "path": "src/components/customized/tabs/tabs-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-bordered",
+      "name": "tabs-04",
       "type": "registry:component",
       "title": "Bordered Tabs",
       "description": "Tabs with bordered style",
@@ -4940,13 +4940,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-bordered.tsx",
+          "path": "src/components/customized/tabs/tabs-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-box",
+      "name": "tabs-05",
       "type": "registry:component",
       "title": "Box Tabs",
       "description": "Tabs with box style",
@@ -4954,13 +4954,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-box.tsx",
+          "path": "src/components/customized/tabs/tabs-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-bootstrap",
+      "name": "tabs-06",
       "type": "registry:component",
       "title": "Bootstrap Tabs",
       "description": "Tabs with bootstrap style",
@@ -4968,13 +4968,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-bootstrap.tsx",
+          "path": "src/components/customized/tabs/tabs-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-icon",
+      "name": "tabs-07",
       "type": "registry:component",
       "title": "Icon Tabs",
       "description": "Tabs with icons",
@@ -4982,26 +4982,26 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-icon.tsx",
+          "path": "src/components/customized/tabs/tabs-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-mobile-navigation",
+      "name": "tabs-08",
       "type": "registry:component",
       "title": "Mobile Navigation Tabs",
       "description": "Tabs designed for mobile navigation",
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-mobile-navigation.tsx",
+          "path": "src/components/customized/tabs/tabs-08.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-with-badge",
+      "name": "tabs-09",
       "type": "registry:component",
       "title": "Tabs with Badge",
       "description": "Tabs with badge indicators",
@@ -5009,13 +5009,13 @@
       "registryDependencies": ["tabs", "button", "badge"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-with-badge.tsx",
+          "path": "src/components/customized/tabs/tabs-09.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-sharp",
+      "name": "tabs-10",
       "type": "registry:component",
       "title": "Sharp Tabs",
       "description": "Tabs with sharp corners",
@@ -5023,13 +5023,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-sharp.tsx",
+          "path": "src/components/customized/tabs/tabs-10.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-shadow",
+      "name": "tabs-11",
       "type": "registry:component",
       "title": "Shadow Tabs",
       "description": "Tabs with shadow effect",
@@ -5037,13 +5037,13 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-shadow.tsx",
+          "path": "src/components/customized/tabs/tabs-11.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-skewed",
+      "name": "tabs-12",
       "type": "registry:component",
       "title": "Skewed Tabs",
       "description": "Tabs with skewed shape",
@@ -5051,26 +5051,26 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/tabs-skewed.tsx",
+          "path": "src/components/customized/tabs/tabs-12.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-vertical",
+      "name": "tabs-13",
       "type": "registry:component",
       "title": "Vertical Tabs",
       "description": "Tabs with vertical orientation",
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/vertical-tabs.tsx",
+          "path": "src/components/customized/tabs/tabs-13.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-vertical-left-bordered",
+      "name": "tabs-14",
       "type": "registry:component",
       "title": "Vertical Left Bordered Tabs",
       "description": "Vertical tabs with left border",
@@ -5078,13 +5078,13 @@
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/vertical-left-bordered.tsx",
+          "path": "src/components/customized/tabs/tabs-14.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-vertical-separated",
+      "name": "tabs-15",
       "type": "registry:component",
       "title": "Vertical Separated Tabs",
       "description": "Vertical tabs with separated style",
@@ -5092,13 +5092,13 @@
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/vertical-separated.tsx",
+          "path": "src/components/customized/tabs/tabs-15.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-vertical-sharp",
+      "name": "tabs-16",
       "type": "registry:component",
       "title": "Vertical Sharp Tabs",
       "description": "Vertical tabs with sharp corners",
@@ -5106,13 +5106,13 @@
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/vertical-sharp.tsx",
+          "path": "src/components/customized/tabs/tabs-16.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-vertical-bordered",
+      "name": "tabs-17",
       "type": "registry:component",
       "title": "Vertical Bordered Tabs",
       "description": "Vertical tabs with borders",
@@ -5120,13 +5120,13 @@
       "registryDependencies": ["tabs"],
       "files": [
         {
-          "path": "src/components/customized/tabs/vertical-bordered.tsx",
+          "path": "src/components/customized/tabs/tabs-17.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tabs-animated",
+      "name": "tabs-18",
       "type": "registry:component",
       "title": "Animated Tabs",
       "description": "Tabs with content animation",
@@ -5134,189 +5134,189 @@
       "registryDependencies": ["tabs", "button"],
       "files": [
         {
-          "path": "src/components/customized/tabs/animated-tabs.tsx",
+          "path": "src/components/customized/tabs/tabs-18.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-default",
+      "name": "textarea-01",
       "type": "registry:component",
       "title": "Default Textarea",
       "description": "A default textarea component",
       "registryDependencies": ["textarea"],
       "files": [
         {
-          "path": "src/components/customized/textarea/default.tsx",
+          "path": "src/components/customized/textarea/textarea-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-with-background-color",
+      "name": "textarea-02",
       "type": "registry:component",
       "title": "Textarea with Background Color",
       "description": "A textarea component with background color",
       "registryDependencies": ["textarea"],
       "files": [
         {
-          "path": "src/components/customized/textarea/with-background-color.tsx",
+          "path": "src/components/customized/textarea/textarea-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-disabled",
+      "name": "textarea-03",
       "type": "registry:component",
       "title": "Disabled Textarea",
       "description": "A disabled textarea component",
       "registryDependencies": ["textarea"],
       "files": [
         {
-          "path": "src/components/customized/textarea/disabled.tsx",
+          "path": "src/components/customized/textarea/textarea-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-with-label",
+      "name": "textarea-04",
       "type": "registry:component",
       "title": "Textarea with Label",
       "description": "A textarea component with a label",
       "registryDependencies": ["textarea", "label"],
       "files": [
         {
-          "path": "src/components/customized/textarea/with-label.tsx",
+          "path": "src/components/customized/textarea/textarea-04.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-rows",
+      "name": "textarea-05",
       "type": "registry:component",
       "title": "Textarea with Rows",
       "description": "A textarea component with custom rows",
       "registryDependencies": ["textarea"],
       "files": [
         {
-          "path": "src/components/customized/textarea/rows.tsx",
+          "path": "src/components/customized/textarea/textarea-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-with-helper-text",
+      "name": "textarea-06",
       "type": "registry:component",
       "title": "Textarea with Helper Text",
       "description": "A textarea component with helper text",
       "registryDependencies": ["textarea", "label"],
       "files": [
         {
-          "path": "src/components/customized/textarea/with-helper-text.tsx",
+          "path": "src/components/customized/textarea/textarea-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "textarea-controlled",
+      "name": "textarea-07",
       "type": "registry:component",
       "title": "Controlled Textarea",
       "description": "A controlled textarea component",
       "registryDependencies": ["textarea"],
       "files": [
         {
-          "path": "src/components/customized/textarea/controlled.tsx",
+          "path": "src/components/customized/textarea/textarea-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-default",
+      "name": "tooltip-01",
       "type": "registry:component",
       "title": "Default Tooltip",
       "description": "A default tooltip component",
       "registryDependencies": ["tooltip", "button"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/default.tsx",
+          "path": "src/components/customized/tooltip/tooltip-01.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-with-arrow",
+      "name": "tooltip-02",
       "type": "registry:component",
       "title": "Tooltip with Arrow",
       "description": "A tooltip component with an arrow",
       "registryDependencies": ["tooltip", "button"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/with-arrow.tsx",
+          "path": "src/components/customized/tooltip/tooltip-02.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-portal",
+      "name": "tooltip-07",
       "type": "registry:component",
       "title": "Tooltip Portal",
       "description": "A tooltip component using portal for rendering",
       "registryDependencies": ["tooltip", "button"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/tooltip-portal.tsx",
+          "path": "src/components/customized/tooltip/tooltip-07.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-directions",
+      "name": "tooltip-03",
       "type": "registry:component",
       "title": "Tooltip Directions",
       "description": "A tooltip component with different directions",
       "registryDependencies": ["tooltip", "button"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/tooltip-directions.tsx",
+          "path": "src/components/customized/tooltip/tooltip-03.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-with-delay",
+      "name": "tooltip-05",
       "type": "registry:component",
       "title": "Tooltip with Delay",
       "description": "A tooltip component with delay settings",
       "registryDependencies": ["tooltip", "button", "input", "label"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/tooltip-with-delay.tsx",
+          "path": "src/components/customized/tooltip/tooltip-05.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-with-skip-delay-duration",
+      "name": "tooltip-06",
       "type": "registry:component",
       "title": "Tooltip with Skip Delay Duration",
       "description": "A tooltip component with skip delay duration settings",
       "registryDependencies": ["tooltip", "button", "input", "label"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/tooltip-with-skip-delay-duration.tsx",
+          "path": "src/components/customized/tooltip/tooltip-06.tsx",
           "type": "registry:component"
         }
       ]
     },
     {
-      "name": "tooltip-with-disabled-hoverable-content",
+      "name": "tooltip-04",
       "type": "registry:component",
       "title": "Tooltip with Disabled Hoverable Content",
       "description": "A tooltip component with disabled hoverable content",
       "registryDependencies": ["tooltip", "button"],
       "files": [
         {
-          "path": "src/components/customized/tooltip/with-disabled-hoverable-content.tsx",
+          "path": "src/components/customized/tooltip/tooltip-04.tsx",
           "type": "registry:component"
         }
       ]
