@@ -60,12 +60,20 @@
               },
               "keyframes": {
                 "marquee": {
-                  "from": { "transform": "translateX(0)" },
-                  "to": { "transform": "translateX(calc(-100% - var(--gap)))" }
+                  "from": {
+                    "transform": "translateX(0)"
+                  },
+                  "to": {
+                    "transform": "translateX(calc(-100% - var(--gap)))"
+                  }
                 },
                 "marquee-vertical": {
-                  "from": { "transform": "translateY(0)" },
-                  "to": { "transform": "translateY(calc(-100% - var(--gap)))" }
+                  "from": {
+                    "transform": "translateY(0)"
+                  },
+                  "to": {
+                    "transform": "translateY(calc(-100% - var(--gap)))"
+                  }
                 }
               }
             }
@@ -1395,6 +1403,3921 @@
           "path": "src/blocks/timeline-07/timeline-07.tsx",
           "type": "registry:block",
           "target": "components/timeline-07/timeline-07.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-default",
+      "type": "registry:component",
+      "title": "Default Accordion",
+      "description": "A default accordion component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-outline",
+      "type": "registry:component",
+      "title": "Outline Accordion",
+      "description": "An outline styled accordion",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-outline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-box",
+      "type": "registry:component",
+      "title": "Box Accordion",
+      "description": "A box styled accordion",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-box.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-contained",
+      "type": "registry:component",
+      "title": "Contained Accordion",
+      "description": "A contained accordion component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-contained.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-box-contained",
+      "type": "registry:component",
+      "title": "Box Contained Accordion",
+      "description": "A box-contained accordion component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-box-contained.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-tabs",
+      "type": "registry:component",
+      "title": "Tabs Accordion",
+      "description": "A tabs-styled accordion component",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-highlight-active-item",
+      "type": "registry:component",
+      "title": "Highlight Active Item Accordion",
+      "description": "An accordion that highlights the active item",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-highlight-active-item.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-multiple-open",
+      "type": "registry:component",
+      "title": "Multiple Expanded at a time Accordion",
+      "description": "An accordion that allows multiple items to be expanded at once",
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-multiple-open.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-expand-icon",
+      "type": "registry:component",
+      "title": "Expand Icon Accordion",
+      "description": "An accordion with a custom expand icon",
+      "dependencies": ["lucide-react", "@radix-ui/react-accordion"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-expand-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-icon",
+      "type": "registry:component",
+      "title": "Icon Accordion",
+      "description": "An accordion with icons",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-media-content",
+      "type": "registry:component",
+      "title": "Media Content Accordion",
+      "description": "An accordion with media content",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-media-content.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "accordion-item-disabled",
+      "type": "registry:component",
+      "title": "Disabled Item Accordion",
+      "description": "An accordion with disabled items",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["accordion"],
+      "files": [
+        {
+          "path": "src/components/customized/accordion/accordion-item-disabled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-default",
+      "type": "registry:component",
+      "title": "Primary Alert",
+      "description": "A primary alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-destructive",
+      "type": "registry:component",
+      "title": "Destructive Alert",
+      "description": "A destructive alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-destructive.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-success",
+      "type": "registry:component",
+      "title": "Success Alert",
+      "description": "A success alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-success.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-warning",
+      "type": "registry:component",
+      "title": "Warning Alert",
+      "description": "A warning alert component",
+      "dependencies": ["@radix-ui/react-icons"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-info",
+      "type": "registry:component",
+      "title": "Info Alert",
+      "description": "An info alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-info.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-with-background",
+      "type": "registry:component",
+      "title": "Alert With Background",
+      "description": "An alert with background component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/with-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-soft",
+      "type": "registry:component",
+      "title": "Soft Alert",
+      "description": "A soft alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-soft.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-bootstrap",
+      "type": "registry:component",
+      "title": "Bootstrap Alert",
+      "description": "A bootstrap-styled alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-bootstrap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-callout",
+      "type": "registry:component",
+      "title": "Callout Alert",
+      "description": "A callout alert component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/alert-callout.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-with-actions",
+      "type": "registry:component",
+      "title": "Alert With Actions",
+      "description": "An alert with actions component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert/with-actions.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-default",
+      "type": "registry:component",
+      "title": "Default Alert Dialog",
+      "description": "A default alert dialog component",
+      "registryDependencies": ["alert-dialog", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-with-icon",
+      "type": "registry:component",
+      "title": "Alert Dialog With Icon",
+      "description": "An alert dialog with icon component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert-dialog", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-destructive",
+      "type": "registry:component",
+      "title": "Destructive Alert Dialog",
+      "description": "A destructive alert dialog component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert-dialog", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/destructive.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-info",
+      "type": "registry:component",
+      "title": "Info Alert Dialog",
+      "description": "An info alert dialog component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert-dialog", "button", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/info.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-customized-header",
+      "type": "registry:component",
+      "title": "Customized Header Alert Dialog",
+      "description": "An alert dialog with customized header",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert-dialog", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/customized-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-customized-footer",
+      "type": "registry:component",
+      "title": "Customized Footer Alert Dialog",
+      "description": "An alert dialog with customized footer",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["alert-dialog", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/alert-dialog/customized-footer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-default",
+      "type": "registry:component",
+      "title": "Default Avatar",
+      "description": "A default avatar component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-clickable",
+      "type": "registry:component",
+      "title": "Clickable Avatar",
+      "description": "A clickable avatar component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/clickable.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-tooltip",
+      "type": "registry:component",
+      "title": "Avatar with Tooltip",
+      "description": "An avatar with tooltip component",
+      "registryDependencies": ["avatar", "tooltip"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/tooltip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-with-text",
+      "type": "registry:component",
+      "title": "Avatar with Text",
+      "description": "An avatar with text component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/with-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-hover-card",
+      "type": "registry:component",
+      "title": "Avatar with Hover Card",
+      "description": "An avatar with hover card component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["avatar", "hover-card"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/hover-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-size",
+      "type": "registry:component",
+      "title": "Avatar Size",
+      "description": "Different sizes of avatar component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/size.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-color",
+      "type": "registry:component",
+      "title": "Avatar Color",
+      "description": "Different colors of avatar component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-shape",
+      "type": "registry:component",
+      "title": "Avatar Shape",
+      "description": "Different shapes of avatar component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/shape.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-fallback",
+      "type": "registry:component",
+      "title": "Avatar Fallback",
+      "description": "Avatar with fallback component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/fallback.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-with-ring",
+      "type": "registry:component",
+      "title": "Avatar with Ring",
+      "description": "Avatar with ring component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/with-ring.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-status",
+      "type": "registry:component",
+      "title": "Avatar Status",
+      "description": "Avatar with status indicator component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/status.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group",
+      "type": "registry:component",
+      "title": "Avatar Group",
+      "description": "Group of avatars component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "avatar-max-group",
+      "type": "registry:component",
+      "title": "Avatar Group with Max",
+      "description": "Group of avatars with maximum limit component",
+      "registryDependencies": ["avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/avatar/max-avatar-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-default",
+      "type": "registry:component",
+      "title": "Default Badge",
+      "description": "A default badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-secondary",
+      "type": "registry:component",
+      "title": "Secondary Badge",
+      "description": "A secondary badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/secondary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-outline",
+      "type": "registry:component",
+      "title": "Outline Badge",
+      "description": "An outline badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/outline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-destructive",
+      "type": "registry:component",
+      "title": "Destructive Badge",
+      "description": "A destructive badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/destructive.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-rounded",
+      "type": "registry:component",
+      "title": "Rounded Badge",
+      "description": "A rounded badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/rounded.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-gradient",
+      "type": "registry:component",
+      "title": "Gradient Badge",
+      "description": "A gradient badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/gradient.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-gradient-outline",
+      "type": "registry:component",
+      "title": "Gradient Outline Badge",
+      "description": "A gradient outline badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/gradient-outline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-soft",
+      "type": "registry:component",
+      "title": "Soft Badge",
+      "description": "A soft badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/soft.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-status",
+      "type": "registry:component",
+      "title": "Status Badge",
+      "description": "A status badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/status.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-with-image",
+      "type": "registry:component",
+      "title": "Badge with Image",
+      "description": "A badge with image component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/with-image.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-with-icon",
+      "type": "registry:component",
+      "title": "Badge with Icon",
+      "description": "A badge with icon component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-clickable",
+      "type": "registry:component",
+      "title": "Clickable Badge",
+      "description": "A clickable badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/clickable.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "badge-clickable-link",
+      "type": "registry:component",
+      "title": "Clickable Link Badge",
+      "description": "A clickable link badge component",
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/badge/clickable-link.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-primary",
+      "type": "registry:component",
+      "title": "Primary Button",
+      "description": "A primary button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/primary-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-secondary",
+      "type": "registry:component",
+      "title": "Secondary Button",
+      "description": "A secondary button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/secondary-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-destructive",
+      "type": "registry:component",
+      "title": "Destructive Button",
+      "description": "A destructive button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/destructive-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-outline",
+      "type": "registry:component",
+      "title": "Outline Button",
+      "description": "An outline button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/outline-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-ghost",
+      "type": "registry:component",
+      "title": "Ghost Button",
+      "description": "A ghost button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/ghost-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-full-width",
+      "type": "registry:component",
+      "title": "Full Width Button",
+      "description": "A full width button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/full-width-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:component",
+      "title": "Button Group",
+      "description": "A button group component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/group-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-group-2",
+      "type": "registry:component",
+      "title": "Button Group 2",
+      "description": "Another button group component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/group-button-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-with-tooltip",
+      "type": "registry:component",
+      "title": "Button with Tooltip",
+      "description": "A button with tooltip component",
+      "registryDependencies": ["button", "tooltip"],
+      "files": [
+        {
+          "path": "src/components/customized/button/with-tooltip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-theme-toggle",
+      "type": "registry:component",
+      "title": "Theme Toggle Button",
+      "description": "A theme toggle button component",
+      "dependencies": ["lucide-react", "next-themes"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/theme-toggle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-copy",
+      "type": "registry:component",
+      "title": "Copy Button",
+      "description": "A copy button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/copy-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-rounded",
+      "type": "registry:component",
+      "title": "Rounded Button",
+      "description": "A rounded button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/rounded-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-toggle",
+      "type": "registry:component",
+      "title": "Toggle Button",
+      "description": "A toggle button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/toggle-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-social",
+      "type": "registry:component",
+      "title": "Social Button",
+      "description": "A social button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/social-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-social-login",
+      "type": "registry:component",
+      "title": "Social Login Button",
+      "description": "A social login button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/social-login-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-split",
+      "type": "registry:component",
+      "title": "Split Button",
+      "description": "A split button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button", "dropdown-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/button/split-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-loading",
+      "type": "registry:component",
+      "title": "Loading Button",
+      "description": "A loading button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/loading-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-gradient",
+      "type": "registry:component",
+      "title": "Gradient Button",
+      "description": "A gradient button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/gradient-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-icon",
+      "type": "registry:component",
+      "title": "Icon Button",
+      "description": "An icon button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/icon-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-neon",
+      "type": "registry:component",
+      "title": "Neon Button",
+      "description": "A neon button component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/neon-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-with-tap-animation",
+      "type": "registry:component",
+      "title": "Button with Tap Animation",
+      "description": "A button with tap animation component",
+      "dependencies": ["lucide-react", "framer-motion"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/with-tap-animation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-link",
+      "type": "registry:component",
+      "title": "Link Button",
+      "description": "A link button component",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/link-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "button-with-badge",
+      "type": "registry:component",
+      "title": "Button with Badge",
+      "description": "A button with badge component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "src/components/customized/button/with-badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-default",
+      "type": "registry:component",
+      "title": "Default Card",
+      "description": "A default card component",
+      "registryDependencies": ["card", "button", "input", "label", "select"],
+      "files": [
+        {
+          "path": "src/components/customized/card/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-with-background",
+      "type": "registry:component",
+      "title": "Card with Background",
+      "description": "A card with background component",
+      "registryDependencies": ["card", "button", "input", "label", "select"],
+      "files": [
+        {
+          "path": "src/components/customized/card/with-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-create-account",
+      "type": "registry:component",
+      "title": "Create Account Card",
+      "description": "A create account card component",
+      "registryDependencies": ["card", "button", "input", "label", "separator"],
+      "files": [
+        {
+          "path": "src/components/customized/card/create-account.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-product",
+      "type": "registry:component",
+      "title": "Product Card",
+      "description": "A product card component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["card", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/card/product-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-banner",
+      "type": "registry:component",
+      "title": "Banner Card",
+      "description": "A banner card component",
+      "registryDependencies": ["card", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/card/card-banner.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-pricing",
+      "type": "registry:component",
+      "title": "Pricing Card",
+      "description": "A pricing card component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["card", "button", "tooltip"],
+      "files": [
+        {
+          "path": "src/components/customized/card/card-pricing.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-testimonial",
+      "type": "registry:component",
+      "title": "Testimonial Card",
+      "description": "A testimonial card component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["card", "avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/card/testimonial-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "card-post",
+      "type": "registry:component",
+      "title": "Post Card",
+      "description": "A post card component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["card", "button", "separator"],
+      "files": [
+        {
+          "path": "src/components/customized/card/card-post.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-disabled",
+      "type": "registry:component",
+      "title": "Disabled Checkbox",
+      "description": "A disabled checkbox component",
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/disabled-checkbox.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-with-text",
+      "type": "registry:component",
+      "title": "Checkbox with Text",
+      "description": "A checkbox with text component",
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/with-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-controlled",
+      "type": "registry:component",
+      "title": "Controlled Checkbox",
+      "description": "A controlled checkbox component",
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/controlled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-indeterminate",
+      "type": "registry:component",
+      "title": "Indeterminate Checkbox",
+      "description": "An indeterminate checkbox component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/indeterminate.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-colors",
+      "type": "registry:component",
+      "title": "Checkbox Colors",
+      "description": "Different colors of checkbox component",
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/colors.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-sizes",
+      "type": "registry:component",
+      "title": "Checkbox Sizes",
+      "description": "Different sizes of checkbox component",
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/sizes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-horizontal-group",
+      "type": "registry:component",
+      "title": "Horizontal Checkbox Group",
+      "description": "A horizontal checkbox group component",
+      "registryDependencies": ["checkbox", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/horizontal-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-icon",
+      "type": "registry:component",
+      "title": "Icon Checkbox",
+      "description": "A checkbox with custom icon component",
+      "dependencies": [
+        "lucide-react",
+        "@radix-ui/react-icons",
+        "@radix-ui/react-checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-card",
+      "type": "registry:component",
+      "title": "Card Checkbox",
+      "description": "A card checkbox component",
+      "dependencies": ["lucide-react", "@radix-ui/react-checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/card-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-multi-color-picker",
+      "type": "registry:component",
+      "title": "Multi Color Picker Checkbox",
+      "description": "A multi color picker checkbox component",
+      "dependencies": ["lucide-react", "@radix-ui/react-checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/multi-color-picker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-vertical-group",
+      "type": "registry:component",
+      "title": "Vertical Checkbox Group",
+      "description": "A vertical checkbox group component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["checkbox"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/vertical-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox-with-form",
+      "type": "registry:component",
+      "title": "Checkbox with Form",
+      "description": "A checkbox with form component",
+      "dependencies": ["react-hook-form", "zod", "@hookform/resolvers"],
+      "registryDependencies": ["checkbox", "form", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/checkbox/with-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-default",
+      "type": "registry:component",
+      "title": "Default Dropdown Menu",
+      "description": "A default dropdown menu component",
+      "registryDependencies": ["dropdown-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-checkboxes",
+      "type": "registry:component",
+      "title": "Dropdown Menu with Checkboxes",
+      "description": "A dropdown menu with checkboxes component",
+      "registryDependencies": ["dropdown-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/checkboxes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-with-icon",
+      "type": "registry:component",
+      "title": "Dropdown Menu with Icon",
+      "description": "A dropdown menu with icon component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-radio-group",
+      "type": "registry:component",
+      "title": "Dropdown Menu with Radio Group",
+      "description": "A dropdown menu with radio group component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/radio-group.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-with-sub-menu",
+      "type": "registry:component",
+      "title": "Dropdown Menu with Sub Menu",
+      "description": "A dropdown menu with sub menu component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/with-sub-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-complex",
+      "type": "registry:component",
+      "title": "Complex Dropdown Menu",
+      "description": "A complex dropdown menu component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/complex-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-with-shortcuts",
+      "type": "registry:component",
+      "title": "Dropdown Menu with Shortcuts",
+      "description": "A dropdown menu with keyboard shortcuts component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/with-shortcuts.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu-workspace-switcher",
+      "type": "registry:component",
+      "title": "Workspace Switcher Dropdown Menu",
+      "description": "A workspace switcher dropdown menu component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["dropdown-menu", "avatar"],
+      "files": [
+        {
+          "path": "src/components/customized/dropdown-menu/workspace-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-default",
+      "type": "registry:component",
+      "title": "Default Input",
+      "description": "A default input component",
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "src/components/customized/input/default-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-filled",
+      "type": "registry:component",
+      "title": "Filled Input",
+      "description": "A filled input component",
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "src/components/customized/input/filled-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-disabled",
+      "type": "registry:component",
+      "title": "Disabled Input",
+      "description": "A disabled input component",
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "src/components/customized/input/disabled-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-helper-text",
+      "type": "registry:component",
+      "title": "Input with Helper Text",
+      "description": "An input with helper text component",
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-helper-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-error-message",
+      "type": "registry:component",
+      "title": "Input with Error Message",
+      "description": "An input with error message component",
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-error-message.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-file",
+      "type": "registry:component",
+      "title": "File Input",
+      "description": "A file input component",
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/input/file-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-dropzone",
+      "type": "registry:component",
+      "title": "Dropzone Input",
+      "description": "A dropzone input component",
+      "dependencies": ["lucide-react", "react-dropzone"],
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/input/dropzone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-ring",
+      "type": "registry:component",
+      "title": "Ring Input",
+      "description": "A ring input component",
+      "registryDependencies": ["input"],
+      "files": [
+        {
+          "path": "src/components/customized/input/ring-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-form",
+      "type": "registry:component",
+      "title": "Input with Form",
+      "description": "An input with form component",
+      "dependencies": ["@hookform/resolvers"],
+      "registryDependencies": ["input", "form", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-button",
+      "type": "registry:component",
+      "title": "Input with Button",
+      "description": "An input with button component",
+      "registryDependencies": ["input", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-adornment",
+      "type": "registry:component",
+      "title": "Input with Adornment",
+      "description": "An input with adornment component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["input", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-adornment.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-with-label",
+      "type": "registry:component",
+      "title": "Input with Label",
+      "description": "An input with label component",
+      "registryDependencies": ["input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/input/with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-default",
+      "type": "registry:component",
+      "title": "Default Breadcrumb",
+      "description": "A default breadcrumb component",
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-icon",
+      "type": "registry:component",
+      "title": "Breadcrumb with Icon",
+      "description": "A breadcrumb with icon component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-icon-2",
+      "type": "registry:component",
+      "title": "Breadcrumb with Icon (Alternate)",
+      "description": "An alternate breadcrumb with icon component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-icon-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-icon-and-label",
+      "type": "registry:component",
+      "title": "Breadcrumb with Icon and Label",
+      "description": "A breadcrumb with icon and label component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-icon-and-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-icon-and-label-2",
+      "type": "registry:component",
+      "title": "Breadcrumb with Icon and Label (Alternate)",
+      "description": "An alternate breadcrumb with icon and label component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-icon-and-label-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-dropdown",
+      "type": "registry:component",
+      "title": "Breadcrumb with Dropdown",
+      "description": "A breadcrumb with dropdown component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb", "dropdown-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-dropdown.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-tab-active",
+      "type": "registry:component",
+      "title": "Breadcrumb with Tab Active",
+      "description": "A breadcrumb with tab active component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/tab-active.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-collapsed",
+      "type": "registry:component",
+      "title": "Collapsed Breadcrumb",
+      "description": "A collapsed breadcrumb component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb", "dropdown-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/collapsed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-with-background",
+      "type": "registry:component",
+      "title": "Breadcrumb with Background",
+      "description": "A breadcrumb with background component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/with-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-tabs",
+      "type": "registry:component",
+      "title": "Tabs Breadcrumb",
+      "description": "A tabs breadcrumb component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-tabs-outline",
+      "type": "registry:component",
+      "title": "Tabs Outline Breadcrumb",
+      "description": "A tabs outline breadcrumb component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/tabs-outline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-steps",
+      "type": "registry:component",
+      "title": "Steps Breadcrumb",
+      "description": "A steps breadcrumb component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/steps.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-chevrons-separator",
+      "type": "registry:component",
+      "title": "Breadcrumb with Chevrons Separator",
+      "description": "A breadcrumb with chevrons separator component",
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/chevrons-separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-dot-separator",
+      "type": "registry:component",
+      "title": "Breadcrumb with Dot Separator",
+      "description": "A breadcrumb with dot separator component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/dot-separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb-slash-separator",
+      "type": "registry:component",
+      "title": "Breadcrumb with Slash Separator",
+      "description": "A breadcrumb with slash separator component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["breadcrumb"],
+      "files": [
+        {
+          "path": "src/components/customized/breadcrumb/slash-separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-default",
+      "type": "registry:component",
+      "title": "Default Carousel",
+      "description": "A default carousel component",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-multiple-slides",
+      "type": "registry:component",
+      "title": "Carousel with Multiple Slides",
+      "description": "A carousel displaying multiple slides at once",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/multiple-slides.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-vertical",
+      "type": "registry:component",
+      "title": "Vertical Carousel",
+      "description": "A vertical orientation carousel",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-slide-status",
+      "type": "registry:component",
+      "title": "Carousel with Slide Status",
+      "description": "A carousel with slide status indicator",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/slide-status.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-slide-status-2",
+      "type": "registry:component",
+      "title": "Carousel with Slide Status (Alternate)",
+      "description": "An alternate carousel with slide status indicator",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/slide-status-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-pagination",
+      "type": "registry:component",
+      "title": "Carousel with Pagination",
+      "description": "A carousel with pagination controls",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/pagination.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-footer",
+      "type": "registry:component",
+      "title": "Carousel with Footer",
+      "description": "A carousel with a footer section",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/footer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-progress",
+      "type": "registry:component",
+      "title": "Carousel with Progress Bar",
+      "description": "A carousel with a progress bar indicator",
+      "registryDependencies": ["carousel", "card", "progress"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/progress.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-thumbs",
+      "type": "registry:component",
+      "title": "Carousel with Thumbnails",
+      "description": "A carousel with thumbnail navigation",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/thumbs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-opacity",
+      "type": "registry:component",
+      "title": "Carousel with Opacity Transition",
+      "description": "A carousel with opacity transition effects",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/opacity.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "carousel-scale",
+      "type": "registry:component",
+      "title": "Carousel with Scale Transition",
+      "description": "A carousel with scale transition effects",
+      "registryDependencies": ["carousel", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/carousel/scale.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-default",
+      "type": "registry:component",
+      "title": "Default Collapsible",
+      "description": "A default collapsible component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["collapsible", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/collapsible/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-show-more",
+      "type": "registry:component",
+      "title": "Show More Collapsible",
+      "description": "A collapsible component with show more functionality",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["collapsible", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/collapsible/show-more.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-file-tree",
+      "type": "registry:component",
+      "title": "File Tree Collapsible",
+      "description": "A collapsible component for displaying file trees",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["collapsible"],
+      "files": [
+        {
+          "path": "src/components/customized/collapsible/file-tree.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "collapsible-filters",
+      "type": "registry:component",
+      "title": "Filters Collapsible",
+      "description": "A collapsible component for filter options",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": [
+        "collapsible",
+        "input",
+        "label",
+        "slider",
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/customized/collapsible/filters.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-default",
+      "type": "registry:component",
+      "title": "Default OTP Input",
+      "description": "A default one-time password input component",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-separated",
+      "type": "registry:component",
+      "title": "Separated OTP Input",
+      "description": "An OTP input with separated input fields",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/separated.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-separated-2",
+      "type": "registry:component",
+      "title": "Separated OTP Input (Alternate)",
+      "description": "An alternate style of separated OTP input fields",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/separated-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-secondary",
+      "type": "registry:component",
+      "title": "Secondary OTP Input",
+      "description": "An OTP input with secondary styling",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/secondary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-without-separator",
+      "type": "registry:component",
+      "title": "OTP Input Without Separator",
+      "description": "An OTP input without separators between fields",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/without-separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-custom-separator",
+      "type": "registry:component",
+      "title": "OTP Input with Custom Separator",
+      "description": "An OTP input with custom separator between fields",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/custom-separator.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input-otp-inner-shadow",
+      "type": "registry:component",
+      "title": "OTP Input with Inner Shadow",
+      "description": "An OTP input with inner shadow styling",
+      "registryDependencies": ["input-otp"],
+      "files": [
+        {
+          "path": "src/components/customized/input-otp/inner-shadow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-default",
+      "type": "registry:component",
+      "title": "Default Navigation Menu",
+      "description": "A default navigation menu component",
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-icon",
+      "type": "registry:component",
+      "title": "Navigation Menu with Icons",
+      "description": "A navigation menu with icon elements",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-active-item",
+      "type": "registry:component",
+      "title": "Navigation Menu with Active Item",
+      "description": "A navigation menu with active item styling",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/active-item.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-underlined",
+      "type": "registry:component",
+      "title": "Underlined Navigation Menu",
+      "description": "A navigation menu with underlined styling",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/underlined.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-mobile-navigation",
+      "type": "registry:component",
+      "title": "Mobile Navigation Menu",
+      "description": "A mobile-friendly navigation menu",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/mobile-navigation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-with-icon",
+      "type": "registry:component",
+      "title": "Navigation Menu with Icon",
+      "description": "A navigation menu with icon integration",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-rich-menu",
+      "type": "registry:component",
+      "title": "Rich Navigation Menu",
+      "description": "A feature-rich navigation menu with advanced styling",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/rich-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu-with-dropdown",
+      "type": "registry:component",
+      "title": "Navigation Menu with Dropdown",
+      "description": "A navigation menu with dropdown functionality",
+      "registryDependencies": ["navigation-menu"],
+      "files": [
+        {
+          "path": "src/components/customized/navigation-menu/with-dropdown.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-default",
+      "type": "registry:component",
+      "title": "Default Pagination",
+      "description": "A default pagination component",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-icon-and-label",
+      "type": "registry:component",
+      "title": "Pagination with Icon and Label",
+      "description": "A pagination component with icons and labels",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/icon-and-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-icon",
+      "type": "registry:component",
+      "title": "Pagination with Icon",
+      "description": "A pagination component with icons",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-bordered",
+      "type": "registry:component",
+      "title": "Bordered Pagination",
+      "description": "A pagination component with bordered styling",
+      "registryDependencies": ["pagination", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/bordered.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-rounded-button",
+      "type": "registry:component",
+      "title": "Pagination with Rounded Buttons",
+      "description": "A pagination component with rounded button styling",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/rounded-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-tabs",
+      "type": "registry:component",
+      "title": "Tabs Pagination",
+      "description": "A pagination component with tabs styling",
+      "registryDependencies": ["pagination", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-first-last-page",
+      "type": "registry:component",
+      "title": "Pagination with First/Last Page",
+      "description": "A pagination component with first and last page navigation",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/first-last-page.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-tabs-secondary",
+      "type": "registry:component",
+      "title": "Secondary Tabs Pagination",
+      "description": "A pagination component with secondary tabs styling",
+      "registryDependencies": ["pagination", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/tabs-secondary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-numberless",
+      "type": "registry:component",
+      "title": "Numberless Pagination",
+      "description": "A pagination component without page numbers",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/numberless.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-numberless-with-text",
+      "type": "registry:component",
+      "title": "Numberless Pagination with Text",
+      "description": "A pagination component without numbers but with text",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/numberless-with-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-ellipsis",
+      "type": "registry:component",
+      "title": "Pagination with Ellipsis",
+      "description": "A pagination component with ellipsis for long page ranges",
+      "registryDependencies": ["pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/ellipsis.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-table-pagination",
+      "type": "registry:component",
+      "title": "Table Pagination",
+      "description": "A pagination component designed for tables",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["pagination", "button", "select", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/table-pagination.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-primary-button",
+      "type": "registry:component",
+      "title": "Pagination with Primary Buttons",
+      "description": "A pagination component with primary button styling",
+      "registryDependencies": ["pagination", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/primary-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pagination-secondary-button",
+      "type": "registry:component",
+      "title": "Pagination with Secondary Buttons",
+      "description": "A pagination component with secondary button styling",
+      "registryDependencies": ["pagination", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/pagination/secondary-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-default",
+      "type": "registry:component",
+      "title": "Default Progress",
+      "description": "A default linear progress component",
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-linear-with-label",
+      "type": "registry:component",
+      "title": "Linear Progress with Label",
+      "description": "A linear progress component with label",
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/linear-with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-rounded",
+      "type": "registry:component",
+      "title": "Rounded Progress",
+      "description": "A progress component with rounded styling",
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/rounded.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-linear-color",
+      "type": "registry:component",
+      "title": "Linear Progress with Custom Color",
+      "description": "A linear progress component with custom color",
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/linear-color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular",
+      "type": "registry:component",
+      "title": "Circular Progress",
+      "description": "A circular progress component",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular-color",
+      "type": "registry:component",
+      "title": "Circular Progress with Custom Color",
+      "description": "A circular progress component with custom color",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular-color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular-with-label",
+      "type": "registry:component",
+      "title": "Circular Progress with Label",
+      "description": "A circular progress component with label",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular-with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular-with-custom-label",
+      "type": "registry:component",
+      "title": "Circular Progress with Custom Label",
+      "description": "A circular progress component with custom label",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular-with-custom-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular-progress-shape",
+      "type": "registry:component",
+      "title": "Circular Progress with Custom Shape",
+      "description": "A circular progress component with custom shape",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular-progress-shape.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-circular-stroke-width",
+      "type": "registry:component",
+      "title": "Circular Progress with Custom Stroke Width",
+      "description": "A circular progress component with custom stroke width",
+      "files": [
+        {
+          "path": "src/components/customized/progress/circular-stroke-width.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-gradient",
+      "type": "registry:component",
+      "title": "Gradient Progress",
+      "description": "A progress component with gradient styling",
+      "registryDependencies": ["progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/gradient.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "progress-animation",
+      "type": "registry:component",
+      "title": "Animated Progress",
+      "description": "A progress component with animation effects",
+      "dependencies": ["@radix-ui/react-progress"],
+      "files": [
+        {
+          "path": "src/components/customized/progress/animation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-default",
+      "type": "registry:component",
+      "title": "Default Radio Group",
+      "description": "A default radio group component",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-disabled",
+      "type": "registry:component",
+      "title": "Disabled Radio Group",
+      "description": "A radio group component with disabled options",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/disabled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-size",
+      "type": "registry:component",
+      "title": "Radio Group with Custom Size",
+      "description": "A radio group component with custom size options",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/size.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-cards-1",
+      "type": "registry:component",
+      "title": "Radio Group with Cards (Style 1)",
+      "description": "A radio group component with card-style options (style 1)",
+      "registryDependencies": ["radio-group"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/cards-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-cards-2",
+      "type": "registry:component",
+      "title": "Radio Group with Cards (Style 2)",
+      "description": "A radio group component with card-style options (style 2)",
+      "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/cards-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-cards-3",
+      "type": "registry:component",
+      "title": "Radio Group with Cards (Style 3)",
+      "description": "A radio group component with card-style options (style 3)",
+      "registryDependencies": ["radio-group", "card", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/cards-3.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-horizontal",
+      "type": "registry:component",
+      "title": "Horizontal Radio Group",
+      "description": "A radio group component with horizontal layout",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-color",
+      "type": "registry:component",
+      "title": "Radio Group with Custom Colors",
+      "description": "A radio group component with custom color options",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio-group-variant",
+      "type": "registry:component",
+      "title": "Radio Group with Variant Styling",
+      "description": "A radio group component with variant styling options",
+      "registryDependencies": ["radio-group", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/radio-group/variant.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-default",
+      "type": "registry:component",
+      "title": "Default Select",
+      "description": "A default select component",
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-with-icon",
+      "type": "registry:component",
+      "title": "Select with Icon",
+      "description": "A select component with icon integration",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/with-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-controlled",
+      "type": "registry:component",
+      "title": "Controlled Select",
+      "description": "A controlled select component",
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/controlled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-scrollable",
+      "type": "registry:component",
+      "title": "Scrollable Select",
+      "description": "A select component with scrollable options",
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/scrollable.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-menu-position",
+      "type": "registry:component",
+      "title": "Select with Custom Menu Position",
+      "description": "A select component with custom menu position",
+      "registryDependencies": ["select", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/select/select-menu-position.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-custom-dropdown-icon",
+      "type": "registry:component",
+      "title": "Select with Custom Dropdown Icon",
+      "description": "A select component with custom dropdown icon",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/custom-dropdown-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-ghost",
+      "type": "registry:component",
+      "title": "Ghost Select",
+      "description": "A select component with ghost styling",
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/ghost.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-shape",
+      "type": "registry:component",
+      "title": "Select with Custom Shape",
+      "description": "A select component with custom shape styling",
+      "registryDependencies": ["select", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/select/shape.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-theme-selector",
+      "type": "registry:component",
+      "title": "Theme Selector Select",
+      "description": "A select component for theme selection",
+      "dependencies": ["lucide-react", "next-themes"],
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/theme-selector.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-with-auto-complete",
+      "type": "registry:component",
+      "title": "Select with Auto-Complete",
+      "description": "A select component with auto-complete functionality",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["select", "command", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/select/with-auto-complete.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-background-color",
+      "type": "registry:component",
+      "title": "Select with Background Color",
+      "description": "A select component with custom background color",
+      "registryDependencies": ["select"],
+      "files": [
+        {
+          "path": "src/components/customized/select/background-color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select-with-form",
+      "type": "registry:component",
+      "title": "Select with Form Integration",
+      "description": "A select component integrated with form handling",
+      "dependencies": ["@hookform/resolvers", "zod"],
+      "registryDependencies": ["select", "form"],
+      "files": [
+        {
+          "path": "src/components/customized/select/with-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-default",
+      "type": "registry:component",
+      "title": "Default Separator",
+      "description": "A default separator component",
+      "registryDependencies": ["separator"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-dashed",
+      "type": "registry:component",
+      "title": "Dashed Separator",
+      "description": "A dashed separator component",
+      "registryDependencies": ["separator", "card", "input", "label", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/separator-dashed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-vertical",
+      "type": "registry:component",
+      "title": "Vertical Separator",
+      "description": "A vertical separator component",
+      "registryDependencies": ["separator", "button", "input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/separator-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-with-chip-horizontal",
+      "type": "registry:component",
+      "title": "Horizontal Separator with Chip",
+      "description": "A horizontal separator with chip component",
+      "registryDependencies": ["separator", "button", "input", "label", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/with-chip-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-with-chip-vertical",
+      "type": "registry:component",
+      "title": "Vertical Separator with Chip",
+      "description": "A vertical separator with chip component",
+      "registryDependencies": ["separator", "button", "input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/with-chip-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-with-label-horizontal",
+      "type": "registry:component",
+      "title": "Horizontal Separator with Label",
+      "description": "A horizontal separator with label component",
+      "registryDependencies": ["separator", "button", "input", "label", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/with-label-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "separator-with-label-vertical",
+      "type": "registry:component",
+      "title": "Vertical Separator with Label",
+      "description": "A vertical separator with label component",
+      "registryDependencies": ["separator", "button", "input", "label", "card"],
+      "files": [
+        {
+          "path": "src/components/customized/separator/with-label-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-default",
+      "type": "registry:component",
+      "title": "Default Slider",
+      "description": "A default slider component",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-disabled",
+      "type": "registry:component",
+      "title": "Disabled Slider",
+      "description": "A disabled slider component",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/disabled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-size",
+      "type": "registry:component",
+      "title": "Slider Size",
+      "description": "A slider component with different sizes",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/size.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-color",
+      "type": "registry:component",
+      "title": "Slider Color",
+      "description": "A slider component with different colors",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-shape",
+      "type": "registry:component",
+      "title": "Slider Shape",
+      "description": "A slider component with different shapes",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/shape.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-with-label",
+      "type": "registry:component",
+      "title": "Slider with Label",
+      "description": "A slider component with a label",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-vertical",
+      "type": "registry:component",
+      "title": "Vertical Slider",
+      "description": "A vertical slider component",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-thumb-icon",
+      "type": "registry:component",
+      "title": "Slider with Thumb Icon",
+      "description": "A slider component with a custom thumb icon",
+      "dependencies": ["@radix-ui/react-slider", "lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/thumb-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-audio-slider",
+      "type": "registry:component",
+      "title": "Audio Slider",
+      "description": "A slider component designed for audio controls",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/audio-slider.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-marks",
+      "type": "registry:component",
+      "title": "Slider with Marks",
+      "description": "A slider component with marks for specific values",
+      "registryDependencies": ["slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/marks.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-sticky-label",
+      "type": "registry:component",
+      "title": "Slider with Sticky Label",
+      "description": "A slider component with a sticky label",
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/sticky-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-sticky-label-hover",
+      "type": "registry:component",
+      "title": "Slider with Sticky Label on Hover",
+      "description": "A slider component with a sticky label that appears on hover",
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/sticky-label-hover.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-sticky-label-arrow",
+      "type": "registry:component",
+      "title": "Slider with Sticky Label Arrow",
+      "description": "A slider component with a sticky label with arrow",
+      "dependencies": ["@radix-ui/react-slider"],
+      "registryDependencies": ["badge"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/sticky-label-arrow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-range",
+      "type": "registry:component",
+      "title": "Range Slider",
+      "description": "A range slider component",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/range.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slider-multiple-thumbs",
+      "type": "registry:component",
+      "title": "Slider with Multiple Thumbs",
+      "description": "A slider component with multiple thumbs",
+      "dependencies": ["@radix-ui/react-slider"],
+      "files": [
+        {
+          "path": "src/components/customized/slider/multiple-thumbs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-default",
+      "type": "registry:component",
+      "title": "Default Spinner",
+      "description": "A default spinner component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/spinner/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle",
+      "type": "registry:component",
+      "title": "Circle Spinner",
+      "description": "A circular spinner component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-pinwheel",
+      "type": "registry:component",
+      "title": "Pinwheel Spinner",
+      "description": "A pinwheel spinner component",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-pinwheel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-colors",
+      "type": "registry:component",
+      "title": "Spinner Colors",
+      "description": "A spinner component with different colors",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-colors.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-sizes",
+      "type": "registry:component",
+      "title": "Spinner Sizes",
+      "description": "A spinner component with different sizes",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-sizes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-swirling-effect",
+      "type": "registry:component",
+      "title": "Swirling Effect Spinner",
+      "description": "A spinner component with swirling effect",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/swirling-effect.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle-1",
+      "type": "registry:component",
+      "title": "Spinner Circle 1",
+      "description": "A circle spinner component variation 1",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle-2",
+      "type": "registry:component",
+      "title": "Spinner Circle 2",
+      "description": "A circle spinner component variation 2",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle-3",
+      "type": "registry:component",
+      "title": "Spinner Circle 3",
+      "description": "A circle spinner component variation 3",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle-3.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle-4",
+      "type": "registry:component",
+      "title": "Spinner Circle 4",
+      "description": "A circle spinner component variation 4",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle-4.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spinner-circle-5",
+      "type": "registry:component",
+      "title": "Spinner Circle 5",
+      "description": "A circle spinner component variation 5",
+      "files": [
+        {
+          "path": "src/components/customized/spinner/spinner-circle-5.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-default",
+      "type": "registry:component",
+      "title": "Default Switch",
+      "description": "A default switch component",
+      "registryDependencies": ["switch"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-with-label",
+      "type": "registry:component",
+      "title": "Switch with Label",
+      "description": "A switch component with a label",
+      "registryDependencies": ["switch", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-disabled",
+      "type": "registry:component",
+      "title": "Disabled Switch",
+      "description": "A disabled switch component",
+      "registryDependencies": ["switch", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/disabled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-colors",
+      "type": "registry:component",
+      "title": "Switch Colors",
+      "description": "A switch component with different colors",
+      "registryDependencies": ["switch"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/colors.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-sizes",
+      "type": "registry:component",
+      "title": "Switch Sizes",
+      "description": "A switch component with different sizes",
+      "dependencies": ["@radix-ui/react-switch"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/sizes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-controlled",
+      "type": "registry:component",
+      "title": "Controlled Switch",
+      "description": "A controlled switch component",
+      "registryDependencies": ["switch"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/controlled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "switch-customization",
+      "type": "registry:component",
+      "title": "Switch Customization",
+      "description": "A customized switch component",
+      "dependencies": ["@radix-ui/react-switch", "lucide-react"],
+      "files": [
+        {
+          "path": "src/components/customized/switch/customization.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-default",
+      "type": "registry:component",
+      "title": "Default Table",
+      "description": "A default table component",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-bordered",
+      "type": "registry:component",
+      "title": "Bordered Table",
+      "description": "A bordered table component",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/bordered.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-striped-rows",
+      "type": "registry:component",
+      "title": "Striped Rows Table",
+      "description": "A table with striped rows",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/striped-rows.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-rounded-corners",
+      "type": "registry:component",
+      "title": "Rounded Corners Table",
+      "description": "A table with rounded corners",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/rounded-corners.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-with-pagination",
+      "type": "registry:component",
+      "title": "Table with Pagination",
+      "description": "A table with pagination",
+      "registryDependencies": ["table", "pagination"],
+      "files": [
+        {
+          "path": "src/components/customized/table/with-pagination.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-sticky-header",
+      "type": "registry:component",
+      "title": "Sticky Header Table",
+      "description": "A table with sticky header",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/sticky-header.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-sticky-columns",
+      "type": "registry:component",
+      "title": "Sticky Columns Table",
+      "description": "A table with sticky columns",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/sticky-columns.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-overflow-scroll",
+      "type": "registry:component",
+      "title": "Overflow Scroll Table",
+      "description": "A table with overflow scroll",
+      "registryDependencies": ["table"],
+      "files": [
+        {
+          "path": "src/components/customized/table/overflow-scroll.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-data-table",
+      "type": "registry:component",
+      "title": "Data Table",
+      "description": "A data table component",
+      "dependencies": ["@tanstack/react-table", "lucide-react"],
+      "registryDependencies": [
+        "table",
+        "dropdown-menu",
+        "input",
+        "button",
+        "checkbox"
+      ],
+      "files": [
+        {
+          "path": "src/components/customized/table/data-table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-data-table-density",
+      "type": "registry:component",
+      "title": "Data Table Density",
+      "description": "A data table with density controls",
+      "dependencies": ["@tanstack/react-table", "lucide-react"],
+      "registryDependencies": [
+        "table",
+        "select",
+        "button",
+        "checkbox",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "src/components/customized/table/data-table-density.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "table-columns-visibility",
+      "type": "registry:component",
+      "title": "Columns Visibility Table",
+      "description": "A table with columns visibility control",
+      "dependencies": ["@tanstack/react-table", "lucide-react"],
+      "registryDependencies": [
+        "table",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "src/components/customized/table/columns-visibility.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-default",
+      "type": "registry:component",
+      "title": "Default Tabs",
+      "description": "Default tabs component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-underlined",
+      "type": "registry:component",
+      "title": "Underlined Tabs",
+      "description": "Tabs with underlined style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/underlined-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-separated",
+      "type": "registry:component",
+      "title": "Separated Tabs",
+      "description": "Tabs with separated style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/separated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-bordered",
+      "type": "registry:component",
+      "title": "Bordered Tabs",
+      "description": "Tabs with bordered style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-bordered.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-box",
+      "type": "registry:component",
+      "title": "Box Tabs",
+      "description": "Tabs with box style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-box.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-bootstrap",
+      "type": "registry:component",
+      "title": "Bootstrap Tabs",
+      "description": "Tabs with bootstrap style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-bootstrap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-icon",
+      "type": "registry:component",
+      "title": "Icon Tabs",
+      "description": "Tabs with icons",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-icon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-mobile-navigation",
+      "type": "registry:component",
+      "title": "Mobile Navigation Tabs",
+      "description": "Tabs designed for mobile navigation",
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-mobile-navigation.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-with-badge",
+      "type": "registry:component",
+      "title": "Tabs with Badge",
+      "description": "Tabs with badge indicators",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button", "badge"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-with-badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-sharp",
+      "type": "registry:component",
+      "title": "Sharp Tabs",
+      "description": "Tabs with sharp corners",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-sharp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-shadow",
+      "type": "registry:component",
+      "title": "Shadow Tabs",
+      "description": "Tabs with shadow effect",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-shadow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-skewed",
+      "type": "registry:component",
+      "title": "Skewed Tabs",
+      "description": "Tabs with skewed shape",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/tabs-skewed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-vertical",
+      "type": "registry:component",
+      "title": "Vertical Tabs",
+      "description": "Tabs with vertical orientation",
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/vertical-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-vertical-left-bordered",
+      "type": "registry:component",
+      "title": "Vertical Left Bordered Tabs",
+      "description": "Vertical tabs with left border",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/vertical-left-bordered.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-vertical-separated",
+      "type": "registry:component",
+      "title": "Vertical Separated Tabs",
+      "description": "Vertical tabs with separated style",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/vertical-separated.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-vertical-sharp",
+      "type": "registry:component",
+      "title": "Vertical Sharp Tabs",
+      "description": "Vertical tabs with sharp corners",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/vertical-sharp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-vertical-bordered",
+      "type": "registry:component",
+      "title": "Vertical Bordered Tabs",
+      "description": "Vertical tabs with borders",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["tabs"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/vertical-bordered.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs-animated",
+      "type": "registry:component",
+      "title": "Animated Tabs",
+      "description": "Tabs with content animation",
+      "dependencies": ["lucide-react", "framer-motion"],
+      "registryDependencies": ["tabs", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tabs/animated-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-default",
+      "type": "registry:component",
+      "title": "Default Textarea",
+      "description": "A default textarea component",
+      "registryDependencies": ["textarea"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-with-background-color",
+      "type": "registry:component",
+      "title": "Textarea with Background Color",
+      "description": "A textarea component with background color",
+      "registryDependencies": ["textarea"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/with-background-color.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-disabled",
+      "type": "registry:component",
+      "title": "Disabled Textarea",
+      "description": "A disabled textarea component",
+      "registryDependencies": ["textarea"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/disabled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-with-label",
+      "type": "registry:component",
+      "title": "Textarea with Label",
+      "description": "A textarea component with a label",
+      "registryDependencies": ["textarea", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/with-label.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-rows",
+      "type": "registry:component",
+      "title": "Textarea with Rows",
+      "description": "A textarea component with custom rows",
+      "registryDependencies": ["textarea"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/rows.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-with-helper-text",
+      "type": "registry:component",
+      "title": "Textarea with Helper Text",
+      "description": "A textarea component with helper text",
+      "registryDependencies": ["textarea", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/with-helper-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "textarea-controlled",
+      "type": "registry:component",
+      "title": "Controlled Textarea",
+      "description": "A controlled textarea component",
+      "registryDependencies": ["textarea"],
+      "files": [
+        {
+          "path": "src/components/customized/textarea/controlled.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-default",
+      "type": "registry:component",
+      "title": "Default Tooltip",
+      "description": "A default tooltip component",
+      "registryDependencies": ["tooltip", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/default.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-with-arrow",
+      "type": "registry:component",
+      "title": "Tooltip with Arrow",
+      "description": "A tooltip component with an arrow",
+      "registryDependencies": ["tooltip", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/with-arrow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-portal",
+      "type": "registry:component",
+      "title": "Tooltip Portal",
+      "description": "A tooltip component using portal for rendering",
+      "registryDependencies": ["tooltip", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/tooltip-portal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-directions",
+      "type": "registry:component",
+      "title": "Tooltip Directions",
+      "description": "A tooltip component with different directions",
+      "registryDependencies": ["tooltip", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/tooltip-directions.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-with-delay",
+      "type": "registry:component",
+      "title": "Tooltip with Delay",
+      "description": "A tooltip component with delay settings",
+      "registryDependencies": ["tooltip", "button", "input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/tooltip-with-delay.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-with-skip-delay-duration",
+      "type": "registry:component",
+      "title": "Tooltip with Skip Delay Duration",
+      "description": "A tooltip component with skip delay duration settings",
+      "registryDependencies": ["tooltip", "button", "input", "label"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/tooltip-with-skip-delay-duration.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tooltip-with-disabled-hoverable-content",
+      "type": "registry:component",
+      "title": "Tooltip with Disabled Hoverable Content",
+      "description": "A tooltip component with disabled hoverable content",
+      "registryDependencies": ["tooltip", "button"],
+      "files": [
+        {
+          "path": "src/components/customized/tooltip/with-disabled-hoverable-content.tsx",
+          "type": "registry:component"
         }
       ]
     }
