@@ -31,7 +31,8 @@ const ComponentBlock: FC<BlockProps> = async ({
 }) => {
   const src = `src/components/customized/${type}/${name}.tsx`;
   const code = await getFileContent(src);
-  const registryUrl = `${config.appUrl}/r/${name}.json`;
+  const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+  const registryUrl = `${protocol}://${config.appUrl}/r/${name}.json`;
 
   // Dynamically import the component from its path
   const DynamicComponent = dynamic(() =>
