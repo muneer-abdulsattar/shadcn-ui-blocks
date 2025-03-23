@@ -6,6 +6,7 @@ import { CopyToClipboardButton } from "./copy-to-clipboard-button";
 import { CodeDialog } from "./customized/code-dialog";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import { cn } from "@/lib/utils";
+import { config } from "@/config";
 
 interface BlockProps {
   title: string;
@@ -30,6 +31,7 @@ const ComponentBlock: FC<BlockProps> = async ({
 }) => {
   const src = `src/components/customized/${type}/${name}.tsx`;
   const code = await getFileContent(src);
+  const registryUrl = `${config.appUrl}/r/${name}.json`;
 
   // Dynamically import the component from its path
   const DynamicComponent = dynamic(() =>
@@ -75,7 +77,7 @@ const ComponentBlock: FC<BlockProps> = async ({
           >
             <Copy />
           </CopyToClipboardButton>
-          <CodeDialog code={code} />
+          <CodeDialog code={code} registryUrl={registryUrl} />
         </div>
       </div>
       <div className="flex-1 min-h-32 px-1 py-5 w-full rounded flex items-center justify-center">

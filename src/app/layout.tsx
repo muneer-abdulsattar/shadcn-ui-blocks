@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +11,11 @@ import { WebSite, WithContext } from "schema-dts";
 const geist = Geist({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
+});
+const geistMono = Geist_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
@@ -91,7 +96,7 @@ export default function RootLayout({
           src="https://datafa.st/js/script.js"
         />
       </head>
-      <body className={cn(geist.className, "antialiased")}>
+      <body className={cn(geist.className, geistMono.variable, "antialiased")}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

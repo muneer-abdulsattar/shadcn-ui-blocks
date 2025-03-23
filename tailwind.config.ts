@@ -65,6 +65,12 @@ const config: Config = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        code: {
+          DEFAULT: "hsl(var(--code))",
+        },
+      },
+      fontFamily: {
+        mono: ["var(--font-geist-mono)"],
       },
       borderRadius: {
         lg: "var(--radius)",
