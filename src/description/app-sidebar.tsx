@@ -1,4 +1,5 @@
 import {
+  Aperture,
   BookTextIcon,
   ChevronDownIcon,
   ChevronsUpDown,
@@ -24,22 +25,30 @@ import {
   TextCursorInputIcon,
   ToggleRightIcon,
   TriangleAlertIcon,
-} from "lucide-react";
+} from "lucide-react"
 
 interface ComponentDetails {
-  title: string;
-  url: string;
-  icon: LucideIcon;
-  blockName: string;
-  columns?: number;
-  description?: string;
-  className?: string;
-  isNew?: boolean;
+  title: string
+  url: string
+  icon: LucideIcon
+  blockName: string
+  columns?: number
+  description?: string
+  className?: string
+  isNew?: boolean
 }
 
-type ComponentsMap = Record<string, ComponentDetails>;
+type ComponentsMap = Record<string, ComponentDetails>
 
 export const componentsMap: ComponentsMap = {
+  custom: {
+    title: "Custom",
+    url: "/components/custom",
+    icon: Aperture,
+    blockName: "custom",
+    columns: 2,
+    description: "A custom component that is not part of the standard library.",
+  },
   accordion: {
     title: "Accordion",
     url: "/components/accordion",
@@ -281,9 +290,9 @@ export const componentsMap: ComponentsMap = {
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
-};
+}
 
-export const components = Object.values(componentsMap);
+export const components = Object.values(componentsMap)
 
 export const groups = [
   {
@@ -300,4 +309,4 @@ export const groups = [
     label: "Components",
     items: components,
   },
-];
+]

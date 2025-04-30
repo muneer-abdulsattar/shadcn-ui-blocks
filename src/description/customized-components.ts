@@ -1,4 +1,5 @@
 export const customizedComponents = {
+  custom: [{ title: "Default", type: "custom", name: "tags-input" }],
   accordion: [
     { title: "Default", type: "accordion", name: "accordion-01" },
     { title: "Outline", type: "accordion", name: "accordion-02" },
@@ -635,4 +636,4 @@ export const customizedComponents = {
       description: "When used, portals the content part into the body.",
     },
   ],
-};
+}
