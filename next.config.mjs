@@ -42,6 +42,23 @@ const nextConfig = {
 	outputFileTracingExcludes: {
 		"*": [".next/export-detail.json"],
 	},
+	webpack: (
+		config,
+		{
+			buildId: _buildId,
+			dev,
+			isServer: _isServer,
+			defaultLoaders: _defaultLoaders,
+			nextRuntime: _nextRuntime,
+			webpack: _webpack,
+		},
+	) => {
+		if (config.cache && !dev) {
+			config.cache = Object.freeze({ type: "memory" });
+		}
+		// Important: return the modified config
+		return config;
+	},
 };
 
 export default nextConfig;
