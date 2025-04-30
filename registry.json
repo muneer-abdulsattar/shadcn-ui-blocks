@@ -8,12 +8,12 @@
 			"type": "registry:ui",
 			"title": "Tags Input",
 			"description": "A simple tags input",
-			"dependencies": ["lucide-react"],
-			"registryDependencies": ["badge", "input"],
+			"dependencies": ["lucide-react", "badge"],
+			"registryDependencies": ["badge"],
 			"files": [
 				{
 					"path": "src/components/extensions/tags-input.tsx",
-					"type": "registry:ui"
+					"type": "registry:component"
 				}
 			]
 		},

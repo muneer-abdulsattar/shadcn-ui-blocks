@@ -36,7 +36,7 @@ interface TagsInputContextProps {
 
 const TagInputContext = React.createContext<TagsInputContextProps | null>(null);
 
-const TagsInput = React.forwardRef<HTMLDivElement, TagsInputProps>(
+export const TagsInput = React.forwardRef<HTMLDivElement, TagsInputProps>(
 	(
 		{
 			value = [],
@@ -310,5 +310,3 @@ const TagsInput = React.forwardRef<HTMLDivElement, TagsInputProps>(
 );
 
 TagsInput.displayName = "TagsInput";
-
-export default TagsInput;
