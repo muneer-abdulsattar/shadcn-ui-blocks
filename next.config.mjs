@@ -39,6 +39,9 @@ const nextConfig = {
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
+	outputFileTracingExcludes: {
+		"*": [".next/export-detail.json"],
+	},
 };
 
 export default nextConfig;
