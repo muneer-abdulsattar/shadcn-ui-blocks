@@ -5,6 +5,7 @@
   "title": "Default Spinner",
   "description": "A default spinner component",
   "dependencies": [
+    "lucide-react",
     "lucide-react"
   ],
   "files": [

@@ -6,6 +6,8 @@
   "description": "A slider component with a custom thumb icon",
   "dependencies": [
     "@radix-ui/react-slider",
+    "lucide-react",
+    "@radix-ui/react-slider",
     "lucide-react"
   ],
   "files": [

@@ -5,6 +5,7 @@
   "title": "Animated Progress",
   "description": "A progress component with animation effects",
   "dependencies": [
+    "@radix-ui/react-progress",
     "@radix-ui/react-progress"
   ],
   "files": [

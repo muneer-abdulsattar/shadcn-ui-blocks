@@ -5,6 +5,7 @@
   "title": "Contact 01",
   "description": "A simple contact form",
   "dependencies": [
+    "lucide-react",
     "lucide-react"
   ],
   "files": [

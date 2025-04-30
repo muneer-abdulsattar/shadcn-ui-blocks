@@ -6,7 +6,9 @@
   "description": "A card checkbox component",
   "dependencies": [
     "lucide-react",
-    "@radix-ui/react-checkbox"
+    "@radix-ui/react-checkbox",
+    "@radix-ui/react-checkbox",
+    "lucide-react"
   ],
   "files": [
     {

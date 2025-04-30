@@ -5,6 +5,7 @@
   "title": "Circle Spinner",
   "description": "A circular spinner component",
   "dependencies": [
+    "lucide-react",
     "lucide-react"
   ],
   "files": [

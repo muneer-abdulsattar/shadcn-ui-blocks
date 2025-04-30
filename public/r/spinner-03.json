@@ -5,6 +5,7 @@
   "title": "Pinwheel Spinner",
   "description": "A pinwheel spinner component",
   "dependencies": [
+    "lucide-react",
     "lucide-react"
   ],
   "files": [

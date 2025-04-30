@@ -5,6 +5,7 @@
   "title": "Spinner Sizes",
   "description": "A spinner component with different sizes",
   "dependencies": [
+    "lucide-react",
     "lucide-react"
   ],
   "files": [
