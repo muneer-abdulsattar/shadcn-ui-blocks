@@ -3,6 +3,15 @@ export const customizedComponents = {
 		{ title: "Tags Input", type: "custom", name: "tags-input" },
 		{ title: "Rating Input", type: "custom", name: "rating-input" },
 		{ title: "Auto Complete", type: "custom", name: "auto-complete" },
+		{ title: "Notification Badge", type: "custom", name: "notification-badge" },
+
+		{ title: "Better Badge", type: "custom", name: "better-badge" },
+		{ title: "Files Uploader", type: "custom", name: "file-uploader" },
+		{
+			title: "Profile Files Uploader",
+			type: "custom",
+			name: "profile-file-uploader",
+		},
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
