@@ -35,7 +35,7 @@ const DisplayIcon = ({
 	icon,
 	className,
 }: {
-	icon?: React.ComponentType<{ className?: string }> | string;
+	icon?: any | string;
 	className?: string;
 }) => {
 	if (!icon) return null;
@@ -44,7 +44,7 @@ const DisplayIcon = ({
 		return <img src={icon} alt="icon" className="w-4 h-4" />;
 	}
 
-	const Icon = icon as React.ComponentType<{ className?: string }>;
+	const Icon = icon as React.ReactElement;
 
 	return <Icon className={cn("size-4", className)} />;
 };
@@ -73,20 +73,101 @@ const multiSelectVariants = cva(
 	},
 );
 
+type DisplaySelectOption = {
+	label: string;
+	value: string;
+	icon?: React.ComponentType<{ className?: string }> | string | undefined;
+};
+
+interface DisplaySelectedBadgesProps
+	extends VariantProps<typeof multiSelectVariants> {
+	selectedOptions: DisplaySelectOption[];
+	mode?: "single" | "multiple";
+	maxCount?: number;
+	isAnimating?: boolean;
+	animation?: number;
+	onRemove?: (option: DisplaySelectOption, event: React.MouseEvent) => void;
+	onClearExtra?: (event: React.MouseEvent) => void;
+}
+
+const DisplaySelectedBadges = ({
+	selectedOptions,
+	mode = "multiple",
+	maxCount = 3,
+	isAnimating = false,
+	animation = 0,
+	variant,
+	onRemove,
+	onClearExtra,
+}: DisplaySelectedBadgesProps) => {
+	if (mode === "single" && selectedOptions.length > 0) {
+		return (
+			<Badge className="flex gap-2 bg-transparent hover:bg-transparent text-foreground text-base">
+				<DisplayIcon icon={selectedOptions[0].icon} />
+				<p className="text-black dark:text-white">
+					{selectedOptions[0]?.label}
+				</p>
+			</Badge>
+		);
+	}
+
+	return (
+		<>
+			{selectedOptions.slice(0, maxCount).map((option) => (
+				<Badge
+					key={option.value}
+					className={cn(
+						isAnimating ? "animate-bounce" : "",
+						multiSelectVariants({ variant }),
+						"bg-transparent",
+					)}
+					style={{ animationDuration: `${animation}s` }}
+				>
+					<DisplayIcon icon={option.icon} />
+					<span className="mx-2">{option.label}</span>
+					{onRemove && (
+						<XCircle
+							className="rtl:mr-2 ltr:ml-2 w-4 h-4 cursor-pointer"
+							onClick={(event) => onRemove(option, event)}
+						/>
+					)}
+				</Badge>
+			))}
+			{selectedOptions.length > maxCount && (
+				<Badge
+					className={cn(
+						"bg-transparent text-foreground border-foreground/1 hover:bg-transparent",
+						isAnimating ? "animate-bounce" : "",
+						multiSelectVariants({ variant }),
+					)}
+					style={{ animationDuration: `${animation}s` }}
+				>
+					{`+ ${selectedOptions.length - maxCount} more`}
+					{onClearExtra && (
+						<XCircle
+							className="rtl:mr-2 ltr:ml-2 w-4 h-4 cursor-pointer"
+							onClick={onClearExtra}
+						/>
+					)}
+				</Badge>
+			)}
+		</>
+	);
+};
+
+type Option = {
+	label: string;
+	value: string;
+	icon?: any;
+};
+
 interface AutoCompleteInlineProps
 	extends VariantProps<typeof multiSelectVariants> {
 	/**
 	 * An array of option objects to be displayed in the multi-select component.
 	 * Each option object has a label, value, and an optional icon.
 	 */
-	options: {
-		/** The text to display for the option. */
-		label: string;
-		/** The unique value associated with the option. */
-		value: string;
-		/** Optional icon component to display alongside the option. */
-		icon?: React.ComponentType<{ className?: string }> | string;
-	}[];
+	options: Option[];
 
 	/**
 	 * Callback function triggered when the selected values change.
@@ -102,11 +183,7 @@ interface AutoCompleteInlineProps
 	) => void;
 
 	/** The default selected values when the component mounts. */
-	defaultValue?: {
-		label: string;
-		value: string;
-		icon?: React.ComponentType<{ className?: string }>;
-	}[];
+	selected?: Option[];
 
 	/**
 	 * Placeholder text to be displayed when no values are selected.
@@ -155,7 +232,9 @@ interface AutoCompleteInlineProps
 	 * Callback function triggered when the input value changes.
 	 * Receives the new input value as a string.
 	 */
-	onInputChange?: (value: string) => void;
+	setInputValue?: (value: string) => void;
+
+	initialInputValue?: string;
 
 	/**
 	 * The mode of the multi-select component. When set to "single", only one option can be selected.
@@ -178,7 +257,7 @@ export const PopoverAutoComplete = React.forwardRef<
 			options,
 			onSelect,
 			variant,
-			defaultValue = [],
+			selected = [],
 			placeholder = "Select options",
 			animation = 0,
 			maxCount = 3,
@@ -186,7 +265,8 @@ export const PopoverAutoComplete = React.forwardRef<
 			asChild = false,
 			className,
 			isLoading = false,
-			onInputChange,
+			setInputValue,
+			initialInputValue,
 
 			mode = "multiple",
 			fetchNextPage,
@@ -195,7 +275,9 @@ export const PopoverAutoComplete = React.forwardRef<
 		},
 		ref,
 	) => {
-		const [selectedOptions, setSelectedOptions] = React.useState(defaultValue);
+		const [inputValue, setInputValueState] = React.useState(initialInputValue);
+		const [selectedOptions, setSelectedOptions] =
+			React.useState<Array<Option>>(selected);
 		const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
 		const [isAnimating, setIsAnimating] = React.useState(false);
 
@@ -218,8 +300,8 @@ export const PopoverAutoComplete = React.forwardRef<
 			icon?: React.ComponentType<{ className?: string }>;
 		}) => {
 			if (mode === "single") {
-				setSelectedOptions([option] as { label: string; value: string }[]);
-				onSelect?.([option] as { label: string; value: string }[]);
+				setSelectedOptions([option]);
+				onSelect?.([option]);
 
 				return;
 			}
@@ -229,10 +311,8 @@ export const PopoverAutoComplete = React.forwardRef<
 			)
 				? selectedOptions.filter((selected) => selected.value !== option.value)
 				: [...selectedOptions, option];
-			setSelectedOptions(
-				newSelectedOptions as { label: string; value: string }[],
-			);
-			onSelect?.(newSelectedOptions as { label: string; value: string }[]);
+			setSelectedOptions(newSelectedOptions);
+			onSelect?.(newSelectedOptions);
 		};
 
 		const handleClear = () => {
@@ -246,10 +326,8 @@ export const PopoverAutoComplete = React.forwardRef<
 
 		const clearExtraOptions = () => {
 			const newSelectedOptions = selectedOptions.slice(0, maxCount);
-			setSelectedOptions(
-				newSelectedOptions as { label: string; value: string }[],
-			);
-			onSelect?.(newSelectedOptions as { label: string; value: string }[]);
+			setSelectedOptions(newSelectedOptions);
+			onSelect?.(newSelectedOptions);
 		};
 
 		// const toggleAll = () => {
@@ -263,15 +341,15 @@ export const PopoverAutoComplete = React.forwardRef<
 
 		React.useEffect(() => {
 			if (!isPopoverOpen) {
-				onInputChange?.("");
+				setInputValue?.("");
 			}
 		}, [isPopoverOpen]);
 
 		React.useEffect(() => {
-			if (defaultValue.length > 0) {
-				setSelectedOptions(defaultValue.filter((d) => !!d));
+			if (selected.length > 0) {
+				setSelectedOptions(selected.filter((d) => !!d));
 			}
-		}, [defaultValue]);
+		}, [selected]);
 
 		return (
 			<Popover
@@ -292,59 +370,22 @@ export const PopoverAutoComplete = React.forwardRef<
 						{selectedOptions.length > 0 ? (
 							<div className="flex justify-between items-center w-full">
 								<div className="flex flex-wrap items-center">
-									{mode === "single" ? (
-										<Badge className="flex gap-2 bg-transparent text-foreground text-base">
-											<DisplayIcon icon={selectedOptions[0].icon} />
-											<p className="text-black dark:text-white">
-												{selectedOptions?.[0]?.label}
-											</p>
-										</Badge>
-									) : (
-										<>
-											{selectedOptions.slice(0, maxCount).map((option) => {
-												const IconComponent = option.icon;
-												return (
-													<Badge
-														key={option.value}
-														className={cn(
-															isAnimating ? "animate-bounce" : "",
-															multiSelectVariants({ variant }),
-														)}
-														style={{ animationDuration: `${animation}s` }}
-													>
-														<DisplayIcon icon={IconComponent} />
-														<span className="mx-2">{option.label}</span>
-														<XCircle
-															className="rtl:mr-2 ltr:ml-2 w-4 h-4 cursor-pointer"
-															onClick={(event) => {
-																event.stopPropagation();
-																toggleOption(option);
-															}}
-														/>
-													</Badge>
-												);
-											})}
-											{selectedOptions.length > maxCount && (
-												<Badge
-													className={cn(
-														"bg-transparent text-foreground border-foreground/1 hover:bg-transparent",
-														isAnimating ? "animate-bounce" : "",
-														multiSelectVariants({ variant }),
-													)}
-													style={{ animationDuration: `${animation}s` }}
-												>
-													{`+ ${selectedOptions.length - maxCount} more`}
-													<XCircle
-														className="rtl:mr-2 ltr:ml-2 w-4 h-4 cursor-pointer"
-														onClick={(event) => {
-															event.stopPropagation();
-															clearExtraOptions();
-														}}
-													/>
-												</Badge>
-											)}
-										</>
-									)}
+									<DisplaySelectedBadges
+										selectedOptions={selectedOptions}
+										mode={mode}
+										maxCount={maxCount}
+										isAnimating={isAnimating}
+										animation={animation}
+										variant={variant}
+										onRemove={(option, event) => {
+											event.stopPropagation();
+											toggleOption(option as Option);
+										}}
+										onClearExtra={(event) => {
+											event.stopPropagation();
+											clearExtraOptions();
+										}}
+									/>
 								</div>
 								<div className="flex justify-between items-center">
 									<div
@@ -394,14 +435,15 @@ export const PopoverAutoComplete = React.forwardRef<
 				>
 					<Command
 						shouldFilter
-						onSelect={(e) =>
-							onInputChange?.((e.target as HTMLInputElement).value)
-						}
+						onSelect={(e) => {
+							setInputValue?.((e.target as HTMLInputElement).value);
+							setInputValueState((e.target as HTMLInputElement).value);
+						}}
 					>
 						<CommandInput
 							autoFocus
 							placeholder="Search..."
-							onKeyDown={handleInputKeyDown}
+							value={inputValue}
 						/>
 						<CommandList>
 							<CommandEmpty>No results found.</CommandEmpty>
@@ -486,12 +528,6 @@ export const PopoverAutoComplete = React.forwardRef<
 );
 
 PopoverAutoComplete.displayName = "PopoverAutoComplete";
-
-type Option = {
-	label: string;
-	value: string;
-	icon?: React.ComponentType<{ className?: string }> | string | undefined;
-};
 
 type InlineAutoCompleteProps = {
 	options: Option[];
@@ -642,52 +678,25 @@ export function InlineAutoComplete({
 						</div>
 					) : (
 						<>
-							{localSelected.slice(0, maxCount).map((singleOption) => (
-								<Badge
-									key={singleOption.value}
-									variant="secondary"
-									className="bg-card hover:bg-card/80 border-foreground/10 text-foreground"
-								>
-									<DisplayIcon icon={singleOption.icon} />
-									<span className="mx-1">{singleOption.label}</span>
-									<button
-										type="button"
-										className="mx-1 rounded-full outline-none focus:ring-2 focus:ring-ring ring-offset-background focus:ring-offset-2"
-										onKeyDown={(e) => {
-											if (e.key === "Enter") {
-												handleUnselect(singleOption);
-											}
-										}}
-										onMouseDown={(e) => {
-											e.preventDefault();
-											e.stopPropagation();
-										}}
-										onClick={() => handleUnselect(singleOption)}
-									>
-										<XCircle className="w-4 h-4" />
-									</button>
-								</Badge>
-							))}
-							{localSelected.length > maxCount && (
-								<>
-									{" "}
-									<Badge
-										variant="secondary"
-										className="bg-card hover:bg-card/80 border-foreground/10 text-foreground"
-									>
-										+ {localSelected.length - maxCount} more
-										<button
-											type="button"
-											className="mx-1 rounded-full outline-none focus:ring-2 focus:ring-ring ring-offset-background focus:ring-offset-2"
-											onClick={() => {
-												setLocalSelected(localSelected.slice(0, maxCount));
-											}}
-										>
-											<XCircle className="rtl:mr-2 ltr:ml-2 w-4 h-4" />
-										</button>
-									</Badge>
-								</>
-							)}
+							<DisplaySelectedBadges
+								selectedOptions={localSelected}
+								mode="multiple"
+								maxCount={maxCount}
+								onRemove={(option, event) => {
+									event.preventDefault();
+									event.stopPropagation();
+									handleUnselect(option);
+								}}
+								onClearExtra={(event) => {
+									event.preventDefault();
+									event.stopPropagation();
+									setLocalSelected(localSelected.slice(0, maxCount));
+									if (onSelect) {
+										onSelect(localSelected.slice(0, maxCount));
+									}
+								}}
+								variant="secondary"
+							/>
 						</>
 					)}
 

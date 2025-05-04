@@ -21,19 +21,21 @@ export default function AutoCompleteDemo() {
 				<p>Single Popover</p>
 				<PopoverSingleAutoComplete />
 			</div>
+			<div>
+				<p>Multi Popover</p>
+				<PopoverMultiAutoComplete />
+			</div>
 		</div>
 	);
 }
 
 const InlineSingleAutoComplete = () => {
 	const [inputValue, setInputValue] = useState("");
-	const [options, setOptions] = useState<
-		Array<{ label: string; value: string }>
-	>([
+	const [options, setOptions] = useState<any>([
 		{
 			label: "Apple",
 			value: "apple",
-			icon: Home as any,
+			icon: Home,
 		},
 	]);
 	return (
@@ -65,7 +67,7 @@ const InlineSingleAutoComplete = () => {
 };
 const InlineMultiAutoComplete = () => {
 	const [inputValue, setInputValue] = useState("");
-	const [options, setOptions] = useState([
+	const [options, setOptions] = useState<any>([
 		{
 			label: "Apple",
 			value: "apple",
@@ -74,6 +76,7 @@ const InlineMultiAutoComplete = () => {
 		{
 			label: "Banana",
 			value: "banana",
+			icon: "/images/apple-touch-icon.png",
 		},
 	]);
 	return (
@@ -104,23 +107,19 @@ const InlineMultiAutoComplete = () => {
 };
 const PopoverSingleAutoComplete = () => {
 	const [inputValue, setInputValue] = useState("");
-	const [options, setOptions] = useState<
-		Array<{ label: string; value: string }>
-	>([
+	const [options, setOptions] = useState<any>([
 		{
 			label: "Apple",
 			value: "apple",
+			icon: Home,
 		},
 	]);
 	return (
 		<PopoverAutoComplete
-			defaultValue={[
-				{
-					label: "Apple",
-					value: "apple",
-					icon: Home,
-				},
-			]}
+			setInputValue={setInputValue}
+			initialInputValue={inputValue}
+			onSelect={setOptions}
+			selected={options}
 			mode="single"
 			options={[
 				{
@@ -141,20 +140,20 @@ const PopoverSingleAutoComplete = () => {
 };
 const PopoverMultiAutoComplete = () => {
 	const [inputValue, setInputValue] = useState("");
-	const [options, setOptions] = useState<
-		Array<{ label: string; value: string }>
-	>([
+	const [options, setOptions] = useState<any>([
 		{
 			label: "Apple",
 			value: "apple",
+			icon: Home,
 		},
 		{
 			label: "Banana",
 			value: "banana",
+			icon: "/images/apple-touch-icon.png",
 		},
 	]);
 	return (
-		<InlineAutoComplete
+		<PopoverAutoComplete
 			selected={options}
 			onSelect={setOptions}
 			setInputValue={setInputValue}
