@@ -35,20 +35,29 @@ export interface ProfileFileUploaderProps {
 export function ProfileFileUploader({
 	size = 4,
 	className,
-
 	initialFile,
 	onFileChange,
 	buttonClassName,
 	rounded = false,
 }: ProfileFileUploaderProps) {
-	const [{ files }, { removeFile, openFileDialog, getInputProps }] =
-		useFileUpload({
-			accept: "image/*",
-			initialFiles: initialFile ? [initialFile] : [],
-			onFilesChange: (files) => {
-				onFileChange?.(files[0]?.file instanceof File ? files[0].file : null);
-			},
-		});
+	const [
+		{ files, isDragging },
+		{
+			removeFile,
+			openFileDialog,
+			getInputProps,
+			handleDragEnter,
+			handleDragLeave,
+			handleDragOver,
+			handleDrop,
+		},
+	] = useFileUpload({
+		accept: "image/*",
+		initialFiles: initialFile ? [initialFile] : [],
+		onFilesChange: (files) => {
+			onFileChange?.(files[0]?.file instanceof File ? files[0].file : null);
+		},
+	});
 
 	const previewUrl = files[0]?.preview || null;
 	const sizeInRem = `${size}rem`;
@@ -63,9 +72,14 @@ export function ProfileFileUploader({
 						"relative shadow-none p-0 overflow-hidden",
 						buttonClassName,
 						rounded && "rounded-full border-dashed",
+						isDragging && "border-primary border-dashed opacity-70",
 					)}
 					style={{ width: sizeInRem, height: sizeInRem }}
 					onClick={openFileDialog}
+					onDragEnter={handleDragEnter}
+					onDragOver={handleDragOver}
+					onDragLeave={handleDragLeave}
+					onDrop={handleDrop}
 					aria-label={previewUrl ? "Change image" : "Upload image"}
 				>
 					{previewUrl ? (

@@ -13,6 +13,9 @@ export const customizedComponents = {
 			name: "profile-file-uploader",
 		},
 		{ title: "Better Date Picker", type: "custom", name: "better-datepicker" },
+		{ title: "Dual Range Slider", type: "custom", name: "dual-range-slider" },
+		{ title: "Dual Range Slider", type: "custom", name: "infinite-scroll" },
+		{ title: "Better Select", type: "custom", name: "better-select" },
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
