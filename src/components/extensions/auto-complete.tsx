@@ -243,9 +243,6 @@ interface AutoCompleteInlineProps
 	 * */
 
 	mode?: "single" | "multiple";
-
-	isFetchingNextPage?: boolean;
-	fetchNextPage?: () => void;
 }
 
 export const PopoverAutoComplete = React.forwardRef<
@@ -269,8 +266,7 @@ export const PopoverAutoComplete = React.forwardRef<
 			initialInputValue,
 
 			mode = "multiple",
-			fetchNextPage,
-			isFetchingNextPage,
+
 			...props
 		},
 		ref,
@@ -542,9 +538,6 @@ type InlineAutoCompleteProps = {
 	initialInputValue?: any;
 
 	maxCount?: number;
-
-	fetchNextPage?: () => void;
-	isFetchingNextPage?: boolean;
 };
 
 export function InlineAutoComplete({
@@ -558,9 +551,6 @@ export function InlineAutoComplete({
 	initialInputValue = "",
 
 	maxCount = 3,
-
-	fetchNextPage,
-	isFetchingNextPage,
 }: InlineAutoCompleteProps) {
 	const [inputValue, setInputValueState] = React.useState(initialInputValue);
 	const inputRef = React.useRef<HTMLInputElement>(null);

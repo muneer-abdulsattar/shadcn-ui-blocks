@@ -12,6 +12,7 @@ export const customizedComponents = {
 			type: "custom",
 			name: "profile-file-uploader",
 		},
+		{ title: "Better Date Picker", type: "custom", name: "better-datepicker" },
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
