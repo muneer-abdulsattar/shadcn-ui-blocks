@@ -16,6 +16,8 @@ export const customizedComponents = {
 		{ title: "Dual Range Slider", type: "custom", name: "dual-range-slider" },
 		{ title: "Dual Range Slider", type: "custom", name: "infinite-scroll" },
 		{ title: "Better Select", type: "custom", name: "better-select" },
+		{ title: "Input With Icons", type: "custom", name: "input-with-icons" },
+		{ title: "Input With Actions", type: "custom", name: "input-with-actions" },
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
