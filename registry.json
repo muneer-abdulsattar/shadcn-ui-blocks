@@ -1434,6 +1434,19 @@
 			]
 		},
 		{
+			"name": "r-accordion-01",
+			"type": "registry:component",
+			"title": "Default Accordion",
+			"description": "A default accordion component",
+			"registryDependencies": ["accordion"],
+			"files": [
+				{
+					"path": "src/registry/accordion/accordion-01.tsx",
+					"type": "registry:component"
+				}
+			]
+		},
+		{
 			"name": "accordion-02",
 			"type": "registry:component",
 			"title": "Outline Accordion",

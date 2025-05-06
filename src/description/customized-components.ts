@@ -2,7 +2,8 @@ export const customizedComponents = {
 	custom: [
 		{ title: "Tags Input", type: "custom", name: "tags-input" },
 		{ title: "Rating Input", type: "custom", name: "rating-input" },
-		{ title: "Auto Complete", type: "custom", name: "auto-complete" },
+		{ title: "Better Tooltip", type: "custom", name: "better-tooltip" },
+
 		{ title: "Notification Badge", type: "custom", name: "notification-badge" },
 		{ title: "infinite Scroll", type: "custom", name: "infinite-scroll" },
 
@@ -15,12 +16,19 @@ export const customizedComponents = {
 		},
 		{ title: "Better Date Picker", type: "custom", name: "better-datepicker" },
 		{ title: "Date Range Picker", type: "custom", name: "date-range-picker" },
-		{ title: "Dual Range Slider", type: "custom", name: "dual-range-slider" },
+		{ title: "Multi Select", type: "custom", name: "multi-select" },
 		{ title: "Better Select", type: "custom", name: "better-select" },
+		{ title: "Dual Range Slider", type: "custom", name: "dual-range-slider" },
 		{ title: "Input With Icons", type: "custom", name: "input-with-icons" },
 		{ title: "Input With Actions", type: "custom", name: "input-with-actions" },
 		{ title: "Number Input", type: "custom", name: "number-input" },
-		{ title: "Better Tooltip", type: "custom", name: "better-tooltip" },
+		{ title: "Back Drop", type: "custom", name: "backdrop" },
+		{
+			title: "Click Away Listener",
+			type: "custom",
+			name: "click-away-listener",
+		},
+		{ title: "Price Format", type: "custom", name: "price-format" },
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
