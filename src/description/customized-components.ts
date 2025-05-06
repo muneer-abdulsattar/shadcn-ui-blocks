@@ -4,6 +4,7 @@ export const customizedComponents = {
 		{ title: "Rating Input", type: "custom", name: "rating-input" },
 		{ title: "Auto Complete", type: "custom", name: "auto-complete" },
 		{ title: "Notification Badge", type: "custom", name: "notification-badge" },
+		{ title: "infinite Scroll", type: "custom", name: "infinite-scroll" },
 
 		{ title: "Better Badge", type: "custom", name: "better-badge" },
 		{ title: "Files Uploader", type: "custom", name: "file-uploader" },
@@ -13,11 +14,13 @@ export const customizedComponents = {
 			name: "profile-file-uploader",
 		},
 		{ title: "Better Date Picker", type: "custom", name: "better-datepicker" },
+		{ title: "Date Range Picker", type: "custom", name: "date-range-picker" },
 		{ title: "Dual Range Slider", type: "custom", name: "dual-range-slider" },
-		{ title: "Dual Range Slider", type: "custom", name: "infinite-scroll" },
 		{ title: "Better Select", type: "custom", name: "better-select" },
 		{ title: "Input With Icons", type: "custom", name: "input-with-icons" },
 		{ title: "Input With Actions", type: "custom", name: "input-with-actions" },
+		{ title: "Number Input", type: "custom", name: "number-input" },
+		{ title: "Better Tooltip", type: "custom", name: "better-tooltip" },
 	],
 	accordion: [
 		{ title: "Default", type: "accordion", name: "accordion-01" },
