@@ -1,0 +1,117 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "autoform",
+  "type": "registry:ui",
+  "title": "Pagination",
+  "dependencies": [
+    "@autoform/zod",
+    "@autoform/react",
+    "react-hook-form",
+    "lucide-react",
+    "date-fns",
+    "@autoform/react",
+    "."
+  ],
+  "registryDependencies": [
+    "label",
+    "button",
+    "select",
+    "input",
+    "radio-group",
+    "form",
+    "alert",
+    "popover",
+    "calendar",
+    "checkbox"
+  ],
+  "files": [
+    {
+      "path": "src/components/extensions/autoform/AutoForm.tsx",
+      "content": "import {\n\tAutoFormUIComponents,\n\tAutoForm as BaseAutoForm,\n} from \"@autoform/react\";\nimport { ArrayElementWrapper } from \"./components/ArrayElementWrapper\";\nimport { ArrayWrapper } from \"./components/ArrayWrapper\";\nimport { BooleanField } from \"./components/BooleanField\";\nimport { DateField } from \"./components/DateField\";\nimport { ErrorMessage } from \"./components/ErrorMessage\";\nimport { FieldWrapper } from \"./components/FieldWrapper\";\nimport { Form } from \"./components/Form\";\nimport { NumberField } from \"./components/NumberField\";\nimport { ObjectWrapper } from \"./components/ObjectWrapper\";\nimport { RadioField } from \"./components/RadioField\";\nimport { SelectField } from \"./components/SelectField\";\nimport { StringField } from \"./components/StringField\";\nimport { SubmitButton } from \"./components/SubmitButton\";\nimport { AutoFormProps } from \"./types\";\n\nconst ShadcnUIComponents: AutoFormUIComponents = {\n\tForm,\n\tFieldWrapper,\n\tErrorMessage,\n\tSubmitButton,\n\tObjectWrapper,\n\tArrayWrapper,\n\tArrayElementWrapper,\n};\n\nexport const ShadcnAutoFormFieldComponents = {\n\tstring: StringField,\n\tnumber: NumberField,\n\tboolean: BooleanField,\n\tdate: DateField,\n\tselect: SelectField,\n\tradio: RadioField,\n} as const;\nexport type FieldTypes = keyof typeof ShadcnAutoFormFieldComponents;\n\nexport function AutoForm<T extends Record<string, any>>({\n\tuiComponents,\n\tformComponents,\n\t...props\n}: AutoFormProps<T>) {\n\treturn (\n\t\t<BaseAutoForm\n\t\t\t{...props}\n\t\t\tuiComponents={{ ...ShadcnUIComponents, ...uiComponents }}\n\t\t\tformComponents={{ ...ShadcnAutoFormFieldComponents, ...formComponents }}\n\t\t/>\n\t);\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/index.ts",
+      "content": "export * from \"./AutoForm\";\nexport * from \"./types\";\nexport * from \"./utils\";\n",
+      "type": "registry:file",
+      "target": "src/components/extensions/autoform/index.ts"
+    },
+    {
+      "path": "src/components/extensions/autoform/utils.ts",
+      "content": "import { buildZodFieldConfig } from \"@autoform/react\";\nimport { FieldTypes } from \"./AutoForm\";\n\nexport const fieldConfig = buildZodFieldConfig<\n  FieldTypes,\n  {\n    // Add types for `customData` here.\n  }\n>();\n",
+      "type": "registry:file",
+      "target": "src/components/extensions/autoform/utils.ts"
+    },
+    {
+      "path": "src/components/extensions/autoform/types.ts",
+      "content": "import { ExtendableAutoFormProps } from \"@autoform/react\";\nimport { FieldValues } from \"react-hook-form\";\n\nexport interface AutoFormProps<T extends FieldValues>\n  extends ExtendableAutoFormProps<T> {}\n",
+      "type": "registry:file",
+      "target": "src/components/extensions/autoform/types.ts"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/ArrayElementWrapper.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { ArrayElementWrapperProps } from \"@autoform/react\";\nimport { TrashIcon } from \"lucide-react\";\nimport React from \"react\";\n\nexport const ArrayElementWrapper: React.FC<ArrayElementWrapperProps> = ({\n\tchildren,\n\tonRemove,\n}) => {\n\treturn (\n\t\t<div className=\"relative mt-2 p-4 border rounded-md\">\n\t\t\t<Button\n\t\t\t\tonClick={onRemove}\n\t\t\t\tvariant=\"ghost\"\n\t\t\t\tsize=\"sm\"\n\t\t\t\tclassName=\"top-2 right-2 absolute\"\n\t\t\t\ttype=\"button\"\n\t\t\t>\n\t\t\t\t<TrashIcon className=\"w-4 h-4\" />\n\t\t\t</Button>\n\n\t\t\t{children}\n\t\t</div>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/ArrayWrapper.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { ArrayWrapperProps } from \"@autoform/react\";\nimport { PlusIcon } from \"lucide-react\";\nimport React from \"react\";\n\nexport const ArrayWrapper: React.FC<ArrayWrapperProps> = ({\n\tlabel,\n\tchildren,\n\tonAddItem,\n\tfield,\n}) => {\n\tconsole.log();\n\treturn (\n\t\t<div className=\"space-y-4\">\n\t\t\t<h3 className=\"font-medium text-lg\">{label}</h3>\n\t\t\t{children}\n\t\t\t{field.fieldConfig?.customData?.enableAdd === false ? null : (\n\t\t\t\t<Button onClick={onAddItem} variant=\"outline\" size=\"sm\" type=\"button\">\n\t\t\t\t\t<PlusIcon className=\"w-4 h-4\" />\n\t\t\t\t</Button>\n\t\t\t)}\n\t\t</div>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/BooleanField.tsx",
+      "content": "import { Checkbox } from \"@/components/ui/checkbox\";\nimport { Label } from \"@/components/ui/label\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\nimport React from \"react\";\n\nexport const BooleanField: React.FC<AutoFormFieldProps> = ({\n\tfield,\n\tlabel,\n\tid,\n\tinputProps,\n\tvalue,\n}) => (\n\t<div className={cn(\"flex items-center space-x-2\", inputProps.className)}>\n\t\t<Checkbox\n\t\t\tid={id}\n\t\t\tonCheckedChange={(checked) => {\n\t\t\t\t// react-hook-form expects an event object\n\t\t\t\tconst event = {\n\t\t\t\t\ttarget: {\n\t\t\t\t\t\tname: field.key,\n\t\t\t\t\t\tvalue: checked,\n\t\t\t\t\t},\n\t\t\t\t};\n\t\t\t\tinputProps.onChange(event);\n\t\t\t}}\n\t\t\tchecked={value}\n\t\t/>\n\t\t<Label htmlFor={id}>\n\t\t\t{label}\n\t\t\t{field.required && <span className=\"text-destructive\"> *</span>}\n\t\t</Label>\n\t</div>\n);\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/DateField.tsx",
+      "content": "import { Button } from \"@/components/ui/button\";\nimport { Calendar } from \"@/components/ui/calendar\";\nimport {\n\tPopover,\n\tPopoverContent,\n\tPopoverTrigger,\n} from \"@/components/ui/popover\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\n\nimport { format } from \"date-fns\";\nimport { CalendarIcon } from \"lucide-react\";\nimport React from \"react\";\nimport { useController } from \"react-hook-form\";\n\nexport const DateField: React.FC<AutoFormFieldProps> = ({\n\tinputProps,\n\tfield,\n\n\tcontrol,\n}) => {\n\tconst {\n\t\tfield: { onChange, value },\n\t\tfieldState: { error },\n\t} = useController({\n\t\tname: inputProps.name,\n\t\tcontrol,\n\t\tdefaultValue: field.default,\n\t\trules: {\n\t\t\trequired: inputProps.required,\n\t\t},\n\t});\n\n\tconst [openPopover, setOpenPopover] = React.useState(false);\n\n\treturn (\n\t\t<>\n\t\t\t<Popover open={openPopover} onOpenChange={setOpenPopover}>\n\t\t\t\t<PopoverTrigger asChild>\n\t\t\t\t\t<Button\n\t\t\t\t\t\ttype=\"button\"\n\t\t\t\t\t\tvariant={\"outline\"}\n\t\t\t\t\t\tclassName={cn(\n\t\t\t\t\t\t\t\"w-full pl-3 text-left font-normal relative\",\n\t\t\t\t\t\t\t!value && \"text-muted-foreground\",\n\t\t\t\t\t\t\terror && \"border-destructive\",\n\t\t\t\t\t\t\tinputProps.className,\n\t\t\t\t\t\t)}\n\t\t\t\t\t>\n\t\t\t\t\t\t{value ? (\n\t\t\t\t\t\t\tformat?.(value, \"dd/MM/yyyy\")\n\t\t\t\t\t\t) : (\n\t\t\t\t\t\t\t<span>{inputProps.placeholder || \"Select a date\"}</span>\n\t\t\t\t\t\t)}\n\t\t\t\t\t\t<CalendarIcon className={cn(\"opacity-50 ml-auto w-4 h-4\")} />\n\t\t\t\t\t</Button>\n\t\t\t\t</PopoverTrigger>\n\t\t\t\t<PopoverContent className=\"p-0 w-auto\" align=\"start\">\n\t\t\t\t\t<Calendar\n\t\t\t\t\t\tmode=\"single\"\n\t\t\t\t\t\tselected={value}\n\t\t\t\t\t\tonSelect={(value) => {\n\t\t\t\t\t\t\tonChange(value?.toString());\n\t\t\t\t\t\t\tsetOpenPopover(false);\n\t\t\t\t\t\t}}\n\t\t\t\t\t\tinitialFocus\n\t\t\t\t\t/>\n\t\t\t\t</PopoverContent>\n\t\t\t</Popover>\n\t\t</>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/ErrorMessage.tsx",
+      "content": "import React from \"react\";\nimport { AlertCircle } from \"lucide-react\";\n\nimport { Alert, AlertTitle } from \"@/components/ui/alert\";\n\nexport const ErrorMessage: React.FC<{ error: string }> = ({ error }) => (\n  <Alert variant=\"destructive\">\n    <AlertCircle className=\"h-4 w-4\" />\n    <AlertTitle>{error}</AlertTitle>\n  </Alert>\n);\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/FieldWrapper.tsx",
+      "content": "import { Label } from \"@/components/ui/label\";\nimport { FieldWrapperProps } from \"@autoform/react\";\nimport React from \"react\";\n\nconst DISABLED_LABELS = [\"boolean\", \"object\", \"array\"];\n\nexport const FieldWrapper: React.FC<FieldWrapperProps> = ({\n\tlabel,\n\tchildren,\n\tid,\n\tfield,\n\terror,\n}) => {\n\tconst isDisabled = DISABLED_LABELS.includes(field.type);\n\n\treturn (\n\t\t<div>\n\t\t\t{!isDisabled && (\n\t\t\t\t<Label htmlFor={id} className=\"select-none\">\n\t\t\t\t\t{label}\n\t\t\t\t\t{field.required && <span className=\"text-destructive\"> *</span>}\n\t\t\t\t</Label>\n\t\t\t)}\n\t\t\t{children}\n\t\t\t{field?.fieldConfig?.description && (\n\t\t\t\t<p className=\"text-muted-foreground text-sm\">\n\t\t\t\t\t{field?.fieldConfig.description}\n\t\t\t\t</p>\n\t\t\t)}\n\t\t\t{error && <p className=\"text-destructive text-sm\">{error}</p>}\n\t\t</div>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/Form.tsx",
+      "content": "import React from \"react\";\n\nexport const Form = React.forwardRef<\n  HTMLFormElement,\n  React.ComponentProps<\"form\">\n>(({ children, ...props }, ref) => {\n  return (\n    <form ref={ref} className=\"space-y-4\" {...props}>\n      {children}\n    </form>\n  );\n});\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/NumberField.tsx",
+      "content": "import { Input } from \"@/components/ui/input\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\nimport React from \"react\";\n\nexport const NumberField: React.FC<AutoFormFieldProps> = ({\n\tinputProps,\n\terror,\n\tid,\n}) => (\n\t<>\n\t\t<Input\n\t\t\tid={id}\n\t\t\ttype=\"number\"\n\t\t\t{...inputProps}\n\t\t\tclassName={cn(error && \"border-destructive\", inputProps.className)}\n\t\t\tkey={id} // Add key prop to avoid warning\n\t\t/>\n\t</>\n);\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/ObjectWrapper.tsx",
+      "content": "import { ObjectWrapperProps } from \"@autoform/react\";\nimport React from \"react\";\n\nexport const ObjectWrapper: React.FC<ObjectWrapperProps> = ({\n\tlabel,\n\tchildren,\n}) => {\n\treturn (\n\t\t<div className=\"space-y-4\">\n\t\t\t<h3 className=\"font-bold text-lg\">{label}</h3>\n\t\t\t{children}\n\t\t</div>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/RadioField.tsx",
+      "content": "import { FormControl, FormItem, FormLabel } from \"@/components/ui/form\";\nimport { RadioGroup, RadioGroupItem } from \"@/components/ui/radio-group\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\nimport React, { useEffect } from \"react\";\nimport { useController } from \"react-hook-form\";\n\nexport const RadioField: React.FC<AutoFormFieldProps> = ({\n\tfield,\n\tinputProps,\n\tid,\n\tcontrol,\n}) => {\n\tconst [key, setKey] = React.useState(id);\n\tconst {\n\t\tfield: { onChange, value },\n\t\tfieldState: { error },\n\t} = useController({\n\t\tname: inputProps.name,\n\t\tcontrol,\n\t\tdefaultValue: field.default,\n\t\trules: {\n\t\t\trequired: inputProps.required,\n\t\t},\n\t});\n\n\t// This to clear the selected value when the field is reset\n\tuseEffect(() => {\n\t\tif (!value) {\n\t\t\tsetKey(new Date().toISOString());\n\t\t}\n\t}, [value]);\n\n\treturn (\n\t\t<>\n\t\t\t<RadioGroup\n\t\t\t\t{...inputProps}\n\t\t\t\tonValueChange={onChange}\n\t\t\t\tvalue={value}\n\t\t\t\tclassName={cn(\n\t\t\t\t\t\"flex flex-col space-y-1\",\n\t\t\t\t\terror && \"text-destructive\",\n\t\t\t\t\tinputProps.className,\n\t\t\t\t)}\n\t\t\t\trequired={false}\n\t\t\t\tkey={key}\n\t\t\t>\n\t\t\t\t{(field.options || []).map(([key, label]) => (\n\t\t\t\t\t<FormItem key={key} className=\"flex items-center space-x-3 space-y-0\">\n\t\t\t\t\t\t<FormControl>\n\t\t\t\t\t\t\t<RadioGroupItem value={key} />\n\t\t\t\t\t\t</FormControl>\n\t\t\t\t\t\t<FormLabel className=\"font-normal\">{label}</FormLabel>\n\t\t\t\t\t</FormItem>\n\t\t\t\t))}\n\t\t\t</RadioGroup>\n\t\t</>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/SelectField.tsx",
+      "content": "import {\n\tSelect,\n\tSelectContent,\n\tSelectGroup,\n\tSelectItem,\n\tSelectTrigger,\n\tSelectValue,\n} from \"@/components/ui/select\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\nimport React, { useEffect } from \"react\";\nimport { useController } from \"react-hook-form\";\n\nexport const SelectField: React.FC<AutoFormFieldProps> = ({\n\tfield,\n\tinputProps,\n\n\tid,\n\tcontrol,\n}) => {\n\tconst [key, setKey] = React.useState(id);\n\tconst {\n\t\tfield: { onChange, value },\n\t\tfieldState: { error },\n\t} = useController({\n\t\tname: inputProps.name,\n\t\tcontrol,\n\t\tdefaultValue: field.default,\n\t\trules: {\n\t\t\trequired: inputProps.required,\n\t\t},\n\t});\n\n\t// This to clear the selected value when the field is reset\n\tuseEffect(() => {\n\t\tif (!value) {\n\t\t\tsetKey(new Date().toISOString());\n\t\t}\n\t}, [value]);\n\n\treturn (\n\t\t<>\n\t\t\t<Select\n\t\t\t\t{...inputProps}\n\t\t\t\t// set the value on change\n\t\t\t\tonValueChange={(value) => {\n\t\t\t\t\tonChange(value);\n\t\t\t\t}}\n\t\t\t\t// set the default value if there's default\n\t\t\t\tvalue={value}\n\t\t\t\t//! fix error where if the field is required and none selected it never show error\n\t\t\t\trequired={false}\n\t\t\t\tkey={key}\n\t\t\t>\n\t\t\t\t<SelectTrigger\n\t\t\t\t\tid={id}\n\t\t\t\t\ttype=\"button\"\n\t\t\t\t\tclassName={cn(error && \"border-destructive\", inputProps.className)}\n\t\t\t\t>\n\t\t\t\t\t<SelectValue placeholder=\"Select an option\" />\n\t\t\t\t</SelectTrigger>\n\t\t\t\t<SelectContent>\n\t\t\t\t\t<SelectGroup>\n\t\t\t\t\t\t{(field.options || []).map(([key, label]) => (\n\t\t\t\t\t\t\t<SelectItem key={`${key}-${id}`} value={key}>\n\t\t\t\t\t\t\t\t{label}\n\t\t\t\t\t\t\t</SelectItem>\n\t\t\t\t\t\t))}\n\t\t\t\t\t</SelectGroup>\n\t\t\t\t</SelectContent>\n\t\t\t</Select>\n\t\t</>\n\t);\n};\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/StringField.tsx",
+      "content": "import { Input } from \"@/components/ui/input\";\nimport { cn } from \"@/lib/utils\";\nimport { AutoFormFieldProps } from \"@autoform/react\";\nimport React from \"react\";\n\nexport const StringField: React.FC<AutoFormFieldProps> = ({\n\tinputProps,\n\terror,\n\tid,\n}) => (\n\t<Input\n\t\tid={id}\n\t\t{...inputProps}\n\t\tclassName={cn(error && \"border-destructive\", inputProps.className)}\n\t\tkey={id} // Add key prop to avoid warning\n\t/>\n);\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/extensions/autoform/components/SubmitButton.tsx",
+      "content": "import React from \"react\";\nimport { Button } from \"@/components/ui/button\";\n\nexport const SubmitButton: React.FC<{ children: React.ReactNode }> = ({\n  children,\n}) => <Button type=\"submit\">{children}</Button>;\n",
+      "type": "registry:ui"
+    }
+  ]
+}

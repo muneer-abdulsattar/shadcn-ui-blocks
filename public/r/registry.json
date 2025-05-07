@@ -5,6 +5,116 @@
 
 	"items": [
 		{
+			"name": "autoform",
+			"type": "registry:ui",
+			"title": "Pagination",
+			"dependencies": [
+				"@autoform/zod",
+				"@autoform/react",
+				"react-hook-form",
+				"lucide-react",
+				"date-fns"
+			],
+			"registryDependencies": [
+				"label",
+				"button",
+				"select",
+				"input",
+				"radio-group",
+				"form",
+				"alert",
+				"popover",
+				"calendar",
+				"checkbox"
+			],
+			"files": [
+				{
+					"path": "src/components/extensions/autoform/AutoForm.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/components/extensions/autoform/index.ts",
+					"target": "src/components/extensions/autoform/index.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/components/extensions/autoform/utils.ts",
+					"target": "src/components/extensions/autoform/utils.ts"
+				},
+				{
+					"type": "registry:file",
+					"path": "src/components/extensions/autoform/types.ts",
+					"target": "src/components/extensions/autoform/types.ts"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/ArrayElementWrapper.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/ArrayWrapper.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/BooleanField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/DateField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/ErrorMessage.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/FieldWrapper.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/Form.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/NumberField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/ObjectWrapper.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/RadioField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/SelectField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/StringField.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/autoform/components/SubmitButton.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"type": "registry:ui",
+			"title": "Pagination",
+			"dependencies": ["nuqs"],
+			"registryDependencies": ["pagination", "label", "button", "select"],
+			"files": [
+				{
+					"path": "src/components/extensions/pagination.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
 			"name": "debug",
 			"type": "registry:ui",
 			"title": "Debug Component",

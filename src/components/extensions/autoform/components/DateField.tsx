@@ -1,9 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
-import { PopoverContent } from "@/components/ui/popover";
+import {
+	Popover,
+	PopoverContent,
+	PopoverTrigger,
+} from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { AutoFormFieldProps } from "@autoform/react";
-import { Popover, PopoverTrigger } from "@radix-ui/react-popover";
+
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import React from "react";
