@@ -2,14 +2,15 @@
 	"$schema": "https://ui.shadcn.com/schema/registry.json",
 	"name": "Shadcn UI Blocks",
 	"homepage": "https://www.shadcnui-blocks.com",
+
 	"items": [
 		{
 			"name": "tags-input",
 			"type": "registry:ui",
 			"title": "Tags Input",
 			"description": "A simple tags input",
-			"dependencies": ["lucide-react", "badge"],
-			"registryDependencies": ["badge"],
+			"dependencies": ["lucide-react"],
+			"registryDependencies": ["badge", "input"],
 			"files": [
 				{
 					"path": "src/components/extensions/tags-input.tsx",
@@ -1433,19 +1434,7 @@
 				}
 			]
 		},
-		{
-			"name": "r-accordion-01",
-			"type": "registry:component",
-			"title": "Default Accordion",
-			"description": "A default accordion component",
-			"registryDependencies": ["accordion"],
-			"files": [
-				{
-					"path": "src/registry/accordion/accordion-01.tsx",
-					"type": "registry:component"
-				}
-			]
-		},
+
 		{
 			"name": "accordion-02",
 			"type": "registry:component",

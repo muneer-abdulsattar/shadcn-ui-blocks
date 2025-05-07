@@ -6,14 +6,14 @@
   "description": "A simple tags input",
   "dependencies": [
     "lucide-react",
-    "badge",
     "class-variance-authority",
     "clsx",
     "tailwind-merge",
     "lucide-react"
   ],
   "registryDependencies": [
-    "badge"
+    "badge",
+    "input"
   ],
   "files": [
     {
