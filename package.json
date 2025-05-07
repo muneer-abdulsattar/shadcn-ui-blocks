@@ -61,6 +61,7 @@
 		"react-dom": "19.0.0",
 		"react-dropzone": "^14.2.10",
 		"react-hook-form": "^7.53.1",
+		"react-image-crop": "^11.0.10",
 		"react-number-format": "^5.4.4",
 		"react-remove-scroll": "^2.6.3",
 		"react-resizable-panels": "^2.1.6",

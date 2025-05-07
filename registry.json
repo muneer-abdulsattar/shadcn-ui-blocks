@@ -5,16 +5,264 @@
 
 	"items": [
 		{
+			"name": "date-range-picker",
+			"type": "registry:ui",
+			"title": "Profile Image Uploader",
+			"files": [
+				{
+					"path": "src/components/extensions/date-range-picker/index.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"target": "src/components/extensions/date-range-picker/date-input.tsx",
+					"path": "src/components/extensions/date-range-picker/date-input.tsx",
+					"type": "registry:file"
+				}
+			]
+		},
+		{
+			"name": "profile-uploader",
+			"type": "registry:ui",
+			"title": "Profile Image Uploader",
+			"dependencies": ["react-image-crop", "lucide-react"],
+			"registryDependencies": ["dialog", "button"],
+			"files": [
+				{
+					"path": "src/components/extensions/files-uploader/profile.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"target": "src/components/extensions/files-uploader/use-file-upload.ts",
+					"path": "src/components/extensions/files-uploader/use-file-upload.ts",
+					"type": "registry:file"
+				}
+			]
+		},
+		{
+			"name": "files-uploader",
+			"type": "registry:ui",
+			"title": "Files Uploader",
+			"dependencies": ["lucide-react"],
+			"registryDependencies": ["dialog", "button"],
+			"files": [
+				{
+					"path": "src/components/extensions/files-uploader/index.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"target": "src/components/extensions/files-uploader/use-file-upload.ts",
+					"path": "src/components/extensions/files-uploader/use-file-upload.ts",
+					"type": "registry:file"
+				}
+			]
+		},
+		{
+			"name": "backdrop",
+			"type": "registry:ui",
+			"title": "Backdrop",
+			"files": [
+				{
+					"path": "src/components/extensions/backdrop.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "backdrop",
+			"type": "registry:ui",
+			"title": "Backdrop",
+			"files": [
+				{
+					"path": "src/components/extensions/backdrop.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "better-badge",
+			"type": "registry:ui",
+			"title": "Better Badge",
+
+			"dependencies": ["class-variance-authority"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-badge.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "better-date-picker",
+			"type": "registry:ui",
+			"title": "Better Date Picker",
+			"registryDependencies": ["popover", "input", "button", "select"],
+			"dependencies": ["lucide-react", "date-fns", "react-day-picker"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-date-picker.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "better-select",
+			"type": "registry:ui",
+			"title": "Better Select",
+			"registryDependencies": ["command", "popover", "button"],
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-select.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "better-tooltip",
+			"type": "registry:ui",
+			"title": "Better Tooltip",
+			"registryDependencies": ["tooltip"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-tooltip.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "click-away-listener",
+			"type": "registry:ui",
+			"title": "Click Away Listener",
+			"files": [
+				{
+					"path": "src/components/extensions/click-away-listener.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "dual-range-slider",
+			"type": "registry:ui",
+			"title": "Dual Range Slider",
+			"dependencies": ["@radix-ui/react-slider"],
+			"files": [
+				{
+					"path": "src/components/extensions/dual-range-slider.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "infinite-scroll",
+			"type": "registry:ui",
+			"title": "Infinite Scroll",
+			"files": [
+				{
+					"path": "src/components/extensions/infinite-scroll.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "input-with-actions",
+			"type": "registry:ui",
+			"title": "Input With Actions",
+
+			"registryDependencies": ["input", "button", "select"],
+			"files": [
+				{
+					"path": "src/components/extensions/input-with-actions.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "input-with-icons",
+			"type": "registry:ui",
+			"title": "Input With Icons",
+
+			"registryDependencies": ["input"],
+			"files": [
+				{
+					"path": "src/components/extensions/input-with-icons.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "multi-select",
+			"type": "registry:ui",
+			"title": "Multi Select",
+			"dependencies": ["cmdk", "lucide-react"],
+			"registryDependencies": ["badge", "command"],
+			"files": [
+				{
+					"path": "src/components/extensions/multi-select.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "notification-badge",
+			"type": "registry:ui",
+			"title": "Notification Badge",
+			"files": [
+				{
+					"path": "src/components/extensions/notification-badge.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "number-input",
+			"type": "registry:ui",
+			"title": "Number Input",
+			"dependencies": ["react-number-format", "lucide-react"],
+			"registryDependencies": ["input", "button"],
+			"files": [
+				{
+					"path": "src/components/extensions/number-input.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "price-format",
+			"type": "registry:ui",
+			"title": "Price Format",
+
+			"dependencies": ["react-number-format"],
+			"files": [
+				{
+					"path": "src/components/extensions/price-format.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
+			"name": "rating-input",
+			"type": "registry:ui",
+			"title": "rating Input",
+
+			"dependencies": ["lucide-react"],
+			"files": [
+				{
+					"path": "src/components/extensions/rating-input.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
 			"name": "tags-input",
 			"type": "registry:ui",
 			"title": "Tags Input",
-			"description": "A simple tags input",
+
 			"dependencies": ["lucide-react"],
 			"registryDependencies": ["badge", "input"],
 			"files": [
 				{
 					"path": "src/components/extensions/tags-input.tsx",
-					"type": "registry:component"
+					"type": "registry:ui"
 				}
 			]
 		},
