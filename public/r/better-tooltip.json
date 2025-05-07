@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "better-tooltip",
+  "type": "registry:ui",
+  "title": "Better Tooltip",
+  "dependencies": [
+    "@radix-ui/react-tooltip",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "src/components/extensions/better-tooltip.tsx",
+      "content": "import {\n\tTooltip,\n\tTooltipContent,\n\tTooltipProvider,\n\tTooltipTrigger,\n} from \"@/components/ui/tooltip\";\n\nexport default function BetterToolTip({\n\tchildren,\n\tasChild = false,\n\tside = \"top\",\n\tdelayDuration = 100,\n\tvalue,\n}: {\n\tchildren: React.ReactNode;\n\tasChild?: boolean;\n\tside?: \"top\" | \"right\" | \"bottom\" | \"left\";\n\tdelayDuration?: number;\n\tvalue: React.ReactNode;\n}) {\n\treturn (\n\t\t<TooltipProvider delayDuration={delayDuration}>\n\t\t\t<Tooltip>\n\t\t\t\t<TooltipTrigger asChild={asChild}>{children}</TooltipTrigger>\n\t\t\t\t<TooltipContent side={side}>{value}</TooltipContent>\n\t\t\t</Tooltip>\n\t\t</TooltipProvider>\n\t);\n}\n",
+      "type": "registry:ui"
+    },
+    {
+      "path": "src/components/ui/tooltip.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as TooltipPrimitive from \"@radix-ui/react-tooltip\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst TooltipProvider = TooltipPrimitive.Provider;\n\nconst Tooltip = TooltipPrimitive.Root;\n\nconst TooltipTrigger = TooltipPrimitive.Trigger;\n\nconst TooltipContent = React.forwardRef<\n  React.ElementRef<typeof TooltipPrimitive.Content>,\n  React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>\n>(({ className, sideOffset = 4, ...props }, ref) => (\n  <TooltipPrimitive.Portal>\n    <TooltipPrimitive.Content\n      ref={ref}\n      sideOffset={sideOffset}\n      className={cn(\n        \"z-50 overflow-hidden font-semibold rounded-md bg-primary px-3 py-1.5 text-xs text-primary-foreground animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2\",\n        className\n      )}\n      {...props}\n    />\n  </TooltipPrimitive.Portal>\n));\nTooltipContent.displayName = TooltipPrimitive.Content.displayName;\n\nexport { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };\n",
+      "type": "registry:ui",
+      "target": ""
+    },
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
+      "type": "registry:lib",
+      "target": ""
+    },
+    {
+      "path": "src/config.ts",
+      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ]
+}

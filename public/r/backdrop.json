@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "backdrop",
+  "type": "registry:ui",
+  "title": "Backdrop",
+  "dependencies": [],
+  "files": [
+    {
+      "path": "src/components/extensions/backdrop.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\nimport { createPortal } from \"react-dom\";\n\nexport default function Backdrop({\n\topen = true,\n\tonClick,\n\tchildren,\n}: {\n\topen?: boolean;\n\tonClick?: () => void;\n\tchildren?: React.ReactNode;\n}) {\n\tconst [mounted, setMounted] = useState(false);\n\n\tuseEffect(() => {\n\t\tsetMounted(true);\n\t\treturn () => setMounted(false);\n\t}, []);\n\n\tif (!open) return null;\n\n\tconst backdropContent = (\n\t\t<div\n\t\t\tonClick={onClick}\n\t\t\tclassName=\"z-50 fixed inset-0 flex flex-col justify-center items-center bg-black/60\"\n\t\t>\n\t\t\t{children}\n\t\t</div>\n\t);\n\n\treturn mounted ? createPortal(backdropContent, document.body) : null;\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}
