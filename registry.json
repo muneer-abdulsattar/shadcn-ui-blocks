@@ -5,6 +5,19 @@
 
 	"items": [
 		{
+			"name": "debug",
+			"type": "registry:ui",
+			"title": "Debug Component",
+			"dependencies": ["react-syntax-highlighter"],
+			"devDependencies": ["@types/react-syntax-highlighter"],
+			"files": [
+				{
+					"path": "src/components/extensions/debug.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
 			"name": "date-range-picker",
 			"type": "registry:ui",
 			"title": "Profile Image Uploader",

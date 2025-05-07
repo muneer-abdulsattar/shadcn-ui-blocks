@@ -1,5 +1,7 @@
 export const customizedComponents = {
+	autoForm: [{ title: "General", type: "autoform", name: "general" }],
 	custom: [
+		{ title: "Debug", type: "custom", name: "debug" },
 		{ title: "Tags Input", type: "custom", name: "tags-input" },
 		{ title: "Rating Input", type: "custom", name: "rating-input" },
 		{ title: "Better Tooltip", type: "custom", name: "better-tooltip" },
