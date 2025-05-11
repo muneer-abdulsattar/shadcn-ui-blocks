@@ -19,6 +19,7 @@ export default function DebugDemo() {
 					boolean: true,
 
 					date: new Date(),
+					nullValue: null,
 				}}
 			/>
 		</div>

@@ -180,6 +180,18 @@
 			]
 		},
 		{
+			"name": "better-dropdown",
+			"type": "registry:ui",
+			"title": "Better Dropdown",
+			"registryDependencies": ["dropdown"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-dropdown.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
 			"name": "backdrop",
 			"type": "registry:ui",
 			"title": "Backdrop",
