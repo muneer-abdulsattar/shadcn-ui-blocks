@@ -203,7 +203,7 @@
 			"name": "use-fake-data",
 			"type": "registry:hook",
 			"title": "Fake Data",
-
+			"dependencies": ["@faker-js/faker"],
 			"files": [
 				{
 					"path": "src/hooks/use-fake-data.tsx",

@@ -4,6 +4,7 @@
   "type": "registry:hook",
   "title": "Fake Data",
   "dependencies": [
+    "@faker-js/faker",
     "@faker-js/faker"
   ],
   "files": [
