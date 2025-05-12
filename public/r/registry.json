@@ -5,6 +5,26 @@
 
 	"items": [
 		{
+			"name": "table",
+			"type": "registry:ui",
+			"title": "Table",
+
+			"files": [
+				{
+					"path": "src/components/extensions/Table/index.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/Table/TableColumnView.tsx",
+					"type": "registry:ui"
+				},
+				{
+					"path": "src/components/extensions/Table/TableHeaderDropdown.tsx",
+					"type": "registry:ui"
+				}
+			]
+		},
+		{
 			"name": "autoform",
 			"type": "registry:ui",
 			"title": "Pagination",
@@ -176,6 +196,30 @@
 					"target": "src/components/extensions/files-uploader/use-file-upload.ts",
 					"path": "src/components/extensions/files-uploader/use-file-upload.ts",
 					"type": "registry:file"
+				}
+			]
+		},
+		{
+			"name": "use-fake-data",
+			"type": "registry:hook",
+			"title": "Fake Data",
+
+			"files": [
+				{
+					"path": "src/hooks/use-fake-data.tsx",
+					"type": "registry:hook"
+				}
+			]
+		},
+		{
+			"name": "better-dropdown",
+			"type": "registry:ui",
+			"title": "Better Dropdown",
+			"registryDependencies": ["dropdown"],
+			"files": [
+				{
+					"path": "src/components/extensions/better-dropdown.tsx",
+					"type": "registry:ui"
 				}
 			]
 		},

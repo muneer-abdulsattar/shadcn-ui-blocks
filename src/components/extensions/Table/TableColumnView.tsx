@@ -17,14 +17,20 @@ interface DataTableViewOptionsProps<TData> {
 	showHideColumns?: boolean;
 }
 
-export default function DataTableViewOptions<TData>({
+export default function TableColumnView<TData>({
 	table,
-
 	showHideColumns = true,
 }: DataTableViewOptionsProps<TData>) {
-	const selectedRows = table
-		.getSelectedRowModel()
-		?.flatRows?.map((row) => row.original);
+	const columns = table
+		.getAllColumns()
+		.filter(
+			(column) =>
+				typeof column.accessorFn !== "undefined" && column.getCanHide(),
+		);
+
+	if (columns.length === 0) {
+		return null;
+	}
 
 	return (
 		<>
@@ -44,24 +50,18 @@ export default function DataTableViewOptions<TData>({
 				<DropdownMenuContent align="end" className="w-[150px]">
 					<DropdownMenuLabel>Toggle columns</DropdownMenuLabel>
 					<DropdownMenuSeparator />
-					{table
-						.getAllColumns()
-						.filter(
-							(column) =>
-								typeof column.accessorFn !== "undefined" && column.getCanHide(),
-						)
-						.map((column) => {
-							return (
-								<DropdownMenuCheckboxItem
-									key={column.id}
-									className="capitalize"
-									checked={column.getIsVisible()}
-									onCheckedChange={(value) => column.toggleVisibility(!!value)}
-								>
-									{column.id}
-								</DropdownMenuCheckboxItem>
-							);
-						})}
+					{columns.map((column) => {
+						return (
+							<DropdownMenuCheckboxItem
+								key={column.id}
+								className="capitalize"
+								checked={column.getIsVisible()}
+								onCheckedChange={(value) => column.toggleVisibility(!!value)}
+							>
+								{column.id}
+							</DropdownMenuCheckboxItem>
+						);
+					})}
 				</DropdownMenuContent>
 			</DropdownMenu>
 		</>

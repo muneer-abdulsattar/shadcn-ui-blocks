@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-fake-data",
+  "type": "registry:hook",
+  "title": "Fake Data",
+  "dependencies": [
+    "@faker-js/faker"
+  ],
+  "files": [
+    {
+      "path": "src/hooks/use-fake-data.tsx",
+      "content": "\"use client\";\nimport { faker } from \"@faker-js/faker\";\nimport React from \"react\";\n\nconst sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));\n\nexport interface UseFakeDataOptions<T> {\n\tdelay?: number;\n\tcount?: number;\n\tenabled?: boolean;\n}\n\nexport function useFakeData(\n\tdata: () => any,\n\toptions: UseFakeDataOptions<any> = {},\n) {\n\tconst { delay = 1000, count = 10, enabled = true } = options;\n\n\tconst [localData, setData] = React.useState<any[] | null>(null);\n\tconst [loading, setLoading] = React.useState(enabled);\n\tconst [error, setError] = React.useState<Error | null>(null);\n\n\tconst refetch = React.useCallback(async () => {\n\t\tsetLoading(true);\n\t\tsetError(null);\n\n\t\ttry {\n\t\t\t// Simulate network delay\n\t\t\tawait sleep(delay);\n\n\t\t\t// Use faker.helpers.multiple instead of Array.from\n\t\t\tconst items = faker.helpers.multiple(data, { count });\n\t\t\tsetData(items);\n\t\t} catch (err) {\n\t\t\tsetError(err instanceof Error ? err : new Error(\"An error occurred\"));\n\t\t} finally {\n\t\t\tsetLoading(false);\n\t\t}\n\t}, [delay, count, data]);\n\n\tReact.useEffect(() => {\n\t\tif (enabled) {\n\t\t\trefetch();\n\t\t}\n\t}, [enabled, refetch]);\n\n\treturn {\n\t\tdata: localData,\n\t\tisLoading: loading,\n\t\terror,\n\t\trefetch,\n\t};\n}\n",
+      "type": "registry:hook"
+    }
+  ]
+}

@@ -4,10 +4,6 @@ import {
 	type VisibilityState,
 	flexRender,
 	getCoreRowModel,
-	getFacetedRowModel,
-	getFacetedUniqueValues,
-	getFilteredRowModel,
-	getSortedRowModel,
 	useReactTable,
 } from "@tanstack/react-table";
 import * as React from "react";
@@ -26,60 +22,81 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 
-import type { ColumnDef } from "@tanstack/react-table";
+import TableHeaderDropdown from "@/components/extensions/Table/TableHeaderDropdown";
+import type { ColumnDef, Table as TTable } from "@tanstack/react-table";
 
 interface DataTableProps<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[];
-	data: TData[];
-
+	data?: TData[] | null;
 	isLoading?: boolean;
 	ExpandableChildren?: (props: {
 		row: Row<TData>;
 		colSpan: number;
 		className: string;
 	}) => React.ReactNode;
-
-	showHideColumns?: boolean;
 	className?: string;
+	children?: (Table: TTable<TData>) => React.ReactNode;
 }
 
 export default function Table<TData, TValue>({
 	columns,
 	data,
-
 	isLoading,
 	ExpandableChildren,
-
-	showHideColumns = false,
 	className,
+	children,
 }: DataTableProps<TData, TValue>) {
 	const [columnVisibility, setColumnVisibility] =
 		React.useState<VisibilityState>({});
 
 	const table = useReactTable({
-		data,
-		columns,
+		data: data || [],
+		// @ts-ignore
+		columns: columns.map((column) => ({
+			enableSorting: false,
+			enableHiding: false,
+			enableColumnFilter: false,
+			header: ({ column }) => (
+				<TableHeaderDropdown column={column} title={column.id} />
+			),
+			...column,
+		})),
 		state: {
 			columnVisibility,
 		},
-		initialState: {
-			columnPinning: {
-				left: [],
-				right: ["actions"],
-			},
-		},
-		enableRowSelection: true,
 
 		onColumnVisibilityChange: setColumnVisibility,
 		getCoreRowModel: getCoreRowModel(),
-		getFilteredRowModel: getFilteredRowModel(),
-		getSortedRowModel: getSortedRowModel(),
-		getFacetedRowModel: getFacetedRowModel(),
-		getFacetedUniqueValues: getFacetedUniqueValues(),
 	});
 
+	React.useEffect(() => {
+		// Load column visibility from localStorage on initial render
+		const savedVisibility = localStorage.getItem(
+			`table-visibility-${columns[0]?.id || "default"}`,
+		);
+		if (savedVisibility) {
+			try {
+				const parsedVisibility = JSON.parse(savedVisibility);
+				setColumnVisibility(parsedVisibility);
+			} catch (error) {
+				console.error("Failed to parse saved column visibility", error);
+			}
+		}
+	}, []);
+
+	// Save column visibility to localStorage when it changes
+	React.useEffect(() => {
+		if (Object.keys(columnVisibility).length) {
+			localStorage.setItem(
+				`table-visibility-${columns[0]?.id || "default"}`,
+				JSON.stringify(columnVisibility),
+			);
+		}
+	}, [columnVisibility, columns]);
+
 	return (
-		<div className="space-y-4">
+		<div className="space-y-1">
+			{children?.(table)}
 			<div className="flex">
 				<ScrollArea className={cn("flex-1 w-1", className)}>
 					<>
