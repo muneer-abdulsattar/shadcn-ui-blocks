@@ -42,6 +42,14 @@ interface ComponentDetails {
 type ComponentsMap = Record<string, ComponentDetails>;
 
 export const componentsMap: ComponentsMap = {
+	form: {
+		title: "Form",
+		url: "/components/form",
+		icon: FormInput,
+		blockName: "form",
+		columns: 2,
+		description: "A form component that is not part of the standard library.",
+	},
 	autoForm: {
 		title: "autoForm",
 		url: "/components/autoForm",

@@ -1,4 +1,12 @@
 export const customizedComponents = {
+	form: [
+		{ title: "Wrapper", type: "form", name: "wrapper" },
+		{
+			title: "General Controlled Inputs",
+			type: "form",
+			name: "input-controlled",
+		},
+	],
 	autoForm: [
 		{ title: "General", type: "autoform", name: "general" },
 		{ title: "Dynamic Filters", type: "autoform", name: "dynamicFilters" },
