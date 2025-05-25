@@ -5,7 +5,7 @@
 
 	"items": [
 		{
-			"name": "form fields",
+			"name": "form-controlled-inputs",
 			"type": "registry:ui",
 			"title": "Form Fields",
 			"registryDependencies": [
