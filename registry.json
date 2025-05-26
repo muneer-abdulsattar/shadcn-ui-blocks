@@ -150,14 +150,15 @@
 		},
 		{
 			"name": "pagination",
-			"type": "registry:component",
+			"type": "registry:file",
 			"title": "Pagination",
 			"dependencies": ["nuqs"],
 			"registryDependencies": ["pagination", "label", "button", "select"],
 			"files": [
 				{
 					"path": "src/registry/default/extensions/pagination.tsx",
-					"type": "registry:component"
+					"type": "registry:file",
+					"target": "src/components/extensions/pagination.tsx"
 				}
 			]
 		},
