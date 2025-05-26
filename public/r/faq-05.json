@@ -5,7 +5,6 @@
   "title": "FAQ 05",
   "description": "A simple FAQ component",
   "dependencies": [
-    "lucide-react",
     "lucide-react"
   ],
   "files": [

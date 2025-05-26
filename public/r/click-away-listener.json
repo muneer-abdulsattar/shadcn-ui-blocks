@@ -3,27 +3,11 @@
   "name": "click-away-listener",
   "type": "registry:ui",
   "title": "Click Away Listener",
-  "dependencies": [
-    "clsx",
-    "tailwind-merge"
-  ],
   "files": [
     {
       "path": "src/components/extensions/click-away-listener.tsx",
       "content": "\"use client\";\n\nimport * as React from \"react\";\nimport { useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ClickAwayListenerProps extends React.HTMLAttributes<HTMLDivElement> {\n\t/**\n\t * The content to be rendered inside the click-away listener\n\t */\n\tchildren: React.ReactNode;\n\t/**\n\t * Function to be called when focus moves away from the component and its children\n\t */\n\tonClickAway: (event: FocusEvent) => void;\n\t/**\n\t * Whether the click-away listener is active\n\t * @default true\n\t */\n\tactive?: boolean;\n\t/**\n\t * The root element to attach the event listeners to\n\t * @default document\n\t */\n\troot?: Document | HTMLElement | null;\n\t/**\n\t * Whether to listen for focus events instead of just click events\n\t * @default true\n\t */\n\tuseFocusEvents?: boolean;\n}\n\n/**\n * ClickAwayListener - Detects when focus moves away from its children and calls the onClickAway function\n */\nconst ClickAwayListener = React.forwardRef<\n\tHTMLDivElement,\n\tClickAwayListenerProps\n>(\n\t(\n\t\t{\n\t\t\tchildren,\n\t\t\tonClickAway,\n\t\t\tactive = true,\n\t\t\troot = typeof document !== \"undefined\" ? document : null,\n\t\t\tuseFocusEvents = true,\n\t\t\tclassName,\n\t\t\t...props\n\t\t},\n\t\tref,\n\t) => {\n\t\tconst nodeRef = useRef<HTMLDivElement | null>(null);\n\t\tconst combinedRef = useCombinedRefs(ref, nodeRef);\n\n\t\tuseEffect(() => {\n\t\t\tif (!active || !root) {\n\t\t\t\treturn undefined;\n\t\t\t}\n\n\t\t\tconst handleFocusOut = (event: FocusEvent) => {\n\t\t\t\tif (!nodeRef.current) return;\n\n\t\t\t\t// Check if the relatedTarget (where focus moved to) is outside our component\n\t\t\t\tconst relatedTarget = event.relatedTarget as Node | null;\n\n\t\t\t\t// If focus moved outside our component (null) or to an element not inside our component\n\t\t\t\tif (\n\t\t\t\t\trelatedTarget === null ||\n\t\t\t\t\t!nodeRef.current.contains(relatedTarget)\n\t\t\t\t) {\n\t\t\t\t\tonClickAway(event);\n\t\t\t\t}\n\t\t\t};\n\n\t\t\tif (useFocusEvents) {\n\t\t\t\t// Add focusout event listener to detect when focus leaves the component\n\t\t\t\tnodeRef.current?.addEventListener(\"focusout\", handleFocusOut);\n\t\t\t}\n\n\t\t\treturn () => {\n\t\t\t\tif (useFocusEvents && nodeRef.current) {\n\t\t\t\t\tnodeRef.current.removeEventListener(\"focusout\", handleFocusOut);\n\t\t\t\t}\n\t\t\t};\n\t\t}, [active, onClickAway, root, useFocusEvents]);\n\n\t\treturn (\n\t\t\t<div ref={combinedRef} className={cn(className)} tabIndex={-1} {...props}>\n\t\t\t\t{children}\n\t\t\t</div>\n\t\t);\n\t},\n);\n\nClickAwayListener.displayName = \"ClickAwayListener\";\n\n// Helper to combine refs\nfunction useCombinedRefs<T>(\n\t...refs: Array<React.Ref<T> | null | undefined>\n): React.RefCallback<T> {\n\treturn React.useCallback(\n\t\t(element: T) => {\n\t\t\tfor (const ref of refs) {\n\t\t\t\tif (!ref) continue;\n\n\t\t\t\tif (typeof ref === \"function\") {\n\t\t\t\t\tref(element);\n\t\t\t\t} else {\n\t\t\t\t\t// TypeScript doesn't know that ref is a MutableRefObject\n\t\t\t\t\t(ref as React.MutableRefObject<T>).current = element;\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t[refs],\n\t);\n}\n\nexport { ClickAwayListener };\n",
       "type": "registry:ui"
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

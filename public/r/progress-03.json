@@ -4,11 +4,6 @@
   "type": "registry:component",
   "title": "Linear Progress with Custom Color",
   "description": "A linear progress component with custom color",
-  "dependencies": [
-    "@radix-ui/react-progress",
-    "clsx",
-    "tailwind-merge"
-  ],
   "registryDependencies": [
     "progress"
   ],
@@ -17,24 +12,6 @@
       "path": "src/components/customized/progress/progress-03.tsx",
       "content": "\"use client\";\n\nimport * as React from \"react\";\n\nimport { Progress } from \"@/components/ui/progress\";\n\nexport default function ProgressColorDemo() {\n  const [progress, setProgress] = React.useState(13);\n\n  React.useEffect(() => {\n    const timer = setTimeout(() => setProgress(66), 500);\n    return () => clearTimeout(timer);\n  }, []);\n\n  return (\n    <div className=\"w-full flex flex-col items-center gap-6\">\n      <Progress value={progress} className=\"w-[60%] [&>div]:bg-green-500\" />\n      <Progress value={progress} className=\"w-[60%] [&>div]:bg-indigo-500\" />\n      <Progress value={progress} className=\"w-[60%] [&>div]:bg-rose-500\" />\n    </div>\n  );\n}\n",
       "type": "registry:component"
-    },
-    {
-      "path": "src/components/ui/progress.tsx",
-      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst Progress = React.forwardRef<\n  React.ElementRef<typeof ProgressPrimitive.Root>,\n  React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>\n>(({ className, value, ...props }, ref) => (\n  <ProgressPrimitive.Root\n    ref={ref}\n    className={cn(\n      \"relative h-2 w-full overflow-hidden rounded-full bg-primary/20\",\n      className\n    )}\n    {...props}\n  >\n    <ProgressPrimitive.Indicator\n      className=\"h-full w-full flex-1 bg-primary transition-all\"\n      style={{ transform: `translateX(-${100 - (value || 0)}%)` }}\n    />\n  </ProgressPrimitive.Root>\n))\nProgress.displayName = ProgressPrimitive.Root.displayName\n\nexport { Progress }\n",
-      "type": "registry:ui",
-      "target": ""
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

@@ -3,27 +3,11 @@
   "name": "notification-badge",
   "type": "registry:ui",
   "title": "Notification Badge",
-  "dependencies": [
-    "clsx",
-    "tailwind-merge"
-  ],
   "files": [
     {
       "path": "src/components/extensions/notification-badge.tsx",
       "content": "import { cn } from \"@/lib/utils\";\n\nexport const NotificationBadge = ({\n\tchildren,\n\tvalue,\n\tPosition = \"top-right\",\n\tcolor = \"destructive\",\n}: {\n\tchildren: React.ReactNode;\n\tvalue?: string | number;\n\tPosition?: \"top-left\" | \"top-right\" | \"bottom-left\" | \"bottom-right\";\n\tcolor?:\n\t\t| \"destructive\"\n\t\t| \"warning\"\n\t\t| \"info\"\n\t\t| \"success\"\n\t\t| \"primary\"\n\t\t| \"offline\";\n}) => {\n\treturn (\n\t\t<div className=\"relative\">\n\t\t\t{children}\n\t\t\t<span\n\t\t\t\tclassName={cn(\n\t\t\t\t\t\" absolute flex justify-center items-center  px-1 rounded-full  text-xs origin-center text-white \",\n\t\t\t\t\t{\n\t\t\t\t\t\t\"p-1\": !value,\n\n\t\t\t\t\t\t\" min-w-4 \": value,\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"-top-1\": Position.includes(\"top\") && !value,\n\t\t\t\t\t\t\"-translate-y-1/2 top-0 \": Position.includes(\"top\") && value,\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"-right-1\": Position.includes(\"right\") && !value,\n\t\t\t\t\t\t\"translate-x-1/2 right-0\": Position.includes(\"right\") && value,\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"-bottom-1\": Position.includes(\"bottom\") && !value,\n\t\t\t\t\t\t\"translate-y-1/2 bottom-0 \": Position.includes(\"bottom\") && value,\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"-left-1\": Position.includes(\"left\") && !value,\n\t\t\t\t\t\t\"-translate-x-1/2 left-0\": Position.includes(\"left\") && value,\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"bg-destructive text-destructive-foreground\":\n\t\t\t\t\t\t\tcolor === \"destructive\",\n\t\t\t\t\t\t\"bg-yellow-400 dark:bg-yellow-500 \": color === \"warning\",\n\t\t\t\t\t\t\"bg-blue-400 dark:bg-blue-500 \": color === \"info\",\n\t\t\t\t\t\t\"bg-lime-400 dark:bg-lime-500\": color === \"success\",\n\t\t\t\t\t\t\"bg-primary text-primary-foreground\": color === \"primary\",\n\t\t\t\t\t\t\"bg-background border-2 border-muted-foreground\":\n\t\t\t\t\t\t\tcolor === \"offline\",\n\t\t\t\t\t},\n\t\t\t\t)}\n\t\t\t>\n\t\t\t\t{value}\n\t\t\t</span>\n\t\t</div>\n\t);\n};\n",
       "type": "registry:ui"
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

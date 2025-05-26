@@ -6,13 +6,7 @@
   "description": "A simple hero block",
   "dependencies": [
     "lucide-react",
-    "next-themes",
-    "class-variance-authority",
-    "clsx",
-    "tailwind-merge",
-    "@radix-ui/react-slot",
-    "lucide-react",
-    "."
+    "next-themes"
   ],
   "registryDependencies": [
     "badge",
@@ -32,30 +26,6 @@
       "content": "\"use client\";\n\nimport DotPattern from \"@/components/ui/dot-pattern\";\nimport Particles from \"@/components/ui/particles\";\nimport { cn } from \"@/lib/utils\";\nimport { useTheme } from \"next-themes\";\n\nexport const BackgroundPattern = () => {\n  const { resolvedTheme } = useTheme();\n  const isLightTheme = resolvedTheme === \"light\";\n\n  return (\n    <>\n      <DotPattern\n        width={20}\n        height={20}\n        cx={1}\n        cy={1}\n        cr={1}\n        className={cn(\n          \"[mask-image:radial-gradient(ellipse,rgba(0,0,0,0.3)_30%,black_50%)]\",\n          \"dark:fill-slate-700\"\n        )}\n      />\n      <Particles\n        className=\"absolute inset-0\"\n        quantity={100}\n        ease={80}\n        color={isLightTheme ? \"#000\" : \"#fff\"}\n        refresh\n      />\n    </>\n  );\n};\n",
       "type": "registry:component",
       "target": "components/hero-06/background-pattern.tsx"
-    },
-    {
-      "path": "src/components/ui/badge.tsx",
-      "content": "import * as React from \"react\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst badgeVariants = cva(\n  \"inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80\",\n        secondary:\n          \"border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80\",\n        destructive:\n          \"border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80\",\n        outline: \"text-foreground\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  }\n);\n\nexport interface BadgeProps\n  extends React.HTMLAttributes<HTMLDivElement>,\n    VariantProps<typeof badgeVariants> {}\n\nfunction Badge({ className, variant, ...props }: BadgeProps) {\n  return (\n    <div className={cn(badgeVariants({ variant }), className)} {...props} />\n  );\n}\n\nexport { Badge, badgeVariants };\n",
-      "type": "registry:ui",
-      "target": ""
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
-    },
-    {
-      "path": "src/components/ui/button.tsx",
-      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst buttonVariants = cva(\n  \"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"bg-primary text-primary-foreground shadow hover:bg-primary/90\",\n        destructive:\n          \"bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90\",\n        outline:\n          \"border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground\",\n        secondary:\n          \"bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80\",\n        ghost: \"hover:bg-accent hover:text-accent-foreground\",\n        link: \"text-primary underline-offset-4 hover:underline\",\n      },\n      size: {\n        default: \"h-9 px-4 py-2\",\n        sm: \"h-8 rounded-md px-3 text-xs\",\n        lg: \"h-10 rounded-md px-8\",\n        icon: \"h-9 w-9\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      size: \"default\",\n    },\n  }\n);\n\nexport interface ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean;\n}\n\nconst Button = React.forwardRef<HTMLButtonElement, ButtonProps>(\n  ({ className, variant, size, asChild = false, ...props }, ref) => {\n    const Comp = asChild ? Slot : \"button\";\n    return (\n      <Comp\n        className={cn(buttonVariants({ variant, size, className }))}\n        ref={ref}\n        {...props}\n      />\n    );\n  }\n);\nButton.displayName = \"Button\";\n\nexport { Button, buttonVariants };\n",
-      "type": "registry:ui",
-      "target": ""
     }
   ]
 }

@@ -3,7 +3,6 @@
   "name": "backdrop",
   "type": "registry:ui",
   "title": "Backdrop",
-  "dependencies": [],
   "files": [
     {
       "path": "src/components/extensions/backdrop.tsx",

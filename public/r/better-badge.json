@@ -4,28 +4,13 @@
   "type": "registry:ui",
   "title": "Better Badge",
   "dependencies": [
-    "class-variance-authority",
-    "class-variance-authority",
-    "clsx",
-    "tailwind-merge"
+    "class-variance-authority"
   ],
   "files": [
     {
       "path": "src/components/extensions/better-badge.tsx",
       "content": "import { type VariantProps, cva } from \"class-variance-authority\";\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst betterBadgeVariants = cva(\n\t\"inline-flex items-center px-2.5 py-0.5 border rounded-full focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background font-medium text-xs transition-colors\",\n\t{\n\t\tvariants: {\n\t\t\tvariant: {\n\t\t\t\tdefault:\n\t\t\t\t\t\"border-transparent bg-primary/10 dark:bg-primary/20 text-primary shadow hover:bg-primary/10\",\n\t\t\t\tsecondary:\n\t\t\t\t\t\"border-transparent dark:bg-secondary/20 bg-secondary/10 hover:bg-secondary/10\",\n\t\t\t\tdestructive:\n\t\t\t\t\t\"border-transparent dark:bg-destructive/20 bg-destructive/10 text-destructive shadow hover:bg-destructive/10\",\n\t\t\t\tinfo: \"border-transparent bg-blue-600/10 dark:bg-blue-600/20 text-blue-500 shadow hover:bg-blue-600/10\",\n\t\t\t\tsuccess:\n\t\t\t\t\t\"bg-emerald-600/10 dark:bg-emerald-600/20 hover:bg-emerald-600/10 text-emerald-500 shadow-none\",\n\t\t\t\twarning:\n\t\t\t\t\t\"bg-yellow-600/10 dark:bg-yellow-600/20 hover:bg-yellow-600/10 text-yellow-500 shadow-none\",\n\t\t\t\toutline: \"text-foreground\",\n\t\t\t},\n\t\t},\n\t\tdefaultVariants: {\n\t\t\tvariant: \"default\",\n\t\t},\n\t},\n);\n\nconst DisplayIcon = ({\n\ticon,\n\tclassName,\n}: {\n\ticon?:\n\t\t| React.ComponentType<{ className?: string }>\n\t\t| React.ReactElement\n\t\t| string;\n\tclassName?: string;\n}) => {\n\tif (!icon) return null;\n\n\t// Case 1: String (image URL)\n\tif (typeof icon === \"string\") {\n\t\treturn <img src={icon} alt=\"icon\" className=\"w-4 h-4\" />;\n\t}\n\n\t// Case 2: Already rendered ReactElement\n\tif (React.isValidElement(icon)) {\n\t\treturn icon;\n\t}\n\n\t// Case 3: Component type that needs to be rendered\n\tconst Icon = icon;\n\treturn <Icon className={cn(\"size-4\", className)} />;\n};\n\nexport interface BadgeProps\n\textends React.HTMLAttributes<HTMLDivElement>,\n\t\tVariantProps<typeof betterBadgeVariants> {}\n\nfunction BetterBadge({\n\tclassName,\n\tvariant = \"default\",\n\tstatus,\n\tborder = false,\n\tStartIcon,\n\tEndIcon,\n\t...props\n}: BadgeProps & {\n\tstatus?: boolean;\n\tborder?: boolean;\n\tStartIcon?:\n\t\t| React.ComponentType<{ className?: string }>\n\t\t| React.ReactElement\n\t\t| string;\n\tEndIcon?:\n\t\t| React.ComponentType<{ className?: string }>\n\t\t| React.ReactElement\n\t\t| string;\n}) {\n\tconst getStatusColor = () => {\n\t\tconst colorMap = {\n\t\t\tdestructive: \"bg-destructive\",\n\t\t\tsecondary: \"bg-foreground\",\n\t\t\tinfo: \"bg-blue-500\",\n\t\t\tsuccess: \"bg-emerald-500\",\n\t\t\twarning: \"bg-yellow-500\",\n\t\t\tdefault: \"bg-primary\",\n\t\t};\n\n\t\treturn colorMap[variant as keyof typeof colorMap] || colorMap.default;\n\t};\n\n\treturn (\n\t\t<div\n\t\t\tclassName={cn(\n\t\t\t\tbetterBadgeVariants({ variant }),\n\t\t\t\tborder && \"border-current\",\n\t\t\t\t\"gap-1.5\",\n\t\t\t\tStartIcon && \"pl-1\",\n\t\t\t\tEndIcon && \"pr-1\",\n\t\t\t\tclassName,\n\t\t\t\t\"flex items-center\",\n\t\t\t)}\n\t\t\t{...props}\n\t\t>\n\t\t\t{status && (\n\t\t\t\t<span className={cn(\"size-1.5 rounded-full\", getStatusColor())} />\n\t\t\t)}\n\t\t\t<DisplayIcon icon={StartIcon} />\n\t\t\t{props.children}\n\t\t\t<DisplayIcon icon={EndIcon} />\n\t\t</div>\n\t);\n}\n\nexport { BetterBadge, betterBadgeVariants };\n",
       "type": "registry:ui"
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

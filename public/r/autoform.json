@@ -2,15 +2,13 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "autoform",
   "type": "registry:ui",
-  "title": "Pagination",
+  "title": "Auto form",
   "dependencies": [
     "@autoform/zod",
     "@autoform/react",
     "react-hook-form",
     "lucide-react",
-    "date-fns",
-    "@autoform/react",
-    "."
+    "date-fns"
   ],
   "registryDependencies": [
     "label",

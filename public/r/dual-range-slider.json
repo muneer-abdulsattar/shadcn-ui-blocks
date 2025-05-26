@@ -4,28 +4,13 @@
   "type": "registry:ui",
   "title": "Dual Range Slider",
   "dependencies": [
-    "@radix-ui/react-slider",
-    "@radix-ui/react-slider",
-    "clsx",
-    "tailwind-merge"
+    "@radix-ui/react-slider"
   ],
   "files": [
     {
       "path": "src/components/extensions/dual-range-slider.tsx",
       "content": "\"use client\";\n\nimport * as SliderPrimitive from \"@radix-ui/react-slider\";\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface DualRangeSliderProps\n\textends React.ComponentProps<typeof SliderPrimitive.Root> {\n\tlabelPosition?: \"top\" | \"bottom\";\n\tlabel?: (value: number | undefined) => React.ReactNode;\n}\n\nconst DualRangeSlider = React.forwardRef<\n\tReact.ElementRef<typeof SliderPrimitive.Root>,\n\tDualRangeSliderProps\n>(({ className, label, labelPosition = \"top\", ...props }, ref) => {\n\tconst initialValue = Array.isArray(props.value)\n\t\t? props.value\n\t\t: [props.min, props.max];\n\n\treturn (\n\t\t<SliderPrimitive.Root\n\t\t\tref={ref}\n\t\t\tclassName={cn(\n\t\t\t\t\"relative flex w-full touch-none select-none items-center\",\n\t\t\t\tclassName,\n\t\t\t)}\n\t\t\t{...props}\n\t\t>\n\t\t\t<SliderPrimitive.Track className=\"relative bg-secondary rounded-full w-full h-2 overflow-hidden grow\">\n\t\t\t\t<SliderPrimitive.Range className=\"absolute bg-primary h-full\" />\n\t\t\t</SliderPrimitive.Track>\n\t\t\t{initialValue.map((value, index) => (\n\t\t\t\t<React.Fragment key={index}>\n\t\t\t\t\t<SliderPrimitive.Thumb className=\"block relative bg-background disabled:opacity-50 border-2 border-primary rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ring-offset-background focus-visible:ring-offset-2 w-4 h-4 transition-colors disabled:pointer-events-none\">\n\t\t\t\t\t\t{label && (\n\t\t\t\t\t\t\t<span\n\t\t\t\t\t\t\t\tclassName={cn(\n\t\t\t\t\t\t\t\t\t\"absolute flex w-full justify-center\",\n\t\t\t\t\t\t\t\t\tlabelPosition === \"top\" && \"-top-7\",\n\t\t\t\t\t\t\t\t\tlabelPosition === \"bottom\" && \"top-4\",\n\t\t\t\t\t\t\t\t)}\n\t\t\t\t\t\t\t>\n\t\t\t\t\t\t\t\t{label(value)}\n\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t)}\n\t\t\t\t\t</SliderPrimitive.Thumb>\n\t\t\t\t</React.Fragment>\n\t\t\t))}\n\t\t</SliderPrimitive.Root>\n\t);\n});\nDualRangeSlider.displayName = \"DualRangeSlider\";\n\nexport { DualRangeSlider };\n",
       "type": "registry:ui"
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

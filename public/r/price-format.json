@@ -4,9 +4,6 @@
   "type": "registry:ui",
   "title": "Price Format",
   "dependencies": [
-    "react-number-format",
-    "clsx",
-    "tailwind-merge",
     "react-number-format"
   ],
   "files": [
@@ -14,18 +11,6 @@
       "path": "src/components/extensions/price-format.tsx",
       "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\nimport { NumericFormat } from \"react-number-format\";\n\ninterface PriceFormatProps extends React.HTMLAttributes<HTMLDivElement> {\n\tvalue: number;\n\tprefix?: string;\n\tthousandSeparator?: string;\n\tdecimalSeparator?: string;\n\tdecimalScale?: number;\n\tsuffix?: string;\n}\n\nconst PriceFormat: React.FC<PriceFormatProps> = ({\n\tclassName,\n\tdecimalScale = 2,\n\tdecimalSeparator = \".\",\n\tprefix = \"$\",\n\tsuffix = \"\",\n\tthousandSeparator = \",\",\n\tvalue,\n}) => {\n\treturn (\n\t\t<NumericFormat\n\t\t\tvalue={value}\n\t\t\tthousandSeparator={thousandSeparator}\n\t\t\tdecimalSeparator={decimalSeparator}\n\t\t\tdecimalScale={decimalScale}\n\t\t\tprefix={prefix}\n\t\t\tsuffix={suffix}\n\t\t\tdisplayType=\"text\"\n\t\t\tclassName={cn(\"text-lg font-medium\", className)}\n\t\t/>\n\t);\n};\n\nexport default PriceFormat;\n",
       "type": "registry:ui"
-    },
-    {
-      "path": "src/lib/utils.ts",
-      "content": "import { config } from \"@/config\";\nimport { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n\treturn twMerge(clsx(inputs));\n}\n\nexport function capitalize(str: string) {\n\treturn str.charAt(0).toUpperCase() + str.slice(1);\n}\n\n// eslint-disable-next-line @typescript-eslint/no-unused-vars\ntype GroupBy<T, K extends keyof T> = Record<string, T[]>;\n\nexport function groupBy<T, K extends keyof T>(\n\tarray: T[],\n\tkey: K,\n): GroupBy<T, K> {\n\treturn array.reduce(\n\t\t(acc, item) => {\n\t\t\tconst keyValue = String(item[key]);\n\t\t\tif (!acc[keyValue]) {\n\t\t\t\tacc[keyValue] = [];\n\t\t\t}\n\t\t\tacc[keyValue].push(item);\n\t\t\treturn acc;\n\t\t},\n\t\t{} as GroupBy<T, K>,\n\t);\n}\n\nexport function absoluteUrl(path: string) {\n\treturn process.env.NODE_ENV === \"development\"\n\t\t? `http://localhost:3000${path}`\n\t\t: `https://${config.appUrl}${path}`;\n}\n",
-      "type": "registry:lib",
-      "target": ""
-    },
-    {
-      "path": "src/config.ts",
-      "content": "export const config = {\n  appUrl:\n    process.env.NODE_ENV === \"production\"\n      ? process.env.VERCEL_PROJECT_PRODUCTION_URL ??\n        process.env.NEXT_PUBLIC_APP_URL!\n      : \"localhost:3000\",\n  social: {\n    github: \"https://github.com/akash3444/shadcn-ui-blocks\",\n    twitter: \"https://twitter.com/akash_3444\",\n  },\n};\n",
-      "type": "registry:component",
-      "target": ""
     }
   ]
 }

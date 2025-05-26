@@ -1,8 +1,7 @@
 {
 	"$schema": "https://ui.shadcn.com/schema/registry.json",
-	"name": "Shadcn UI Blocks",
-	"homepage": "https://www.shadcnui-blocks.com",
-
+	"name": "Shadcn UI Blocks - muneer",
+	"homepage": "https://shadcn-e-components.vercel.app",
 	"items": [
 		{
 			"name": "form-controlled-inputs",
@@ -55,7 +54,7 @@
 		{
 			"name": "autoform",
 			"type": "registry:ui",
-			"title": "Pagination",
+			"title": "Auto form",
 			"dependencies": [
 				"@autoform/zod",
 				"@autoform/react",
@@ -151,14 +150,14 @@
 		},
 		{
 			"name": "pagination",
-			"type": "registry:ui",
+			"type": "registry:component",
 			"title": "Pagination",
 			"dependencies": ["nuqs"],
 			"registryDependencies": ["pagination", "label", "button", "select"],
 			"files": [
 				{
-					"path": "src/components/extensions/pagination.tsx",
-					"type": "registry:ui"
+					"path": "src/registry/default/extensions/pagination.tsx",
+					"type": "registry:component"
 				}
 			]
 		},

@@ -5,7 +5,6 @@
   "title": "Spinner Colors",
   "description": "A spinner component with different colors",
   "dependencies": [
-    "lucide-react",
     "lucide-react"
   ],
   "files": [

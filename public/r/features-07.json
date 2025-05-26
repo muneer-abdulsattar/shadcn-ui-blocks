@@ -5,7 +5,6 @@
   "title": "Features 07",
   "description": "A simple features block",
   "dependencies": [
-    "lucide-react",
     "lucide-react"
   ],
   "files": [

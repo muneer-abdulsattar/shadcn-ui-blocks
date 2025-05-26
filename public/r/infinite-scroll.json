@@ -3,7 +3,6 @@
   "name": "infinite-scroll",
   "type": "registry:ui",
   "title": "Infinite Scroll",
-  "dependencies": [],
   "files": [
     {
       "path": "src/components/extensions/infinite-scroll.tsx",
