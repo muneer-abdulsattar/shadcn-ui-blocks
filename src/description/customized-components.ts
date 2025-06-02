@@ -1,10 +1,10 @@
 export const customizedComponents = {
 	form: [
-		{ title: "Wrapper", type: "form", name: "wrapper" },
+		{ title: "Wrapper", type: "form", name: "form-controlled-inputs" },
 		{
 			title: "General Controlled Inputs",
 			type: "form",
-			name: "input-controlled",
+			name: "form-controlled-inputs",
 		},
 	],
 	autoForm: [
