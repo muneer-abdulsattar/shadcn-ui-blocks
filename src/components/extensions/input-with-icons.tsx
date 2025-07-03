@@ -96,9 +96,12 @@ export default function InputWithIcons({
 			{EndButton && (
 				<button
 					disabled={props.disabled}
-					className="focus:z-10 absolute inset-y-0 flex justify-center items-center disabled:opacity-50 focus-visible:border-ring rounded-e-md outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 w-9 h-full text-muted-foreground/80 hover:text-foreground transition-[color,box-shadow] disabled:cursor-not-allowed disabled:pointer-events-none end-0"
 					aria-label="Subscribe"
 					{...EndButton}
+					className={cn(
+						"focus:z-10 absolute inset-y-0 flex justify-center items-center disabled:opacity-50 focus-visible:border-ring rounded-e-md outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 w-9 h-full text-muted-foreground/80 hover:text-foreground transition-[color,box-shadow] disabled:cursor-not-allowed disabled:pointer-events-none end-0",
+						EndButton.className,
+					)}
 				>
 					<DisplayIcon icon={EndButton.icon} />
 				</button>
@@ -121,9 +124,12 @@ export default function InputWithIcons({
 			{StartButton && (
 				<button
 					disabled={props.disabled}
-					className="focus:z-10 absolute inset-y-0 flex justify-center items-center disabled:opacity-50 focus-visible:border-ring rounded-s-md outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 w-9 h-full text-muted-foreground/80 hover:text-foreground transition-[color,box-shadow] disabled:cursor-not-allowed disabled:pointer-events-none start-0"
 					aria-label="Subscribe"
 					{...StartButton}
+					className={cn(
+						"focus:z-10 absolute inset-y-0 flex justify-center items-center disabled:opacity-50 focus-visible:border-ring rounded-s-md outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50 w-9 h-full text-muted-foreground/80 hover:text-foreground transition-[color,box-shadow] disabled:cursor-not-allowed disabled:pointer-events-none start-0",
+						StartButton.className,
+					)}
 				>
 					<DisplayIcon icon={StartButton.icon} />
 				</button>
