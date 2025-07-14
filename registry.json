@@ -35,19 +35,10 @@
 		},
 		{
 			"name": "table",
-			"type": "registry:block",
+			"type": "registry:ui",
 			"title": "Table",
 			"dependencies": ["@tanstack/react-table", "lucide-react", "nuqs"],
-			"registryDependencies": [
-				"skeleton",
-				"table",
-				"scroll-area",
-				"button",
-				"dropdown-menu",
-				"input",
-				"popover",
-				"select"
-			],
+
 			"files": [
 				{
 					"path": "src/components/extensions/Table/index.tsx",
