@@ -33,21 +33,29 @@
 		},
 		{
 			"name": "table",
-			"type": "registry:ui",
+			"type": "registry:block",
 			"title": "Table",
 
 			"files": [
 				{
 					"path": "src/components/extensions/Table/index.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/Table/index.tsx"
 				},
 				{
 					"path": "src/components/extensions/Table/TableColumnView.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/Table/TableColumnView.tsx"
 				},
 				{
 					"path": "src/components/extensions/Table/TableHeaderDropdown.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/Table/TableHeaderDropdown.tsx"
+				},
+				{
+					"path": "src/components/extensions/Table/tableTypes.d.ts",
+					"type": "registry:file",
+					"target": "src/components/extensions/Table/tableTypes.d.ts"
 				}
 			]
 		},
