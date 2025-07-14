@@ -22,6 +22,7 @@ import {
 	Ban,
 	ChevronsUpDown,
 	EyeOff,
+	Search,
 	X,
 } from "lucide-react";
 import { parseAsString, useQueryState } from "nuqs";
@@ -66,7 +67,7 @@ export default function TableHeaderDropdown<TData, TValue>({
 					<Button
 						variant={filterValue ? "secondary" : "ghost"}
 						size="sm"
-						className="data-[state=open]:bg-accent -mx-0 px-3 h-8"
+						className="data-[state=open]:bg-accent h-6"
 					>
 						<span>{title}</span>
 						{sortKey === column.id ? (
@@ -77,9 +78,11 @@ export default function TableHeaderDropdown<TData, TValue>({
 									<ArrowDown className="ml-2 w-4 h-4" />
 								)}
 							</>
-						) : (
-							column.getCanSort() && <ChevronsUpDown className="ml-2 w-4 h-4" />
-						)}
+						) : column.getCanSort() ? (
+							<ChevronsUpDown className="ml-2 w-4 h-4" />
+						) : column.getCanFilter() ? (
+							<Search className="!size-3" />
+						) : null}
 					</Button>
 				</PopoverTrigger>
 				<PopoverContent align="start" className="p-1 w-[180px]">
