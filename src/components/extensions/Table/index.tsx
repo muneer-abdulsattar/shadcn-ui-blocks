@@ -1,14 +1,4 @@
 "use client";
-import TableHeaderDropdown from "@/components/extensions/Table/TableHeaderDropdown";
-import type { ColumnDef, Row, Table as TTable } from "@tanstack/react-table";
-import {
-	flexRender,
-	getCoreRowModel,
-	useReactTable,
-	type VisibilityState,
-} from "@tanstack/react-table";
-import * as React from "react";
-
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
@@ -20,6 +10,15 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
+import type { ColumnDef, Row, Table as TTable } from "@tanstack/react-table";
+import {
+	flexRender,
+	getCoreRowModel,
+	useReactTable,
+	type VisibilityState,
+} from "@tanstack/react-table";
+import * as React from "react";
+import TableHeaderDropdown from "./TableHeaderDropdown";
 
 interface DataTableProps<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[];
