@@ -101,7 +101,7 @@ export default function Table<TData, TValue>({
 				>
 					<>
 						<CNTable className="relative">
-							<TableHeader>
+							<TableHeader className="bg-card">
 								{table.getHeaderGroups().map((headerGroup) => (
 									<TableRow key={headerGroup.id}>
 										{headerGroup.headers.map((header) => {
