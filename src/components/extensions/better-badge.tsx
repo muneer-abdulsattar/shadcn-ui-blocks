@@ -1,10 +1,10 @@
-import { type VariantProps, cva } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
 const betterBadgeVariants = cva(
-	"inline-flex items-center px-2.5 py-0.5 border rounded-full focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background font-medium text-xs transition-colors",
+	"inline-flex items-center px-2.5 py-0.5 border rounded-full focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background [&_svg:not([class*='size-'])]:size-4 font-medium text-xs transition-colors [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0",
 	{
 		variants: {
 			variant: {

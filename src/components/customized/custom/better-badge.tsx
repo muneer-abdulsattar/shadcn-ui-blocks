@@ -69,9 +69,7 @@ export default function BetterBadgeDemo() {
 			<div>
 				<p>With Icons</p>
 				<div className="flex flex-wrap gap-3">
-					<BetterBadge
-						StartIcon={<ArrowLeft className="size-4 cursor-pointer" />}
-					>
+					<BetterBadge StartIcon={<ArrowLeft className="cursor-pointer" />}>
 						hello world
 					</BetterBadge>
 					<BetterBadge EndIcon={X}>hello world</BetterBadge>
