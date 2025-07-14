@@ -93,9 +93,14 @@ export default function Table<TData, TValue>({
 		<div className="space-y-1">
 			{children?.(table)}
 			<div className="flex">
-				<ScrollArea className={cn("flex-1 w-1", className)}>
+				<ScrollArea
+					style={{
+						borderRadius: "var(--radius)",
+					}}
+					className={cn("flex-1 w-1 border", className)}
+				>
 					<>
-						<CNTable className="relative border rounded-lg">
+						<CNTable className="relative">
 							<TableHeader>
 								{table.getHeaderGroups().map((headerGroup) => (
 									<TableRow key={headerGroup.id}>
