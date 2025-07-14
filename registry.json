@@ -5,7 +5,7 @@
 	"items": [
 		{
 			"name": "form-controlled-inputs",
-			"type": "registry:ui",
+			"type": "registry:block",
 			"title": "Form Fields",
 			"registryDependencies": [
 				"button",
@@ -23,11 +23,13 @@
 			"files": [
 				{
 					"path": "src/components/extensions/form/controller-field-wrapper.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/form/controller-field-wrapper.tsx"
 				},
 				{
 					"path": "src/components/extensions/form/controlled-inputs.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/form/controlled-inputs.tsx"
 				}
 			]
 		},
@@ -85,7 +87,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/autoform/AutoForm.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/AutoForm.tsx"
 				},
 				{
 					"type": "registry:file",
@@ -104,55 +107,68 @@
 				},
 				{
 					"path": "src/components/extensions/autoform/components/ArrayElementWrapper.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/ArrayElementWrapper.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/ArrayWrapper.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/ArrayWrapper.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/BooleanField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/BooleanField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/DateField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/DateField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/ErrorMessage.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/ErrorMessage.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/FieldWrapper.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/FieldWrapper.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/Form.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/Form.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/NumberField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/NumberField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/ObjectWrapper.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/ObjectWrapper.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/RadioField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/RadioField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/SelectField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/SelectField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/StringField.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/StringField.tsx"
 				},
 				{
 					"path": "src/components/extensions/autoform/components/SubmitButton.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/autoform/components/SubmitButton.tsx"
 				}
 			]
 		},
@@ -179,7 +195,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/debug.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/debug.tsx"
 				}
 			]
 		},
@@ -190,7 +207,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/date-range-picker/index.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/date-range-picker/index.tsx"
 				},
 				{
 					"target": "src/components/extensions/date-range-picker/date-input.tsx",
@@ -208,7 +226,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/files-uploader/profile.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/files-uploader/profile.tsx"
 				},
 				{
 					"target": "src/components/extensions/files-uploader/use-file-upload.ts",
@@ -226,7 +245,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/files-uploader/index.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/files-uploader/index.tsx"
 				},
 				{
 					"target": "src/components/extensions/files-uploader/use-file-upload.ts",
@@ -255,7 +275,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/better-dropdown.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/better-dropdown.tsx"
 				}
 			]
 		},
@@ -266,7 +287,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/backdrop.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/backdrop.tsx"
 				}
 			]
 		},
@@ -277,7 +299,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/backdrop.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/backdrop.tsx"
 				}
 			]
 		},
@@ -290,7 +313,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/better-badge.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/better-badge.tsx"
 				}
 			]
 		},
@@ -303,7 +327,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/better-date-picker.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/better-date-picker.tsx"
 				}
 			]
 		},
@@ -316,7 +341,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/better-select.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/better-select.tsx"
 				}
 			]
 		},
@@ -328,7 +354,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/better-tooltip.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/better-tooltip.tsx"
 				}
 			]
 		},
@@ -339,7 +366,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/click-away-listener.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/click-away-listener.tsx"
 				}
 			]
 		},
@@ -351,7 +379,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/dual-range-slider.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/dual-range-slider.tsx"
 				}
 			]
 		},
@@ -362,7 +391,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/infinite-scroll.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/infinite-scroll.tsx"
 				}
 			]
 		},
@@ -375,7 +405,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/input-with-actions.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/input-with-actions.tsx"
 				}
 			]
 		},
@@ -388,7 +419,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/input-with-icons.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/input-with-icons.tsx"
 				}
 			]
 		},
@@ -401,7 +433,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/multi-select.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/multi-select.tsx"
 				}
 			]
 		},
@@ -412,7 +445,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/notification-badge.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/notification-badge.tsx"
 				}
 			]
 		},
@@ -425,7 +459,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/number-input.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/number-input.tsx"
 				}
 			]
 		},
@@ -438,7 +473,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/price-format.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/price-format.tsx"
 				}
 			]
 		},
@@ -451,7 +487,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/rating-input.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/rating-input.tsx"
 				}
 			]
 		},
@@ -465,7 +502,8 @@
 			"files": [
 				{
 					"path": "src/components/extensions/tags-input.tsx",
-					"type": "registry:ui"
+					"type": "registry:file",
+					"target": "src/components/extensions/tags-input.tsx"
 				}
 			]
 		},
