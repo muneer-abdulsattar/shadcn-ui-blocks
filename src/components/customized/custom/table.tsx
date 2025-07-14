@@ -26,6 +26,9 @@ const columns: ColumnDef<FakerDataType>[] = [
 		accessorKey: "name",
 		enableHiding: true,
 		enableSorting: true,
+		meta: {
+			className: "text-muted-foreground",
+		},
 	},
 	{
 		accessorKey: "age",

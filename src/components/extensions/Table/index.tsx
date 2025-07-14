@@ -1,13 +1,16 @@
 "use client";
-import type { Row } from "@tanstack/react-table";
+import TableHeaderDropdown from "@/components/extensions/Table/TableHeaderDropdown";
+import type { ColumnDef, Row, Table as TTable } from "@tanstack/react-table";
 import {
-	type VisibilityState,
 	flexRender,
 	getCoreRowModel,
 	useReactTable,
+	type VisibilityState,
 } from "@tanstack/react-table";
 import * as React from "react";
 
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
 	Table as CNTable,
 	TableBody,
@@ -16,14 +19,7 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-
-import { Skeleton } from "@/components/ui/skeleton";
-
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-
-import TableHeaderDropdown from "@/components/extensions/Table/TableHeaderDropdown";
-import type { ColumnDef, Table as TTable } from "@tanstack/react-table";
 
 interface DataTableProps<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[];
@@ -150,13 +146,13 @@ export default function Table<TData, TValue>({
 													>
 														{row.getVisibleCells().map((cell) => (
 															<TableCell
-																className={`${
-																	row.getIsExpanded()
-																		? "bg-neutral-50 dark:bg-neutral-900"
-																		: ""
-																}
-															${cell.column.getIsPinned() ? "sticky z-50 right-0" : ""}
-															`}
+																className={cn(
+																	row.getIsExpanded() &&
+																		"bg-neutral-50 dark:bg-neutral-900",
+																	cell.column.getIsPinned() &&
+																		"sticky z-50 right-0",
+																	cell.column.columnDef.meta?.className,
+																)}
 																key={cell.id}
 															>
 																{flexRender(
